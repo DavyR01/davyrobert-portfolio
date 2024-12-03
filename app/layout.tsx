@@ -5,18 +5,25 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Davy ROBERT portfolio's 2024",
+   title: "My Portfolio",
+   description: "Davy ROBERT portfolio's 2024",
 };
 
 export default function RootLayout({
-  children,
+   children,
 }: Readonly<{
-  children: React.ReactNode;
+   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+   return (
+      <html lang="en">
+         <head>
+            {/* <link rel="icon" href="" type="image/x-icon" /> */}
+         </head>
+         <body className={inter.className}>{children}
+            <div>
+
+            </div>
+         </body>
+      </html>
+   );
 }
