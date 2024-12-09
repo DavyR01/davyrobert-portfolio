@@ -26,13 +26,21 @@ export default function RootLayout({
 }: Readonly<{
    children: React.ReactNode;
 }>) {
-
+   const isMaintenanceMode = process.env.APP_MAINTENANCE === "true";
    return (
       <html lang="en">
          <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}
          >
-            <Navbar />
-            {children}
+            {isMaintenanceMode ? (
+               <div className="h-screen flex justify-center items-center font-medium text-3xl text-center">
+                  <div>Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...</div>
+               </div>
+            ) : (
+               <>
+                  <Navbar />
+                  {children}
+               </>
+            )}
          </body>
       </html>
    );
