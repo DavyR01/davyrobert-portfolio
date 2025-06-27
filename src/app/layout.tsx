@@ -33,7 +33,7 @@ export default function RootLayout({
          >
             {isMaintenanceMode ? (
                <div className="h-screen flex justify-center items-center font-medium text-3xl text-center">
-                  <div>Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...</div>
+                  <div>Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
                </div>
             ) : (
                <>
