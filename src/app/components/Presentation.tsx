@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
+
 const Presentation = () => {
    return (
       <section
@@ -39,13 +40,24 @@ const Presentation = () => {
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?
             </p>
 
-            <div className="flex flex-wrap gap-6 sm:flex-nowrap sm:items-center">
+            <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
                   className="bg-[#5EE9B5] text-black font-semibold py-3 px-6 text-lg rounded-full transition-all hover:scale-105 hover:bg-white hover:text-[#5EE9B5] hover:border-[#5EE9B5] border-2 border-transparent break-words w-full sm:w-auto text-center"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
                   Télécharger mon CV
+               </a>
+               <a
+                  className="relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-black font-semibold py-3 px-6 text-lg rounded-full transition-all hover:scale-105 hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] border-2 border-transparent break-words w-full sm:w-auto text-center shadow-md"
+                  href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
+                  download
+               >
+                  <span className="relative z-10">Télécharger mon CV format long</span>
+                  <span
+                     className="absolute left-[-75%] top-0 w-[80%] h-full bg-gradient-to-r from-transparent via-white/90 to-transparent opacity-80 blur-[1px] animate-shine pointer-events-none"
+                     aria-hidden="true"
+                  />
                </a>
                <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8">
                   <a

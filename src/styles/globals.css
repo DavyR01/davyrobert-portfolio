@@ -42,25 +42,20 @@ body {
 }
 
 
+/* Handle animation Button Long CV.tsx */
+@keyframes shine {
+   0% {
+      left: -75%;
+   }
 
+   100% {
+      left: 100%;
+   }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.animate-shine {
+   animation: shine 1.2s linear infinite;
+}
 
 
 
