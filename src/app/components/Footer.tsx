@@ -4,9 +4,9 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
    return (
-      <footer className="bg-black text-white py-10">
+      <footer id="contact" className="bg-black text-white py-10">
          {/* Ligne verte */}
-         <div className="h-[2px] bg-[#5EE9B5] w-[80%] mx-auto mb-6" />
+         <div className="h-[2px] bg-[#5ce1e6] w-[80%] mx-auto mb-6" />
 
          {/* Titre */}
          <h3 className="text-center text-xl font-semibold mb-4">
@@ -19,7 +19,7 @@ const Footer = () => {
                href="https://github.com/davyR01"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[#5EE9B5] text-3xl hover:scale-110 transition-transform"
+               className="text-[#5ce1e6] text-3xl hover:scale-110 transition-transform"
             >
                <FaGithub />
             </a>
@@ -27,13 +27,13 @@ const Footer = () => {
                href="https://www.linkedin.com/in/davy-robert"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[#5EE9B5] text-3xl hover:scale-110 transition-transform"
+               className="text-[#5ce1e6] text-3xl hover:scale-110 transition-transform"
             >
                <FaLinkedin />
             </a>
             <a
                href="mailto:contact@davyrobert.fr"
-               className="text-[#5EE9B5] text-3xl hover:scale-110 transition-transform"
+               className="text-[#5ce1e6] text-3xl hover:scale-110 transition-transform"
             >
                <MdEmail />
             </a>

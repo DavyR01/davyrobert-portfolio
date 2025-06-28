@@ -6,17 +6,17 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 const Presentation = () => {
    return (
       <section
-         id="home"
+         id="introduction"
          className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 text-white relative gap-12"
       >
          {/* Fond binaire */}
          <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none">
-            <div className="number-container absolute top-0 left-[40%] animate-scroll opacity-10 text-[#5EE9B5] font-bold text-sm leading-none select-none">
+            <div className="number-container absolute top-0 left-[40%] animate-scroll opacity-10 text-[#5ce1e6] font-bold text-sm leading-none select-none">
                {Array.from({ length: 200 }, (_, i) => (
                   <div key={i}>0<br />1</div>
                ))}
             </div>
-            <div className="number-container absolute top-0 left-[60%] animate-scroll2 opacity-10 text-[#5EE9B5] font-bold text-xs leading-none select-none">
+            <div className="number-container absolute top-0 left-[60%] animate-scroll2 opacity-10 text-[#5ce1e6] font-bold text-xs leading-none select-none">
                {Array.from({ length: 200 }, (_, i) => (
                   <div key={i}>1<br />0</div>
                ))}
@@ -33,8 +33,8 @@ const Presentation = () => {
             </h1>
             <h2 className="text-4xl font-bold mb-6">
                Et j&#39;exerce en tant que <br />
-               <span className="text-[#5EE9B5]">Développeur Full</span>{' '}
-               <span className="text-[#5EE9B5]">Stack</span>
+               <span className="text-[#5ce1e6]">Développeur Full</span>{' '}
+               <span className="text-[#5ce1e6]">Stack</span>
             </h2>
             <p className="text-white text-base mb-8">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?
@@ -42,7 +42,7 @@ const Presentation = () => {
 
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
-                  className="bg-[#5EE9B5] text-black font-semibold py-3 px-6 text-lg rounded-full transition-all hover:scale-105 hover:bg-white hover:text-[#5EE9B5] hover:border-[#5EE9B5] border-2 border-transparent break-words w-full sm:w-auto text-center"
+                  className="bg-[#5ce1e6] text-black font-semibold py-3 px-6 text-lg rounded-full transition-all hover:scale-105 hover:bg-white hover:text-[#5ce1e6] hover:border-[#5ce1e6] border-2 border-transparent break-words w-full sm:w-auto text-center"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
@@ -64,7 +64,7 @@ const Presentation = () => {
                      href="https://github.com/davyR01"
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="text-[#5EE9B5] text-4xl hover:scale-110 transition-transform"
+                     className="text-[#5ce1e6] text-4xl hover:scale-110 transition-transform"
                   >
                      <FaGithub />
                   </a>
@@ -72,7 +72,7 @@ const Presentation = () => {
                      href="https://www.linkedin.com/in/davy-robert"
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="text-[#5EE9B5] text-4xl hover:scale-110 transition-transform"
+                     className="text-[#5ce1e6] text-4xl hover:scale-110 transition-transform"
                   >
                      <FaLinkedin />
                   </a>
@@ -81,7 +81,7 @@ const Presentation = () => {
          </div>
 
          {/* Image profil */}
-         <div className="aspect-square w-[250px] md:w-[400px] min-w-[150px] max-w-full rounded-full border-2 border-[#5EE9B5] flex items-center justify-center overflow-hidden shrink-0 lg:self-start mx-auto lg:mx-0">
+         <div className="aspect-square w-[250px] md:w-[400px] min-w-[150px] max-w-full rounded-full border-2 border-[#5ce1e6] flex items-center justify-center overflow-hidden shrink-0 lg:self-start mx-auto lg:mx-0">
             <Image
                src="/davyprofile.png"
                width={400}

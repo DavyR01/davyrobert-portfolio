@@ -1,4 +1,5 @@
 // import Link from "next/link";
+import { default as MesExperiences } from "./components/MesExperiences";
 import Numbers from "./components/Numbers";
 import Presentation from "./components/Presentation";
 
@@ -8,6 +9,7 @@ export default function Home() {
          <div className="flex flex-col items-center gap-8 text-white w-full">
             <Numbers />
             <Presentation />
+            <MesExperiences />
          </div>
       </main>
    );
