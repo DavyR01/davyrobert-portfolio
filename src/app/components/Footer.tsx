@@ -10,7 +10,7 @@ const Footer = () => {
 
          {/* Titre */}
          <h3 className="text-center text-xl font-semibold mb-4">
-            Me Contacter :
+            ME CONTACTER :
          </h3>
 
          {/* Icônes */}

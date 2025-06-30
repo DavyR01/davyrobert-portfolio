@@ -4,7 +4,6 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 const MesExperiences = () => {
-
    const [isMobile, setIsMobile] = useState(false)
 
    useEffect(() => {
@@ -23,10 +22,7 @@ const MesExperiences = () => {
          experiences: [
             {
                title: 'xxxxx',
-               tasks: [
-                  'Lorem ipsum dolor sit amet',
-                  'Consectetur adipiscing elit',
-               ],
+               tasks: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
             },
             {
                title: 'xxxxx',
@@ -37,22 +33,17 @@ const MesExperiences = () => {
             },
             {
                title: 'xxxxx',
-               tasks: [
-                  'Ex task',
-               ],
-            }
+               tasks: ['Ex task'],
+            },
          ],
-         icons: ['file', 'file', 'file']
+         icons: ['file', 'file', 'file'],
       },
       {
          year: 'xxxxx',
          experiences: [
             {
                title: 'xxxxx',
-               tasks: [
-                  'Lorem ipsum dolor sit amet',
-                  'Consectetur adipiscing elit',
-               ],
+               tasks: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
             },
             {
                title: 'xxxxx',
@@ -63,12 +54,10 @@ const MesExperiences = () => {
             },
             {
                title: 'xxxxx',
-               tasks: [
-                  'Ex task',
-               ],
-            }
+               tasks: ['Ex task'],
+            },
          ],
-         icons: ['file', 'file', 'file']
+         icons: ['file', 'file', 'file'],
       },
       {
          year: 'xxxxx',
@@ -76,25 +65,20 @@ const MesExperiences = () => {
             {
                title: 'xxxxx',
                tasks: [
-                  'Lorem ipsum dolor sit asum dolordolordolordolordolo rdolordolordolord olordolord olodolordolordolordolordolo rdolordolordolord olordolrdolord olodolordolordolordolordolo rdolordolordolord olordolrdolord olodolordolordolordolordolo rdolordolordolord olordolord olordolordolo rdolordolordolo dolordolordolordolordolo rdolordolordolord olordolord olordolordolo rdolordolordolo m dolor sit asum dolor sit amet',
+                  'Lorem ipsum dolor sit asum dolor sit amet',
                   'Consectetur adipiscing elit',
                ],
             },
             {
                title: 'xxxxx',
-               tasks: [
-                  'Sed do eiusmod tempor incididunt',
-                  'Sed do eiusmod tempor incididunt',
-               ],
+               tasks: ['Sed do eiusmod tempor incididunt', 'Sed do eiusmod tempor incididunt'],
             },
             {
                title: 'xxxxx',
-               tasks: [
-                  'Ex task',
-               ],
-            }
+               tasks: ['Ex task'],
+            },
          ],
-         icons: ['file', 'file', 'file']
+         icons: ['file', 'file', 'file'],
       },
    ]
 
@@ -104,13 +88,12 @@ const MesExperiences = () => {
             <span className="italic text-white">Mes</span> Expériences
          </h2>
 
-         {/* === Layout selon la taille d’écran === */}
          {isMobile ? (
-            // ✅ VERSION RESPONSIVE (< 1150px)
+            // Responsive layout (<= 1150px)
             <div className="relative mx-auto w-full max-w-[700px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
                {data.map((item, i) => (
-                  <div key={i} className="relative flex flex-col md:flex-row w-full mb-16">
+                  <div key={i} className="relative flex flex-col w-full mb-16">
                      <div className="w-full flex justify-center mb-6">
                         <div className="relative w-full max-w-[500px]">
                            <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-full text-base">
@@ -137,16 +120,19 @@ const MesExperiences = () => {
                ))}
             </div>
          ) : (
-            // ✅ VERSION DESKTOP (> 1150px)
+            // Desktop layout (> 1150px)
             <div className="relative mx-auto w-full max-w-[1400px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
                {data.map((item, i) => (
                   <div key={i} className="relative w-full flex mb-16">
                      {i % 2 === 0 ? (
                         <>
-                           <div className="w-1/2 flex justify-end pr-4">
+                           <div className="w-1/2 flex justify-end pr-10">
                               <div className="relative">
-                                 <div className="absolute top-10 right-[-40px] h-1 w-10 bg-[#5ce1e6] z-20"></div>
+                                 {!isMobile && (
+                                    <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[#5ce1e6] z-20 rounded"></div>
+                                 )}
+
                                  <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-[500px] text-base">
                                     <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
                                     {item.experiences.map((exp, idx) => (
@@ -172,9 +158,12 @@ const MesExperiences = () => {
                      ) : (
                         <>
                            <div className="w-1/2"></div>
-                           <div className="w-1/2 flex justify-start pl-4">
+                           <div className="w-1/2 flex justify-start pl-10">
                               <div className="relative">
-                                 <div className="absolute top-10 left-[-40px] h-1 w-10 bg-[#5ce1e6] z-20"></div>
+                                 {!isMobile && (
+                                    <div className="absolute top-1/2 left-[-39px] h-1 w-10 bg-[#5ce1e6] z-20 rounded"></div>
+                                 )}
+
                                  <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-[500px] text-base">
                                     <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
                                     {item.experiences.map((exp, idx) => (
