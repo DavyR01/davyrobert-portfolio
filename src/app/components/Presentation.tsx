@@ -46,14 +46,14 @@ const Presentation = () => {
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
-                  Télécharger mon CV
+                  Mon CV format standard
                </a>
                <a
                   className="relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-black font-semibold py-3 px-6 text-lg rounded-full transition-all hover:scale-105 hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] border-2 border-transparent break-words w-full sm:w-auto text-center shadow-md"
                   href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
                   download
                >
-                  <span className="relative z-10">Télécharger mon CV format long</span>
+                  <span className="relative z-10">Mon CV format long</span>
                   <span
                      className="absolute left-[-75%] top-0 w-[80%] h-full bg-gradient-to-r from-transparent via-white/90 to-transparent opacity-80 blur-[1px] animate-shine pointer-events-none"
                      aria-hidden="true"

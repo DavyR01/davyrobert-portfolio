@@ -55,12 +55,17 @@ const Navbar = () => {
 
                {/* Menu burger mobile */}
                <div
-                  className="md:hidden flex flex-col justify-center items-center w-8 h-6 space-y-1 cursor-pointer z-50"
+                  className="md:hidden flex flex-col justify-center items-center w-10 h-6 space-y-1 cursor-pointer z-50"
                   onClick={() => setMenuOpen(!menuOpen)}
                >
-                  <span className="block w-6 h-0.5 bg-white" />
-                  <span className="block w-6 h-0.5 bg-white" />
-                  <span className="block w-6 h-0.5 bg-white" />
+                  <Image
+                     src="/burger-menu.svg"
+                     alt="Ouvrir le menu"
+                     width={48}
+                     height={48}
+                     className="object-contain"
+                     priority
+                  />
                </div>
             </div>
 

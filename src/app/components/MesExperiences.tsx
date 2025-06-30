@@ -18,7 +18,7 @@ const MesExperiences = () => {
 
    const data = [
       {
-         year: 'xxxxx',
+         year: 'XX/XX - XX/XX',
          experiences: [
             {
                title: 'xxxxx',
@@ -36,10 +36,10 @@ const MesExperiences = () => {
                tasks: ['Ex task'],
             },
          ],
-         icons: ['file', 'file', 'file'],
+         icons: ['file.svg', 'file.svg', 'file.svg'],
       },
       {
-         year: 'xxxxx',
+         year: 'XXXX',
          experiences: [
             {
                title: 'xxxxx',
@@ -57,10 +57,10 @@ const MesExperiences = () => {
                tasks: ['Ex task'],
             },
          ],
-         icons: ['file', 'file', 'file'],
+         icons: ['globe.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'globe.svg'],
       },
       {
-         year: 'xxxxx',
+         year: 'XXXX',
          experiences: [
             {
                title: 'xxxxx',
@@ -69,16 +69,8 @@ const MesExperiences = () => {
                   'Consectetur adipiscing elit',
                ],
             },
-            {
-               title: 'xxxxx',
-               tasks: ['Sed do eiusmod tempor incididunt', 'Sed do eiusmod tempor incididunt'],
-            },
-            {
-               title: 'xxxxx',
-               tasks: ['Ex task'],
-            },
          ],
-         icons: ['file', 'file', 'file'],
+         icons: ['file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg'],
       },
    ]
 
@@ -90,27 +82,29 @@ const MesExperiences = () => {
 
          {isMobile ? (
             // Responsive layout (<= 1150px)
-            <div className="relative mx-auto w-full max-w-[700px]">
+            <div className="relative mx-auto w-full max-w-[800px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
                {data.map((item, i) => (
                   <div key={i} className="relative flex flex-col w-full mb-16">
                      <div className="w-full flex justify-center mb-6">
-                        <div className="relative w-full max-w-[500px]">
+                        <div className="relative w-full max-w-[95%] sm:max-w-[97%]">
                            <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-full text-base">
-                              <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
+
+                              <h2 className="text-3xl font-bold mb-4 w-fit mx-auto">{item.year}</h2>
                               {item.experiences.map((exp, idx) => (
                                  <div key={idx} className="mb-4">
                                     <h3 className="text-[#5ce1e6] font-bold text-2xl break-words">{exp.title}</h3>
-                                    <ul className="list-disc ml-6 mt-1 space-y-1">
+                                    <ul className="list-disc ml-8 mt-1 space-y-1">
                                        {exp.tasks.map((task, j) => (
                                           <li key={j} className="break-words">{task}</li>
                                        ))}
                                     </ul>
                                  </div>
                               ))}
-                              <div className="flex flex-wrap justify-center gap-4 mt-4">
+                              <div className="flex flex-wrap justify-center gap-4 mt-6">
                                  {item.icons.map((icon, k) => (
-                                    <Image key={k} src="/file.svg" alt={icon} width={40} height={40} className="hover:scale-110 transition-transform" />
+                                    <Image key={k} src={`/${icon}`}
+                                       alt={icon} width={50} height={50} className="hover:scale-110 transition-transform" />
                                  ))}
                               </div>
                            </div>
@@ -124,32 +118,52 @@ const MesExperiences = () => {
             <div className="relative mx-auto w-full max-w-[1400px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
                {data.map((item, i) => (
-                  <div key={i} className="relative w-full flex mb-16">
+                  <div key={i} className="relative w-full flex mb-24">
+                     {/* Icônes positionnés à gauche ou à droite */}
+                     {!isMobile && (
+                        <div
+                           className={`
+                                 absolute 
+                                 top-1/2 -translate-y-1/2 
+                                 z-20 
+                                 w-[500px]
+                                 flex flex-wrap gap-8
+                                 ${i % 2 === 0
+                                 ? 'left-[calc(50%+40px)] justify-center'
+                                 : 'right-[calc(55%-0px)] justify-center'} 
+                              `}
+                        >
+
+                           {item.icons.map((icon, k) => (
+                              <Image
+                                 key={k}
+                                 src={`/${icon}`}
+                                 alt={icon}
+                                 width={60}
+                                 height={60}
+                                 className="hover:scale-110 transition-transform"
+                              />
+                           ))}
+                        </div>
+                     )}
+
                      {i % 2 === 0 ? (
                         <>
                            <div className="w-1/2 flex justify-end pr-10">
                               <div className="relative">
-                                 {!isMobile && (
-                                    <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[#5ce1e6] z-20 rounded"></div>
-                                 )}
-
+                                 <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[#5ce1e6] z-20 rounded"></div>
                                  <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-[500px] text-base">
-                                    <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
+                                    <h2 className="text-4xl font-bold mb-4 text-center">{item.year}</h2>
                                     {item.experiences.map((exp, idx) => (
                                        <div key={idx} className="mb-4">
-                                          <h3 className="text-[#5ce1e6] font-bold text-2xl break-words">{exp.title}</h3>
-                                          <ul className="list-disc ml-6 mt-1 space-y-1">
+                                          <h3 className="text-[#5ce1e6] font-bold text-3xl break-words">{exp.title}</h3>
+                                          <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasks.map((task, j) => (
                                                 <li key={j} className="break-words">{task}</li>
                                              ))}
                                           </ul>
                                        </div>
                                     ))}
-                                    <div className="flex flex-wrap justify-center gap-4 mt-4">
-                                       {item.icons.map((icon, k) => (
-                                          <Image key={k} src="/file.svg" alt={icon} width={40} height={40} className="hover:scale-110 transition-transform" />
-                                       ))}
-                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -160,27 +174,19 @@ const MesExperiences = () => {
                            <div className="w-1/2"></div>
                            <div className="w-1/2 flex justify-start pl-10">
                               <div className="relative">
-                                 {!isMobile && (
-                                    <div className="absolute top-1/2 left-[-39px] h-1 w-10 bg-[#5ce1e6] z-20 rounded"></div>
-                                 )}
-
+                                 <div className="absolute top-1/2 left-[-40px] -translate-y-1/2 h-1 w-10 bg-[#5ce1e6] z-20 rounded"></div>
                                  <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-[500px] text-base">
-                                    <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
+                                    <h2 className="text-4xl font-bold mb-4 text-center">{item.year}</h2>
                                     {item.experiences.map((exp, idx) => (
                                        <div key={idx} className="mb-4">
-                                          <h3 className="text-[#5ce1e6] font-bold text-2xl break-words">{exp.title}</h3>
-                                          <ul className="list-disc ml-6 mt-1 space-y-1">
+                                          <h3 className="text-[#5ce1e6] font-bold text-3xl break-words">{exp.title}</h3>
+                                          <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasks.map((task, j) => (
                                                 <li key={j} className="break-words">{task}</li>
                                              ))}
                                           </ul>
                                        </div>
                                     ))}
-                                    <div className="flex flex-wrap justify-center gap-4 mt-4">
-                                       {item.icons.map((icon, k) => (
-                                          <Image key={k} src="/file.svg" alt={icon} width={40} height={40} className="hover:scale-110 transition-transform" />
-                                       ))}
-                                    </div>
                                  </div>
                               </div>
                            </div>
