@@ -16,7 +16,7 @@ const MesExperiences = () => {
             {
                title: 'xxxxx',
                tasks: [
-                  'Sed do eiusmod tempor incididunt',
+                  'Sed do eiusmod tempor incididunt eiusmod tempor incididunt incididunt eiusmod tempor incididunt',
                   'Sed do eiusmod tempor incididunt',
                ],
             },
@@ -43,7 +43,7 @@ const MesExperiences = () => {
                title: 'xxxxx',
                tasks: [
                   'Sed do eiusmod tempor incididunt',
-                  'Sed do eiusmod tempor incididunt',
+                  'Sed do eiusmod tempor incididunt eiusmod tempor incididunt',
                ],
             },
             {
@@ -85,44 +85,92 @@ const MesExperiences = () => {
 
    return (
       <section id="experience" className="pt-52 text-white px-4">
-         <h2 className="text-center text-[#5ce1e6] uppercase text-3xl font-bold mb-12">
+         <h2 className="text-center text-[#5ce1e6] uppercase text-4xl font-bold mb-12">
             <span className="italic text-white">Mes</span> Expériences
          </h2>
 
-         <div className="relative border-l-2 border-[#5ce1e6] mx-auto w-full max-w-[500px]">            {data.map((item, i) => (
-            <div key={i} className="relative pl-10 mb-16">
-               {/* Timeline point */}
-               <div className="absolute top-0 left-[-9px] w-4 h-4 bg-[#5ce1e6] rounded-full border-2 border-black"></div>
-
-               <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6">
-                  <h2 className="text-2xl font-bold mb-4">{item.year}</h2>
-
-                  {item.experiences.map((exp, idx) => (
-                     <div key={idx} className="mb-4">
-                        <h3 className="text-[#5ce1e6] font-semibold">{exp.title}</h3>
-                        <ul className="list-disc ml-6 mt-1 text-sm space-y-1">
-                           {exp.tasks.map((task, j) => (
-                              <li key={j}>{task}</li>
-                           ))}
-                        </ul>
-                     </div>
-                  ))}
-
-                  <div className="flex flex-wrap justify-center gap-4 mt-4">
-                     {item.icons.map((icon, k) => (
-                        <Image
-                           key={k}
-                           src="/file.svg"
-                           alt={icon}
-                           width={40}
-                           height={40}
-                           className="hover:scale-110 transition-transform"
-                        />
-                     ))}
-                  </div>
+         <div className="relative mx-auto w-full max-w-[700px]">
+            {/* Ligne centrale */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
+            {data.map((item, i) => (
+               <div
+                  key={i}
+                  className="relative w-full flex mb-16"
+               >
+                  {/* Colonne gauche */}
+                  {i % 2 === 0 ? (
+                     <>
+                        <div className="w-1/2 flex justify-end pr-4">
+                           <div className="relative">
+                              {/* Trait horizontal entre la carte et la barre centrale */}
+                              <div className="absolute top-10 right-[-40px] h-1 w-10 bg-[#5ce1e6] z-20"></div>
+                              <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-[320px] sm:w-[350px] md:w-[500px] text-base">
+                                 <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
+                                 {item.experiences.map((exp, idx) => (
+                                    <div key={idx} className="mb-4">
+                                       <h3 className="text-[#5ce1e6] font-bold text-2xl">{exp.title}</h3>
+                                       <ul className="list-disc ml-10 mt-1 space-y-1">
+                                          {exp.tasks.map((task, j) => (
+                                             <li key={j}>{task}</li>
+                                          ))}
+                                       </ul>
+                                    </div>
+                                 ))}
+                                 <div className="flex flex-wrap justify-center gap-4 mt-4">
+                                    {item.icons.map((icon, k) => (
+                                       <Image
+                                          key={k}
+                                          src="/file.svg"
+                                          alt={icon}
+                                          width={40}
+                                          height={40}
+                                          className="hover:scale-110 transition-transform"
+                                       />
+                                    ))}
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div className="w-1/2"></div>
+                     </>
+                  ) : (
+                     <>
+                        <div className="w-1/2"></div>
+                        <div className="w-1/2 flex justify-start pl-4">
+                           <div className="relative">
+                              {/* Trait horizontal entre la carte et la barre centrale */}
+                              <div className="absolute top-10 left-[-40px] h-1 w-10 bg-[#5ce1e6] z-20"></div>
+                              <div className="bg-[#0f0f0f] border border-[#5ce1e6] rounded-lg p-6 w-[320px] sm:w-[350px] md:w-[500px] text-base">
+                                 <h2 className="text-4xl font-bold mb-4">{item.year}</h2>
+                                 {item.experiences.map((exp, idx) => (
+                                    <div key={idx} className="mb-4">
+                                       <h3 className="text-[#5ce1e6] font-bold text-2xl">{exp.title}</h3>
+                                       <ul className="list-disc ml-10 mt-1 space-y-1">
+                                          {exp.tasks.map((task, j) => (
+                                             <li key={j}>{task}</li>
+                                          ))}
+                                       </ul>
+                                    </div>
+                                 ))}
+                                 <div className="flex flex-wrap justify-center gap-4 mt-4">
+                                    {item.icons.map((icon, k) => (
+                                       <Image
+                                          key={k}
+                                          src="/file.svg"
+                                          alt={icon}
+                                          width={40}
+                                          height={40}
+                                          className="hover:scale-110 transition-transform"
+                                       />
+                                    ))}
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </>
+                  )}
                </div>
-            </div>
-         ))}
+            ))}
          </div>
       </section>
    )
