@@ -27,7 +27,7 @@ export default function RootLayout({
 }: Readonly<{
    children: React.ReactNode;
 }>) {
-   const isMaintenanceMode = process.env.APP_MAINTENANCE === "true";
+   const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
    return (
       <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
          <body className="antialiased flex flex-col min-h-screen overflow-x-hidden">            {isMaintenanceMode ? (

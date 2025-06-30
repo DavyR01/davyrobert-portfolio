@@ -55,55 +55,57 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
          transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
       >
          <Tilt
-            className='bg-[#1A1A1A] p-5 rounded-2xl sm:w-[360px] w-full relative overflow-hidden'
+            className='bg-[#1A1A1A] p-5 rounded-2xl sm:w-[360px] w-full relative overflow-hidden flex flex-col'
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={1000}
          >
-            <div className='relative w-full h-[200px]'>
-               <Image
-                  src={image}
-                  alt={name}
-                  fill
-                  className='object-cover rounded-2xl'
-               />
-
-               <div className="absolute bottom-2 right-2 z-10 flex gap-2">
-                  {sourceWeb && (
-                     <div
-                        onClick={() => window.open(sourceWeb, '_blank')}
-                        className="w-10 h-10 rounded-full bg-black/70 flex items-center justify-center text-white cursor-pointer"
-                     >
-                        <AiFillEye className="w-6 h-6" />
-                     </div>
-                  )}
-                  {sourceGithub && (
-                     <a
-                        href={sourceGithub.startsWith('http') ? sourceGithub : `https://${sourceGithub}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-10 h-10 rounded-full bg-black/70 flex items-center justify-center text-white cursor-pointer"
-                     >
-                        <AiFillGithub className="w-6 h-6" />
-                     </a>
-                  )}
+            <div className="flex-1 flex flex-col">
+               <div className='relative w-full h-[200px] mb-5'>
+                  <Image
+                     src={image}
+                     alt={name}
+                     fill
+                     className='object-cover rounded-2xl'
+                  />
                </div>
-            </div>
 
-            <div className='mt-5'>
-               <p className='text-white font-bold text-[24px]'>{name}</p>
-               <p className='mt-2 text-secondary text-[16px]'>{description}</p>
-            </div>
+               <div className='mt-5'>
+                  <p className='text-white font-bold text-[24px]'>{name}</p>
+                  <p className='mt-2 text-secondary text-[16px]'>{description}</p>
+               </div>
 
-            <div className='mt-4 flex flex-wrap gap-2'>
-               {tags.map((tag, idx) => (
-                  <p key={idx} className={`text-[14px] ${tag.color}`}>
-                     #{tag.name}
-                  </p>
-               ))}
+                  <div className='mt-4 flex items-center justify-between mb-6 gap-6'>
+                    <div className="flex flex-wrap gap-2">
+                      {tags.map((tag, idx) => (
+                        <p key={idx} className={`text-[14px] ${tag.color}`}>
+                           #{tag.name}
+                        </p>
+                      ))}
+                    </div>
+                    <div className="flex gap-2 ml-4">
+                      {sourceWeb && (
+                        <div
+                           onClick={() => window.open(sourceWeb, '_blank')}
+                           className="w-10 h-10 rounded-full bg-black/70 flex items-center justify-center text-white cursor-pointer"
+                        >
+                           <AiFillEye className="w-10 h-10" />
+                        </div>
+                      )}
+                      {sourceGithub && (
+                        <a
+                           href={sourceGithub.startsWith('http') ? sourceGithub : `https://${sourceGithub}`}
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="w-10 h-10 rounded-full bg-black/70 flex items-center justify-center text-white cursor-pointer"
+                        >
+                           <AiFillGithub className="w-10 h-10" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
             </div>
          </Tilt>
-
       </motion.div>
    );
 };
