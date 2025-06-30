@@ -84,7 +84,7 @@ const Navbar = () => {
                   </li>
                   <li>
                      <a href="#experience" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
-                        EXPÉRIENCE
+                        EXPÉRIENCES
                      </a>
                   </li>
                   <li>

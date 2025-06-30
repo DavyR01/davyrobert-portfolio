@@ -1,5 +1,6 @@
 // import Link from "next/link";
 import { default as MesExperiences } from "./components/MesExperiences";
+import MesProjets from "./components/MesProjets";
 import Numbers from "./components/Numbers";
 import Presentation from "./components/Presentation";
 
@@ -10,6 +11,7 @@ export default function Home() {
             <Numbers />
             <Presentation />
             <MesExperiences />
+            <MesProjets />
          </div>
       </main>
    );

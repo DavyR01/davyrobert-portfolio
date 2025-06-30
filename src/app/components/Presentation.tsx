@@ -7,7 +7,7 @@ const Presentation = () => {
    return (
       <section
          id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 text-white relative gap-12"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 text-white relative gap-12 pt-6"
       >
          {/* Fond binaire */}
          <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none">

@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { data_experiences } from '../datas/datas'
 
 const MesExperiences = () => {
    const [isMobile, setIsMobile] = useState(false)
@@ -16,66 +17,8 @@ const MesExperiences = () => {
       return () => window.removeEventListener('resize', handleResize)
    }, [])
 
-   const data = [
-      {
-         year: 'XX/XX - XX/XX',
-         experiences: [
-            {
-               title: 'xxxxx',
-               tasks: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
-            },
-            {
-               title: 'xxxxx',
-               tasks: [
-                  'Sed do eiusmod tempor incididunt eiusmod tempor incididunt incididunt eiusmod tempor incididunt',
-                  'Sed do eiusmod tempor incididunt',
-               ],
-            },
-            {
-               title: 'xxxxx',
-               tasks: ['Ex task'],
-            },
-         ],
-         icons: ['file.svg', 'file.svg', 'file.svg'],
-      },
-      {
-         year: 'XXXX',
-         experiences: [
-            {
-               title: 'xxxxx',
-               tasks: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
-            },
-            {
-               title: 'xxxxx',
-               tasks: [
-                  'Sed do eiusmod tempor incididunt',
-                  'Sed do eiusmod tempor incididunt eiusmod tempor incididunt',
-               ],
-            },
-            {
-               title: 'xxxxx',
-               tasks: ['Ex task'],
-            },
-         ],
-         icons: ['globe.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'globe.svg'],
-      },
-      {
-         year: 'XXXX',
-         experiences: [
-            {
-               title: 'xxxxx',
-               tasks: [
-                  'Lorem ipsum dolor sit asum dolor sit amet',
-                  'Consectetur adipiscing elit',
-               ],
-            },
-         ],
-         icons: ['file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg'],
-      },
-   ]
-
    return (
-      <section id="experience" className="pt-52 text-white px-4">
+      <section id="experience" className="pt-32 text-white px-4">
          <h2 className="text-center text-[#5ce1e6] uppercase text-4xl font-bold mb-12">
             <span className="italic text-white">Mes</span> Expériences
          </h2>
@@ -84,7 +27,7 @@ const MesExperiences = () => {
             // Responsive layout (<= 1150px)
             <div className="relative mx-auto w-full max-w-[800px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
-               {data.map((item, i) => (
+               {data_experiences.map((item, i) => (
                   <div key={i} className="relative flex flex-col w-full mb-16">
                      <div className="w-full flex justify-center mb-6">
                         <div className="relative w-full max-w-[95%] sm:max-w-[97%]">
@@ -117,7 +60,7 @@ const MesExperiences = () => {
             // Desktop layout (> 1150px)
             <div className="relative mx-auto w-full max-w-[1400px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[#5ce1e6] z-0 rounded"></div>
-               {data.map((item, i) => (
+               {data_experiences.map((item, i) => (
                   <div key={i} className="relative w-full flex mb-24">
                      {/* Icônes positionnés à gauche ou à droite */}
                      {!isMobile && (
