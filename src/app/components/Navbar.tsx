@@ -35,7 +35,7 @@ const Navbar = () => {
    }, [menuOpen]);
 
    return (
-      <header className="fixed top-0 left-0 right-0 z-10 w-full max-w-[1400px] mx-auto bg-black">
+      <header className="fixed top-0 left-0 right-0 z-30 w-full max-w-[1400px] mx-auto bg-black">
          <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20">
             <div className="flex justify-between items-center w-full md:w-auto h-20">
                {/* <Link href="/" className="text-white text-xl font-bold italic">
