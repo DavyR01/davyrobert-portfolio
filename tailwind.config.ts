@@ -13,8 +13,8 @@ export default {
             foreground: "var(--foreground)",
          },
          screens: {
-            xs843: { max: "843px" },
-            "xs843-min": { min: "844px" },
+            xs858: { max: "858px" },
+            "xs859-min": { min: "859px" },
          },
       },
    },

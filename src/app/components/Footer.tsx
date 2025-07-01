@@ -1,10 +1,20 @@
+'use client';
+
+import { motion } from "framer-motion"; // 👈 Import
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
    return (
-      <footer id="contact" className="bg-black text-white py-10">
+      <motion.footer
+         id="contact"
+         className="bg-black text-white py-10"
+         initial={{ opacity: 0, y: 40 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         viewport={{ once: true, amount: 0.3 }}
+         transition={{ duration: 0.6, ease: "easeOut" }}
+      >
          {/* Ligne verte */}
          <div className="h-[2px] bg-[#5ce1e6] w-[80%] mx-auto mb-6" />
 
@@ -38,7 +48,17 @@ const Footer = () => {
                <MdEmail />
             </a>
          </div>
-      </footer>
+         {/* Copyright*/}
+         <div className="mt-10 text-center space-y-2">
+            <p className="text-sm text-[#5ce1e6]">
+               Design et Développement réalisés en NextJS
+            </p>
+            <p className="text-sm text-[#5ce1e6]">
+               © 2025 Davy Robert – Tous droits réservés
+            </p>
+         </div>
+
+      </motion.footer>
    );
 };
 
