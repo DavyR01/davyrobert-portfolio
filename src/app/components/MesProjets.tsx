@@ -78,7 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ index, name, description, tag
                   <div className='mt-4 flex items-center justify-between mb-6 gap-6'>
                     <div className="flex flex-wrap gap-2">
                       {tags.map((tag, idx) => (
-                        <p key={idx} className={`text-[14px] ${tag.color}`}>
+                        <p key={idx} className={`text-[14px] ${tag.color} bg-black/30 px-2 py-1 rounded-full`}>
                            #{tag.name}
                         </p>
                       ))}
