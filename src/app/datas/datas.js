@@ -59,14 +59,14 @@ const projects = [
          { name: "tag2", color: "text-[#5ce1e6]" },
          { name: "tag3", color: "text-[#5ce1e6]" },
       ],
-      image: "/projects/crit-job.png",
+      image: "/projects/crit_job5.png",
       sourceWeb: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1",
    },
    {
-      name: "Eurowatt",
+      name: "Eurowatt Super7",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
       tags: [
-         { name: "tag1", color: "text-[#5ce1e6]" },
+         { name: "PHP", color: "text-[#5ce1e6]" },
          { name: "tag2", color: "text-[#5ce1e6]" },
          { name: "tag3", color: "text-[#5ce1e6]" },
       ],
@@ -116,7 +116,7 @@ const projects = [
          { name: "React JS", color: "text-[#5ce1e6]" },
          { name: "Sharepoint", color: "text-[#5ce1e6]" },
       ],
-      image: "/projects/blog_project.png",
+      image: "/projects/vuitton2.png",
       sourceWeb: "https://fr.louisvuitton.com/fra-fr/homepage",
    },
 ];

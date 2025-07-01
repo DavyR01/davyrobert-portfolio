@@ -20,7 +20,7 @@ const MesProjets = () => {
                transition={{ delay: 0.2 }}
                className='mt-3 text-secondary text-[18px] max-w-4xl leading-[28px] text-center mx-auto'
             >
-               Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d&apos;autres l&rsquo;on été dans un cadre professionnel. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br />
+               Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d&apos;autres l&rsquo;ont été dans un cadre professionnel en collaboration avec d&apos;autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br />
                Toutefois, j&apos;ai réalisé quelques vidéos de démonstration afin d&apos;illustrer les fonctionnalités et l&apos;ergonomie de ces projets.
             </motion.p>
          </div>
