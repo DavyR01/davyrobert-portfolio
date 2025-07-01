@@ -64,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
          transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
       >
          <Tilt
-            className="bg-[#1A1A1A] p-5 rounded-2xl xs843:w-full sm:w-[360px] relative overflow-hidden flex flex-col"
+            className="bg-[#1A1A1A] p-5 rounded-2xl xs843:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs843-min:h-full xs843-min:min-h-[480px]"
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={1000}

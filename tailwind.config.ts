@@ -14,6 +14,7 @@ export default {
          },
          screens: {
             xs843: { max: "843px" },
+            "xs843-min": { min: "844px" },
          },
       },
    },
