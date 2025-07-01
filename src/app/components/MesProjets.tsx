@@ -20,7 +20,7 @@ const MesProjets = () => {
                transition={{ delay: 0.2 }}
                className='mt-3 text-secondary text-[18px] max-w-4xl leading-[28px] text-center mx-auto'
             >
-               Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d&apos;autres l&rsquo;on été dans un cadre professionnel. <br/> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br/>
+               Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d&apos;autres l&rsquo;on été dans un cadre professionnel. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br />
                Toutefois, j&apos;ai réalisé quelques vidéos de démonstration afin d&apos;illustrer les fonctionnalités et l&apos;ergonomie de ces projets.
             </motion.p>
          </div>
@@ -64,19 +64,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
          transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
       >
          <Tilt
-            className="bg-[#1A1A1A] p-5 rounded-2xl sm:w-[360px] w-full relative overflow-hidden flex flex-col"
+            className="bg-[#1A1A1A] p-5 rounded-2xl xs843:w-full sm:w-[360px] relative overflow-hidden flex flex-col"
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={1000}
          >
             <div className="flex-1 flex flex-col">
                {/* Image du projet */}
-               <div className="relative w-full h-[200px] mb-5">
+               <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden rounded-2xl">
                   <Image
                      src={image}
                      alt={name}
-                     fill
-                     className="object-cover rounded-2xl"
+                     width={640}
+                     height={360}
+                     className="rounded-2xl object-cover w-full h-auto"
                   />
                </div>
 
@@ -106,15 +107,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                </div>
 
                {/* Description */}
-               <p className="text-secondary text-[16px] mt-3 line-clamp-5 overflow-hidden">{description}</p>
+               <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem]">
+                  {description}
+               </p>
+
 
 
                {/* Tags */}
-               <div className="mt-4 flex flex-wrap gap-2 mb-6">
+               <div className="mt-4 flex flex-wrap gap-2 mb-2">
                   {tags.map((tag, idx) => (
                      <p
                         key={idx}
-                        className={`text-[14px] ${tag.color} bg-black/30 px-2 py-1 rounded-full font-semibold`}
+                        className={`inline-flex text-[14px] ${tag.color} bg-black/30 px-2 py-0.5 rounded-full font-semibold`}
                      >
                         {tag.name}
                      </p>

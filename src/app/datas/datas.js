@@ -2,7 +2,7 @@
 const projects = [
    {
       name: "Ecosystem QVMD",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Lorem ip",
       tags: [
          { name: "Angular", color: "text-[#5ce1e6]" },
          { name: "Typescript", color: "text-[#5ce1e6]" },
@@ -13,7 +13,6 @@ const projects = [
       ],
       image: "/projects/ecosystem-qvmmd.png",
       sourceWeb: "https://www.quiveutmesdechets.fr/",
-      sourceGithub: "https://www.github.com",
    },
    {
       name: "Wild Rent",
@@ -23,9 +22,9 @@ const projects = [
          { name: "tag2", color: "text-[#5ce1e6]" },
          { name: "tag3", color: "text-[#5ce1e6]" },
          { name: "tag3", color: "text-[#5ce1e6]" },
-         { name: "tag3", color: "text-[#5ce1e6]" },
-         { name: "tag3", color: "text-[#5ce1e6]" },
-         { name: "tag3", color: "text-[#5ce1e6]" },
+         // { name: "tag3", color: "text-[#5ce1e6]" },
+         // { name: "tag3", color: "text-[#5ce1e6]" },
+         // { name: "tag3", color: "text-[#5ce1e6]" },
       ],
       image: "/assets/window.svg",
       sourceWeb: "https://wildrent.davyrobert.fr/",
@@ -53,7 +52,6 @@ const projects = [
       ],
       image: "/assets/window.svg",
       sourceWeb: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1",
-      sourceGithub: "https://www.github.com",
    },
    {
       name: "Virtual Met'Art",
