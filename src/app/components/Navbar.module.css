@@ -1,0 +1,26 @@
+.navLink {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--green-light);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: var(--green-light);
+  }
+  
+  .navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }

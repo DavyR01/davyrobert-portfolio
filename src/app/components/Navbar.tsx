@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
+import styles from './Navbar.module.css';
 
 const Navbar = () => {
    const [menuOpen, setMenuOpen] = useState(false);
@@ -78,27 +79,27 @@ const Navbar = () => {
             >
                <ul className="flex flex-col md:flex-row gap-6 md:gap-12 items-center list-none">
                   <li>
-                     <a href="#introduction" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
+                     <a href="#introduction" onClick={() => setMenuOpen(false)} className={styles.navLink}>
                         A PROPOS
                      </a>
                   </li>
                   <li>
-                     <a href="#skills" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
+                     <a href="#skills" onClick={() => setMenuOpen(false)} className={styles.navLink}>
                         COMPÉTENCES
                      </a>
                   </li>
                   <li>
-                     <a href="#experience" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
+                     <a href="#experience" onClick={() => setMenuOpen(false)} className={styles.navLink}>
                         EXPÉRIENCES
                      </a>
                   </li>
                   <li>
-                     <a href="#projets" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
+                     <a href="#projets" onClick={() => setMenuOpen(false)} className={styles.navLink}>
                         PROJETS
                      </a>
                   </li>
                   <li>
-                     <a href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
+                     <a href="#contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
                         CONTACT
                      </a>
                   </li>
