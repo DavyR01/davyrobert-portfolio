@@ -49,9 +49,9 @@ const Footer = () => {
             </a>
          </div>
          {/* Copyright*/}
-         <div className="mt-10 text-center space-y-2">
-            <p className="text-sm text-[#5ce1e6]">
-               Design et Développement réalisés en NextJS
+         <div className="mt-10 text-center space-y-2 mx-4">
+            <p className="text-sm text-gray-500">
+               Design et Développement réalisés en NextJS & TailwindCSS
             </p>
             <p className="text-sm text-[#5ce1e6]">
                © 2025 Davy Robert – Tous droits réservés
