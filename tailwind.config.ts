@@ -13,6 +13,9 @@ export default {
             foreground: "var(--foreground)",
          },
          screens: {
+            xxs: "280px",
+            xs: "390px",        // ➜ 3 colonnes
+            xs420: "420px", 
             xs858: { max: "858px" },
             "xs859-min": { min: "859px" },
          },

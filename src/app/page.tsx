@@ -3,6 +3,7 @@ import { default as MesExperiences } from "./components/MesExperiences";
 import MesProjets from "./components/MesProjets";
 import Numbers from "./components/Numbers";
 import Presentation from "./components/Presentation";
+import Skills from "./components/Skills";
 
 export default function Home() {
    return (
@@ -10,6 +11,7 @@ export default function Home() {
          <div className="flex flex-col items-center gap-8 text-white w-full">
             <Numbers />
             <Presentation />
+            <Skills />
             <MesExperiences />
             <MesProjets />
          </div>

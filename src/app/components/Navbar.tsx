@@ -76,10 +76,15 @@ const Navbar = () => {
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-white text-base transition-all duration-300`}
             >
-               <ul className="flex flex-col md:flex-row gap-6 md:gap-20 items-center list-none">
+               <ul className="flex flex-col md:flex-row gap-6 md:gap-12 items-center list-none">
                   <li>
                      <a href="#introduction" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
-                        INTRODUCTION
+                        A PROPOS
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#skills" onClick={() => setMenuOpen(false)} className="hover:text-[#5ce1e6] transition-colors">
+                        COMPÉTENCES
                      </a>
                   </li>
                   <li>
