@@ -9,21 +9,21 @@ const Skills = () => {
     return (
         <motion.section
             id="skills"
-            className="pt-32 text-white px-4"
+            className="pt-32 px-4"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
             <h2 className="text-center text-[#5ce1e6] uppercase text-4xl font-bold mb-12">
-                <span className="italic text-white">Mes</span> Compétences
+                <span className="italic">Mes</span> Compétences
             </h2>
 
             {/* 🔹 Mobile <640px (flexible grid responsive) */}
             <div className="sm:hidden w-full max-w-[1400px] mx-auto flex flex-col gap-12">
                 {categories.map((cat) => (
                     <div key={cat.title} className="flex flex-col items-center gap-6 px-4">
-                        <h3 className="text-3xl font-semibold text-white">{cat.title}</h3>
+                        <h3 className="text-3xl font-semibold">{cat.title}</h3>
                         <div className="grid grid-cols-1 xxs:grid-cols-2 xs:grid-cols-3 gap-y-6 xxs:gap-x-12 xs:gap-x-20 w-full justify-items-center">
                             {cat.items.map(({ icon, label }, i) => (
                                 <div
@@ -61,7 +61,7 @@ const Skills = () => {
                         `}
                     >
 
-                        <h3 className="text-3xl font-semibold text-white">{cat.title}</h3>
+                        <h3 className="text-3xl font-semibold">{cat.title}</h3>
                         <div className="grid grid-cols-2 gap-6 lg:gap-x-14 lg:gap-y-8 w-full">
                             {cat.items.map(({ icon, label }, i) => (
                                 <div

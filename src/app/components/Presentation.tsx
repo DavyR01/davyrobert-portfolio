@@ -8,7 +8,7 @@ const Presentation = () => {
    return (
       <section
          id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 text-white relative gap-12 pt-8"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 pt-8"
       >
          {/* Fond binaire */}
          <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none">
@@ -30,8 +30,8 @@ const Presentation = () => {
             <h2 className="text-4xl font-bold text-center lg:text-left">Bonjour je me présente</h2>
 
             <h1 className="text-[64px] my-4 font-bold text-center lg:text-left">
-               <span className="italic font-light text-white">Davy</span>{' '}
-               <span className="text-white">ROBERT</span>
+               <span className="italic font-light">Davy</span>{' '}
+               <span className="">ROBERT</span>
             </h1>
 
             <h2 className="text-4xl font-bold mb-6 text-center lg:text-left">
@@ -52,13 +52,13 @@ const Presentation = () => {
                />
             </div>
 
-            <p className="text-white text-base mb-8">
+            <p className=" text-base mb-8">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?
             </p>
 
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
-                  className="bg-[#5ce1e6] text-black font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-white hover:text-[#5ce1e6] hover:border-[#5ce1e6] border-2 border-transparent break-words w-full sm:w-auto text-center"
+                  className="bg-[#5ce1e6] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-white hover:text-[#5ce1e6] hover:border-[#5ce1e6] border-2 border-transparent break-words w-full sm:w-auto text-center"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
