@@ -57,7 +57,7 @@ const Skills = () => {
                     <div
                         key={cat.title}
                         className={`flex flex-col items-center gap-6 px-6 py-4
-                            ${idx !== 0 ? 'border-l border-gray-500/40' : ''} ${cat.title === 'Outils' ? 'md:border-l-0 lg:border-l' : ''} ${cat.title === 'Backend' ? 'sm:border-l-0 md:border-l lg:border-l' : ''}
+                            ${idx !== 0 ? 'border-l border-gray-500/40' : ''} ${cat.title === 'Outils' ? 'md:border-l-0 lg:border-l' : ''} ${cat.title === 'Backend' ? 'sm:border-l-0 md:border-l lg:border-l' : ''} ${cat.title === 'Outils' ? 'md:col-span-3 md:mx-auto lg:col-span-1 lg:mx-0' : ''}
                         `}
                     >
 
