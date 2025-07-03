@@ -33,6 +33,33 @@ type SkillCategory = {
     items: SkillItem[];
 };
 
+const iconColors: Record<string, string> = {
+    typescript: '#3178C6',
+    javascript: '#F7DF1E',
+    java: '#007396',
+    kotlin: '#7F52FF',
+    csharp: '#512BD4',
+    nextjs: '#000',
+    react: '#61DAFB',
+    tailwindcss: '#06B6D4',
+    angular: '#DD0031',
+    nodejs: '#339933',
+    '.net': '#512BD4',
+    postgresql: '#336791',
+    mysql: '#4479A1',
+    sqlite: '#003B57',
+    docker: '#2496ED',
+    aws: '#FF9900',
+    firebase: '#FFCA28',
+    'ovh cloud': '#123F6D',
+    vercel: '#FFFF',
+    'git & github': '#FFFF',
+    gitlab: '#FC6D26',
+    bitbucket: '#0052CC',
+    figma: '#F24E1E',
+};
+
+
 const categories: SkillCategory[] = [
     {
         title: 'Langages',
@@ -131,7 +158,21 @@ const Skills = () => {
                                     key={`${label}-${i}`}
                                     className="flex flex-col items-center gap-1 hover:scale-105 transition-transform"
                                 >
-                                    <span className="text-5xl lg:text-6xl text-[#5ce1e6]">{icon}</span>
+                                    {label.toLowerCase() === 'git & github' ? (
+                                        <div className="w-[3.5rem] h-[3.5rem] lg:w-[4rem] lg:h-[4rem] bg-white rounded-lg flex items-center justify-center shadow-sm">
+                                            <FaGithub className="text-black text-3xl lg:text-4xl" />
+                                        </div>
+                                    ) : (
+                                        <span
+                                            className={`text-5xl lg:text-6xl`}
+                                            style={{ color: iconColors[label.toLowerCase()] || '#fff' }}
+                                        >
+                                            {icon}
+                                        </span>
+                                    )}
+
+
+
                                     <span className="uppercase text-sm tracking-wide text-center">{label}</span>
                                 </div>
                             ))}
