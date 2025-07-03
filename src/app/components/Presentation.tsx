@@ -58,7 +58,7 @@ const Presentation = () => {
 
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
-                  className="bg-[#5ce1e6] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-white hover:text-[#5ce1e6] hover:border-[#5ce1e6] border-2 border-transparent break-words w-full sm:w-auto text-center"
+                  className="bg-[#5ce1e6] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-white hover:text-[#5ce1e6] hover:border-[#5ce1e6] border-2 border-transparent break-words w-full sm:w-auto text-center text-black"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >

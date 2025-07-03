@@ -48,12 +48,19 @@ const Navbar = () => {
                   <span className="text-[#5ce1e6]">Robert</span>
                </Link> */}
 
-               <Link href="/" className="block w-[60px] h-[80px] relative">
+               <Link href="/" className="block w-[60px] h-[80px] relative select-none">
                   <Image
                      src="/assets/logos/davy-logo-white-trans.png"
                      alt="Logo Davy Robert"
                      fill
-                     className="object-contain"
+                     className="object-contain hidden dark:block"
+                     priority
+                  />
+                  <Image
+                     src="/assets/logos/davy-logo-black-trans.png"
+                     alt="Logo sombre"
+                     fill
+                     className="object-contain dark:hidden"
                      priority
                   />
                </Link>
@@ -81,7 +88,7 @@ const Navbar = () => {
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >
-               <ul className="flex flex-col md:flex-row gap-6 md:gap-12 items-center list-none">
+               <ul className="flex flex-col md:flex-row gap-6 md:gap-9 items-center list-none">
                   <li>
                      <a href="#introduction" onClick={() => setMenuOpen(false)} className={styles.navLink}>
                         A PROPOS

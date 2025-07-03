@@ -50,10 +50,10 @@ const Footer = () => {
          </div>
          {/* Copyright*/}
          <div className="mt-10 text-center space-y-2 mx-4">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm dark:text-gray-500 text-gray-900">
                Design et Développement réalisés en NextJS & TailwindCSS
             </p>
-            <p className="text-sm text-[#5ce1e6]">
+            <p className="text-sm dark:text-[#5ce1e6] text-gray-900 dark:font-semibold">
                © 2025 Davy Robert – Tous droits réservés
             </p>
          </div>

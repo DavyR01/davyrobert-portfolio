@@ -16,7 +16,7 @@ const Skills = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
             <h2 className="text-center text-[#5ce1e6] uppercase text-4xl font-bold mb-12">
-                <span className="italic">Mes</span> Compétences
+                <span className="italic dark:text-white text-black">Mes</span> Compétences
             </h2>
 
             {/* 🔹 Mobile <640px (flexible grid responsive) */}

@@ -32,10 +32,10 @@ export default function RootLayout({
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
    return (
       <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-         <body className="antialiased flex flex-col min-h-screen overflow-x-hidden">
+         <body className="antialiased flex flex-col min-h-screen overflow-x-hidden dark:bg-black bg-white">
             <ThemeProvider>
                {isMaintenanceMode ? (
-                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center text-red-500 dark:bg-black dark:text-white">
+                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-black dark:text-white">
                      <div className="border border-[#5ce1e6] text-[#5ce1e6] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
                   </div>
                ) : (
