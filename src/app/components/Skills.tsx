@@ -3,22 +3,19 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { DiDotnet, DiJavascript } from 'react-icons/di';
-import { FaDocker, FaGithub, FaGitlab, FaJava } from 'react-icons/fa';
+import { FaDocker } from 'react-icons/fa';
+import Image from 'next/image';
+
 import { FaAws, FaBitbucket } from 'react-icons/fa6';
 import { GrMysql } from 'react-icons/gr';
 import {
-    SiFigma,
     SiTailwindcss,
     SiTypescript,
     SiReact,
     SiPostgresql,
     SiVercel,
-    SiSharp,
     SiNodedotjs,
-    SiNextdotjs,
     SiKotlin,
-    SiAngular,
-    SiFirebase,
     SiSqlite,
     SiOvh,
 } from 'react-icons/si';
@@ -66,18 +63,57 @@ const categories: SkillCategory[] = [
         items: [
             { icon: <SiTypescript />, label: 'typescript' },
             { icon: <DiJavascript />, label: 'Javascript' },
-            { icon: <FaJava />, label: 'Java' },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/java2.svg"
+                        alt="Java"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ), label: 'Java'
+            },
             { icon: <SiKotlin />, label: 'Kotlin' },
-            { icon: <SiSharp />, label: 'C#' },
-        ],
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/csharp.svg"
+                        alt="C#"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ), label: 'C#'
+            },],
     },
     {
         title: 'Frontend',
         items: [
-            { icon: <SiNextdotjs />, label: 'nextjs' },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/nextjs.png"
+                        alt="NextJS"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ), label: 'nextjs'
+            },
             { icon: <SiReact />, label: 'react' },
             { icon: <SiTailwindcss />, label: 'TailwindCSS' },
-            { icon: <SiAngular />, label: 'Angular' },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/angular.svg"
+                        alt="Angular"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ), label: 'Angular'
+            },
         ],
     },
     {
@@ -95,14 +131,53 @@ const categories: SkillCategory[] = [
         items: [
             { icon: <FaDocker />, label: 'Docker' },
             { icon: <FaAws />, label: 'AWS' },
-            { icon: <SiFirebase />, label: 'Firebase' },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/firebase.svg"
+                        alt="Firebase"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ), label: 'Firebase'
+            },
             { icon: <SiOvh />, label: 'OVH Cloud' },
             { icon: <SiVercel />, label: 'vercel' },
-            { icon: <FaGithub />, label: 'git & github' },
-            { icon: <FaGitlab />, label: 'gitlab' },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/github3.png"
+                        alt="GitHub"
+                        width={48}
+                        height={48}
+                        className="w-14 h-14"
+                    />
+                ), label: 'git & github'
+            },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/gitlab.svg"
+                        alt="GitLab"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ), label: 'gitlab'
+            },
             { icon: <FaBitbucket />, label: 'Bitbucket' },
-            { icon: <SiFigma />, label: 'figma' },
-        ],
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/figma.svg"
+                        alt="Figma"
+                        width={48}
+                        height={48}
+                        className="w-14 h-14"
+                    />
+                ), label: 'figma'
+            },],
     },
 ];
 
@@ -124,14 +199,25 @@ const Skills = () => {
             <div className="sm:hidden w-full max-w-[1400px] mx-auto flex flex-col gap-12">
                 {categories.map((cat) => (
                     <div key={cat.title} className="flex flex-col items-center gap-6 px-4">
-                        <h3 className="text-2xl font-semibold text-white">{cat.title}</h3>
+                        <h3 className="text-3xl font-semibold text-white">{cat.title}</h3>
                         <div className="grid grid-cols-1 xxs:grid-cols-2 xs:grid-cols-3 gap-y-6 xxs:gap-x-12 xs:gap-x-20 w-full justify-items-center">
                             {cat.items.map(({ icon, label }, i) => (
                                 <div
                                     key={`${label}-${i}`}
                                     className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
                                 >
-                                    <span className="text-6xl sm:text-5xl text-[#5ce1e6]">{icon}</span>
+                                    <div className="w-16 h-16 flex items-center justify-center">
+                                        {label.toLowerCase() === 'git & github' ? (
+                                            icon
+                                        ) : (
+                                            <span
+                                                className="text-6xl sm:text-5xl"
+                                                style={{ color: iconColors[label.toLowerCase()] || '#5ce1e6' }}
+                                            >
+                                                {icon}
+                                            </span>
+                                        )}
+                                    </div>
                                     <span className="uppercase text-sm sm:text-xs tracking-wide text-center">{label}</span>
                                 </div>
                             ))}
@@ -151,30 +237,29 @@ const Skills = () => {
                         `}
                     >
 
-                        <h3 className="text-2xl font-semibold text-white">{cat.title}</h3>
+                        <h3 className="text-3xl font-semibold text-white">{cat.title}</h3>
                         <div className="grid grid-cols-2 gap-6 lg:gap-x-14 lg:gap-y-8 w-full">
                             {cat.items.map(({ icon, label }, i) => (
                                 <div
                                     key={`${label}-${i}`}
                                     className="flex flex-col items-center gap-1 hover:scale-105 transition-transform"
                                 >
-                                    {label.toLowerCase() === 'git & github' ? (
-                                        <div className="w-[3.5rem] h-[3.5rem] lg:w-[4rem] lg:h-[4rem] bg-white rounded-lg flex items-center justify-center shadow-sm">
-                                            <FaGithub className="text-black text-3xl lg:text-4xl" />
-                                        </div>
-                                    ) : (
-                                        <span
-                                            className={`text-5xl lg:text-6xl`}
-                                            style={{ color: iconColors[label.toLowerCase()] || '#fff' }}
-                                        >
-                                            {icon}
-                                        </span>
-                                    )}
+                                    <div className="w-16 h-16 flex items-center justify-center">
+                                        {label.toLowerCase() === 'git & github' ? (
+                                            icon
+                                        ) : (
+                                            <span
+                                                className="text-5xl lg:text-6xl"
+                                                style={{ color: iconColors[label.toLowerCase()] || '#5ce1e6' }}
+                                            >
+                                                {icon}
+                                            </span>
+                                        )}
 
-
-
+                                    </div>
                                     <span className="uppercase text-sm tracking-wide text-center">{label}</span>
                                 </div>
+
                             ))}
                         </div>
                     </div>
