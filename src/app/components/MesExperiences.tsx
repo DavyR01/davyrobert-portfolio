@@ -46,7 +46,7 @@ const MesExperiences = () => {
                               ))}
                               <div className="flex flex-wrap justify-center gap-4 mt-6">
                                  {item.icons.map((icon, k) => (
-                                    <Image key={k} src={`/${icon}`}
+                                    <Image key={k} src={`/assets/icons/${icon}`}
                                        alt={icon} width={50} height={50} className="hover:scale-110 transition-transform" />
                                  ))}
                               </div>
@@ -80,7 +80,7 @@ const MesExperiences = () => {
                            {item.icons.map((icon, k) => (
                               <Image
                                  key={k}
-                                 src={`/${icon}`}
+                                 src={`/assets/icons/${icon}`}
                                  alt={icon}
                                  width={60}
                                  height={60}

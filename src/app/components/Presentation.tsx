@@ -44,7 +44,7 @@ const Presentation = () => {
             {/* Image profil <=1024px */}
             <div className="lg:hidden aspect-square w-[250px] md:w-[300px] min-w-[150px] max-w-full rounded-full border-2 border-[#5ce1e6] flex items-center justify-center overflow-hidden shrink-0 mx-auto my-6">
                <Image
-                  src="/davyprofile.png"
+                  src="/assets/photos/davyprofile.png"
                   width={300}
                   height={300}
                   alt="profile"
@@ -107,7 +107,7 @@ const Presentation = () => {
          {/* Image profil > 1024px */}
          <div className="hidden lg:flex aspect-square w-[250px] md:w-[400px] min-w-[150px] max-w-full rounded-full border-2 border-[#5ce1e6] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0">
             <Image
-               src="/davyprofile.png"
+               src="/assets/photos/davyprofile.png"
                width={400}
                height={400}
                alt="profile"

@@ -45,7 +45,7 @@ const Navbar = () => {
 
                <Link href="/" className="block w-[60px] h-[80px] relative">
                   <Image
-                     src="/davy-logo-white-trans.png"
+                     src="/assets/logos/davy-logo-white-trans.png"
                      alt="Logo Davy Robert"
                      fill
                      className="object-contain"
@@ -59,7 +59,7 @@ const Navbar = () => {
                   onClick={() => setMenuOpen(!menuOpen)}
                >
                   <Image
-                     src="/burger-menu.svg"
+                     src="/assets/icons/burger-menu.svg"
                      alt="Ouvrir le menu"
                      width={48}
                      height={48}

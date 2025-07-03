@@ -1,4 +1,13 @@
 
+import React from 'react';
+import Image from 'next/image';
+// React-Icon imports
+import { SiTypescript, SiTailwindcss, SiReact, SiPostgresql, SiVercel, SiNodedotjs, SiKotlin, SiSqlite, SiOvh } from 'react-icons/si';
+import { DiJavascript, DiDotnet } from 'react-icons/di';
+import { FaDocker } from 'react-icons/fa';
+import { FaAws, FaBitbucket } from 'react-icons/fa6';
+import { GrMysql } from 'react-icons/gr';
+
 const projects = [
    {
       name: "Ecosystem QVMD",
@@ -181,5 +190,133 @@ const data_experiences = [
 ]
 
 
-export { data_experiences, projects };
+
+
+
+const categories = [
+   {
+       title: 'Langages',
+       items: [
+           { icon: <SiTypescript />, label: 'typescript' },
+           { icon: <DiJavascript />, label: 'Javascript' },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/java2.svg"
+                       alt="Java"
+                       width={48}
+                       height={48}
+                       className="w-16 h-16"
+                   />
+               ), label: 'Java'
+           },
+           { icon: <SiKotlin />, label: 'Kotlin' },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/csharp.svg"
+                       alt="C#"
+                       width={48}
+                       height={48}
+                       className="w-16 h-16"
+                   />
+               ), label: 'C#'
+           },],
+   },
+   {
+       title: 'Frontend',
+       items: [
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/nextjs.png"
+                       alt="NextJS"
+                       width={48}
+                       height={48}
+                       className="w-16 h-16"
+                   />
+               ), label: 'nextjs'
+           },
+           { icon: <SiReact />, label: 'react' },
+           { icon: <SiTailwindcss />, label: 'TailwindCSS' },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/angular.svg"
+                       alt="Angular"
+                       width={48}
+                       height={48}
+                       className="w-16 h-16"
+                   />
+               ), label: 'Angular'
+           },
+       ],
+   },
+   {
+       title: 'Backend',
+       items: [
+           { icon: <SiNodedotjs />, label: 'NodeJS' },
+           { icon: <DiDotnet />, label: '.NET' },
+           { icon: <SiPostgresql />, label: 'postgresql' },
+           { icon: <GrMysql />, label: 'MySQL' },
+           { icon: <SiSqlite />, label: 'SQLite' },
+       ],
+   },
+   {
+       title: 'Outils',
+       items: [
+           { icon: <FaDocker />, label: 'Docker' },
+           { icon: <FaAws />, label: 'AWS' },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/firebase.svg"
+                       alt="Firebase"
+                       width={48}
+                       height={48}
+                       className="w-16 h-16"
+                   />
+               ), label: 'Firebase'
+           },
+           { icon: <SiOvh />, label: 'OVH Cloud' },
+           { icon: <SiVercel />, label: 'vercel' },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/github3.png"
+                       alt="GitHub"
+                       width={48}
+                       height={48}
+                       className="w-14 h-14"
+                   />
+               ), label: 'git & github'
+           },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/gitlab.svg"
+                       alt="GitLab"
+                       width={48}
+                       height={48}
+                       className="w-16 h-16"
+                   />
+               ), label: 'gitlab'
+           },
+           { icon: <FaBitbucket />, label: 'Bitbucket' },
+           {
+               icon: (
+                   <Image
+                       src="/assets/skills/figma.svg"
+                       alt="Figma"
+                       width={48}
+                       height={48}
+                       className="w-14 h-14"
+                   />
+               ), label: 'figma'
+           },],
+   },
+];
+
+
+export { data_experiences, projects, categories };
 
