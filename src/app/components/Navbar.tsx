@@ -36,7 +36,11 @@ const Navbar = () => {
    }, [menuOpen]);
 
    return (
-      <header className="fixed top-0 left-0 right-0 z-30 w-full max-w-[1400px] mx-auto bg-black">
+      <header className="
+      fixed top-0 left-0 right-0 z-30 w-full max-w-[1400px] mx-auto
+      bg-white text-black
+      dark:bg-black/90  dark:text-white
+    ">
          <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20">
             <div className="flex justify-between items-center w-full md:w-auto h-20">
                {/* <Link href="/" className="text-white text-xl font-bold italic">
@@ -73,9 +77,9 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex bg-black/90 absolute top-20 left-0 w-full pt-6 border-t border-[#5ce1e6]'
+                  ? 'flex bg-white dark:bg-black/90 absolute top-20 left-0 w-full pt-6 border-t border-[#5ce1e6]'
                   : 'hidden'
-                  } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-white text-base transition-all duration-300`}
+                  } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >
                <ul className="flex flex-col md:flex-row gap-6 md:gap-12 items-center list-none">
                   <li>

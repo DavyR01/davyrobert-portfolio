@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { ThemeProvider } from "@/context/ThemeContext";
+import ThemeToggle from "./components/ThemeToggle";
 
 const geistSans = localFont({
    src: "./fonts/GeistVF.woff",
@@ -30,19 +32,23 @@ export default function RootLayout({
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
    return (
       <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-         <body className="antialiased flex flex-col min-h-screen overflow-x-hidden">            {isMaintenanceMode ? (
-            <div className="h-screen flex justify-center items-center font-medium text-3xl text-center text-white bg-[#1A1A1A]">
-               <div className="border border-[#5ce1e6] text-[#5ce1e6] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
-            </div>
-         ) : (
-            <>
-               <Navbar />
-               <main className="flex-1 pt-20">
-                  {children}
-               </main>
-               <Footer />
-            </>
-         )}
+         <body className="antialiased flex flex-col min-h-screen overflow-x-hidden">
+            <ThemeProvider>
+               {isMaintenanceMode ? (
+                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center text-white bg-[#1A1A1A]">
+                     <div className="border border-[#5ce1e6] text-[#5ce1e6] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
+                  </div>
+               ) : (
+                  <>
+                     <Navbar />
+                     <main className="flex-1 pt-20">
+                        {children}
+                     </main>
+                     <Footer />
+                     <ThemeToggle />
+                  </>
+               )}
+            </ThemeProvider>
          </body>
       </html>
    );
