@@ -74,8 +74,8 @@ const Navbar = () => {
    return (
       <header className="
       fixed top-0 left-0 right-0 z-30 w-full max-w-[1400px] mx-auto
-      bg-[var(--bg-light)] text-[var(--text-color-light)]
-      dark:bg-[var(--bg-dark)]  dark:text-[var(--text-color-dark)]
+      bg-[var(--bg-light)] text-[var(--text-color-dark)]
+      dark:bg-[var(--bg-dark)]  dark:text-[var(--text-color-light)]
     ">
          <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20">
             <div className="flex justify-between items-center w-full md:w-auto h-20">

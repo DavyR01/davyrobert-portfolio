@@ -41,7 +41,7 @@ export default async function RootLayout({
             </Script>
             <ThemeProvider>
                {isMaintenanceMode ? (
-                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-dark)]">
+                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
                      <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
                   </div>
                ) : (

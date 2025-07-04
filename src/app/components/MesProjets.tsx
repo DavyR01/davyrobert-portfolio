@@ -9,9 +9,9 @@ import { ProjectCardProps } from "@/types/types";
 
 const MesProjets = () => {
    return (
-      <section id="projets" className="pt-32 text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] px-4">
+      <section id="projets" className="pt-32 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] px-4">
          <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
-            <span className="italic text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">Mes</span> Projets & Réalisations
+            <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">Mes</span> Projets & Réalisations
          </h2>
 
          <div className='w-full flex'>
@@ -74,12 +74,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                {/* Titre + icônes */}
                <div className="mt-3 mb-2 flex items-center justify-between gap-4">
-                  <p className="text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] font-bold text-[24px]">{name}</p>
+                  <p className="text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] font-bold text-[24px]">{name}</p>
                   <div className="flex gap-4">
                      {sourceWeb && (
                         <div
                            onClick={() => window.open(sourceWeb, "_blank")}
-                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] cursor-pointer"
+                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                         >
                            <AiFillEye className="w-10 h-10" />
                         </div>
@@ -89,7 +89,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                            href={sourceGithub.startsWith("http") ? sourceGithub : `https://${sourceGithub}`}
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] cursor-pointer"
+                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                         >
                            <AiFillGithub className="w-10 h-10" />
                         </a>

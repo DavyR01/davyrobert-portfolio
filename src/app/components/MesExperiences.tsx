@@ -18,9 +18,9 @@ const MesExperiences = () => {
    }, [])
 
    return (
-      <section id="experience" className="pt-32 px-4 text-[var(--text-color-light)] dark:text-[var(--text-color-dark)]">
+      <section id="experience" className="pt-32 px-4 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
          <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
-            <span className="italic text-[var(--text-color-light)] dark:text-[var(--text-color-dark)]">Mes</span> Expériences
+            <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">Mes</span> Expériences
          </h2>
 
          {isMobile ? (
