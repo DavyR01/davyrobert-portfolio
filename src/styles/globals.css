@@ -7,15 +7,21 @@
 :root {
    /* --background: #ffffff;
    --foreground: #171717;
-   --foreground-rgb: 0, 0, 0;
-   --background-start-rgb: 214, 155, 120;
-   --background-end-rgb: 255, 255, 255; */
+*/
+   
    --bg-dark: #000;
-   --bg-dark-items: #1A1A1A;
+   --bg-dark-items1: #1A1A1A;
+   --bg-dark-items2: #0f0f0f;
    --bg-light: #ffffff;
+   --bg-light-items1: #f5f5f5;
+   --bg-light-items2: #e5e8e8;
+
    --primary-color: #5ce1e6;
    --secondary-color: #ff0066;
    --tertiary-color: #f7c40f;
+
+   --text-color-dark: #ffffff;
+   --text-color-light: #000000;
 }
 
 body {
@@ -25,7 +31,7 @@ body {
 }
 
 /* .dark :root {
-   --background: #0f0f0f;
+   --background: --bg-dark-items2;
    --foreground: #ffffff;
    --foreground: #0ed572;
 } */

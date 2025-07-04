@@ -61,8 +61,8 @@ const Navbar = () => {
    return (
       <header className="
       fixed top-0 left-0 right-0 z-30 w-full max-w-[1400px] mx-auto
-      bg-white text-black
-      dark:bg-[var(--bg-dark)]  dark:text-white
+      bg-[var(--bg-light)] text-[var(--text-color-light)]
+      dark:bg-[var(--bg-dark)]  dark:text-[var(--text-color-dark)]
     ">
          <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20">
             <div className="flex justify-between items-center w-full md:w-auto h-20">
@@ -102,7 +102,7 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex bg-white dark:bg-[var(--bg-dark)]/90 absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
+                  ? 'flex bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]/90 absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >

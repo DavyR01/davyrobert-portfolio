@@ -8,9 +8,9 @@ import { projects } from "@/datas/datas";
 
 const MesProjets = () => {
    return (
-      <section id="projets" className="pt-32 text-black dark:text-white px-4">
+      <section id="projets" className="pt-32 text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] px-4">
          <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
-            <span className="italic text-black dark:text-white bg-white dark:bg-[var(--bg-dark)]">Mes</span> Projets & Réalisations
+            <span className="italic text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">Mes</span> Projets & Réalisations
          </h2>
 
          <div className='w-full flex'>
@@ -64,7 +64,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
          transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
       >
          <Tilt
-            className="dark:bg-[#1A1A1A] bg-gray-100 p-5 rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
+            className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] p-5 rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={1000}
@@ -83,12 +83,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
                {/* Titre + icônes */}
                <div className="mt-3 mb-2 flex items-center justify-between gap-4">
-                  <p className="text-black dark:text-white font-bold text-[24px]">{name}</p>
+                  <p className="text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] font-bold text-[24px]">{name}</p>
                   <div className="flex gap-4">
                      {sourceWeb && (
                         <div
                            onClick={() => window.open(sourceWeb, "_blank")}
-                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-black dark:text-white cursor-pointer"
+                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] cursor-pointer"
                         >
                            <AiFillEye className="w-10 h-10" />
                         </div>
@@ -98,7 +98,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                            href={sourceGithub.startsWith("http") ? sourceGithub : `https://${sourceGithub}`}
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-black dark:text-white cursor-pointer"
+                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] cursor-pointer"
                         >
                            <AiFillGithub className="w-10 h-10" />
                         </a>
@@ -118,7 +118,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   {tags.map((tag, idx) => (
                      <p
                         key={idx}
-                        className={`inline-flex text-[14px] ${tag.color} bg-gray-200 dark:bg-[var(--bg-dark)]/30 text-[#000] px-2 py-0.5 rounded-full font-semibold`}
+                        className={`inline-flex text-[14px] ${tag.color} bg-[var(--bg-light-items2)] dark:bg-[var(--bg-dark-items1)] px-2 py-0.5 rounded-full font-semibold`}
                      >
                         {tag.name}
                      </p>

@@ -9,7 +9,7 @@ const Footer = () => {
    return (
       <motion.footer
          id="contact"
-         className="dark:bg-[var(--bg-dark)] bg-white text-black dark:text-white py-10"
+         className="dark:bg-[var(--bg-dark)] bg-[var(--bg-light)] text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] py-10"
          initial={{ opacity: 0, y: 40 }}
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true, amount: 0.3 }}

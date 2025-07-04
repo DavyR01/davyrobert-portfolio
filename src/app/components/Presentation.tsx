@@ -58,14 +58,14 @@ const Presentation = () => {
 
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
-                  className="bg-[--primary-color] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-white hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-black"
+                  className="bg-[--primary-color] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-[var(--bg-light)] hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-[var(--text-color-light)]"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
                   Mon CV format standard
                </a>
                <a
-                  className="relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-black font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] border-2 border-transparent break-words w-full sm:w-auto text-center shadow-md"
+                  className="relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-[var(--text-color-light)] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] border-2 border-transparent break-words w-full sm:w-auto text-center shadow-md"
                   href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
                   download
                // target="_blank"
