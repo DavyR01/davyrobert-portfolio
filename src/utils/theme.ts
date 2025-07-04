@@ -3,10 +3,10 @@ import { cookies } from "next/headers";
 export const THEME_COOKIE_KEY = "theme";
 
 export async function getServerThemeClass(): Promise<string> {
-  const theme = (await cookies()).get(THEME_COOKIE_KEY)?.value;
+  const cookieStore = await cookies();
+  const theme = cookieStore.get(THEME_COOKIE_KEY)?.value;
   return theme === "dark" ? "dark" : "";
 }
-
 
 export const THEME_INIT_SCRIPT = `(() => {
   try {
