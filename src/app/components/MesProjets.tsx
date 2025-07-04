@@ -5,6 +5,7 @@ import Image from "next/image";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
 import { projects } from "@/datas/datas";
+import { ProjectCardProps } from "@/types/types";
 
 const MesProjets = () => {
    return (
@@ -34,16 +35,6 @@ const MesProjets = () => {
          </div>
       </section>
    );
-};
-
-type ProjectCardProps = {
-   index: number;
-   name: string;
-   description: string;
-   tags: { name: string; color: string }[];
-   image: string;
-   sourceWeb?: string;
-   sourceGithub?: string;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
