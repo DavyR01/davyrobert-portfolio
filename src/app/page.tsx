@@ -4,6 +4,7 @@ import MesProjets from "./components/MesProjets";
 import Numbers from "./components/Numbers";
 import Presentation from "./components/Presentation";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 export default function Home() {
    return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Skills />
             <MesExperiences />
             <MesProjets />
+            <Contact />
          </div>
       </main>
    );
