@@ -21,18 +21,10 @@ const Contact = () => {
 
                     <a
                         href="mailto:contact@davyrobert.fr"
-                        className="relative inline-block mt-6 text-lg font-semibold text-[--primary-color] border-2 border-[--primary-color] px-10 py-4 overflow-hidden transition-colors duration-200 group rounded-lg"
+                        className="relative inline-block mt-6 text-lg font-semibold dark:text-[--primary-color] border-2 dark:border-[--primary-color] border-[var(--primary-color)] text-[var(--text-color-dark)] px-10 py-4 overflow-hidden transition-colors duration-200 group rounded-lg"
                     >
                         <span className="relative z-10 group-hover:text-[var(--text-color-dark)] transition-colors duration-200">contact@davyrobert.fr</span>
-                        <span className="absolute inset-0 bg-[--primary-color] -z-10 w-0 group-hover:w-full transition-all duration-300" />
-                    </a>
-
-                    <a
-                        href="mailto:contact@davyrobert.fr"
-                        className="inline-block mt-6 text-[1.8rem] font-jost text-inherit border border-[var(--primary-color)] px-10 py-4 transition duration-200 relative overflow-hidden group"
-                    >
-                        <span className="relative z-10">contact@davyrobert.fr</span>
-                        <span className="absolute inset-0 bg-[--primary-color] -z-0 transition-all duration-300 group-hover:w-full w-0"></span>
+                        <span className="absolute inset-0 bg-[--primary-color] w-0 group-hover:w-full transition-all duration-300" />
                     </a>
                 </div>
             </div>

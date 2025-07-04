@@ -19,9 +19,9 @@ const Footer = () => {
          <div className="h-[2px] bg-[--primary-color] w-[80%] mx-auto mb-6" />
 
          {/* Titre */}
-         <h3 className="text-center text-xl font-semibold mb-4">
+         {/* <h3 className="text-center text-xl font-semibold mb-4">
             ME CONTACTER :
-         </h3>
+         </h3> */}
 
          {/* Icônes */}
          <div className="flex justify-center items-center gap-6">
@@ -29,7 +29,7 @@ const Footer = () => {
                href="https://github.com/davyR01"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--primary-color] text-3xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <FaGithub />
             </a>
@@ -37,13 +37,13 @@ const Footer = () => {
                href="https://www.linkedin.com/in/davy-robert"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--primary-color] text-3xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <FaLinkedin />
             </a>
             <a
                href="mailto:contact@davyrobert.fr"
-               className="text-[--primary-color] text-3xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <MdEmail />
             </a>
