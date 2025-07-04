@@ -1,11 +1,32 @@
 'use client';
 
+import { SiVercel } from 'react-icons/si';
+
 import { motion } from 'framer-motion';
 import { categories } from '../../datas/datas';
 import React from 'react'
 import iconColors from '../../utils/colors';
 
+// Helper component to render an icon with optional color logic
+const IconDisplay = ({ icon, label, sizeClass }: { icon: React.ReactNode; label: string; sizeClass: string }) => {
+    const lower = label.toLowerCase();
+    if (lower === 'git & github') return <>{icon}</>;
+    if (lower === 'vercel') {
+        return (
+            <span className={`${sizeClass} text-black dark:text-white`}>
+                <SiVercel />
+            </span>
+        );
+    }
+    return (
+        <span className={sizeClass} style={{ color: iconColors[lower] || 'var(--primary-color)' }}>
+            {icon}
+        </span>
+    );
+};
+
 const Skills = () => {
+    
     return (
         <motion.section
             id="skills"
@@ -31,16 +52,7 @@ const Skills = () => {
                                     className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
                                 >
                                     <div className="w-16 h-16 flex items-center justify-center">
-                                        {label.toLowerCase() === 'git & github' ? (
-                                            icon
-                                        ) : (
-                                            <span
-                                                className="text-6xl sm:text-5xl"
-                                                style={{ color: iconColors[label.toLowerCase()] || '--primary-color' }}
-                                            >
-                                                {icon}
-                                            </span>
-                                        )}
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-6xl sm:text-5xl" />
                                     </div>
                                     <span className="uppercase text-sm sm:text-xs tracking-wide text-center">{label}</span>
                                 </div>
@@ -69,17 +81,7 @@ const Skills = () => {
                                     className="flex flex-col items-center gap-1 hover:scale-105 transition-transform"
                                 >
                                     <div className="w-16 h-16 flex items-center justify-center">
-                                        {label.toLowerCase() === 'git & github' ? (
-                                            icon
-                                        ) : (
-                                            <span
-                                                className="text-5xl lg:text-6xl"
-                                                style={{ color: iconColors[label.toLowerCase()] || '--primary-color' }}
-                                            >
-                                                {icon}
-                                            </span>
-                                        )}
-
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-5xl lg:text-6xl" />
                                     </div>
                                     <span className="uppercase text-sm tracking-wide text-center">{label}</span>
                                 </div>

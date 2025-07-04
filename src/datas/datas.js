@@ -279,8 +279,12 @@ const categories = [
                ), label: 'Firebase'
            },
            { icon: <SiOvh />, label: 'OVH Cloud' },
-           { icon: <SiVercel />, label: 'vercel' },
            {
+            icon: (
+                <SiVercel />
+            ), label: 'Vercel'
+        },           
+        {
                icon: (
                    <Image
                        src="/assets/skills/github3.png"
