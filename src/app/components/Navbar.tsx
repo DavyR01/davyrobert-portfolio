@@ -5,11 +5,33 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Navbar.module.css';
 
+const sections = ['introduction', 'skills', 'experience', 'projets', 'contact'] as const;
+
+type SectionId = typeof sections[number];
+
 const Navbar = () => {
    const [menuOpen, setMenuOpen] = useState(false);
+   const [activeSection, setActiveSection] = useState<SectionId | null>(null);
    const navRef = useRef<HTMLDivElement>(null);
 
    useEffect(() => {
+      // Intersection Observer to detect active section
+      const observer = new IntersectionObserver(
+         (entries) => {
+            entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                  setActiveSection(entry.target.id as SectionId);
+               }
+            });
+         },
+         { root: null, rootMargin: '0px', threshold: 0.6 }
+      );
+
+      sections.forEach((id) => {
+         const el = document.getElementById(id);
+         if (el) observer.observe(el);
+      });
+
       const handleResize = () => {
          if (window.innerWidth >= 768) {
             setMenuOpen(false);
@@ -30,6 +52,7 @@ const Navbar = () => {
       document.addEventListener('mousedown', handleClickOutside);
 
       return () => {
+         observer.disconnect();
          window.removeEventListener('resize', handleResize);
          document.removeEventListener('mousedown', handleClickOutside);
       };
@@ -90,27 +113,27 @@ const Navbar = () => {
             >
                <ul className="flex flex-col md:flex-row gap-6 md:gap-9 items-center list-none">
                   <li>
-                     <a href="#introduction" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+                     <a href="#introduction" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='introduction'?'text-[#5ce1e6]':''}`}>
                         A PROPOS
                      </a>
                   </li>
                   <li>
-                     <a href="#skills" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+                     <a href="#skills" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='skills'?'text-[#5ce1e6]':''}`}>
                         COMPÉTENCES
                      </a>
                   </li>
                   <li>
-                     <a href="#experience" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+                     <a href="#experience" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='experience'?'text-[#5ce1e6]':''}`}>
                         EXPÉRIENCES
                      </a>
                   </li>
                   <li>
-                     <a href="#projets" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+                     <a href="#projets" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='projets'?'text-[#5ce1e6]':''}`}>
                         PROJETS
                      </a>
                   </li>
                   <li>
-                     <a href="#contact" onClick={() => setMenuOpen(false)} className={styles.navLink}>
+                     <a href="#contact" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='contact'?'text-[#5ce1e6]':''}`}>
                         CONTACT
                      </a>
                   </li>
@@ -121,8 +144,6 @@ const Navbar = () => {
             </nav>
          </div>
 
-         {/* Ligne sous le menu mobile */}
-         {/* Ligne de séparation */}
          <div className="h-[1px] w-[97%] bg-[#5ce1e6] mx-auto" />
       </header>
    );

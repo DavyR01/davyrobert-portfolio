@@ -13,8 +13,8 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window === "undefined") return "light";
-    return (localStorage.getItem("theme") as Theme) ?? "light";
+    if (typeof window === "undefined") return "dark";
+    return (localStorage.getItem("theme") as Theme) ?? "dark";
   });
 
   useEffect(() => {
@@ -23,7 +23,13 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    setTheme((prev) => {
+      const next = prev === "light" ? "dark" : "light";
+      if (typeof document !== "undefined") {
+        document.cookie = `theme=${next}; path=/; max-age=31536000`;
+      }
+      return next;
+    });
   }, []);
 
   const ctx = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme]);
