@@ -6,6 +6,7 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
 import { projects } from "@/datas/datas";
 import { ProjectCardProps } from "@/types/types";
+import Link from "next/link";
 
 const MesProjets = () => {
    return (
@@ -45,6 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
    image,
    sourceWeb,
    sourceGithub,
+   readmore,
 }) => {
    //   const tiltRef = useRef(null);
 
@@ -63,13 +65,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="flex-1 flex flex-col">
                {/* Image du projet */}
                <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden rounded-2xl">
-                  <Image
-                     src={image}
-                     alt={name}
-                     width={640}
-                     height={360}
-                     className="rounded-2xl object-cover w-full h-auto"
-                  />
+                  <Link href={readmore}>
+                     <Image
+                        src={image}
+                        alt={name}
+                        width={640}
+                        height={360}
+                        className="rounded-2xl object-cover w-full h-auto"
+                     />
+                  </Link>
                </div>
 
                {/* Titre + icônes */}

@@ -22,6 +22,7 @@ const projects = [
       ],
       image: "/projects/ecosystem-qvmmd.png",
       sourceWeb: "https://www.quiveutmesdechets.fr/",
+      readmore: "/projets",
    },
    {
       name: "Make Sense",
@@ -43,6 +44,7 @@ const projects = [
       image: "/projects/makesense2.png",
       sourceWeb: "https://make-sense.davyrobert.fr",
       sourceGithub: "https://github.com/DavyR01/Make_Sense_Project",
+      readmore: "/projets",
    },
    {
       name: "Wild Rent",
@@ -59,6 +61,7 @@ const projects = [
       image: "/projects/wildrent.png",
       sourceWeb: "https://wildrent.davyrobert.fr/",
       sourceGithub: "https://github.com/DavyR01/Wild-rent-myRepo",
+      readmore: "/projets",
    },
    {
       name: "MyCrit Job",
@@ -70,6 +73,7 @@ const projects = [
       ],
       image: "/projects/crit_job5.png",
       sourceWeb: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1",
+      readmore: "/projets",
    },
    {
       name: "Eurowatt Super7",
@@ -81,6 +85,7 @@ const projects = [
       ],
       image: "/projects/super7_interface.png",
       sourceWeb: "https://eurowatt.com/en",
+      readmore: "/projets",
    },
    {
       name: "Virtual Met'Art",
@@ -93,6 +98,7 @@ const projects = [
       image: "/projects/virtual_met_art.png",
       sourceWeb: "https://virtual-met-art01.davyrobert.fr",
       sourceGithub: "https://github.com/DavyR01/Virtual-MET-ART",
+      readmore: "/projets",
    },
    {
       name: "France Trivia",
@@ -105,6 +111,7 @@ const projects = [
       image: "/projects/france_trivia.png",
       sourceWeb: "https://quiz-france-trivia.davyrobert.fr/",
       sourceGithub: "https://github.com/DavyR01/Projet-P1-WCS",
+      readmore: "/projets",
    },
    {
       name: "Blog Project JS",
@@ -117,6 +124,7 @@ const projects = [
       image: "/projects/blog_project.png",
       sourceWeb: "https://my-blog-project.davyrobert.fr/",
       sourceGithub: "https://github.com/DavyR01/Javascript_Blog_Project/tree/main",
+      readmore: "/projets",
    },
    {
       name: "Louis Vuitton",
@@ -127,6 +135,7 @@ const projects = [
       ],
       image: "/projects/vuitton2.png",
       sourceWeb: "https://fr.louisvuitton.com/fra-fr/homepage",
+      readmore: "/projets",
    },
 ];
 
