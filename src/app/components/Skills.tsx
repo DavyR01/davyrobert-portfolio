@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { categories } from '../datas/datas';
+import { categories } from '../../datas/datas';
 import React from 'react'
-import iconColors from '../utils/colors';
+import iconColors from '../../utils/colors';
 
 const Skills = () => {
     return (

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { data_experiences } from '../datas/datas'
+import { data_experiences } from '@/datas/datas'
 
 const MesExperiences = () => {
    const [isMobile, setIsMobile] = useState(false)

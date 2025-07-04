@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
-import { projects } from "../datas/datas";
+import { projects } from "@/datas/datas";
 
 const MesProjets = () => {
    return (
