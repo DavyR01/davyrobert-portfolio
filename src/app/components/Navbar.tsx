@@ -102,7 +102,7 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]/90 absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
+                  ? 'flex bg-[var(--bg-light)] dark:bg-[rgba(var(--bg-dark-menu),0.9)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >

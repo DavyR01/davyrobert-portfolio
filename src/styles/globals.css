@@ -12,6 +12,7 @@
    --bg-dark: #000;
    --bg-dark-items1: #1A1A1A;
    --bg-dark-items2: #0f0f0f;
+   --bg-dark-menu: 0, 0, 0;
    --bg-light: #ffffff;
    --bg-light-items1: #f5f5f5;
    --bg-light-items2: #e5e8e8;
@@ -22,6 +23,9 @@
 
    --text-color-dark: #ffffff;
    --text-color-light: #000000;
+
+   --bg-button-dark: rgba(17, 24, 39, 1);
+   --bg-button-light: rgb(245, 245, 245);
 }
 
 body {

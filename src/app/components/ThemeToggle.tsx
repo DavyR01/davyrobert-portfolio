@@ -22,8 +22,8 @@ const ThemeToggle = () => {
       aria-label="Toggle theme"
       onClick={toggleTheme}
       onKeyDown={handleKey}
-      className={`fixed bottom-4 right-4 z-50 w-12 h-12 rounded-full flex items-center justify-center transition-colors
-        ${theme === 'light' ? 'bg-white text-gray-700' : 'bg-gray-900 text-yellow-300'}`}
+      className={`fixed bottom-4 right-4 z-50 w-12 h-12 flex items-center justify-center transition-colors hover:border hover:border-gray-400 rounded-full
+        ${theme === 'light' ? 'hover:bg-[var(--bg-button-light)] text-gray-700' : 'hover:bg-[var(--bg-button-dark)]  text-yellow-300'}`}
     >
       {theme === 'light' ? (
         <FaMoon className="text-gray-400 text-xl" />
