@@ -10,8 +10,9 @@
    --foreground-rgb: 0, 0, 0;
    --background-start-rgb: 214, 155, 120;
    --background-end-rgb: 255, 255, 255; */
-   --background-dark: #0f0f0f;
-   --background-light: #ffffff;
+   --bg-dark: #000;
+   --bg-dark-items: #1A1A1A;
+   --bg-light: #ffffff;
    --primary-color: #5ce1e6;
    --secondary-color: #ff0066;
    --tertiary-color: #f7c40f;

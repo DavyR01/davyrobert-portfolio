@@ -10,7 +10,7 @@ const MesProjets = () => {
    return (
       <section id="projets" className="pt-32 text-black dark:text-white px-4">
          <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
-            <span className="italic text-black dark:text-white bg-white dark:bg-black">Mes</span> Projets & Réalisations
+            <span className="italic text-black dark:text-white bg-white dark:bg-[var(--bg-dark)]">Mes</span> Projets & Réalisations
          </h2>
 
          <div className='w-full flex'>
@@ -88,7 +88,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                      {sourceWeb && (
                         <div
                            onClick={() => window.open(sourceWeb, "_blank")}
-                           className="w-8 h-8 rounded-full dark:bg-black/70 flex items-center justify-center text-black dark:text-white cursor-pointer"
+                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-black dark:text-white cursor-pointer"
                         >
                            <AiFillEye className="w-10 h-10" />
                         </div>
@@ -98,7 +98,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                            href={sourceGithub.startsWith("http") ? sourceGithub : `https://${sourceGithub}`}
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="w-8 h-8 rounded-full dark:bg-black/70 flex items-center justify-center text-black dark:text-white cursor-pointer"
+                           className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-black dark:text-white cursor-pointer"
                         >
                            <AiFillGithub className="w-10 h-10" />
                         </a>
@@ -118,7 +118,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   {tags.map((tag, idx) => (
                      <p
                         key={idx}
-                        className={`inline-flex text-[14px] ${tag.color} bg-gray-200 dark:bg-black/30 text-[#000] px-2 py-0.5 rounded-full font-semibold`}
+                        className={`inline-flex text-[14px] ${tag.color} bg-gray-200 dark:bg-[var(--bg-dark)]/30 text-[#000] px-2 py-0.5 rounded-full font-semibold`}
                      >
                         {tag.name}
                      </p>
