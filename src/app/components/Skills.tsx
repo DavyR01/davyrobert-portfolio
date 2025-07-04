@@ -15,7 +15,7 @@ const Skills = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-            <h2 className="text-center text-[#5ce1e6] uppercase text-4xl font-bold mb-12">
+            <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
                 <span className="italic dark:text-white text-black">Mes</span> Compétences
             </h2>
 
@@ -36,7 +36,7 @@ const Skills = () => {
                                         ) : (
                                             <span
                                                 className="text-6xl sm:text-5xl"
-                                                style={{ color: iconColors[label.toLowerCase()] || '#5ce1e6' }}
+                                                style={{ color: iconColors[label.toLowerCase()] || '--primary-color' }}
                                             >
                                                 {icon}
                                             </span>
@@ -74,7 +74,7 @@ const Skills = () => {
                                         ) : (
                                             <span
                                                 className="text-5xl lg:text-6xl"
-                                                style={{ color: iconColors[label.toLowerCase()] || '#5ce1e6' }}
+                                                style={{ color: iconColors[label.toLowerCase()] || '--primary-color' }}
                                             >
                                                 {icon}
                                             </span>

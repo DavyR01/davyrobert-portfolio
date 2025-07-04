@@ -9,7 +9,7 @@ import { projects } from "@/datas/datas";
 const MesProjets = () => {
    return (
       <section id="projets" className="pt-32 text-black dark:text-white px-4">
-         <h2 className="text-center text-[#5ce1e6] uppercase text-4xl font-bold mb-12">
+         <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
             <span className="italic text-black dark:text-white bg-white dark:bg-black">Mes</span> Projets & Réalisations
          </h2>
 

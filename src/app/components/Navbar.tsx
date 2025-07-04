@@ -102,44 +102,44 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex bg-white dark:bg-black/90 absolute top-20 left-0 w-full pt-6 border-t border-[#5ce1e6]'
+                  ? 'flex bg-white dark:bg-black/90 absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >
                <ul className="flex flex-col md:flex-row gap-6 md:gap-9 items-center list-none">
                   <li>
-                     <a href="#introduction" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='introduction'?'text-[#5ce1e6]':''}`}>
+                     <a href="#introduction" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='introduction'?'text-[--primary-color]':''}`}>
                         A PROPOS
                      </a>
                   </li>
                   <li>
-                     <a href="#skills" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='skills'?'text-[#5ce1e6]':''}`}>
+                     <a href="#skills" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='skills'?'text-[--primary-color]':''}`}>
                         COMPÉTENCES
                      </a>
                   </li>
                   <li>
-                     <a href="#experience" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='experience'?'text-[#5ce1e6]':''}`}>
+                     <a href="#experience" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='experience'?'text-[--primary-color]':''}`}>
                         EXPÉRIENCES
                      </a>
                   </li>
                   <li>
-                     <a href="#projets" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='projets'?'text-[#5ce1e6]':''}`}>
+                     <a href="#projets" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='projets'?'text-[--primary-color]':''}`}>
                         PROJETS
                      </a>
                   </li>
                   <li>
-                     <a href="#contact" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='contact'?'text-[#5ce1e6]':''}`}>
+                     <a href="#contact" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='contact'?'text-[--primary-color]':''}`}>
                         CONTACT
                      </a>
                   </li>
                </ul>
                {menuOpen && (
-                  <div className="md:hidden h-[1px] w-[100%] bg-[#5ce1e6] opacity-50 mx-auto mt-6" />
+                  <div className="md:hidden h-[1px] w-[100%] bg-[--primary-color] opacity-50 mx-auto mt-6" />
                )}
             </nav>
          </div>
 
-         <div className="h-[1px] w-[97%] bg-[#5ce1e6] mx-auto" />
+         <div className="h-[1px] w-[97%] bg-[--primary-color] mx-auto" />
       </header>
    );
 };

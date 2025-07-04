@@ -42,7 +42,7 @@ export default async function RootLayout({
             <ThemeProvider>
                {isMaintenanceMode ? (
                   <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-black dark:text-white">
-                     <div className="border border-[#5ce1e6] text-[#5ce1e6] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
+                     <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
                   </div>
                ) : (
                   <>
