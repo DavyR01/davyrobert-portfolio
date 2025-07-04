@@ -18,13 +18,26 @@ const Navbar = () => {
       // Intersection Observer to detect active section
       const observer = new IntersectionObserver(
          (entries) => {
-            entries.forEach((entry) => {
-               if (entry.isIntersecting) {
-                  setActiveSection(entry.target.id as SectionId);
-               }
-            });
+            // Filtrer les sections actuellement visibles
+            const visibleEntries = entries.filter((e) => e.isIntersecting);
+            if (visibleEntries.length === 0) return;
+
+            // Sélectionner celle qui possède la plus grande portion visible
+            const mostVisible = visibleEntries.reduce(
+               (prev, current) =>
+                 prev.intersectionRatio > current.intersectionRatio ? prev : current,
+               visibleEntries[0]
+             );
+
+            setActiveSection(mostVisible.target.id as SectionId);
          },
-         { root: null, rootMargin: '0px', threshold: 0.6 }
+         { 
+            root: null,
+            // Décale la zone d’observation pour compenser la hauteur du header (80 px) et
+            // réduit le seuil d’intersection pour que les sections plus petites soient détectées.
+            rootMargin: '-80px 0px 0px 0px',
+            threshold: 0.1,
+          }
       );
 
       sections.forEach((id) => {
