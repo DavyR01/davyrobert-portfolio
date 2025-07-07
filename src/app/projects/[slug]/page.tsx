@@ -1,12 +1,15 @@
 import { projects } from '@/datas/datas';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { Project } from '@/types/types';
 
+interface PageProps {
+  params: { slug: string };
+}
 
-// Typage propre pour la page
-export default async function ProjectPage({ params }) {
-  const { slug } = await params;
-  const project = projects.find((p) => p.projectSlug === slug);
+export default async function ProjectPage({ params }: PageProps) {
+  const { slug } = params;
+  const project = (projects as Project[]).find((p) => p.projectSlug === slug);
 
   if (!project) return notFound();
 

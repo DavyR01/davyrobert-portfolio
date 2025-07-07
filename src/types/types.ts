@@ -8,3 +8,5 @@ export type ProjectCardProps = {
     sourceGithub?: string;
     projectSlug: string;
 };
+
+export type Project = Omit<ProjectCardProps, 'index'>;
