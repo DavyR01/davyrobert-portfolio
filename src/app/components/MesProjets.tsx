@@ -46,7 +46,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
    image,
    sourceWeb,
    sourceGithub,
-   readmore,
+   projectSlug,
 }) => {
    //   const tiltRef = useRef(null);
 
@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="flex-1 flex flex-col">
                {/* Image du projet */}
                <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden rounded-2xl">
-                  <Link href={readmore}>
+                  <Link href={`/projects/${projectSlug}`}>
                      <Image
                         src={image}
                         alt={name}

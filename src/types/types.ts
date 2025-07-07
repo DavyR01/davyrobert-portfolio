@@ -6,5 +6,5 @@ export type ProjectCardProps = {
     image: string;
     sourceWeb?: string;
     sourceGithub?: string;
-    readmore: string;
+    projectSlug: string;
 };
