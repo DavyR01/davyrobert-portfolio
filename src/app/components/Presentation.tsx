@@ -10,19 +10,6 @@ const Presentation = () => {
          id="introduction"
          className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 pt-8"
       >
-         {/* Fond binaire */}
-         <div className="absolute top-0 left-0 w-full h-full z-[-1] overflow-hidden pointer-events-none">
-            <div className="number-container absolute top-0 left-[40%] animate-scroll opacity-10 text-[--primary-color] font-bold text-sm leading-none select-none">
-               {Array.from({ length: 200 }, (_, i) => (
-                  <div key={i}>0<br />1</div>
-               ))}
-            </div>
-            <div className="number-container absolute top-0 left-[60%] animate-scroll2 opacity-10 text-[--primary-color] font-bold text-xs leading-none select-none">
-               {Array.from({ length: 200 }, (_, i) => (
-                  <div key={i}>1<br />0</div>
-               ))}
-            </div>
-         </div>
 
          {/* Présentation texte */}
          <div id="presentation" className="w-full max-w-[700px] text-left mb-8 lg:mb-0"
