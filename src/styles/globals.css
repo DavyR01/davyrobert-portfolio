@@ -18,7 +18,7 @@
    --bg-light-items2: #e5e8e8;
 
    --primary-color: #5ce1e6;
-   --secondary-color: #ff0066;
+   --secondary-color: #232946;
    --tertiary-color: #f7c40f;
 
    --text-color-light: #ffffff;
@@ -103,3 +103,13 @@ body {
   }
 }
  */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --secondary-color: #5ce1e6; /* turquoise sur fond sombre */
+  }
+}
+
+.dark :root {
+  --secondary-color: #5ce1e6;
+}

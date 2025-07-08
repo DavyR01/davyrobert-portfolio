@@ -1,6 +1,6 @@
 import React from 'react';
 // ATTENTION : Ce fichier doit être en .tsx car il contient du JSX dans les objets de catégories.
-import { Category, DataExperience, ProjectCardProps } from '../types/types';
+import { Category, DataExperience, ProjectCardProps, Qualities } from '../types/types';
 import Image from 'next/image';
 // React-Icon imports
 import { SiTypescript, SiTailwindcss, SiReact, SiPostgresql, SiVercel, SiNodedotjs, SiKotlin, SiSqlite, SiOvh } from 'react-icons/si';
@@ -8,6 +8,9 @@ import { DiJavascript, DiDotnet } from 'react-icons/di';
 import { FaDocker } from 'react-icons/fa';
 import { FaAws, FaBitbucket } from 'react-icons/fa6';
 import { GrMysql } from 'react-icons/gr';
+import { HiLightningBolt, HiOutlineUser, HiOutlineQuestionMarkCircle } from 'react-icons/hi';
+import { BsCheck2Square } from 'react-icons/bs';
+import { FiRefreshCw } from 'react-icons/fi';
 
 const projects: Omit<ProjectCardProps, 'index'>[] = [
    {
@@ -334,4 +337,31 @@ const categories: Category[] = [
   },
 ];
 
-export { data_experiences, projects, categories }; 
+
+const qualities: Qualities = {
+  title: 'Qualités',
+  items: [
+    {
+      label: 'Proactif',
+      icon: <HiLightningBolt size={20} className="inline" />,
+    },
+    {
+      label: 'Rigoureux',
+      icon: <BsCheck2Square size={20} className="inline" />,
+    },
+    {
+      label: 'Autonome',
+      icon: <HiOutlineUser size={20} className="inline" />,
+    },
+    {
+      label: "Adaptatif",
+      icon: <FiRefreshCw size={20} className="inline" />,
+    },
+    {
+      label: 'Curieux',
+      icon: <HiOutlineQuestionMarkCircle size={20} className="inline" />,
+    },
+  ],
+};
+
+export { data_experiences, projects, categories, qualities }; 

@@ -31,3 +31,13 @@ export type Category = {
   title: string;
   items: CategoryItem[];
 };
+
+export type QualityIcon = {
+  label: string;
+  icon: ReactNode;
+};
+
+export type Qualities = {
+  title: string;
+  items: QualityIcon[];
+};

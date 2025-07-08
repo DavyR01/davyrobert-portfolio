@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import MatrixCanvas from './MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
+import { qualities } from '@/datas/datas';
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -43,9 +44,27 @@ const Presentation = () => {
                   className="object-cover w-full h-full"
                />
             </div>
-            <p className="text-base mb-8 text-gray-400 ">
+            <p className="text-base mb-8 dark:text-gray-400 text-gray-600 ">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?
             </p>
+
+            <div className="flex flex-wrap gap-4 mb-8 w-full justify-center md:justify-start">
+              {qualities.items.map((q) => (
+                <span
+                  key={q.label}
+                  className="
+                    flex items-center gap-2
+                    bg-white/10 text-black border border-[#232946]
+                    px-4 py-2 rounded-xl font-semibold text-base shadow transition-all
+                    hover:bg-[#232946] hover:text-white
+                    dark:bg-white/10 dark:text-white dark:border-white/20
+                    dark:hover:bg-white/20
+                  "
+                >
+                  {q.icon}{q.label}
+                </span>
+              ))}
+            </div>
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
                   className="bg-[--primary-color] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-[var(--bg-light)] hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-[var(--text-color-dark)]"
