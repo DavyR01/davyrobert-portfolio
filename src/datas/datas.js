@@ -20,7 +20,7 @@ const projects = [
          { name: "AWS", color: "dark:text-[--primary-color]" },
          { name: "Docker", color: "dark:text-[--primary-color]" },
       ],
-      image: "/projects/ecosystem-qvmmd.png",
+      image: "/projects/ecosystem-qvmd.png",
       sourceWeb: "https://www.quiveutmesdechets.fr/",
       projectSlug: "ecosystem-qvmd",
    },
