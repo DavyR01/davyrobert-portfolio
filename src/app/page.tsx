@@ -1,10 +1,7 @@
 import { default as MesExperiences } from "./components/MesExperiences";
 import MesProjets from "./components/MesProjets";
-import Numbers from "./components/Numbers";
-// import Presentation from "./components/Presentation";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import HeroSection from "./components/HeroSection";
 import Presentation from "./components/Presentation";
 import Navbar from "./components/Navbar";
 
@@ -14,8 +11,8 @@ export default function Home() {
          <div className="flex flex-col items-center gap-8 w-full">
             <Navbar />
             {/* <Numbers /> */}
-            <HeroSection />
             <Presentation />
+            {/* <HeroSection /> */}
             <Skills />
             <MesExperiences />
             <MesProjets />

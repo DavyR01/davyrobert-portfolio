@@ -6,7 +6,6 @@ import localFont from "next/font/local";
 import Footer from "./components/Footer";
 import { getServerThemeClass, THEME_INIT_SCRIPT } from "@/utils/theme";
 import Script from "next/script";
-import Navbar from "./components/Navbar";
 import { ThemeProvider } from "@/context/ThemeContext";
 import ThemeToggle from "./components/ThemeToggle";
 

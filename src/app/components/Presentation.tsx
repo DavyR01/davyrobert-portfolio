@@ -1,32 +1,37 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import React, { useRef } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-
+import MatrixCanvas from './MatrixCanvas';
+import { useTheme } from '@/context/ThemeContext';
 
 const Presentation = () => {
+   const sectionRef = useRef<HTMLElement>(null);
+   const { theme } = useTheme();
+
    return (
       <section
+         ref={sectionRef}
          id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 pt-8"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 lg:pt-16 pt-10"
       >
+         {/* Canvas Matrix background effect */}
+         {theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
          {/* Présentation texte */}
-         <div id="presentation" className="w-full max-w-[700px] text-left mb-8 lg:mb-0"
-         >
+         <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
             <h2 className="text-4xl font-bold text-center lg:text-left">Bonjour je me présente</h2>
-
             <h1 className="text-[64px] my-4 font-bold text-center lg:text-left">
                <span className="italic font-light">Davy</span>{' '}
                <span className="">ROBERT</span>
             </h1>
-
             <h2 className="text-4xl font-bold mb-6 text-center lg:text-left">
                Et j&#39;exerce en tant que <br />
                <span className="text-[--primary-color]">Développeur Full</span>{' '}
                <span className="text-[--primary-color]">Stack</span>
             </h2>
-
 
             {/* Image profil <=1024px */}
             <div className="lg:hidden aspect-square w-[250px] md:w-[300px] min-w-[150px] max-w-full rounded-full border-2 border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto my-6">
@@ -38,11 +43,9 @@ const Presentation = () => {
                   className="object-cover w-full h-full"
                />
             </div>
-
-            <p className=" text-base mb-8">
+            <p className="text-base mb-8 text-gray-400 ">
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?
             </p>
-
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
                   className="bg-[--primary-color] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-[var(--bg-light)] hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-[var(--text-color-dark)]"
@@ -55,8 +58,6 @@ const Presentation = () => {
                   className="relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-[var(--text-color-dark)] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] border-2 border-transparent break-words w-full sm:w-auto text-center shadow-md"
                   href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
                   download
-               // target="_blank"
-               // rel="noopener noreferrer"
                >
                   <span className="relative z-10">Mon CV format long</span>
                   <span
@@ -92,7 +93,7 @@ const Presentation = () => {
          </div>
 
          {/* Image profil > 1024px */}
-         <div className="hidden lg:flex aspect-square w-[250px] md:w-[400px] min-w-[150px] max-w-full rounded-full border-2 border-[--primary-color] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0">
+         <div className="hidden lg:flex aspect-square w-[250px] md:w-[400px] min-w-[150px] max-w-full rounded-full border-2 border-[--primary-color] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0 relative z-10">
             <Image
                src="/assets/logos/davyprofile.png"
                width={400}
@@ -101,9 +102,6 @@ const Presentation = () => {
                className="object-cover w-full h-full"
             />
          </div>
-
-
-
       </section>
    )
 }
