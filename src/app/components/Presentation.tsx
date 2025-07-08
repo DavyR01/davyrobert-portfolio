@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import MatrixCanvas from './MatrixCanvas';
@@ -11,6 +11,11 @@ import { qualities } from '@/datas/datas';
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
    const { theme } = useTheme();
+   const [mounted, setMounted] = useState(false);
+
+   useEffect(() => {
+      setMounted(true);
+   }, []);
 
    return (
       <section
@@ -19,7 +24,7 @@ const Presentation = () => {
          className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 lg:pt-16 pt-10"
       >
          {/* Canvas Matrix background effect */}
-         {theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
+         {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
          {/* Présentation texte */}
          <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
