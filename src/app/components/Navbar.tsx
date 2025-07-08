@@ -73,7 +73,7 @@ const Navbar = () => {
 
    return (
       <header className="
-      fixed top-0 left-0 right-0 z-30 w-full max-w-[1400px] mx-auto
+      fixed top-0 left-0 right-0 z-30 w-full mx-auto
       bg-[var(--bg-light)] text-[var(--text-color-dark)]
       dark:bg-[var(--bg-dark)]  dark:text-[var(--text-color-light)]
     ">
