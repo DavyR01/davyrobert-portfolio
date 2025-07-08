@@ -1,12 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import Tilt from "react-parallax-tilt";
 import { projects } from "@/datas/datas";
-import { ProjectCardProps } from "@/types/types";
-import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
 
 
