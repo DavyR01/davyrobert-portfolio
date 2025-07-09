@@ -2,28 +2,12 @@
 
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import Footer from "./components/Footer";
 import { getServerThemeClass, THEME_INIT_SCRIPT } from "@/utils/theme";
 import Script from "next/script";
 import { ThemeProvider } from "@/context/ThemeContext";
 import ThemeToggle from "./components/ui/ThemeToggle";
-
-const geistSans = localFont({
-   src: "../fonts/GeistVF.woff",
-   variable: "--font-geist-sans",
-   weight: "100 900",
-});
-const geistMono = localFont({
-   src: "../fonts/GeistMonoVF.woff",
-   variable: "--font-geist-mono",
-   weight: "100 900",
-});
-const spaceGrotesk = localFont({
-   src: "../fonts/SpaceGroteskRegular.woff",
-   variable: "--font-space-grotesk",
-   weight: "100 900",
-});
+import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../utils/fonts";
 
 export const metadata: Metadata = {
    title: "Davy Robert - Portfolio",
@@ -38,7 +22,7 @@ export default async function RootLayout({
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
    const htmlThemeClass = await getServerThemeClass();
    return (
-      <html lang="en" className={`${htmlThemeClass} ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable}`}>
+      <html lang="fr" className={`${htmlThemeClass} ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable}`}>
          <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
             <Script id="theme-init" strategy="beforeInteractive">
                {THEME_INIT_SCRIPT}
