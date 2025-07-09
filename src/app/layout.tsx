@@ -19,6 +19,11 @@ const geistMono = localFont({
    variable: "--font-geist-mono",
    weight: "100 900",
 });
+const spaceGrotesk = localFont({
+   src: "../fonts/SpaceGroteskRegular.woff",
+   variable: "--font-space-grotesk",
+   weight: "100 900",
+});
 
 export const metadata: Metadata = {
    title: "Davy Robert - Portfolio",
@@ -33,7 +38,7 @@ export default async function RootLayout({
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
    const htmlThemeClass = await getServerThemeClass();
    return (
-      <html lang="en" className={`${htmlThemeClass} ${geistSans.variable} ${geistMono.variable}`}>
+      <html lang="en" className={`${htmlThemeClass} ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable}`}>
          <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
             <Script id="theme-init" strategy="beforeInteractive">
                {THEME_INIT_SCRIPT}

@@ -15,10 +15,15 @@ export default {
          },
          screens: {
             xxs: "280px",
-            xs: "390px",        // ➜ 3 colonnes
+            xs: "390px",
             xs420: "420px", 
             xs858: { max: "858px" },
             "xs859-min": { min: "859px" },
+         },
+         fontFamily: {
+            sans: ['var(--font-geist-sans)', 'sans-serif'],
+            mono: ['var(--font-geist-mono)', 'sans-serif'],
+            grotesk: ['var(--font-space-grotesk)', 'serif'],
          },
       },
    },
