@@ -17,8 +17,8 @@
    --bg-light-items1: #f5f5f5;
    --bg-light-items2: #e5e8e8;
 
-   --primary-color: #5ce1e6;
-   --secondary-color: #232946;
+   --primary-color: #5ce1e6; /* dark mode */
+   --secondary-color: #1343a9          ; /* white mode */
    --tertiary-color: #f7c40f;
 
    --text-color-light: #ffffff;
@@ -104,12 +104,12 @@ body {
 }
  */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --secondary-color: #5ce1e6; /* turquoise sur fond sombre */
+    --secondary-color: #232946;
   }
 }
 
 .dark :root {
-  --secondary-color: #5ce1e6;
-}
+  --secondary-color: #232946;
+} */

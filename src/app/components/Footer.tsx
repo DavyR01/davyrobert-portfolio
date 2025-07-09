@@ -16,7 +16,7 @@ const Footer = () => {
          transition={{ duration: 0.6, ease: "easeOut" }}
       >
          {/* Ligne verte */}
-         <div className="h-[2px] bg-[--primary-color] w-[80%] mx-auto mb-6" />
+         <div className="h-[2px] bg-[--secondary-color] dark:bg-[--primary-color] w-[80%] mx-auto mb-6" />
 
          {/* Titre */}
          {/* <h3 className="text-center text-xl font-semibold mb-4">
@@ -29,7 +29,7 @@ const Footer = () => {
                href="https://github.com/davyR01"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--secondary-color] dark:text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <FaGithub />
             </a>
@@ -37,13 +37,13 @@ const Footer = () => {
                href="https://www.linkedin.com/in/davy-robert"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--secondary-color] dark:text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <FaLinkedin />
             </a>
             <a
                href="mailto:contact@davyrobert.fr"
-               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--secondary-color] dark:text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <MdEmail />
             </a>
@@ -53,7 +53,7 @@ const Footer = () => {
             <p className="text-sm dark:text-gray-500 text-gray-900">
                Design et Développement réalisés en NextJS & TailwindCSS
             </p>
-            <p className="text-sm dark:text-[--primary-color] text-gray-900 dark:font-semibold">
+            <p className="text-sm text-[--secondary-color] dark:text-[--primary-color] font-semibold">
                © 2025 Davy Robert – Tous droits réservés
             </p>
          </div>
