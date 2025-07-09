@@ -21,7 +21,7 @@ const Presentation = () => {
       <section
          ref={sectionRef}
          id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 lg:pt-16 pt-10"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 lg:pt-16 pt-10 scroll-mt-20"
       >
          {/* Canvas Matrix background effect */}
          {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
@@ -60,7 +60,7 @@ const Presentation = () => {
                   className="
                     flex items-center gap-2
                     bg-white/10 text-black border border-[#232946]
-                    px-4 py-2 rounded-xl font-semibold text-base shadow transition-all
+                    px-2 md:px-4 py-2 rounded-xl font-semibold text-base shadow transition-all
                     hover:bg-[#232946] hover:text-white
                     dark:bg-white/10 dark:text-white dark:border-white/20
                     dark:hover:bg-white/20

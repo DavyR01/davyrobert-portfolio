@@ -3,9 +3,9 @@
 import { SiVercel } from 'react-icons/si';
 
 import { motion } from 'framer-motion';
-import { categories } from '../../datas/datas';
+import { categories } from '@/datas/datas';
 import React from 'react'
-import iconColors from '../../utils/colors';
+import iconColors from '@/utils/colors';
 
 // Helper component to render an icon with optional color logic
 const IconDisplay = ({ icon, label, sizeClass }: { icon: React.ReactNode; label: string; sizeClass: string }) => {
