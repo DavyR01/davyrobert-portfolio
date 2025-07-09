@@ -26,7 +26,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] p-5 rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
+             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
@@ -46,7 +46,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
  
                 {/* Titre + icônes */}
-                <div className="mt-3 mb-2 flex items-center justify-between gap-4">
+                <div className="mt-3 mb-2 flex items-center justify-between gap-4 px-5">
                    <p className="text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] font-bold text-[24px]">{name}</p>
                    <div className="flex gap-4">
                       {sourceWeb && (
@@ -71,14 +71,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
  
                 {/* Description */}
-                <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem]">
+                <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem] px-5">
                    {description}
                 </p>
  
  
  
                 {/* Tags */}
-                <div className="mt-4 flex flex-wrap gap-2 mb-2">
+                <div className="mt-4 flex flex-wrap gap-2 mb-2 px-5">
                    {tags.map((tag, idx) => (
                       <p
                          key={idx}
