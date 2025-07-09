@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './Navbar.module.css';
+import BurgerIcon from './ui/BurgerIcon';
 
 const sections = ['introduction', 'skills', 'experience', 'projets', 'contact'] as const;
 
@@ -101,14 +102,7 @@ const Navbar = () => {
                   className="md:hidden flex flex-col justify-center items-center w-10 h-6 space-y-1 cursor-pointer z-50"
                   onClick={() => setMenuOpen(!menuOpen)}
                >
-                  <Image
-                     src="/assets/icons/burger-menu.svg"
-                     alt="Ouvrir le menu"
-                     width={48}
-                     height={48}
-                     className="object-contain"
-                     priority
-                  />
+                  <BurgerIcon />
                </button>
             </div>
 

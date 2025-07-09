@@ -8,7 +8,7 @@ import MatrixCanvas from './MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
 import { qualities } from '@/datas/datas';
 
-const Presentation = () => {
+   const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
    const { theme } = useTheme();
    const [mounted, setMounted] = useState(false);
@@ -61,7 +61,7 @@ const Presentation = () => {
                     flex items-center gap-2
                     bg-white/10 text-black border border-[#232946]
                     px-2 md:px-4 py-2 rounded-xl font-semibold text-base shadow transition-all
-                    hover:bg-[#232946] hover:text-white
+                    hover:bg-black/70 hover:text-white
                     dark:bg-white/10 dark:text-white dark:border-white/20
                     dark:hover:bg-white/20
                   "
@@ -72,7 +72,7 @@ const Presentation = () => {
             </div>
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
-                  className="bg-[--primary-color] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-[var(--bg-light)] hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-[var(--text-color-dark)]"
+                  className="bg-[--primary-color] dark:text-[var(--text-color-dark)] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-[var(--text-primary-color)] hover:text-[--secondary-color] dark:hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-[var(--text-color-light)]"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
