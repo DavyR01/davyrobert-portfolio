@@ -1,7 +1,6 @@
 import { projects } from '@/datas/datas';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import NavbarBackProjects from '@/app/components/NavbarProjects';
 import BackToProjectsButton from '@/app/components/BackToProjectsButton';
 

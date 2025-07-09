@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { projects } from "@/datas/datas";
 import { ProjectCard } from "./ProjectCard";
-import { useEffect } from "react";
 
 
 const MesProjets = () => {

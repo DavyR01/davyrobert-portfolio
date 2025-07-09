@@ -21,7 +21,7 @@ export default function Home() {
         if (el) {
           const headerHeight = window.innerWidth < 640 ? 70 : 100;
           const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-          smoothScrollTo(y, 300);
+          smoothScrollTo(y, 400);
           // Clean URL to remove the parameter
           router.replace('/', { scroll: false });
         }
