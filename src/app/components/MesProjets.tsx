@@ -7,20 +7,6 @@ import { useEffect } from "react";
 
 
 const MesProjets = () => {
-   
-   useEffect(() => {
-      if (window.location.hash === "#projets") {
-         setTimeout(() => {
-            const el = document.getElementById("projets");
-            if (el) {
-               // Adjust the offset according to the actual height of the header on mobile
-               const headerHeight = window.innerWidth < 640 ? 70 : 100; // 70px on mobile, 100px on desktop
-               const y = el.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-               window.scrollTo({ top: y, behavior: "smooth" });
-            }
-         }, 100); // small delay to let the DOM settle
-      }
-   }, []);
 
    return (
       <section id="projets" className="pt-32 scroll-mt-20 sm:scroll-mt-32 md:scroll-mt-40 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] px-4">
