@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import { getServerThemeClass, THEME_INIT_SCRIPT } from "@/utils/theme";
 import Script from "next/script";
 import { ThemeProvider } from "@/context/ThemeContext";
-import ThemeToggle from "./components/ThemeToggle";
+import ThemeToggle from "./components/ui/ThemeToggle";
 
 const geistSans = localFont({
    src: "../fonts/GeistVF.woff",

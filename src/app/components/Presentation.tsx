@@ -4,7 +4,8 @@ import Image from 'next/image'
 import React, { useRef, useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import MatrixCanvas from './MatrixCanvas';
+import MatrixCanvas from './ui/MatrixCanvas';
+// import MatrixCanvas from '@/app/components/ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
 import { qualities } from '@/datas/datas';
 
