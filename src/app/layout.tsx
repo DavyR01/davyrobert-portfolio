@@ -1,9 +1,7 @@
-// "use client"
-
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import Footer from "./components/Footer";
-import { getServerThemeClass, THEME_INIT_SCRIPT } from "@/utils/theme";
+import { THEME_INIT_SCRIPT } from "@/utils/theme";
 import Script from "next/script";
 import { ThemeProvider } from "@/context/ThemeContext";
 import ThemeToggle from "./components/ui/ThemeToggle";
@@ -20,9 +18,8 @@ export default async function RootLayout({
    children: React.ReactNode;
 }>) {
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
-   const htmlThemeClass = await getServerThemeClass();
    return (
-      <html lang="fr" className={`${htmlThemeClass} ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable}`}>
+      <html lang="fr" className={`dark ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable}`}>
          <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
             <Script id="theme-init" strategy="beforeInteractive">
                {THEME_INIT_SCRIPT}
