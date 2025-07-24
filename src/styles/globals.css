@@ -81,16 +81,16 @@ body {
    }
 }
 
+/* Animations */
 .animate-shine {
    animation: shine 1.2s linear infinite;
 }
 
-
-
-
-
-
-
+@media (min-width: 893px) {
+  .project-tags-min-height {
+    min-height: var(--tags-min-height, 0);
+  }
+}
 
 
 

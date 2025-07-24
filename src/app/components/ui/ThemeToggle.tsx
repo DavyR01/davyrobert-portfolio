@@ -22,13 +22,13 @@ const ThemeToggle = () => {
       aria-label="Toggle theme"
       onClick={toggleTheme}
       onKeyDown={handleKey}
-      className={`fixed bottom-4 right-4 z-50 w-12 h-12 flex items-center justify-center transition-colors hover:border hover:border-gray-400 rounded-full
+      className={`fixed bottom-3 right-3 z-50 w-16 h-16 flex items-center justify-center transition-colors hover:border hover:border-gray-400 rounded-full
         ${theme === 'light' ? 'hover:bg-[var(--bg-button-light)] text-gray-700' : 'hover:bg-[var(--bg-button-dark)]  text-yellow-300'}`}
     >
       {theme === 'light' ? (
-        <FaMoon className="text-gray-400 text-xl" />
+        <FaMoon className="text-gray-400 text-3xl" />
       ) : (
-        <FaSun className="text-gray-400 text-xl" />
+        <FaSun className="text-gray-400 text-3xl" />
       )}
     </button>
   );
