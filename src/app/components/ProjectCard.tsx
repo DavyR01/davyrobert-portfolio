@@ -26,21 +26,21 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
+             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border border-[rgba(19,67,169,0.6)] dark:border-none rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
           >
              <div className="flex-1 flex flex-col">
                 {/* Image du projet */}
-                <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden rounded-2xl">
+                <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden">
                    <Link href={`/projects/${projectSlug}`}>
                       <Image
                          src={image}
                          alt={name}
                          width={640}
                          height={360}
-                         className="rounded-2xl object-cover w-full h-auto"
+                         className="object-cover w-full h-auto"
                       />
                    </Link>
                 </div>

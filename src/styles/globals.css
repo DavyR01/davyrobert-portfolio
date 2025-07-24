@@ -19,6 +19,7 @@
 
    --primary-color: var(--secondary-color); /* Use secondary as primary in light mode */
    --secondary-color: #1343a9; /* white mode */
+   --secondary-color-opacity: rgba(19, 67, 169); /* white mode */
    --tertiary-color: #f7c40f;
 
    --text-color-light: #ffffff;
