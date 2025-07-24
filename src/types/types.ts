@@ -9,6 +9,7 @@ export type ProjectCardProps = {
   sourceWeb?: string;
   sourceGithub?: string;
   projectSlug: string;
+  maxTagsCount?: number;
 };
 
 export type Experience = {

@@ -17,8 +17,8 @@ export default {
             xxs: "280px",
             xs: "390px",
             xs420: "420px", 
-            xs858: { max: "858px" },
-            "xs859-min": { min: "859px" },
+            "xs892-max": { max: "892px" },
+            "xs893": { min: "893px" },
          },
          fontFamily: {
             sans: ['var(--font-geist-sans)', 'sans-serif'],

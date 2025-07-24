@@ -16,6 +16,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     sourceWeb,
     sourceGithub,
     projectSlug,
+    maxTagsCount,
  }) => {
     //   const tiltRef = useRef(null);
  
@@ -26,7 +27,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border border-[rgba(19,67,169,0.6)] dark:border-none rounded-2xl xs858:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs859-min:h-full xs859-min:min-h-[480px]"
+             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border border-[rgba(19,67,169,0.6)] dark:border-none rounded-2xl xs892-max:w-full sm:w-[360px] relative overflow-hidden flex flex-col xs893:h-full"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
@@ -78,16 +79,23 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
  
  
                 {/* Tags */}
-                <div className="mt-4 flex flex-wrap gap-2 mb-2 px-5">
-                   {tags.map((tag, idx) => (
-                      <p
-                         key={idx}
-                         className={`inline-flex text-[14px] ${tag.color} bg-[var(--bg-light-items2)] dark:bg-[var(--bg-dark-items1)] px-2 py-0.5 rounded-full font-semibold`}
-                      >
-                         {tag.name}
-                      </p>
-                   ))}
-                </div>
+                <div className="mt-4 px-5 mb-2">
+                   <div
+                      className="overflow-hidden"
+                      style={{ minHeight: maxTagsCount ? `${Math.ceil(maxTagsCount / 4) * 1.3}rem` : undefined }}
+                    >
+                       <div className="flex flex-wrap gap-2">
+                          {tags.map((tag, idx) => (
+                             <span
+                                key={idx}
+                                className={`inline-flex text-[12px] ${tag.color} bg-[var(--bg-light-items2)] dark:bg-[var(--bg-dark-items1)] px-2 py-0.5 rounded-full font-semibold`}
+                             >
+                                {tag.name}
+                             </span>
+                          ))}
+                       </div>
+                    </div>
+                 </div>
              </div>
           </Tilt>
        </motion.div>

@@ -6,6 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 
 const MesProjets = () => {
+   const maxTagsCount = projects.reduce((max, project) => Math.max(max, project.tags.length), 0);
 
    return (
       <section id="projets" className="pt-32 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] px-4">
@@ -25,11 +26,15 @@ const MesProjets = () => {
             </motion.p>
          </div>
 
-         <div className="mt-20 flex justify-center">
-            <div className="flex flex-wrap justify-center gap-7 max-w-[1200px]">
-               {projects.map((project, index) => (
-                  <ProjectCard key={`project-${index}`} index={index} {...project} />
-               ))}
+         <div className="mt-20 flex justify-center w-full">
+            <div className="w-full max-w-[1200px]">
+               <div className="flex flex-wrap justify-center gap-7 w-full">
+                  {projects.map((project, index) => (
+                     <div key={`project-${index}`} className="w-full xs893:w-auto">
+                        <ProjectCard index={index} {...project} maxTagsCount={maxTagsCount} />
+                     </div>
+                  ))}
+               </div>
             </div>
          </div>
       </section>
