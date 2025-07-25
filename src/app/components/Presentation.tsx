@@ -7,9 +7,9 @@ import { MdEmail } from 'react-icons/md'
 import MatrixCanvas from './ui/MatrixCanvas';
 // import MatrixCanvas from '@/app/components/ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
-import { qualities } from '@/datas/datas';
+import { qualities, methods } from '@/datas/datas';
 
-   const Presentation = () => {
+const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
    const { theme } = useTheme();
    const [mounted, setMounted] = useState(false);
@@ -50,15 +50,33 @@ import { qualities } from '@/datas/datas';
                   className="object-cover w-full h-full"
                />
             </div>
+
+            <div className="flex flex-col xl:flex-row items-center lg:items-start my-6 gap-2 xl:gap-4">
+              <span className="text-lg font-bold text-[--primary-color] mb-2 xl:mb-0 flex items-center gap-2 min-w-max">
+                Méthodes adoptées :
+              </span>
+              <div className="flex flex-row flex-wrap gap-2 xl:gap-4 lg:justify-start mt-0 justify-center">
+                {methods.items.map((m) => (
+                  <span
+                    key={m.label}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-medium shadow-sm text-base border border-gray-300 dark:border-white/20"
+                  >
+                    {m.icon}
+                    {m.label}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <p className="text-base mb-8 dark:text-gray-400 text-gray-600 ">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8 w-full justify-center md:justify-start">
-              {qualities.items.map((q) => (
-                <span
-                  key={q.label}
-                  className="
+               {qualities.items.map((q) => (
+                  <span
+                     key={q.label}
+                     className="
                     flex items-center gap-2
                     bg-white/10 text-black border border-[#232946]
                     px-2 md:px-4 py-2 rounded-xl font-semibold text-base shadow transition-all
@@ -66,10 +84,10 @@ import { qualities } from '@/datas/datas';
                     dark:bg-white/10 dark:text-white dark:border-white/20
                     dark:hover:bg-white/20
                   "
-                >
-                  {q.icon}{q.label}
-                </span>
-              ))}
+                  >
+                     {q.icon}{q.label}
+                  </span>
+               ))}
             </div>
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <a
