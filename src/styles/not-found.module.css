@@ -7,6 +7,7 @@
   --color: #fafafa;
   --lit-header: #e6e6e6;
   --speed: 2s;
+  overflow: hidden;
 }
 
 .container404 {
@@ -54,6 +55,8 @@
 }
 
 .container404 h1 {
+  position: relative;
+  z-index: 1;
   -webkit-animation: swing var(--speed) infinite alternate ease-in-out;
   animation: swing var(--speed) infinite alternate ease-in-out;
   font-size: clamp(5rem, 40vmin, 20rem);
@@ -80,23 +83,14 @@
   transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
 }
 
-.container404 .cloak {
-  animation: swing var(--speed) infinite alternate-reverse ease-in-out;
-  height: 100%;
-  width: 100%;
-  transform-origin: 50% 30%;
-  transform: rotate(calc(var(--swing-x) * -0.25deg));
-  background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
-}
-
 .cloak__wrapper {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: hidden;
-  z-index: 0;
+  /* overflow: hidden; */
+  z-index: 10;
 }
 
 .cloak__container {
@@ -118,11 +112,12 @@
 }
 
 .info {
+  /* position: relative; */
   text-align: center;
   line-height: 1.5;
   max-width: clamp(16rem, 90vmin, 25rem);
   position: relative;
-  z-index: 2;
+  z-index: 11;
   margin-top: 2rem;
   color: var(--color);
 }
@@ -139,20 +134,17 @@
   font-weight: 100;
 }
 
-.button {
-  display: inline-block;
-  padding: 1rem 4rem;
-  font-size: 1.1rem;
-  font-family: inherit;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  background: #7a7a7a;
-  color: #0a0a0a;
-  border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 12px #0006;
-  transition: background 0.2s, color 0.2s;
+.container404 .button {
+  height: 3rem;
+  margin-top: 1rem;
+  color: var(--color);
+  ;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5rem;
+  background-color: var(--header);
 }
 
 .button:hover {
@@ -192,25 +184,4 @@
     --swing-y: -100;
     --swing-x: 100;
   }
-}
-
-.container404 .button {
-  height: 3rem;
-  margin-top: 1rem;
-  color: var(--color);
-  ;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.5rem;
-  background-color: var(--header);
-
-}
-
-.container404 .button:hover {
-  background-color: #fafafa;
-  ;
-  color: black;
-  cursor: pointer;
 }
