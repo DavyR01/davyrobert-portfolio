@@ -2,12 +2,19 @@
   --button: #b3b3b3;
   --button-color: #0a0a0a;
   --shadow: #000;
-  --bg: #e6e458;
   --header: #7a7a7a;
   --color: #fafafa;
   --lit-header: #e6e6e6;
   --speed: 2s;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
+  perspective: 1200px;
+  margin: 0;
 }
 
 .container404 {
@@ -27,18 +34,7 @@
   syntax: '<integer>';
 }
 
-.container404 {
-  min-height: 100vh;
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg);
-  color: var(--color);
-  perspective: 1200px;
-  margin: 0;
-}
+/* Styles de base du conteneur déplacés plus haut */
 
 .container404 a {
   text-transform: uppercase;
