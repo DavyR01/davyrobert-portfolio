@@ -9,17 +9,16 @@ export default function NotFound() {
     <>
       <NavbarProjects />
       <div className={styles.container404}>
-        <span className={styles.shadow404}>404</span>
-        <h1 className={styles.main404}>404</h1>
-        <div className={styles.haloWrapper404}>
-          <div className={styles.haloContainer404}>
-            <div className={styles.haloGradient404}></div>
+        <div className={styles.cloak__wrapper}>
+          <div className={styles.cloak__container}>
+            <div className={styles.cloak}></div>
           </div>
         </div>
-        <div className={styles.info404}>
+        <h1>404</h1>
+        <div className={styles.info}>
           <h3>We can&apos;t find that page</h3>
           <p>We&apos;re fairly sure that page used to be here, but seems to have gone missing. We do apologise on it&apos;s behalf.</p>
-          <Link href="/" className={styles.button404} rel="noreferrer noopener">Home</Link>
+          <Link href="/" className={styles.button} rel="noreferrer noopener">Home</Link>
         </div>
       </div>
     </>
