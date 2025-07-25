@@ -56,19 +56,42 @@
 
 .container404 h1 {
   position: relative;
-  z-index: 1;
-  -webkit-animation: swing var(--speed) infinite alternate ease-in-out;
-  animation: swing var(--speed) infinite alternate ease-in-out;
-  font-size: clamp(5rem, 40vmin, 20rem);
-  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
   margin: 0;
   margin-bottom: 1rem;
+  font-size: clamp(5rem, 40vmin, 20rem);
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1rem;
+  -webkit-animation: swing var(--speed) infinite alternate ease-in-out;
+  animation: swing var(--speed) infinite alternate ease-in-out;
   transform: translate3d(0, 0, 0vmin);
   --x: calc(50% + (var(--swing-x) * 0.5) * 1%);
   background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100%/200% 200%;
   -webkit-background-clip: text;
   color: transparent;
+  line-height: 1;
+}
+
+.container404 .text404 {
+  position: relative;
+  z-index: 20;
+  display: block;
+  pointer-events: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background: inherit;
+}
+
+.container404 h1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: 1;
 }
 
 .container404 h1:after {
@@ -78,9 +101,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   color: var(--shadow);
   filter: blur(1.5vmin);
   transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
+  z-index: 0;
 }
 
 .cloak__wrapper {

@@ -14,7 +14,7 @@ export default function NotFound() {
             <div className={styles.cloak}></div>
           </div>
         </div>
-        <h1>404</h1>
+        <h1><span className={styles.text404}>404</span></h1>
         <div className={styles.info}>
           <h3>We can&apos;t find that page</h3>
           <p>We&apos;re fairly sure that page used to be here, but seems to have gone missing. We do apologise on it&apos;s behalf.</p>
