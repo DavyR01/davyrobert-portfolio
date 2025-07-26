@@ -10,6 +10,7 @@ interface ButtonProps {
   download?: boolean;
   type?: "button" | "submit" | "reset";
   withShineEffect?: boolean;
+  fullWidth?: boolean;
 }
 
 export default function Button({
@@ -21,15 +22,17 @@ export default function Button({
   download,
   type = "button",
   withShineEffect = false,
+  fullWidth = true,
 }: ButtonProps) {
-  const baseClasses = "font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 border-2 border-transparent break-words w-full sm:w-auto text-center";
+  const baseClasses = "font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 border-2 border-transparent break-words text-center";
+  const widthClasses = fullWidth ? "w-full sm:w-auto" : "w-auto";
   
   const variantClasses = {
     primary: "bg-[--primary-color] dark:text-[var(--text-color-dark)] hover:bg-[var(--text-primary-color)] hover:text-[--secondary-color] dark:hover:text-[--primary-color] hover:border-[--primary-color] text-[var(--text-color-light)]",
     secondary: "relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-[var(--text-color-dark)] hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] shadow-md"
   };
 
-  const finalClassName = `${baseClasses} ${variantClasses[variant]} ${className}`;
+  const finalClassName = `${baseClasses} ${widthClasses} ${variantClasses[variant]} ${className}`;
 
   const renderContent = () => {
     if (variant === "secondary") {
