@@ -19,11 +19,17 @@ export const THEME_INIT_SCRIPT = `
       const match = document.cookie.match(/(?:^|; )${THEME_COOKIE_KEY}=([^;]+)/);
       const theme = (match && match[1]) || localStorage.getItem('${THEME_COOKIE_KEY}');
       
-      // Si le thème est 'light', retirer la classe 'dark', sinon l'ajouter
+      // Si le thème est 'light', retirer la classe 'dark'
       if (theme === 'light') {
         document.documentElement.classList.remove('dark');
-      } else {
+      // Si le thème est 'dark', ajouter la classe 'dark'
+      } else if (theme === 'dark') {
         document.documentElement.classList.add('dark');
+      // Sinon, vérifier les préférences de l'utilisateur pour le mode sombre
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
       }
     } catch (e) {
       // En cas d'erreur, forcer le thème sombre
