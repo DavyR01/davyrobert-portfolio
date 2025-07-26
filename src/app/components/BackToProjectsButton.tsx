@@ -1,9 +1,11 @@
 "use client"
 
 import { useRouter } from 'next/navigation';
+import { useTranslation } from '@/context/I18nContext';
 
 const BackToProjectsButton = () => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   const handleClick = () => {
     router.push('/?scrollToProjets=1');
@@ -17,9 +19,8 @@ const BackToProjectsButton = () => {
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.25 15L6.25 10L11.25 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
-      <span className="font-semibold text-sm md:text-base">Retour aux projets</span>
+      <span className="font-semibold text-sm md:text-base">{t('backToProjects')}</span>
     </button>
   );
 };
-
-export default BackToProjectsButton; 
+export default BackToProjectsButton;

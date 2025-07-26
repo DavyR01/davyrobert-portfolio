@@ -6,6 +6,7 @@ import Script from "next/script";
 import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../utils/fonts";
 import Footer from "./components/Footer";
 import ThemeToggle from "./components/ui/ThemeToggle";
+import { I18nProvider } from "@/context/I18nContext";
 
 export const metadata: Metadata = {
    title: "Davy Robert - Portfolio",
@@ -25,6 +26,7 @@ export default async function RootLayout({
             <Script id="theme-init" strategy="beforeInteractive">
                {THEME_INIT_SCRIPT}
             </Script>
+            <I18nProvider>
             <ThemeProvider>
                {isMaintenanceMode ? (
                   <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
@@ -40,6 +42,7 @@ export default async function RootLayout({
                   </>
                )}
             </ThemeProvider>
+            </I18nProvider>
          </body>
       </html>
    );

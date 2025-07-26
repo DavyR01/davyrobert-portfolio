@@ -1,8 +1,10 @@
+'use client'
 import { projects } from '@/datas/datas';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import NavbarBackProjects from '@/app/components/NavbarProjects';
 import BackToProjectsButton from '@/app/components/BackToProjectsButton';
+import { useTranslation } from '@/context/I18nContext';
 
 export default async function ProjectPage({ params }) {
   const { slug } = await params;
@@ -10,6 +12,7 @@ export default async function ProjectPage({ params }) {
 
   if (!project) return notFound();
 
+  const { t } = useTranslation();
   return (
     <section className="max-w-[1400px] mx-auto px-6 py-8 text-black dark:text-white">
       <NavbarBackProjects />
@@ -44,7 +47,7 @@ export default async function ProjectPage({ params }) {
             rel="noopener noreferrer"
             className="text-[--primary-color] hover:text-[--primary-color] hover:font-bold"
           >
-            VOIR LE PROJET
+            {t('project.viewProject')}
           </a>
         )}
       </div>
