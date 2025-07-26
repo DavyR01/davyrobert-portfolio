@@ -8,6 +8,7 @@ import MatrixCanvas from './ui/MatrixCanvas';
 // import MatrixCanvas from '@/app/components/ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
 import { qualities, methods } from '@/datas/datas';
+import Button from './ui/Button';
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -90,24 +91,21 @@ const Presentation = () => {
                ))}
             </div>
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
-               <a
-                  className="bg-[--primary-color] dark:text-[var(--text-color-dark)] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:bg-[var(--text-primary-color)] hover:text-[--secondary-color] dark:hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent break-words w-full sm:w-auto text-center text-[var(--text-color-light)]"
+               <Button
+                  variant="primary"
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
                   Mon CV format standard
-               </a>
-               <a
-                  className="relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-[var(--text-color-dark)] font-semibold py-3 px-6 text-lg rounded-lg transition-all hover:scale-105 hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] border-2 border-transparent break-words w-full sm:w-auto text-center shadow-md"
+               </Button>
+               <Button
+                  variant="secondary"
                   href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
                   download
+                  withShineEffect
                >
-                  <span className="relative z-10">Mon CV format long</span>
-                  <span
-                     className="absolute left-[-75%] top-0 w-[80%] h-full bg-gradient-to-r from-transparent via-white/90 to-transparent opacity-80 blur-[1px] animate-shine pointer-events-none"
-                     aria-hidden="true"
-                  />
-               </a>
+                  Mon CV format long
+               </Button>
                <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
                   <a
                      href="https://github.com/davyR01"
