@@ -1,8 +1,8 @@
 
 'use client';
 
-import { KeyboardEvent } from 'react';
 import { useTheme } from '@/context/ThemeContext';
+import { KeyboardEvent } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle = () => {
@@ -32,15 +32,6 @@ const ThemeToggle = () => {
       )}
     </button>
   );
-
-
-
-
-
-
-
-
-
 };
 
 export default ThemeToggle;
