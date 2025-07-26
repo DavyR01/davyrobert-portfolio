@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/context/ThemeContext";
 import "@/styles/globals.css";
-import { THEME_INIT_SCRIPT } from "@/utils/theme";
+import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../utils/fonts";
@@ -18,8 +18,9 @@ export default async function RootLayout({
    children: React.ReactNode;
 }>) {
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
+   const themeClass = await getServerThemeClass();
    return (
-      <html lang="fr" className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable}`}>
+      <html lang="fr" className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
          <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
             <Script id="theme-init" strategy="beforeInteractive">
                {THEME_INIT_SCRIPT}
