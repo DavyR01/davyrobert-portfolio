@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Script from "next/script";
 import { THEME_INIT_SCRIPT } from "@/utils/theme";
 import NavbarBackProjects from "./components/NavbarProjects";
+import Button from "./components/ui/Button";
 
 export default function NotFound() {
   return (
@@ -13,7 +13,9 @@ export default function NotFound() {
           <NavbarBackProjects />
       <h1 className="text-3xl sm:text-4xl mb-4 text-center">Cette page n&apos;existe pas.<br />Merci de vous rediriger vers l&apos;accueil.</h1>
       <p className="text-lg text-gray-600 mb-8 text-center">Désolé, la page que vous cherchez est inaccessible ou a été déplacée.</p>
-        <Link href="/" className="text-blue-600 underline font-bold hover:text-blue-800 transition-colors">Retour à l&apos;accueil</Link>
+        <Button href="/" variant="primary">
+          Retour à l&apos;accueil
+        </Button>
       </main>
     </>
   );
