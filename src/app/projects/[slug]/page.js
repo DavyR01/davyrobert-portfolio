@@ -5,14 +5,15 @@ import { notFound } from 'next/navigation';
 import NavbarBackProjects from '@/app/components/NavbarProjects';
 import BackToProjectsButton from '@/app/components/BackToProjectsButton';
 import { useTranslation } from '@/context/I18nContext';
+import { useParams } from 'next/navigation';
 
-export default async function ProjectPage({ params }) {
-  const { slug } = await params;
+export default function ProjectPage() {
+  const params = useParams();
+  const { t } = useTranslation();
+  const { slug } = params;
   const project = projects.find((p) => p.projectSlug === slug);
 
   if (!project) return notFound();
-
-  const { t } = useTranslation();
   return (
     <section className="max-w-[1400px] mx-auto px-6 py-8 text-black dark:text-white">
       <NavbarBackProjects />
