@@ -5,7 +5,8 @@ export const THEME_COOKIE_KEY = "theme";
 export async function getServerThemeClass(): Promise<string> {
   const cookieStore = await cookies();
   const theme = cookieStore.get(THEME_COOKIE_KEY)?.value;
-  return theme === "dark" ? "dark" : "";
+  // Par défaut 'dark' si aucun cookie (évite flash white→dark au premier rendu)
+  return theme === "light" ? "" : "dark";
 }
 
 // Dark mode defined by default in class attribute
@@ -17,19 +18,26 @@ export const THEME_INIT_SCRIPT = `
       
       // Récupérer le thème depuis les cookies ou le stockage local
       const match = document.cookie.match(/(?:^|; )${THEME_COOKIE_KEY}=([^;]+)/);
-      const theme = (match && match[1]) || localStorage.getItem('${THEME_COOKIE_KEY}');
+      const cookieTheme = match && match[1];
+      const storageTheme = localStorage.getItem('${THEME_COOKIE_KEY}');
       
-      // Si le thème est 'light', retirer la classe 'dark'
-      if (theme === 'light') {
+      // Déterminer le thème final
+      let finalTheme = cookieTheme || storageTheme;
+      
+      // Si aucun thème n'est défini, utiliser les préférences système
+      if (!finalTheme) {
+        finalTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      // IMPORTANT: Synchroniser vers localStorage ET cookies
+      localStorage.setItem('${THEME_COOKIE_KEY}', finalTheme);
+      document.cookie = \`${THEME_COOKIE_KEY}=\${finalTheme}; path=/; max-age=\${60 * 60 * 24 * 365}\`; // 1 an
+      
+      // Appliquer le thème
+      if (finalTheme === 'light') {
         document.documentElement.classList.remove('dark');
-      // Si le thème est 'dark', ajouter la classe 'dark'
-      } else if (theme === 'dark') {
-        document.documentElement.classList.add('dark');
-      // Sinon, vérifier les préférences de l'utilisateur pour le mode sombre
-      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
       } else {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('dark');
       }
     } catch (e) {
       // En cas d'erreur, forcer le thème sombre
