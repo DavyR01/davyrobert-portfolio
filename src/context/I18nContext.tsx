@@ -1,6 +1,6 @@
 'use client';
 
-import React, {createContext, useContext, useState, useEffect, ReactNode} from 'react';
+import React, {createContext, useContext, useState, useEffect, ReactNode, useCallback, useMemo} from 'react';
 import fr from '../locales/fr.json';
 import en from '../locales/en.json';
 
@@ -17,19 +17,35 @@ const messages: Record<Locale, Record<string, string>> = { fr, en };
 const I18nContext = createContext<I18nContextValue | undefined>(undefined);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>('fr');
-  const [dict, setDict] = useState(messages['fr']);
+  const [locale, setLocale] = useState<Locale>(() => {
+    if (typeof window === "undefined") return "fr";
+    return (localStorage.getItem("locale") as Locale) ?? "fr";
+  });
+  const [dict, setDict] = useState(() => messages[locale] || messages['fr']);
 
   useEffect(() => {
     setDict(messages[locale]);
+    document.documentElement.setAttribute('lang', locale);
+    localStorage.setItem("locale", locale);
   }, [locale]);
 
-  function t(key: string) {
+  const changeLocale = useCallback((newLocale: Locale) => {
+    setLocale(() => {
+      if (typeof document !== "undefined") {
+        document.cookie = `locale=${newLocale}; path=/; max-age=31536000`;
+      }
+      return newLocale;
+    });
+  }, []);
+
+  const t = useCallback((key: string) => {
     return dict[key] || key;
-  }
+  }, [dict]);
+
+  const ctx = useMemo(() => ({ locale, setLocale: changeLocale, t }), [locale, changeLocale, t]);
 
   return (
-    <I18nContext.Provider value={{ locale, setLocale, t }}>
+    <I18nContext.Provider value={ctx}>
       {children}
     </I18nContext.Provider>
   );
