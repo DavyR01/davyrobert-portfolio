@@ -21,6 +21,9 @@ export const LOCALE_INIT_SCRIPT = `
       const match = document.cookie.match(/(?:^|; )${LOCALE_COOKIE_KEY}=([^;]+)/);
       const locale = (match && match[1]) || localStorage.getItem('${LOCALE_COOKIE_KEY}') || 'fr';
       
+      // IMPORTANT: Synchroniser vers localStorage (comme THEME_INIT_SCRIPT)
+      localStorage.setItem('${LOCALE_COOKIE_KEY}', locale);
+      
       // Définir l'attribut lang sur l'élément html
       document.documentElement.setAttribute('lang', locale);
       
@@ -32,6 +35,7 @@ export const LOCALE_INIT_SCRIPT = `
       
     } catch (e) {
       // En cas d'erreur, forcer le français
+      localStorage.setItem('${LOCALE_COOKIE_KEY}', 'fr');
       document.documentElement.setAttribute('lang', 'fr');
       document.documentElement.classList.add('locale-ready');
       document.body.classList.remove('locale-not-ready');

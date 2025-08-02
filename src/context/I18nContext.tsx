@@ -19,16 +19,7 @@ const I18nContext = createContext<I18nContextValue | undefined>(undefined);
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>(() => {
     if (typeof window === "undefined") return "fr";
-    
-    // Lire d'abord les cookies (comme ThemeContext)
-    const match = document.cookie.match(/(?:^|; )locale=([^;]+)/);
-    const cookieLocale = match && match[1];
-    
-    // Puis localStorage en fallback
-    const storageLocale = localStorage.getItem("locale");
-    
-    const savedLocale = (cookieLocale || storageLocale) as Locale;
-    return savedLocale === "en" ? "en" : "fr";
+    return (localStorage.getItem("locale") as Locale) ?? "fr";
   });
   const [dict, setDict] = useState(() => messages[locale] || messages['fr']);
 

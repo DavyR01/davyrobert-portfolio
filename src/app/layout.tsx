@@ -32,21 +32,21 @@ export default async function RootLayout({
                {LOCALE_INIT_SCRIPT}
             </Script>
             <I18nProvider>
-            <ThemeProvider>
-               {isMaintenanceMode ? (
-                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
-                     <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
-                  </div>
-               ) : (
-                  <>
-                     <main className="flex-1 pt-20">
-                        {children}
-                     </main>
-                     <Footer />
-                     <ThemeToggle />
-                  </>
-               )}
-            </ThemeProvider>
+               <ThemeProvider>
+                  {isMaintenanceMode ? (
+                     <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
+                        <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
+                     </div>
+                  ) : (
+                     <>
+                        <main className="flex-1 pt-20">
+                           {children}
+                        </main>
+                        <Footer />
+                        <ThemeToggle />
+                     </>
+                  )}
+               </ThemeProvider>
             </I18nProvider>
          </body>
       </html>
