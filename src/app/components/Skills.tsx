@@ -36,9 +36,33 @@ const Skills = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-            <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
+            <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-8">
                 <span className="italic">Mes</span> Compétences
             </h2>
+            
+            {/* Sections d'intervention et stacks techniques */}
+            <div className="max-w-[1000px] mx-auto mb-12 px-4">
+                <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">Mes domaines d&#39;intervention et expertises :</h3>
+                        <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
+                            <li>Conception, création d&#39;applications web modernes et intuitives orientées utilisateur</li>
+                            <li>Analyse, Recherche de solutions numériques et Résolution de problèmes divers</li>
+                            <li>Tests unitaires, intégration et end-to-end...</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">Mes stacks techniques prédominantes à ce jour :</h3>
+                        <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
+                            <li>NextJS, ReactJS, NodeJS avec TailwindCSS</li>
+                            <li>Angular, C#</li>
+                            <li>Java / Kotlin avec Android Studio</li>
+                            <li>Et plus encore...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             {/* 🔹 Mobile <640px (flexible grid responsive) */}
             <div className="sm:hidden w-full max-w-[1200px] mx-auto flex flex-col gap-12">

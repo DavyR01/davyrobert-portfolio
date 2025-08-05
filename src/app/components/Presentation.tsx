@@ -38,7 +38,7 @@ const Presentation = () => {
                <span className="">ROBERT</span>
             </h1>
             <h2 className="xs480:text-4xl text-[1.4rem] font-bold mb-6 text-center lg:text-left ">
-               Et j&#39;exerce en tant que <br />
+               Et j&apos;exerce en tant que <br />
                <span className="text-[--primary-color]">Développeur Full</span>{' '}
                <span className="text-[--primary-color]">Stack</span>
             </h2>
@@ -71,9 +71,23 @@ const Presentation = () => {
               </div>
             </div>
 
-            <p className="text-base mb-8 dark:text-gray-400 text-gray-600 ">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil, non blanditiis veritatis fugiat fuga alias mollitia enim eius?     Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fugit ab totam laboriosam ut reiciendis corrupti libero reprehenderit nesciunt! Nulla nihil
-            </p>
+            <div className="text-base mb-8 dark:text-gray-300 text-gray-700 space-y-4">
+               <p>
+                  Après un parcours riche, varié et diversifié, j&apos;ai décidé de me spécialiser dans le domaine de l&apos;informatique et plus particulièrement dans le développement web et la conception d&apos;applications.
+                  Épris par le monde de l&apos;entrepreneuriat et les nouvelles technologies, je me forme continuellement et évolue constamment selon les compétences requises et la demande sur le marché.
+               </p>
+               
+               <p>
+                  Je conçois, développe et optimise des applications web, d&apos;une idée à la réalisation jusqu&apos;à la mise en production.
+                  Je consacre du temps à me former en autodidacte et m&apos;adapte en permanence aux innovations et nouvelles technologies émergentes. <br /> Je vise donc à exploiter celles qui s&apos;avèrent pertinentes pour mener à bien les missions qui me sont confiées.
+               </p>
+               
+               <p>
+                  De ce fait, je souhaite apporter ma contribution dans des projets ambitieux et porteurs de transformations, auprès d&apos;entreprises engagées et partageant des valeurs fortes.
+               </p>
+               
+
+            </div>
 
             <div className="flex flex-wrap gap-4 mb-8 w-full justify-center md:justify-start">
                {qualities.items.map((q) => (
