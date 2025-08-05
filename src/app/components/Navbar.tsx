@@ -21,7 +21,7 @@ const Navbar = () => {
    const locale = useLocale();
    const router = useRouter();
    const pathname = usePathname();
-   
+
    const toggleLocale = () => {
       const newLocale = locale === 'fr' ? 'en' : 'fr';
       router.push(pathname, { locale: newLocale });
@@ -38,19 +38,19 @@ const Navbar = () => {
             // Sélectionner celle qui possède la plus grande portion visible
             const mostVisible = visibleEntries.reduce(
                (prev, current) =>
-                 prev.intersectionRatio > current.intersectionRatio ? prev : current,
+                  prev.intersectionRatio > current.intersectionRatio ? prev : current,
                visibleEntries[0]
-             );
+            );
 
             setActiveSection(mostVisible.target.id as SectionId);
          },
-         { 
+         {
             root: null,
             // Décale la zone d’observation pour compenser la hauteur du header (80 px) et
             // réduit le seuil d’intersection pour que les sections plus petites soient détectées.
             rootMargin: '-80px 0px 0px 0px',
             threshold: 0.1,
-          }
+         }
       );
 
       sections.forEach((id) => {
@@ -125,69 +125,71 @@ const Navbar = () => {
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >
-               <ul className="flex flex-col md:flex-row gap-6 md:gap-9 items-center list-none">
+               <ul className="flex flex-col md:flex-row gap-6 md:gap-7 items-center list-none">
                   <li>
-                     <button 
+                     <button
                         onClick={() => {
                            scrollToSection('introduction');
                            setMenuOpen(false);
-                        }} 
-                        className={`${styles.navLink} ${activeSection==='introduction'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                        }}
+                        className={`${styles.navLink} ${activeSection === 'introduction' ? 'text-[--primary-color]' : ''} bg-transparent border-none cursor-pointer`}
                      >
                         {t('about')}
                      </button>
                   </li>
                   <li>
-                     <button 
+                     <button
                         onClick={() => {
                            scrollToSection('skills');
                            setMenuOpen(false);
-                        }} 
-                        className={`${styles.navLink} ${activeSection==='skills'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                        }}
+                        className={`${styles.navLink} ${activeSection === 'skills' ? 'text-[--primary-color]' : ''} bg-transparent border-none cursor-pointer`}
                      >
                         {t('skills')}
                      </button>
                   </li>
                   <li>
-                     <button 
+                     <button
                         onClick={() => {
                            scrollToSection('experience');
                            setMenuOpen(false);
-                        }} 
-                        className={`${styles.navLink} ${activeSection==='experience'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                        }}
+                        className={`${styles.navLink} ${activeSection === 'experience' ? 'text-[--primary-color]' : ''} bg-transparent border-none cursor-pointer`}
                      >
                         {t('experience')}
                      </button>
                   </li>
                   <li>
-                     <button 
+                     <button
                         onClick={() => {
                            scrollToSection('projets');
                            setMenuOpen(false);
-                        }} 
-                        className={`${styles.navLink} ${activeSection==='projets'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                        }}
+                        className={`${styles.navLink} ${activeSection === 'projets' ? 'text-[--primary-color]' : ''} bg-transparent border-none cursor-pointer`}
                      >
                         {t('projects')}
                      </button>
                   </li>
                   <li>
-                     <button 
+                     <button
                         onClick={() => {
                            scrollToSection('contact');
                            setMenuOpen(false);
-                        }} 
-                        className={`${styles.navLink} ${activeSection==='contact'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                        }}
+                        className={`${styles.navLink} ${activeSection === 'contact' ? 'text-[--primary-color]' : ''} bg-transparent border-none cursor-pointer`}
                      >
                         {t('contact')}
                      </button>
                   </li>
+                  <li>
+                     <button
+                        onClick={toggleLocale}
+                        className="mt-6 md:mt-0 border border-[--primary-color] px-2 py-1 rounded"
+                     >
+                        {locale === 'fr' ? 'EN' : 'FR'}
+                     </button>
+                  </li>
                </ul>
-               <button
-                  onClick={toggleLocale}
-                  className="mt-6 md:mt-0 md:ml-4 border border-[--primary-color] px-2 py-1 rounded"
-               >
-                  {locale === 'fr' ? 'EN' : 'FR'}
-               </button>
                {menuOpen && (
                   <div className="md:hidden h-[1px] w-[100%] bg-[--primary-color] opacity-50 mx-auto mt-6" />
                )}
