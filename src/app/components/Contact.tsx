@@ -1,23 +1,19 @@
 'use client';
 
 import React from 'react';
+import { useTranslation } from '@/context/I18nContext';
 
 const Contact = () => {
+    const { t } = useTranslation();
     return (
         <section id="contact" className="pt-32 px-4">
             <div className="max-w-[1400px] mx-auto flex flex-col items-center">
                 <h2 className="text-center dark:text-[--primary-color] text-[--secondary-color] uppercase text-4xl font-bold mb-12">
-                    <span className="italic dark:text-white text-black">Me</span> Contacter
+                    <span className="italic dark:text-white text-black">{t('contact.title').split(' ')[0]}</span> {t('contact.title').split(' ')[1]}
                 </h2>
 
                 <div className="max-w-[800px] text-lg leading-7 text-black dark:text-white font-hk text-justify">
-                    <p className="mb-6">
-                        Vous êtes à la recherche d’un développeur, d’un intégrateur web ou encore d’un testeur pour renforcer votre équipe ? <br /><br />
-                        Je suis actuellement à la recherche d’une opportunité professionnelle et serais ravi d’échanger autour d’une future collaboration. <br /><br />
-
-                        N’hésitez pas à me contacter, que ce soit pour discuter d’un projet, en savoir plus sur mon profil, ou simplement me poser des questions. <br /><br />
-                        Je reste disponible et réactif, et je me ferai un plaisir de vous répondre.
-                    </p>
+                    <p className="mb-6" dangerouslySetInnerHTML={{__html: t('contact.paragraph')}} />
 
                     <a
                         href="mailto:contact@davyrobert.fr"

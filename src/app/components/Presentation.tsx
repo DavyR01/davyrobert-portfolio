@@ -9,11 +9,13 @@ import MatrixCanvas from './ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
 import { qualities, methods } from '@/datas/datas';
 import Button from './ui/Button';
+import { useTranslation } from '@/context/I18nContext';
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
    const { theme } = useTheme();
    const [mounted, setMounted] = useState(false);
+   const { t } = useTranslation();
 
    useEffect(() => {
       setMounted(true);
@@ -30,15 +32,13 @@ const Presentation = () => {
 
          {/* Présentation texte */}
          <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold text-center lg:text-left">Bonjour je me présente</h2>
+            <h2 className="text-4xl font-bold text-center lg:text-left">{t('presentation.hello')}</h2>
             <h1 className="text-[64px] my-4 font-bold text-center lg:text-left">
                <span className="italic font-light">Davy</span>{' '}
                <span className="">ROBERT</span>
             </h1>
             <h2 className="text-4xl font-bold mb-6 text-center lg:text-left">
-               Et j&#39;exerce en tant que <br />
-               <span className="text-[--primary-color]">Développeur Full</span>{' '}
-               <span className="text-[--primary-color]">Stack</span>
+               {t('presentation.fullstack')}
             </h2>
 
             {/* Image profil <=1024px */}
@@ -54,7 +54,7 @@ const Presentation = () => {
 
             <div className="flex flex-col xl:flex-row items-center lg:items-start my-6 gap-2 xl:gap-4">
               <span className="text-lg font-bold text-[--primary-color] mb-2 xl:mb-0 flex items-center gap-2 min-w-max">
-                Méthodes adoptées :
+                {t('presentation.methodsTitle')}
               </span>
               <div className="flex flex-row flex-wrap gap-2 xl:gap-4 lg:justify-start mt-0 justify-center">
                 {methods.items.map((m) => (
@@ -96,7 +96,7 @@ const Presentation = () => {
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
-                  Mon CV format standard
+                  {t('presentation.cvStandard')}
                </Button>
                <Button
                   variant="secondary"
@@ -104,7 +104,7 @@ const Presentation = () => {
                   download
                   withShineEffect
                >
-                  Mon CV format long
+                  {t('presentation.cvLong')}
                </Button>
                <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
                   <a

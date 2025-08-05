@@ -1,0 +1,23 @@
+{
+  "navbar.about": "A PROPOS",
+  "navbar.skills": "COMPÉTENCES",
+  "navbar.experience": "EXPÉRIENCES",
+  "navbar.projects": "PROJETS",
+  "navbar.contact": "CONTACT",
+  "presentation.hello": "Bonjour je me présente",
+  "presentation.fullstack": "Et j'exerce en tant que Développeur Full Stack",
+  "presentation.methodsTitle": "Méthodes adoptées :",
+  "presentation.cvStandard": "Mon CV format standard",
+  "presentation.cvLong": "Mon CV format long",
+  "mesProjets.title": "Mes Projets & Réalisations",
+  "mesProjets.intro": "Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d'autres l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai réalisé quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets.",
+  "mesExperiences.title": "Mes Expériences",
+  "contact.title": "Me Contacter",
+  "contact.paragraph": "Vous êtes à la recherche d’un développeur, d’un intégrateur web ou encore d’un testeur pour renforcer votre équipe ? <br /><br /> Je suis actuellement à la recherche d’une opportunité professionnelle et serais ravi d’échanger autour d’une future collaboration. <br /><br /> N’hésitez pas à me contacter, que ce soit pour discuter d’un projet, en savoir plus sur mon profil, ou simplement me poser des questions. <br /><br /> Je reste disponible et réactif, et je me ferai un plaisir de vous répondre.",
+  "footer.madeWith": "Design et Développement réalisés en NextJS & TailwindCSS",
+  "footer.rights": "© 2025 Davy Robert – Tous droits réservés",
+  "backToProjects": "Retour aux projets",
+  "project.viewProject": "VOIR LE PROJET",
+  "maintenance": "Le site est actuellement en cours d'élaboration. \nVeuillez patienter...............",
+  "loading": "Chargement..."
+}

@@ -1,11 +1,13 @@
 import { ThemeProvider } from "@/context/ThemeContext";
 import "@/styles/globals.css";
 import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
+import { LOCALE_INIT_SCRIPT, getServerLocale } from "@/utils/locale";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../utils/fonts";
 import Footer from "./components/Footer";
 import ThemeToggle from "./components/ui/ThemeToggle";
+import { I18nProvider } from "@/context/I18nContext";
 
 export const metadata: Metadata = {
    title: "Davy Robert - Portfolio",
@@ -19,27 +21,33 @@ export default async function RootLayout({
 }>) {
    const isMaintenanceMode = process.env.APP_MAINTENANCE === "false";
    const themeClass = await getServerThemeClass();
+   const serverLocale = await getServerLocale();
    return (
-      <html lang="fr" className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
-         <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
+      <html lang={serverLocale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
+         <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)] locale-not-ready">
             <Script id="theme-init" strategy="beforeInteractive">
                {THEME_INIT_SCRIPT}
             </Script>
-            <ThemeProvider>
-               {isMaintenanceMode ? (
-                  <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
-                     <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
-                  </div>
-               ) : (
-                  <>
-                     <main className="flex-1 pt-20">
-                        {children}
-                     </main>
-                     <Footer />
-                     <ThemeToggle />
-                  </>
-               )}
-            </ThemeProvider>
+            <Script id="locale-init" strategy="beforeInteractive">
+               {LOCALE_INIT_SCRIPT}
+            </Script>
+            <I18nProvider>
+               <ThemeProvider>
+                  {isMaintenanceMode ? (
+                     <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
+                        <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
+                     </div>
+                  ) : (
+                     <>
+                        <main className="flex-1 pt-20">
+                           {children}
+                        </main>
+                        <Footer />
+                        <ThemeToggle />
+                     </>
+                  )}
+               </ThemeProvider>
+            </I18nProvider>
          </body>
       </html>
    );

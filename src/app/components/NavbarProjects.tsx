@@ -28,4 +28,4 @@ const NavbarBackProjects = () => {
   );
 };
 
-export default NavbarBackProjects; 
+export default NavbarBackProjects;

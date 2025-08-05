@@ -2,10 +2,12 @@
 
 import { motion } from "framer-motion"; // 👈 Import
 import React from "react";
+import { useTranslation } from "@/context/I18nContext";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
+   const { t } = useTranslation();
    return (
       <motion.footer
          id="contact"
@@ -51,10 +53,10 @@ const Footer = () => {
          {/* Copyright*/}
          <div className="mt-10 text-center space-y-2 mx-4">
             <p className="text-sm dark:text-gray-500 text-gray-900">
-               Design et Développement réalisés en NextJS & TailwindCSS
+               {t('footer.madeWith')}
             </p>
             <p className="text-sm text-[--secondary-color] dark:text-[--primary-color] font-semibold">
-               © 2025 Davy Robert – Tous droits réservés
+               {t('footer.rights')}
             </p>
          </div>
 

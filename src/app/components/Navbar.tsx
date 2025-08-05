@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from '@/context/I18nContext';
 import styles from './Navbar.module.css';
 import BurgerIcon from './ui/BurgerIcon';
 
@@ -14,6 +15,8 @@ const Navbar = () => {
    const [menuOpen, setMenuOpen] = useState(false);
    const [activeSection, setActiveSection] = useState<SectionId | null>(null);
    const navRef = useRef<HTMLDivElement>(null);
+   const { t, locale, setLocale } = useTranslation();
+   const toggleLocale = () => setLocale(locale === 'fr' ? 'en' : 'fr');
 
    useEffect(() => {
       // Intersection Observer to detect active section
@@ -116,30 +119,36 @@ const Navbar = () => {
                <ul className="flex flex-col md:flex-row gap-6 md:gap-9 items-center list-none">
                   <li>
                      <a href="#introduction" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='introduction'?'text-[--primary-color]':''}`}>
-                        A PROPOS
+                        {t('navbar.about')}
                      </a>
                   </li>
                   <li>
                      <a href="#skills" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='skills'?'text-[--primary-color]':''}`}>
-                        COMPÉTENCES
+                        {t('navbar.skills')}
                      </a>
                   </li>
                   <li>
                      <a href="#experience" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='experience'?'text-[--primary-color]':''}`}>
-                        EXPÉRIENCES
+                        {t('navbar.experience')}
                      </a>
                   </li>
                   <li>
                      <a href="#projets" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='projets'?'text-[--primary-color]':''}`}>
-                        PROJETS
+                        {t('navbar.projects')}
                      </a>
                   </li>
                   <li>
                      <a href="#contact" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='contact'?'text-[--primary-color]':''}`}>
-                        CONTACT
+                        {t('navbar.contact')}
                      </a>
                   </li>
                </ul>
+               <button
+                  onClick={toggleLocale}
+                  className="mt-6 md:mt-0 md:ml-4 border border-[--primary-color] px-2 py-1 rounded"
+               >
+                  {locale === 'fr' ? 'EN' : 'FR'}
+               </button>
                {menuOpen && (
                   <div className="md:hidden h-[1px] w-[100%] bg-[--primary-color] opacity-50 mx-auto mt-6" />
                )}
