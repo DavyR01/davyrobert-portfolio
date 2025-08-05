@@ -32,6 +32,9 @@
 .dark:root {
    --primary-color: #5ce1e6; /* original primary for dark mode */
    --secondary-color: #1343a9;
+
+   /* --primary-color: rgb(92, 225, 230);
+   --secondary-color: rgb(19, 67, 169); */
 }
 
 body {

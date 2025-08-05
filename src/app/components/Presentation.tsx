@@ -73,17 +73,17 @@ const Presentation = () => {
 
             <div className="text-base mb-8 dark:text-gray-300 text-gray-700 space-y-4">
                <p>
-                  Après un parcours riche, varié et diversifié, j&apos;ai décidé de me spécialiser dans le domaine de l&apos;informatique et plus particulièrement dans le développement web et la conception d&apos;applications.
-                  Épris par le monde de l&apos;entrepreneuriat et les nouvelles technologies, je me forme continuellement et évolue constamment selon les compétences requises et la demande sur le marché.
+                  Après un parcours riche, varié et diversifié, j&apos;ai décidé de me <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">spécialiser</span> dans le domaine de l&apos;<span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">informatique</span> et plus particulièrement dans le <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">développement web</span> et la <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">conception d&apos;applications</span>.
+                  Épris par le monde de l&apos;<span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">entrepreneuriat</span> et les <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">nouvelles technologies</span>, je me forme <span className="font-semibold">continuellement</span> et évolue <span className="font-semibold">constamment</span> selon les compétences requises et la demande sur le marché.
                </p>
                
                <p>
-                  Je conçois, développe et optimise des applications web, d&apos;une idée à la réalisation jusqu&apos;à la mise en production.
-                  Je consacre du temps à me former en autodidacte et m&apos;adapte en permanence aux innovations et nouvelles technologies émergentes. <br /> Je vise donc à exploiter celles qui s&apos;avèrent pertinentes pour mener à bien les missions qui me sont confiées.
+                  Je <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">conçois</span>, <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">développe</span> et <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">optimise</span> des applications web, d&apos;une <span className="font-semibold">idée</span> à la réalisation jusqu&apos;à la <span className="font-semibold">mise en production</span>.
+                  Je consacre du temps à me former en <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">autodidacte</span> et m&apos;adapte en permanence aux <span className="font-semibold">innovations</span> et <span className="font-semibold">nouvelles technologies émergentes</span>. <br /> Je vise donc à exploiter celles qui s&apos;avèrent pertinentes pour mener à bien les missions qui me sont confiées.
                </p>
                
                <p>
-                  De ce fait, je souhaite apporter ma contribution dans des projets ambitieux et porteurs de transformations, auprès d&apos;entreprises engagées et partageant des valeurs fortes.
+                  De ce fait, je souhaite apporter ma contribution dans des <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">projets ambitieux</span> et porteurs de <span className="bg-[#1343a9]/15 dark:bg-[#5ce1e6]/15 text-black dark:text-white px-2 py-0.5 rounded-md font-semibold">transformations</span>, auprès d&apos;<span className="font-semibold">entreprises engagées</span> et partageant des <span className="font-semibold">valeurs fortes</span>.
                </p>
                
 
