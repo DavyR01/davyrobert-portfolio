@@ -1,0 +1,48 @@
+{
+  "navbar": {
+    "about": "ABOUT",
+    "skills": "SKILLS",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
+  "presentation": {
+    "hello": "Hello, let me introduce myself",
+    "fullstack": "And I work as a Full Stack Developer",
+    "methodsTitle": "Methods used:",
+    "cvStandard": "Standard CV",
+    "cvLong": "Extended CV"
+  },
+  "mesProjets": {
+    "title": "My Projects & Achievements",
+    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects."
+  },
+  "mesExperiences": {
+    "title": "My Experiences"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "paragraph": "Are you looking for a developer, a web integrator or even a tester to strengthen your team? <br /><br /> I am currently seeking a professional opportunity and would be delighted to discuss a future collaboration. <br /><br /> Feel free to contact me to talk about a project, learn more about my profile or simply ask questions. <br /><br /> I remain available and responsive, and I will be happy to reply."
+  },
+  "footer": {
+    "madeWith": "Design and Development made with NextJS & TailwindCSS",
+    "rights": "© 2025 Davy Robert – All rights reserved"
+  },
+  "project": {
+    "viewProject": "VIEW PROJECT",
+    "backToProjects": "Back to projects",
+    "viewGithub": "VIEW ON GITHUB"
+  },
+  "notFound": {
+    "title": "This page does not exist.\nPlease redirect to home.",
+    "description": "Sorry, the project you are looking for is inaccessible or has been moved.",
+    "backHome": "Back to home"
+  },
+  "globalNotFound": {
+    "title": "This page does not exist.\nPlease redirect to home.",
+    "description": "Sorry, the page you are looking for is inaccessible or has been moved.",
+    "backHome": "Back to home"
+  },
+  "maintenance": "The site is currently under development. \nPlease wait...",
+  "loading": "Loading..."
+}

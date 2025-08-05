@@ -1,19 +1,19 @@
 'use client';
 
 import React from 'react';
-import { useTranslation } from '@/context/I18nContext';
+import { useTranslations } from 'next-intl';
 
 const Contact = () => {
-    const { t } = useTranslation();
+    const t = useTranslations('contact');
     return (
         <section id="contact" className="pt-32 px-4">
             <div className="max-w-[1400px] mx-auto flex flex-col items-center">
                 <h2 className="text-center dark:text-[--primary-color] text-[--secondary-color] uppercase text-4xl font-bold mb-12">
-                    <span className="italic dark:text-white text-black">{t('contact.title').split(' ')[0]}</span> {t('contact.title').split(' ')[1]}
+                    <span className="italic dark:text-white text-black">{t('title').split(' ')[0]}</span> {t('title').split(' ')[1]}
                 </h2>
 
                 <div className="max-w-[800px] text-lg leading-7 text-black dark:text-white font-hk text-justify">
-                    <p className="mb-6" dangerouslySetInnerHTML={{__html: t('contact.paragraph')}} />
+                    <p className="mb-6" dangerouslySetInnerHTML={{__html: t('paragraph')}} />
 
                     <a
                         href="mailto:contact@davyrobert.fr"

@@ -3,11 +3,11 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { data_experiences } from '@/datas/datas'
-import { useTranslation } from '@/context/I18nContext'
+import { useTranslations } from 'next-intl'
 
 const MesExperiences = () => {
    const [isMobile, setIsMobile] = useState(false)
-   const { t } = useTranslation()
+   const t = useTranslations('mesExperiences')
 
    useEffect(() => {
       const handleResize = () => {
@@ -22,7 +22,7 @@ const MesExperiences = () => {
    return (
       <section id="experience" className="pt-32 px-4 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
          <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
-            {t('mesExperiences.title')}
+            {t('title')}
          </h2>
 
          {isMobile ? (

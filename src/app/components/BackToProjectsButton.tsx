@@ -1,11 +1,11 @@
 "use client"
 
-import { useRouter } from 'next/navigation';
-import { useTranslation } from '@/context/I18nContext';
+import { useRouter } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
 
 const BackToProjectsButton = () => {
   const router = useRouter();
-  const { t } = useTranslation();
+  const t = useTranslations('project');
 
   const handleClick = () => {
     router.push('/?scrollToProjets=1');

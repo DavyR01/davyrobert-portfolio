@@ -4,18 +4,18 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import NavbarBackProjects from '@/app/components/NavbarProjects';
 import BackToProjectsButton from '@/app/components/BackToProjectsButton';
-import { useTranslation } from '@/context/I18nContext';
+import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 
 export default function ProjectPage() {
   const params = useParams();
-  const { t } = useTranslation();
+  const t = useTranslations();
   const { slug } = params;
   const project = projects.find((p) => p.projectSlug === slug);
 
   if (!project) return notFound();
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-8 text-black dark:text-white">
+    <section className="max-w-[1400px] mx-auto px-6 py-8 pt-32 text-black dark:text-white">
       <NavbarBackProjects />
       <BackToProjectsButton />
       <div className='md:w-[85%] lg:w-[70%] mx-auto'>
@@ -41,16 +41,32 @@ export default function ProjectPage() {
             </span>
           ))}
         </div>
-        {project.sourceWeb && (
-          <a
-            href={project.sourceWeb}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[--primary-color] hover:text-[--primary-color] hover:font-bold"
-          >
-            {t('project.viewProject')}
-          </a>
-        )}
+        <div className='flex flex-col gap-4 mt-8'>
+          {project.sourceGithub && (
+            <div>
+              <a
+                href={project.sourceGithub}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[--primary-color] hover:text-[--primary-color] hover:font-bold"
+              >
+                {t('project.viewGithub')}
+              </a>
+            </div>
+          )}
+          {project.sourceWeb && (
+            <div>
+            <a
+              href={project.sourceWeb}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[--primary-color] hover:text-[--primary-color] hover:font-bold"
+            >
+              {t('project.viewProject')}
+            </a>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

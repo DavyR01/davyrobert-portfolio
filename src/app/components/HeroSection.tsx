@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { scrollToSection } from '@/utils/scroll';
 import { MdEmail } from 'react-icons/md';
 
 const HeroSection = () => {
@@ -33,12 +33,12 @@ const HeroSection = () => {
             </p>
             
             <div className="pt-4">
-              <Link 
-                href="#projets" 
-                className="inline-block bg-white text-black px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-200 transition-colors"
+              <button 
+                onClick={() => scrollToSection('projets')}
+                className="inline-block bg-white text-black px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-200 transition-colors cursor-pointer border-none"
               >
                 Mes projets
-              </Link>
+              </button>
             </div>
 
             {/* Apps row */}

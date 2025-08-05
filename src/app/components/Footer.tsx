@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion"; // 👈 Import
 import React from "react";
-import { useTranslation } from "@/context/I18nContext";
+import { useTranslations } from 'next-intl';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
-   const { t } = useTranslation();
+   const t = useTranslations('footer');
    return (
       <motion.footer
          id="contact"
@@ -53,10 +53,10 @@ const Footer = () => {
          {/* Copyright*/}
          <div className="mt-10 text-center space-y-2 mx-4">
             <p className="text-sm dark:text-gray-500 text-gray-900">
-               {t('footer.madeWith')}
+               {t('madeWith')}
             </p>
             <p className="text-sm text-[--secondary-color] dark:text-[--primary-color] font-semibold">
-               {t('footer.rights')}
+               {t('rights')}
             </p>
          </div>
 

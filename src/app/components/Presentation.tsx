@@ -9,13 +9,13 @@ import MatrixCanvas from './ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
 import { qualities, methods } from '@/datas/datas';
 import Button from './ui/Button';
-import { useTranslation } from '@/context/I18nContext';
+import { useTranslations } from 'next-intl';
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
    const { theme } = useTheme();
    const [mounted, setMounted] = useState(false);
-   const { t } = useTranslation();
+   const t = useTranslations('presentation');
 
    useEffect(() => {
       setMounted(true);
@@ -25,20 +25,22 @@ const Presentation = () => {
       <section
          ref={sectionRef}
          id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-12 lg:pt-16 pt-10 scroll-mt-20"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-12 pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
       >
          {/* Canvas Matrix background effect */}
          {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
          {/* Présentation texte */}
          <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold text-center lg:text-left">{t('presentation.hello')}</h2>
-            <h1 className="text-[64px] my-4 font-bold text-center lg:text-left">
+            <h2 className="text-4xl font-bold text-center lg:text-left ">{t('hello')}</h2>
+            <h1 className="text-[64px] my-4 font-bold text-center lg:text-left ">
                <span className="italic font-light">Davy</span>{' '}
                <span className="">ROBERT</span>
             </h1>
-            <h2 className="text-4xl font-bold mb-6 text-center lg:text-left">
-               {t('presentation.fullstack')}
+            <h2 className="text-4xl font-bold mb-6 text-center lg:text-left ">
+               Et j&#39;exerce en tant que <br />
+               <span className="text-[--primary-color]">Développeur Full</span>{' '}
+               <span className="text-[--primary-color]">Stack</span>
             </h2>
 
             {/* Image profil <=1024px */}
@@ -54,7 +56,7 @@ const Presentation = () => {
 
             <div className="flex flex-col xl:flex-row items-center lg:items-start my-6 gap-2 xl:gap-4">
               <span className="text-lg font-bold text-[--primary-color] mb-2 xl:mb-0 flex items-center gap-2 min-w-max">
-                {t('presentation.methodsTitle')}
+                {t('methodsTitle')}
               </span>
               <div className="flex flex-row flex-wrap gap-2 xl:gap-4 lg:justify-start mt-0 justify-center">
                 {methods.items.map((m) => (
@@ -96,7 +98,7 @@ const Presentation = () => {
                   href="/download/CV_davy_robert_2025.pdf"
                   download
                >
-                  {t('presentation.cvStandard')}
+                  {t('cvStandard')}
                </Button>
                <Button
                   variant="secondary"
@@ -104,7 +106,7 @@ const Presentation = () => {
                   download
                   withShineEffect
                >
-                  {t('presentation.cvLong')}
+                  {t('cvLong')}
                </Button>
                <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
                   <a

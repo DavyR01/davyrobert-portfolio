@@ -3,9 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import { useTranslation } from '@/context/I18nContext';
+import { useTranslations, useLocale } from 'next-intl';
+import { useRouter, usePathname } from '@/i18n/navigation';
 import styles from './Navbar.module.css';
 import BurgerIcon from './ui/BurgerIcon';
+import { scrollToSection } from '@/utils/scroll';
 
 const sections = ['introduction', 'skills', 'experience', 'projets', 'contact'] as const;
 
@@ -15,8 +17,15 @@ const Navbar = () => {
    const [menuOpen, setMenuOpen] = useState(false);
    const [activeSection, setActiveSection] = useState<SectionId | null>(null);
    const navRef = useRef<HTMLDivElement>(null);
-   const { t, locale, setLocale } = useTranslation();
-   const toggleLocale = () => setLocale(locale === 'fr' ? 'en' : 'fr');
+   const t = useTranslations('navbar');
+   const locale = useLocale();
+   const router = useRouter();
+   const pathname = usePathname();
+   
+   const toggleLocale = () => {
+      const newLocale = locale === 'fr' ? 'en' : 'fr';
+      router.push(pathname, { locale: newLocale });
+   };
 
    useEffect(() => {
       // Intersection Observer to detect active section
@@ -118,29 +127,59 @@ const Navbar = () => {
             >
                <ul className="flex flex-col md:flex-row gap-6 md:gap-9 items-center list-none">
                   <li>
-                     <a href="#introduction" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='introduction'?'text-[--primary-color]':''}`}>
-                        {t('navbar.about')}
-                     </a>
+                     <button 
+                        onClick={() => {
+                           scrollToSection('introduction');
+                           setMenuOpen(false);
+                        }} 
+                        className={`${styles.navLink} ${activeSection==='introduction'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                     >
+                        {t('about')}
+                     </button>
                   </li>
                   <li>
-                     <a href="#skills" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='skills'?'text-[--primary-color]':''}`}>
-                        {t('navbar.skills')}
-                     </a>
+                     <button 
+                        onClick={() => {
+                           scrollToSection('skills');
+                           setMenuOpen(false);
+                        }} 
+                        className={`${styles.navLink} ${activeSection==='skills'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                     >
+                        {t('skills')}
+                     </button>
                   </li>
                   <li>
-                     <a href="#experience" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='experience'?'text-[--primary-color]':''}`}>
-                        {t('navbar.experience')}
-                     </a>
+                     <button 
+                        onClick={() => {
+                           scrollToSection('experience');
+                           setMenuOpen(false);
+                        }} 
+                        className={`${styles.navLink} ${activeSection==='experience'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                     >
+                        {t('experience')}
+                     </button>
                   </li>
                   <li>
-                     <a href="#projets" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='projets'?'text-[--primary-color]':''}`}>
-                        {t('navbar.projects')}
-                     </a>
+                     <button 
+                        onClick={() => {
+                           scrollToSection('projets');
+                           setMenuOpen(false);
+                        }} 
+                        className={`${styles.navLink} ${activeSection==='projets'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                     >
+                        {t('projects')}
+                     </button>
                   </li>
                   <li>
-                     <a href="#contact" onClick={() => setMenuOpen(false)} className={`${styles.navLink} ${activeSection==='contact'?'text-[--primary-color]':''}`}>
-                        {t('navbar.contact')}
-                     </a>
+                     <button 
+                        onClick={() => {
+                           scrollToSection('contact');
+                           setMenuOpen(false);
+                        }} 
+                        className={`${styles.navLink} ${activeSection==='contact'?'text-[--primary-color]':''} bg-transparent border-none cursor-pointer`}
+                     >
+                        {t('contact')}
+                     </button>
                   </li>
                </ul>
                <button
