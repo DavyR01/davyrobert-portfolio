@@ -110,12 +110,20 @@ const Navbar = () => {
                </Link>
 
                {/* Menu burger mobile */}
-               <button
-                  className="md:hidden flex flex-col justify-center items-center w-10 h-6 space-y-1 cursor-pointer z-50"
-                  onClick={() => setMenuOpen(!menuOpen)}
-               >
-                  <BurgerIcon />
-               </button>
+               <div className="flex items-center gap-6">
+                  <button
+                     onClick={toggleLocale}
+                     className="md:mt-0 block md:hidden border border-[--primary-color] px-2 py-1 rounded"
+                  >
+                     {locale === 'fr' ? 'EN' : 'FR'}
+                  </button>
+                  <button
+                     className="md:hidden flex flex-col justify-center items-center w-10 h-6 space-y-1 cursor-pointer z-50"
+                     onClick={() => setMenuOpen(!menuOpen)}
+                  >
+                     <BurgerIcon />
+                  </button>
+               </div>
             </div>
 
             {/* Menu navigation */}
@@ -184,14 +192,14 @@ const Navbar = () => {
                   <li>
                      <button
                         onClick={toggleLocale}
-                        className="mt-6 md:mt-0 border border-[--primary-color] px-2 py-1 rounded"
+                        className="mt-6 md:mt-0 hidden md:block border border-[--primary-color] px-2 py-1 rounded"
                      >
                         {locale === 'fr' ? 'EN' : 'FR'}
                      </button>
                   </li>
                </ul>
                {menuOpen && (
-                  <div className="md:hidden h-[1px] w-[100%] bg-[--primary-color] opacity-50 mx-auto mt-6" />
+                  <div className="md:hidden h-[1px] w-[100%] bg-[--primary-color] opacity-50 mx-auto" />
                )}
             </nav>
          </div>
