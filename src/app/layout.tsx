@@ -16,6 +16,24 @@ export default async function RootLayout({ children }: Props) {
     <html className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        
+        {/* Favicons adaptatifs selon le thème */}
+        <link 
+          rel="icon" 
+          href="/assets/logos/davy-logo-black-trans.png" 
+          media="(prefers-color-scheme: light)"
+        />
+        <link 
+          rel="icon" 
+          href="/assets/logos/davy-logo-white-trans.png" 
+          media="(prefers-color-scheme: dark)"
+        />
+        
+        {/* Favicon par défaut (fallback) */}
+        {/* <link rel="icon" href="/assets/logos/davy-logo-black-trans.png" />
+         */}
+        {/* Apple Touch Icon */}
+        <link rel="apple-touch-icon" href="/assets/logos/davy-logo-black-trans.png" />
       </head>
       <body>{children}</body>
     </html>
