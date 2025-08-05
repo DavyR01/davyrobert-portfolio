@@ -17,6 +17,7 @@ export default {
             xxs: "280px",
             xs: "390px",
             xs420: "420px", 
+            xs480: "480px", 
             "xs892-max": { max: "892px" },
             "xs893": { min: "893px" },
          },

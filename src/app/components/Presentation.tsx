@@ -25,19 +25,19 @@ const Presentation = () => {
       <section
          ref={sectionRef}
          id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-12 pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-12 pt-[100px] xs480:pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
       >
          {/* Canvas Matrix background effect */}
          {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
          {/* Présentation texte */}
          <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold text-center lg:text-left ">{t('hello')}</h2>
-            <h1 className="text-[64px] my-4 font-bold text-center lg:text-left ">
+            <h2 className="xs480:text-4xl text-[1.4rem] font-bold text-center lg:text-left ">{t('hello')}</h2>
+            <h1 className="xs480:text-[64px] text-[2rem] my-4 font-bold text-center lg:text-left ">
                <span className="italic font-light">Davy</span>{' '}
                <span className="">ROBERT</span>
             </h1>
-            <h2 className="text-4xl font-bold mb-6 text-center lg:text-left ">
+            <h2 className="xs480:text-4xl text-[1.4rem] font-bold mb-6 text-center lg:text-left ">
                Et j&#39;exerce en tant que <br />
                <span className="text-[--primary-color]">Développeur Full</span>{' '}
                <span className="text-[--primary-color]">Stack</span>
