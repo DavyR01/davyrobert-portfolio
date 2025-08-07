@@ -4,11 +4,9 @@ import { usePathname, useRouter } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 
 const NavbarBackProjects = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const locale = useLocale();

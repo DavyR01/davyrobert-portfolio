@@ -56,14 +56,14 @@ export default function ProjectPage() {
           )}
           {project.sourceWeb && (
             <div>
-            <a
-              href={project.sourceWeb}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[--primary-color] hover:text-[--primary-color] hover:font-bold"
-            >
-              {t('project.viewProject')}
-            </a>
+              <a
+                href={project.sourceWeb}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[--primary-color] hover:text-[--primary-color] hover:font-bold"
+              >
+                {t('project.viewProject')}
+              </a>
             </div>
           )}
         </div>

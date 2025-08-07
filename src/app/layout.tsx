@@ -49,7 +49,7 @@ export default async function RootLayout({ children }: Props) {
         {/* Apple Touch Icon */}
         <link rel="apple-touch-icon" href="/assets/logos/davy-logo-black-trans.png" />
       </head>
-      <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
+      <body className="antialiased font-grotesk flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>
