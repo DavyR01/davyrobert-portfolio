@@ -7,7 +7,6 @@ import "@/styles/globals.css";
 import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
 import Script from "next/script";
 import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../../utils/fonts";
-import Footer from "../components/Footer";
 import ThemeToggle from "../components/ui/ThemeToggle";
 
 export const metadata = {
@@ -50,7 +49,7 @@ export default async function LocaleLayout({
                 <main className="flex-1">
                   {children}
                 </main>
-                <Footer />
+                {/* <Footer /> */}
               </>
             )}
           </ThemeProvider>
