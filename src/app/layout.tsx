@@ -7,7 +7,10 @@ import '@/styles/globals.css';
 import Script from 'next/script';
 import ThemeToggle from './components/ui/ThemeToggle';
 import { NextIntlClientProvider } from 'next-intl';
-import frMessages from '@/messages/fr.json';
+import { getMessages } from 'next-intl/server';
+import { routing } from '@/i18n/routing';
+import { cookies } from 'next/headers';
+import Footer from './components/Footer';
 
 type Props = {
   children: ReactNode;
@@ -17,9 +20,16 @@ type Props = {
 // According to next-intl documentation, root layout must have html/body structure
 export default async function RootLayout({ children }: Props) {
   const themeClass = await getServerThemeClass();
+  
+  // Detect locale from cookies or use default
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('NEXT_LOCALE')?.value || routing.defaultLocale;
+  
+  // Get messages for the detected locale
+  const messages = await getMessages({ locale });
 
   return (
-    <html className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
+    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
       <head>
         {/* Favicons adaptatifs selon le thème */}
         <link
@@ -43,10 +53,13 @@ export default async function RootLayout({ children }: Props) {
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>
-        <NextIntlClientProvider messages={frMessages}>
+        <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <ThemeToggle />
-            {children}
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
