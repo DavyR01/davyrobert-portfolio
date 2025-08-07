@@ -9,9 +9,22 @@
   "presentation": {
     "hello": "Bonjour je me présente",
     "fullstack": "Et j'exerce en tant que Développeur Full Stack",
+    "fullstackTitle": "Et j'exerce en tant que",
+    "fullstackRole": "Développeur Full Stack",
     "methodsTitle": "Méthodes adoptées :",
     "cvStandard": "Mon CV format standard",
-    "cvLong": "Mon CV format long"
+    "cvLong": "Mon CV format long",
+    "paragraph1": "Après un parcours riche, varié et diversifié, j'ai décidé de me spécialiser dans le domaine de l'informatique et plus particulièrement dans le développement web et la conception d'applications. Épris par le monde de l'entrepreneuriat et les nouvelles technologies, j'apprends et évolue continuellement selon les compétences requises et la demande sur le marché.",
+    "paragraph2": "Je conçois, développe et optimise des applications web, d'une idée à la réalisation jusqu'à la mise en production. Je consacre du temps à me former en autodidacte et m'adapte en permanence aux innovations et nouvelles technologies émergentes. Un de mes objectifs est donc de viser à exploiter celles qui s'avèrent pertinentes pour mener à bien les missions qui me sont confiées.",
+    "paragraph3": "De ce fait, je souhaite apporter ma contribution dans des projets ambitieux et porteurs de transformations, auprès d'entreprises engagées et partageant des valeurs fortes."
+  },
+  "qualities": {
+    "proactif": "Proactif",
+    "rigoureux": "Rigoureux",
+    "autonome": "Autonome",
+    "adaptatif": "Adaptatif",
+    "goutChallenge": "Goût du challenge",
+    "curieux": "Curieux"
   },
   "mesProjets": {
     "title": "Mes Projets & Réalisations",

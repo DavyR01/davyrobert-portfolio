@@ -393,6 +393,38 @@ const methods = {
    ],
 };
 
+// Function to generate qualities with translations
+const getQualities = (tQualities: (key: string) => string): Qualities => ({
+   title: 'Qualités', // This could also be translated if needed
+   items: [
+      {
+         label: tQualities('proactif'),
+         icon: <HiLightningBolt size={20} className="inline" />,
+      },
+      {
+         label: tQualities('rigoureux'),
+         icon: <BsCheck2Square size={20} className="inline" />,
+      },
+      {
+         label: tQualities('autonome'),
+         icon: <HiOutlineUser size={20} className="inline" />,
+      },
+      {
+         label: tQualities('adaptatif'),
+         icon: <FiRefreshCw size={20} className="inline" />,
+      },
+      {
+         label: tQualities('goutChallenge'),
+         icon: <FiTarget size={20} className="inline" />,
+      },
+      {
+         label: tQualities('curieux'),
+         icon: <HiOutlineQuestionMarkCircle size={20} className="inline" />,
+      },
+   ],
+});
+
+// Static qualities for backward compatibility
 const qualities: Qualities = {
    title: 'Qualités',
    items: [
@@ -423,5 +455,5 @@ const qualities: Qualities = {
    ],
 };
 
-export { categories, data_experiences, methods, projects, qualities };
+export { categories, data_experiences, getQualities, methods, projects, qualities };
 

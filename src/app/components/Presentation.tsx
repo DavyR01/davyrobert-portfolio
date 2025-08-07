@@ -7,7 +7,7 @@ import { MdEmail } from 'react-icons/md'
 import MatrixCanvas from './ui/MatrixCanvas';
 // import MatrixCanvas from '@/app/components/ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
-import { qualities, methods } from '@/datas/datas';
+import { getQualities, methods } from '@/datas/datas';
 import Button from './ui/Button';
 import { useTranslations } from 'next-intl';
 
@@ -16,6 +16,34 @@ const Presentation = () => {
    const { theme } = useTheme();
    const [mounted, setMounted] = useState(false);
    const t = useTranslations('presentation');
+   const tQualities = useTranslations('qualities');
+
+   // Function to highlight keywords based on language
+   const highlightKeywords = (text: string, keywords: string[]) => {
+      const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
+      return text.replace(regex, '<span class="keyword-highlight">$1</span>');
+   };
+
+   // Keywords for different paragraphs in French and English
+   const getKeywords = () => {
+      const locale = t('hello').includes('Bonjour') ? 'fr' : 'en';
+      
+      if (locale === 'fr') {
+         return {
+            paragraph1: ['spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'nouvelles technologies'],
+            paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte'],
+            paragraph3: ['projets ambitieux', 'transformations']
+         };
+      } else {
+         return {
+            paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies'],
+            paragraph2: ['design', 'develop', 'optimize', 'self-training'],
+            paragraph3: ['ambitious', 'transformative projects']
+         };
+      }
+   };
+
+   const keywords = getKeywords();
 
    useEffect(() => {
       setMounted(true);
@@ -34,13 +62,11 @@ const Presentation = () => {
          <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
             <h2 className="xs480:text-4xl text-[1.4rem] font-bold text-center lg:text-left ">{t('hello')}</h2>
             <h1 className="xs480:text-[64px] text-[2rem] my-4 font-bold text-center lg:text-left ">
-               <span className="italic font-light">Davy</span>{' '}
-               <span className="">ROBERT</span>
+               <span className="">Davy ROBERT</span>
             </h1>
             <h2 className="xs480:text-4xl text-[1.4rem] font-bold mb-6 text-center lg:text-left ">
-               Et j&apos;exerce en tant que <br />
-               <span className="text-[--primary-color]">Développeur Full</span>{' '}
-               <span className="text-[--primary-color]">Stack</span>
+               {t('fullstackTitle')} <br />
+               <span className="text-[--primary-color]">{t('fullstackRole')}</span>
             </h2>
 
             {/* Image profil <=1024px */}
@@ -55,42 +81,32 @@ const Presentation = () => {
             </div>
 
             <div className="flex flex-col xl:flex-row items-center lg:items-start my-6 gap-2 xl:gap-4">
-              <span className="text-lg font-bold text-[--primary-color] mb-2 xl:mb-0 flex items-center gap-2 min-w-max">
-                {t('methodsTitle')}
-              </span>
-              <div className="flex flex-row flex-wrap gap-2 xl:gap-4 lg:justify-start mt-0 justify-center">
-                {methods.items.map((m) => (
-                  <span
-                    key={m.label}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-medium shadow-sm text-base border border-gray-300 dark:border-white/20"
-                  >
-                    {m.icon}
-                    {m.label}
-                  </span>
-                ))}
-              </div>
+               <span className="text-lg font-bold text-[--primary-color] mb-2 xl:mb-0 flex items-center gap-2 min-w-max">
+                  {t('methodsTitle')}
+               </span>
+               <div className="flex flex-row flex-wrap gap-2 xl:gap-4 lg:justify-start mt-0 justify-center">
+                  {methods.items.map((m) => (
+                     <span
+                        key={m.label}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-medium shadow-sm text-base border border-gray-300 dark:border-white/20"
+                     >
+                        {m.icon}
+                        {m.label}
+                     </span>
+                  ))}
+               </div>
             </div>
 
             <div className="text-base mb-8 dark:text-gray-300 text-gray-700 space-y-4">
-               <p>
-                  Après un parcours riche, varié et diversifié, j&apos;ai décidé de me <span className="keyword-highlight">spécialiser</span> dans le domaine de l&apos;<span className="keyword-highlight">informatique</span> et plus particulièrement dans le <span className="keyword-highlight">développement web</span> et la <span className="keyword-highlight">conception d&apos;applications</span>.
-                  Épris par le monde de l&apos;<span className="keyword-highlight">entrepreneuriat</span> et les <span className="keyword-highlight">nouvelles technologies</span>, j&apos;apprends et évolue continuellement selon les compétences requises et la demande sur le marché.
-               </p>
-               
-               <p>
-                  Je <span className="keyword-highlight">conçois</span>, <span className="keyword-highlight">développe</span> et <span className="keyword-highlight">optimise</span> des applications web, d&apos;une idée à la réalisation jusqu&apos;à la mise en production.
-                  Je consacre du temps à me former en <span className="keyword-highlight">autodidacte</span> et m&apos;adapte en permanence aux innovations et nouvelles technologies émergentes. <br /> Un de mes objectifs est donc de viser à exploiter celles qui s&apos;avèrent pertinentes pour mener à bien les missions qui me sont confiées.
-               </p>
-               
-               <p>
-                  De ce fait, je souhaite apporter ma contribution dans des <span className="keyword-highlight">projets ambitieux</span> et porteurs de <span className="keyword-highlight">transformations</span>, auprès d&apos;entreprises engagées et partageant des valeurs fortes.
-               </p>
-               
+               <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph1'), keywords.paragraph1) }} />
 
+               <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph2'), keywords.paragraph2) }} />
+
+               <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph3'), keywords.paragraph3) }} />
             </div>
 
             <div className="flex flex-wrap gap-4 mb-8 w-full justify-center md:justify-start">
-               {qualities.items.map((q) => (
+               {getQualities(tQualities).items.map((q) => (
                   <span
                      key={q.label}
                      className="
