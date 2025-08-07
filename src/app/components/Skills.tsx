@@ -69,8 +69,8 @@ const Skills = () => {
             {/* 🔹 Mobile <640px (flexible grid responsive) */}
             <div className="sm:hidden w-full max-w-[1200px] mx-auto flex flex-col gap-12">
                 {categories.map((cat) => (
-                    <div key={cat.title} className="flex flex-col items-center gap-6 px-4">
-                        <h3 className="text-3xl font-semibold dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">{cat.title}</h3>
+                    <div key={cat.titleKey} className="flex flex-col items-center gap-6 px-4">
+                        <h3 className="text-3xl font-semibold dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">{t(`categories.${cat.titleKey}`)}</h3>
                         <div className="grid grid-cols-1 xxs:grid-cols-2 xs:grid-cols-3 gap-y-6 xxs:gap-x-12 xs:gap-x-20 w-full justify-items-center">
                             {cat.items.map(({ icon, label }, i) => (
                                 <div
@@ -93,13 +93,13 @@ const Skills = () => {
             <div className="hidden sm:grid w-full max-w-[1200px] lg:max-w-[1200px] mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {categories.map((cat, idx) => (
                     <div
-                        key={cat.title}
+                        key={cat.titleKey}
                         className={`flex flex-col items-center gap-6 px-6 py-4
-                            ${idx !== 0 ? 'border-l border-[var(--border-color)]' : ''} ${cat.title === 'Outils' ? 'md:border-l-0 lg:border-l lg:border-[var(--border-color)]' : ''} ${cat.title === 'Backend' ? 'sm:border-l-0 md:border-l md:border-[var(--border-color)] lg:border-l lg:border-[var(--border-color)]' : ''} ${cat.title === 'Outils' ? 'md:col-span-3 md:mx-auto lg:col-span-1 lg:mx-0' : ''}
+                            ${idx !== 0 ? 'border-l border-[var(--border-color)]' : ''} ${cat.titleKey === 'tools' ? 'md:border-l-0 lg:border-l lg:border-[var(--border-color)]' : ''} ${cat.titleKey === 'backend' ? 'sm:border-l-0 md:border-l md:border-[var(--border-color)] lg:border-l lg:border-[var(--border-color)]' : ''} ${cat.titleKey === 'tools' ? 'md:col-span-3 md:mx-auto lg:col-span-1 lg:mx-0' : ''}
                         `}
                     >
 
-                        <h3 className="text-3xl font-semibold text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{cat.title}</h3>
+                        <h3 className="text-3xl font-semibold text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t(`categories.${cat.titleKey}`)}</h3>
                         <div className="grid grid-cols-2 gap-6 lg:gap-x-14 lg:gap-y-8 w-full">
                             {cat.items.map(({ icon, label }, i) => (
                                 <div

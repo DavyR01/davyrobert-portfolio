@@ -232,7 +232,7 @@ const data_experiences: DataExperience[] = [
 
 const categories: Category[] = [
    {
-      title: 'Langages',
+      titleKey: 'languages',
       items: [
          { icon: <SiTypescript />, label: 'typescript' },
          { icon: <DiJavascript />, label: 'Javascript' },
@@ -264,7 +264,7 @@ const categories: Category[] = [
       ],
    },
    {
-      title: 'Frontend',
+      titleKey: 'frontend',
       items: [
          {
             icon: (
@@ -295,7 +295,7 @@ const categories: Category[] = [
       ],
    },
    {
-      title: 'Backend',
+      titleKey: 'backend',
       items: [
          { icon: <SiNodedotjs />, label: 'NodeJS' },
          { icon: <DiDotnet />, label: '.NET' },
@@ -305,7 +305,7 @@ const categories: Category[] = [
       ],
    },
    {
-      title: 'Outils',
+      titleKey: 'tools',
       items: [
          { icon: <FaDocker />, label: 'Docker' },
          { icon: <FaAws />, label: 'AWS' },

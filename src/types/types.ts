@@ -29,7 +29,7 @@ export type CategoryItem = {
 };
 
 export type Category = {
-  title: string;
+  titleKey: string;
   items: CategoryItem[];
 };
 

@@ -37,7 +37,13 @@
     "stack1": "NextJS, ReactJS, NodeJS avec TailwindCSS",
     "stack2": "Angular, C#",
     "stack3": "Java / Kotlin avec Android Studio",
-    "stack4": "Et plus encore..."
+    "stack4": "Et plus encore...",
+    "categories": {
+      "languages": "Langages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils"
+    }
   },
   "myExperiences": {
     "title1": "Mes",
