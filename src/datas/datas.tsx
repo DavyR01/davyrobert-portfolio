@@ -7,7 +7,7 @@ import { BsCheck2Square } from 'react-icons/bs';
 import { DiDotnet, DiJavascript } from 'react-icons/di';
 import { FaDocker } from 'react-icons/fa';
 import { FaAws, FaBitbucket } from 'react-icons/fa6';
-import { FiRefreshCw } from 'react-icons/fi';
+import { FiRefreshCw, FiTarget } from 'react-icons/fi';
 import { GrMysql } from 'react-icons/gr';
 import { HiLightningBolt, HiOutlineQuestionMarkCircle, HiOutlineUser } from 'react-icons/hi';
 import { SiKotlin, SiNodedotjs, SiOvh, SiPostgresql, SiReact, SiSqlite, SiTailwindcss, SiTypescript, SiVercel } from 'react-icons/si';
@@ -411,6 +411,10 @@ const qualities: Qualities = {
       {
          label: "Adaptatif",
          icon: <FiRefreshCw size={20} className="inline" />,
+      },
+      {
+         label: 'Goût du challenge',
+         icon: <FiTarget size={20} className="inline" />,
       },
       {
          label: 'Curieux',

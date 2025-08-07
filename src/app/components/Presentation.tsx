@@ -79,7 +79,7 @@ const Presentation = () => {
                
                <p>
                   Je <span className="keyword-highlight">conçois</span>, <span className="keyword-highlight">développe</span> et <span className="keyword-highlight">optimise</span> des applications web, d&apos;une idée à la réalisation jusqu&apos;à la mise en production.
-                  Je consacre du temps à me former en <span className="keyword-highlight">autodidacte</span> et m&apos;adapte en permanence aux innovations et nouvelles technologies émergentes. <br /> L&apos;objectif est donc de viser à exploiter celles qui s&apos;avèrent pertinentes pour mener à bien les missions qui me sont confiées.
+                  Je consacre du temps à me former en <span className="keyword-highlight">autodidacte</span> et m&apos;adapte en permanence aux innovations et nouvelles technologies émergentes. <br /> Un de mes objectifs est donc de viser à exploiter celles qui s&apos;avèrent pertinentes pour mener à bien les missions qui me sont confiées.
                </p>
                
                <p>
