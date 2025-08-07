@@ -53,7 +53,19 @@
     "title1": "My",
     "title2": "Projects",
     "title3": "Achievements",
-    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects."
+    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects.",
+    "description": {
+      "ecosystemQVMD": "Check out the Ecosystem QVMD application, a professional platform for waste management between service providers and waste holders",
+      "makeSense": "Application of decision-making between companies, institutions and communities",
+      "wildRent": "Hiking application that allows you to track your hikes.",
+      "myCrit": "Temporary job search application.",
+      "eurowatt": "Learn more about the Eurowatt application, an energy management application.",
+      "virtuelMetArt": "Explore the Virtual Met Art application, an art management application.",
+      "franceTrivia": "Discover the France Trivia application, a quiz about France that allows you to test your knowledge about France.",
+      "blogProject": "Check out a personal blog project that allows you to share your ideas and articles.",
+      "louisVuitton": "Explore the Louis Vuitton project, an e-commerce website project developed in collaboration with other developers."
+    },
+    "learnMore": "LEARN MORE..."
   },
   "contact": {
     "title": "Contact Me",

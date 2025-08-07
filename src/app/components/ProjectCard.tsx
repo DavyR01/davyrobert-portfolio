@@ -6,11 +6,12 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
 import { ProjectCardProps } from "@/types/types";
 import { Link } from '@/i18n/navigation';
+import { useTranslations } from "next-intl";
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
     index,
     name,
-    description,
+    descriptionKey,
     tags,
     image,
     sourceWeb,
@@ -19,6 +20,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     maxTagsCount,
  }) => {
     //   const tiltRef = useRef(null);
+
+    const t = useTranslations('myProjects');
+
  
     return (
        <motion.div
@@ -45,7 +49,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                       />
                       {/* Overlay au hover */}
                       <div className="absolute inset-0 bg-black/70 hidden group-hover:flex items-center justify-center transition-opacity duration-300">
-                         <span className="text-white text-2xl font-bold">EN SAVOIR PLUS</span>
+                         <span className="text-white text-2xl font-bold">{t("learnMore")}</span>
                       </div>
                    </Link>
                 </div>
@@ -77,7 +81,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
  
                 {/* Description */}
                 <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem] px-5">
-                   {description}
+                   {/* {t(descriptionKey)} */}
+                   {t(`description.${descriptionKey}`)}
                 </p>
  
  

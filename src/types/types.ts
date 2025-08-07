@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export type ProjectCardProps = {
   index: number;
   name: string;
-  description: string;
+  descriptionKey: string;
   tags: { name: string; color: string }[];
   image: string;
   sourceWeb?: string;

@@ -15,7 +15,7 @@ import { SiKotlin, SiNodedotjs, SiOvh, SiPostgresql, SiReact, SiSqlite, SiTailwi
 const projects: Omit<ProjectCardProps, 'index'>[] = [
    {
       name: "Ecosystem QVMD",
-      description: "Lorem ip",
+      descriptionKey: "ecosystemQVMD",
       tags: [
          { name: "ANGULAR", color: "dark:text-[--primary-color]" },
          { name: "TYPESCRIPT", color: "dark:text-[--primary-color]" },
@@ -30,7 +30,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "Make Sense",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descriptionKey: "makeSense",
       tags: [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG1", color: "dark:text-[--primary-color]" },
@@ -57,7 +57,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "Wild Rent",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descriptionKey: "wildRent",
       tags: [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
@@ -71,7 +71,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "MyCrit Job",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      descriptionKey: "myCrit",
       tags: [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
@@ -96,7 +96,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "Eurowatt Super7",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      descriptionKey: "eurowatt",
       tags: [
          { name: "PHP", color: "dark:text-[--primary-color]" },
          { name: "TEST", color: "dark:text-[--primary-color]" },
@@ -122,7 +122,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "Virtual Met'Art",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descriptionKey: "virtuelMetArt",
       tags: [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
@@ -135,7 +135,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "France Trivia",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descriptionKey: "franceTrivia",
       tags: [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
@@ -148,7 +148,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "Blog Project JS",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descriptionKey: "blogProject",
       tags: [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
@@ -161,7 +161,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
    },
    {
       name: "Louis Vuitton",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      descriptionKey: "louisVuitton",
       tags: [
          { name: "REACT JS", color: "dark:text-[--primary-color]" },
          { name: "SHAREPOINT", color: "dark:text-[--primary-color]" },
@@ -171,6 +171,8 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
       projectSlug: "louisvuitton",
    },
 ];
+
+
 
 const data_experiences: DataExperience[] = [
    {
