@@ -5,7 +5,7 @@ import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, s
 import { ThemeProvider } from '@/context/ThemeContext';
 import '@/styles/globals.css';
 import Script from 'next/script';
-import ThemeToggle from './components/ui/ThemeToggle';
+// import ThemeToggle from './components/ui/ThemeToggle';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -55,7 +55,7 @@ export default async function RootLayout({ children }: Props) {
         </Script>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <main className="flex-1">
               {children}
             </main>

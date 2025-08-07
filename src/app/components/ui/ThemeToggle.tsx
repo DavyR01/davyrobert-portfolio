@@ -2,11 +2,16 @@
 'use client';
 
 import { useTheme } from '@/context/ThemeContext';
-import { KeyboardEvent } from 'react';
+import { KeyboardEvent, useEffect, useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
 
 
@@ -16,6 +21,11 @@ const ThemeToggle = () => {
       toggleTheme();
     }
   };
+
+  // Don't display the button before complete hydratation
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <button
