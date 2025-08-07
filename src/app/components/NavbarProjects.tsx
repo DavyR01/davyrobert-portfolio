@@ -37,10 +37,20 @@ const NavbarBackProjects = () => {
             priority
           />
         </Link>
-        <div className="w-[60px] h-[80px]" />
+
+        {/* Menu burger mobile */}
+        <div className="flex items-center">
+          <button
+            onClick={toggleLocale}
+            className="md:mt-0 block border border-[--primary-color] px-2 py-1 rounded"
+          >
+            {locale === 'fr' ? 'EN' : 'FR'}
+          </button>
+        </div>
+        {/* <div className="w-[60px] h-[80px]" /> */}
 
         {/* Menu navigation */}
-        <nav
+        {/* <nav
           className={`${menuOpen
             ? 'flex bg-[var(--bg-light)] dark:bg-[rgba(var(--bg-dark-menu),0.9)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
             : 'hidden'
@@ -56,7 +66,7 @@ const NavbarBackProjects = () => {
               </button>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
       </div>
       <div className="h-[1px] w-[97%] bg-[--primary-color] mx-auto" />
