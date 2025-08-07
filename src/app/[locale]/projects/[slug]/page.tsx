@@ -30,7 +30,7 @@ export default function ProjectPage() {
             priority
           />
         </div>
-        <p className="text-lg leading-relaxed mb-6">{project.description}</p>
+        <p className="text-lg leading-relaxed mb-6">{t(`myProjects.description.${project.descriptionKey}`)}</p>
         <div className="flex flex-wrap gap-3 mb-6">
           {project.tags.map((tag) => (
             <span
