@@ -20,11 +20,11 @@ type Props = {
 // According to next-intl documentation, root layout must have html/body structure
 export default async function RootLayout({ children }: Props) {
   const themeClass = await getServerThemeClass();
-  
+
   // Detect locale from cookies or use default
   const cookieStore = await cookies();
   const locale = cookieStore.get('NEXT_LOCALE')?.value || routing.defaultLocale;
-  
+
   // Get messages for the detected locale
   const messages = await getMessages({ locale });
 
@@ -56,9 +56,9 @@ export default async function RootLayout({ children }: Props) {
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             {/* <ThemeToggle /> */}
-            <main className="flex-1">
+            <div className="flex-1">
               {children}
-            </main>
+            </div>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
