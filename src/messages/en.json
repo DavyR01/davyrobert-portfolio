@@ -26,12 +26,28 @@
     "goutChallenge": "Challenge-oriented",
     "curieux": "Curious"
   },
-  "mesProjets": {
-    "title": "My Projects & Achievements",
-    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects."
+  "mySkills": {
+    "title1": "My",
+    "title2": "Skills",
+    "interventionTitle": "My areas of intervention and expertise:",
+    "intervention1": "Design and creation of modern, intuitive user-oriented web applications",
+    "intervention2": "Analysis, Research of digital solutions and Resolution of various problems",
+    "intervention3": "Unit, integration and end-to-end testing...",
+    "stacksTitle": "My predominant technical stacks to date:",
+    "stack1": "NextJS, ReactJS, NodeJS with TailwindCSS",
+    "stack2": "Angular, C#",
+    "stack3": "Java / Kotlin with Android Studio",
+    "stack4": "And much more..."
   },
-  "mesExperiences": {
-    "title": "My Experiences"
+  "myExperiences": {
+    "title1": "My",
+    "title2": "Experiences"
+  },
+  "myProjects": {
+    "title1": "My",
+    "title2": "Projects",
+    "title3": "Achievements",
+    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects."
   },
   "contact": {
     "title": "Contact Me",

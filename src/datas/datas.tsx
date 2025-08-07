@@ -370,7 +370,6 @@ const categories: Category[] = [
 ];
 
 const methods = {
-   title: 'Méthodes',
    items: [
       {
          label: 'DevOps',
@@ -424,36 +423,6 @@ const getQualities = (tQualities: (key: string) => string): Qualities => ({
    ],
 });
 
-// Static qualities for backward compatibility
-const qualities: Qualities = {
-   title: 'Qualités',
-   items: [
-      {
-         label: 'Proactif',
-         icon: <HiLightningBolt size={20} className="inline" />,
-      },
-      {
-         label: 'Rigoureux',
-         icon: <BsCheck2Square size={20} className="inline" />,
-      },
-      {
-         label: 'Autonome',
-         icon: <HiOutlineUser size={20} className="inline" />,
-      },
-      {
-         label: "Adaptatif",
-         icon: <FiRefreshCw size={20} className="inline" />,
-      },
-      {
-         label: 'Goût du challenge',
-         icon: <FiTarget size={20} className="inline" />,
-      },
-      {
-         label: 'Curieux',
-         icon: <HiOutlineQuestionMarkCircle size={20} className="inline" />,
-      },
-   ],
-};
 
-export { categories, data_experiences, getQualities, methods, projects, qualities };
+export { categories, data_experiences, getQualities, methods, projects };
 

@@ -26,12 +26,28 @@
     "goutChallenge": "Goût du challenge",
     "curieux": "Curieux"
   },
-  "mesProjets": {
-    "title": "Mes Projets & Réalisations",
-    "intro": "Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d'autres l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai réalisé quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets."
+  "mySkills": {
+    "title1": "Mes",
+    "title2": "Compétences",
+    "interventionTitle": "Mes domaines d'intervention et expertises :",
+    "intervention1": "Conception, création d'applications web modernes et intuitives orientées utilisateur",
+    "intervention2": "Analyse, Recherche de solutions numériques et Résolution de problèmes divers",
+    "intervention3": "Tests unitaires, intégration et end-to-end...",
+    "stacksTitle": "Mes stacks techniques prédominantes à ce jour :",
+    "stack1": "NextJS, ReactJS, NodeJS avec TailwindCSS",
+    "stack2": "Angular, C#",
+    "stack3": "Java / Kotlin avec Android Studio",
+    "stack4": "Et plus encore..."
   },
-  "mesExperiences": {
-    "title": "Mes Expériences"
+  "myExperiences": {
+    "title1": "Mes",
+    "title2": "Expériences"
+  },
+  "myProjects": {
+    "title1": "Mes",
+    "title2": "Projets",
+    "title3": "Réalisations",
+    "intro": "Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d'autres l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai réalisé quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets."
   },
   "contact": {
     "title": "Me Contacter",

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { categories } from '@/datas/datas';
 import React from 'react'
 import iconColors from '@/utils/colors';
+import { useTranslations } from 'next-intl';
 
 // Helper component to render an icon with optional color logic
 const IconDisplay = ({ icon, label, sizeClass }: { icon: React.ReactNode; label: string; sizeClass: string }) => {
@@ -23,10 +24,11 @@ const IconDisplay = ({ icon, label, sizeClass }: { icon: React.ReactNode; label:
             {icon}
         </span>
     );
-}; 
+};
 
 const Skills = () => {
-    
+    const t = useTranslations('mySkills')
+
     return (
         <motion.section
             id="skills"
@@ -36,29 +38,29 @@ const Skills = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-            <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-8">
-                <span className="italic">Mes</span> Compétences
+            <h2 className="text-center text-[var(--primary-color)] uppercase text-4xl font-bold mb-8">
+                <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')}
             </h2>
-            
+
             {/* Sections d'intervention et stacks techniques */}
             <div className="max-w-[1000px] mx-auto mb-12 px-4">
                 <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">Mes domaines d&#39;intervention et expertises :</h3>
+                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('interventionTitle')}</h3>
                         <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li>Conception, création d&#39;applications web modernes et intuitives orientées utilisateur</li>
-                            <li>Analyse, Recherche de solutions numériques et Résolution de problèmes divers</li>
-                            <li>Tests unitaires, intégration et end-to-end...</li>
+                            <li>{t('intervention1')}</li>
+                            <li>{t('intervention2')}</li>
+                            <li>{t('intervention3')}</li>
                         </ul>
                     </div>
-                    
+
                     <div>
-                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">Mes stacks techniques prédominantes à ce jour :</h3>
+                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('stacksTitle')}</h3>
                         <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li>NextJS, ReactJS, NodeJS avec TailwindCSS</li>
-                            <li>Angular, C#</li>
-                            <li>Java / Kotlin avec Android Studio</li>
-                            <li>Et plus encore...</li>
+                            <li>{t('stack1')}</li>
+                            <li>{t('stack2')}</li>
+                            <li>{t('stack3')}</li>
+                            <li>{t('stack4')}</li>
                         </ul>
                     </div>
                 </div>
