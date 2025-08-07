@@ -142,7 +142,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
          { name: "TAG3", color: "dark:text-[--primary-color]" },
       ],
       image: "/projects/france_trivia.png",
-      sourceWeb: "https://quiz-france-trivia.davyrobert.fr/",
+      sourceWeb: "https://france-trivia.davyrobert.fr/",
       sourceGithub: "https://github.com/DavyR01/Projet-P1-WCS",
       projectSlug: "france-trivia",
    },

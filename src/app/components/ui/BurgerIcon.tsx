@@ -4,7 +4,7 @@ const BurgerIcon = () => (
     width="650"
     height="450"
     viewBox="0 0 650 450"
-    className="object-contain"
+    className="w-10 h-10"
   >
     <rect x="0" y="0" width="650" height="70" rx="15" fill="var(--primary-color)" />
     <rect x="0" y="190" width="650" height="70" rx="5" fill="var(--primary-color)" />
