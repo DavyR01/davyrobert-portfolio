@@ -13,13 +13,14 @@ export type ProjectCardProps = {
 };
 
 export type Experience = {
-  title: string;
-  tasks: string[];
+  // title: any;
+  titleKey: string;
+  tasksKey: string[];
 };
 
 export type DataExperience = {
   year: string;
-  experiences: Experience[];
+  experiencesKey: Experience[];
   icons: string[];
 };
 

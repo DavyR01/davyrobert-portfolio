@@ -177,52 +177,52 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
 const data_experiences: DataExperience[] = [
    {
       year: 'XX/XX - XX/XX',
-      experiences: [
+      experiencesKey: [
          {
-            title: 'xxxxx',
-            tasks: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
+            titleKey: 'cccccc',
+            tasksKey: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
          },
          {
-            title: 'xxxxx',
-            tasks: [
+            titleKey: 'cccccc',
+            tasksKey: [
                'Sed do eiusmod tempor incididunt eiusmod tempor incididunt incididunt eiusmod tempor incididunt',
                'Sed do eiusmod tempor incididunt',
             ],
          },
          {
-            title: 'xxxxx',
-            tasks: ['Ex task'],
+            titleKey: 'ccccccc',
+            tasksKey: ['Ex task'],
          },
       ],
       icons: ['file.svg', 'file.svg', 'file.svg'],
    },
    {
       year: 'XXXX',
-      experiences: [
+      experiencesKey: [
          {
-            title: 'xxxxx',
-            tasks: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
+            titleKey: 'xxxxx',
+            tasksKey: ['Lorem ipsum dolor sit amet', 'Consectetur adipiscing elit'],
          },
          {
-            title: 'xxxxx',
-            tasks: [
+            titleKey: 'xxxxx',
+            tasksKey: [
                'Sed do eiusmod tempor incididunt',
                'Sed do eiusmod tempor incididunt eiusmod tempor incididunt',
             ],
          },
          {
-            title: 'xxxxx',
-            tasks: ['Ex task'],
+            titleKey: 'xxxxx',
+            tasksKey: ['Ex task'],
          },
       ],
       icons: ['globe.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'file.svg', 'globe.svg'],
    },
    {
       year: 'XXXX',
-      experiences: [
+      experiencesKey: [
          {
-            title: 'xxxxx',
-            tasks: [
+            titleKey: 'xxxxx',
+            tasksKey: [
                'Lorem ipsum dolor sit asum dolor sit amet',
                'Consectetur adipiscing elit',
             ],
