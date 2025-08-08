@@ -8,6 +8,7 @@ import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
 import Script from "next/script";
 import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../../utils/fonts";
 import ThemeToggle from "../components/ui/ThemeToggle";
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: "Davy Robert - Portfolio",
@@ -49,7 +50,7 @@ export default async function LocaleLayout({
                 <main className="flex-1">
                   {children}
                 </main>
-                {/* <Footer /> */}
+                <Footer />
               </>
             )}
           </ThemeProvider>

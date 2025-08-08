@@ -10,7 +10,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { cookies } from 'next/headers';
-import Footer from './components/Footer';
 
 type Props = {
   children: ReactNode;
@@ -59,7 +58,7 @@ export default async function RootLayout({ children }: Props) {
             <div className="flex-1">
               {children}
             </div>
-            <Footer />
+            {/* <Footer /> */}
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
