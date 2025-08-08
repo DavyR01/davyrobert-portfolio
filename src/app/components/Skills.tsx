@@ -1,7 +1,5 @@
 'use client';
 
-import { SiVercel } from 'react-icons/si';
-
 import { motion } from 'framer-motion';
 import { categories } from '@/datas/datas';
 import React from 'react'

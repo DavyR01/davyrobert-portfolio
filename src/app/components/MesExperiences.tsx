@@ -48,7 +48,7 @@ const MesExperiences = () => {
                               ))}
                               <div className="flex flex-wrap justify-center gap-4 mt-6">
                                  {item.icons.map((icon, k) => (
-                                    <Image key={`mobile-${item.year}-${icon}-${k}`} src={`/assets/icons/${icon}`}
+                                    <Image key={`mobile-${item.year}-${icon}-${k}`} src={`/assets/skills/${icon}`}
                                        alt={icon} width={50} height={50} className="hover:scale-110 transition-transform" />
                                  ))}
                               </div>
@@ -82,7 +82,7 @@ const MesExperiences = () => {
                            {item.icons.map((icon, k) => (
                               <Image
                                  key={`desktop-${item.year}-${icon}-${k}`}
-                                 src={`/assets/icons/${icon}`}
+                                 src={`/assets/skills/${icon}`}
                                  alt={icon}
                                  width={60}
                                  height={60}
@@ -127,7 +127,7 @@ const MesExperiences = () => {
                                           <h3 className="text-[--primary-color] font-bold text-3xl break-words">{exp.titleKey}</h3>
                                           <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasksKey.map((task, taskIndex) => (
-                                                <li key={`desktop-${task}-${taskIndex}`} className="break-words">S{task}</li>
+                                                <li key={`desktop-${task}-${taskIndex}`} className="break-words">{task}</li>
                                              ))}
                                           </ul>
                                        </div>
