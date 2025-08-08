@@ -42,6 +42,12 @@ export default async function RootLayout({ children }: Props) {
           media="(prefers-color-scheme: dark)"
         />
 
+        {/* Devicon icons stylesheet */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+
         {/* Favicon par défaut (fallback) */}
         {/* <link rel="icon" href="/assets/logos/davy-logo-black-trans.png" />
          */}

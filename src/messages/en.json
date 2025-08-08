@@ -52,7 +52,7 @@
   "myProjects": {
     "title1": "My",
     "title2": "Projects",
-    "title3": "Achievements",
+    "title3": "Fulfillments",
     "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects.",
     "description": {
       "ecosystemQVMD": "Check out the Ecosystem QVMD application, a professional platform for waste management between service providers and waste holders",

@@ -11,11 +11,12 @@ import { useTranslations } from 'next-intl';
 // Helper component to render an icon with optional color logic
 const IconDisplay = ({ icon, label, sizeClass }: { icon: React.ReactNode; label: string; sizeClass: string }) => {
     const lower = label.toLowerCase();
-    if (lower === 'git & github') return <>{icon}</>;
-    if (lower === 'vercel') {
+    const specialCases = ['vercel', 'symfony'];
+    
+    if (specialCases.includes(lower)) {
         return (
             <span className={`${sizeClass} text-black dark:text-white`}>
-                <SiVercel />
+                {icon}
             </span>
         );
     }
@@ -78,7 +79,7 @@ const Skills = () => {
                                     className="flex flex-col items-center gap-2 hover:scale-105 transition-transform"
                                 >
                                     <div className="w-16 h-16 flex items-center justify-center">
-                                        <IconDisplay icon={icon} label={label} sizeClass="text-6xl sm:text-5xl" />
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-6xl" />
                                     </div>
                                     <span className="uppercase text-sm sm:text-xs tracking-wide text-center text-[var(--text-color-dark)] dark:text-white">{label}</span>
                                 </div>
@@ -107,7 +108,7 @@ const Skills = () => {
                                     className="flex flex-col items-center gap-1 hover:scale-105 transition-transform"
                                 >
                                     <div className="w-16 h-16 flex items-center justify-center">
-                                        <IconDisplay icon={icon} label={label} sizeClass="text-5xl lg:text-6xl" />
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-6xl" />
                                     </div>
                                     <span className="uppercase text-sm tracking-wide text-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{label}</span>
                                 </div>

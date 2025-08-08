@@ -5,7 +5,7 @@ import { Category, DataExperience, ProjectCardProps, Qualities } from '../types/
 // React-Icon imports
 import { BsCheck2Square } from 'react-icons/bs';
 import { DiDotnet, DiJavascript } from 'react-icons/di';
-import { FaDocker } from 'react-icons/fa';
+import { FaDocker, FaSymfony } from 'react-icons/fa';
 import { FaAws, FaBitbucket } from 'react-icons/fa6';
 import { FiRefreshCw, FiTarget } from 'react-icons/fi';
 import { GrMysql } from 'react-icons/gr';
@@ -263,6 +263,18 @@ const categories: Category[] = [
             ),
             label: 'C#',
          },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                  alt="PHP"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'PHP',
+         },
       ],
    },
    {
@@ -281,7 +293,6 @@ const categories: Category[] = [
             label: 'nextjs',
          },
          { icon: <SiReact />, label: 'react' },
-         { icon: <SiTailwindcss />, label: 'TailwindCSS' },
          {
             icon: (
                <Image
@@ -294,6 +305,57 @@ const categories: Category[] = [
             ),
             label: 'Angular',
          },
+         { icon: <SiTailwindcss />, label: 'TailwindCSS' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/bootstrap.svg"
+                  alt="Bootstrap"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Bootstrap',
+         },
+         {
+            icon:
+               (
+                  <Image
+                     src="/assets/skills/material-ui2.svg"
+                     alt="Material UI"
+                     width={48}
+                     height={48}
+                     className="w-16 h-16"
+                  />
+               ),
+            label: 'Material UI',
+         },
+         // {
+         //    icon: (
+         //       <Image
+         //          src="/assets/skills/material-ui.png"
+         //          alt="Material UI"
+         //          width={48}
+         //          height={48}
+         //          className="w-16 h-16"
+         //       />
+         //    ),
+         //    label: 'Material UI',
+         // },
+         // {
+         //    icon:
+         //       <i className="devicon-bootstrap-plain colored"></i>
+         //    ,
+         //    label: 'TEST 2'
+         // },
+         // {
+         //    icon:
+         //       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" />
+         //    ,
+         //    label: 'TEST 3'
+         // }
+
       ],
    },
    {
@@ -301,9 +363,52 @@ const categories: Category[] = [
       items: [
          { icon: <SiNodedotjs />, label: 'NodeJS' },
          { icon: <DiDotnet />, label: '.NET' },
+         // {
+         //    icon: (
+         //       <Image
+         //          src="/assets/skills/symfony.svg"
+         //          alt="Symfony"
+         //          width={48}
+         //          height={48}
+         //          className="w-16 h-16"
+         //       />
+         //    ),
+         //    label: 'Symfony',
+         // },
+         { icon: <FaSymfony />, label: 'Symfony' },
          { icon: <SiPostgresql />, label: 'postgresql' },
          { icon: <GrMysql />, label: 'MySQL' },
          { icon: <SiSqlite />, label: 'SQLite' },
+         // {
+         //    icon: (
+         //       <i className="devicon-symfony-original colored"></i>
+         //    ),
+         //    label: 'Symfony',
+         // },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg"
+                  alt="Swagger"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Swagger',
+         },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                  alt="Postman"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Postman',
+         },
       ],
    },
    {
@@ -311,6 +416,18 @@ const categories: Category[] = [
       items: [
          { icon: <FaDocker />, label: 'Docker' },
          { icon: <FaAws />, label: 'AWS' },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg"
+                  alt="Android Studio"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Android Studio',
+         },
          {
             icon: (
                <Image
