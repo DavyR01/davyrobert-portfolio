@@ -47,7 +47,73 @@
   },
   "myExperiences": {
     "title1": "Mes",
-    "title2": "Expériences"
+    "title2": "Expériences",
+    "years": {
+      "y2025": "2025",
+      "y2023_2024": "09/2023 - 09/2024",
+      "y2023_stage": "02/2023 - 08/2023",
+      "y2022_2023": "09/2022 - 02/2023"
+    },
+    "experiences": {
+      "entrepreneurship": {
+        "title": "Entrepreneuriat",
+        "tasks": {
+          "t1": "Création de projets e-commerce avec Shopify",
+          "t2": "Adaptabilité du code à un template existant",
+          "t3": "Publication de contenus visuels et vidéos marketings",
+          "t4": "Copywriting orienté conversion",
+          "t5": "Lancement et gestion de campagnes publicitaires",
+          "t6": "Optimisation SEO (titre, méta description, sémantique, accessibilité...)"
+        }
+      },
+      "portfolio": {
+        "title": "Création de ce portfolio",
+        "tasks": {
+          "t1": "Développement en NextJS App router et TailwindCSS en version desktop et responsive",
+          "t2": "Apprivoisement des outils de déploiements tels que OVH, Vercel, Github...",
+          "t3": "Utilisation et hébergement de projets sur un VPS",
+          "t4": "Formation en autodidacte sur divers outils et langages..."
+        }
+      },
+      "bluesoft": {
+        "title": "BlueSoft Group",
+        "tasks": {
+          "t1": "Développeur FullStack alternance",
+          "t2": "Positionnement multi projets avec approche et méthodologie agiles"
+        }
+      },
+      "wcs_cda": {
+        "title": "Wild Code School",
+        "tasks": {
+          "t1": "Formation en alternance au titre CDA +3/4 (Concepteur Développeur d'Applications) à la WCS. Programme en Full Remote. Travail en équipe sur un projet complet en NextJS.",
+          "t2": "Passage puis obtention titre CDA +3/4",
+          "cta": "Voir le programme"
+        }
+      },
+      "bluesoft_stage": {
+        "title": "BlueSoft Group",
+        "tasks": {
+          "t1": "Développeur Web et Web Mobile stage",
+          "t2": "Positionnement multi projets avec approche et méthodologie agiles"
+        }
+      },
+      "wcs_dwwm": {
+        "title": "Wild Code School",
+        "tasks": {
+          "t1": "Formation au titre DWWM +2 (Développeur Web et Web Mobile) à la WCS. Programme en présentiel. Travail en équipe sur plusieurs projets Javascript, ReactJS...",
+          "t2": "Passage puis obtention titre DWWM +2",
+          "cta": "Voir le programme"
+        }
+      },
+      "projects_done": {
+        "title": "Projets réalisés",
+        "tasks": {
+          "t1": "Projet 1 : France Trivia (Javascript)",
+          "t2": "Projet 2 : Virtual Met Art (ViteJS)",
+          "t3": "Projet 3 : Make Sense (ReactJS + MySQL)"
+        }
+      }
+    }
   },
   "myProjects": {
     "title1": "Mes",

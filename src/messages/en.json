@@ -47,7 +47,73 @@
   },
   "myExperiences": {
     "title1": "My",
-    "title2": "Experiences"
+    "title2": "Experiences",
+    "years": {
+      "y2025": "2025",
+      "y2023_2024": "09/2023 - 09/2024",
+      "y2023_stage": "02/2023 - 08/2023",
+      "y2022_2023": "09/2022 - 02/2023"
+    },
+    "experiences": {
+      "entrepreneurship": {
+        "title": "Entrepreneurship",
+        "tasks": {
+          "t1": "Creation of e-commerce projects with Shopify",
+          "t2": "Code adaptability to an existing template",
+          "t3": "Publishing visual and marketing video content",
+          "t4": "Conversion-oriented copywriting",
+          "t5": "Launching and managing advertising campaigns",
+          "t6": "SEO optimization (title, meta description, semantics, accessibility, etc.)"
+        }
+      },
+      "portfolio": {
+        "title": "Creation of this portfolio",
+        "tasks": {
+          "t1": "Development in NextJS App Router and TailwindCSS, desktop and responsive versions",
+          "t2": "Mastering deployment tools such as OVH, Vercel, GitHub...",
+          "t3": "Using and hosting projects on a VPS",
+          "t4": "Self-taught training on various tools and languages..."
+        }
+      },
+      "bluesoft": {
+        "title": "BlueSoft Group",
+        "tasks": {
+          "t1": "FullStack Developer apprenticeship",
+          "t2": "Multi-project context with agile approaches and methodologies"
+        }
+      },
+      "wcs_cda": {
+        "title": "Wild Code School",
+        "tasks": {
+          "t1": "Work-study training for the CDA +3/4 degree (Application Developer Designer) at WCS. Full Remote program. Teamwork on a complete project in NextJS.",
+          "t2": "CDA +3/4 degree obtained",
+          "cta": "See the program"
+        }
+      },
+      "bluesoft_stage": {
+        "title": "BlueSoft Group",
+        "tasks": {
+          "t1": "Web and Mobile Web Developer internship",
+          "t2": "Multi-project context with agile approaches and methodologies"
+        }
+      },
+      "wcs_dwwm": {
+        "title": "Wild Code School",
+        "tasks": {
+          "t1": "Training for the DWWM +2 degree (Web and Mobile Web Developer) at WCS. In-person program. Teamwork on several JavaScript, ReactJS projects...",
+          "t2": "DWWM +2 degree obtained",
+          "cta": "See the program"
+        }
+      },
+      "projects_done": {
+        "title": "Projects completed",
+        "tasks": {
+          "t1": "Project 1: France Trivia (JavaScript)",
+          "t2": "Project 2: Virtual Met Art (ViteJS)",
+          "t3": "Project 3: Make Sense (ReactJS + MySQL)"
+        }
+      }
+    }
   },
   "myProjects": {
     "title1": "My",

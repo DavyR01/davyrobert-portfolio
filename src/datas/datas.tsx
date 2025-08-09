@@ -176,75 +176,84 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
 
 const data_experiences: DataExperience[] = [
    {
-      yearKey: '2025',
+      yearKey: 'years.y2025',
       experiencesKey: [
          {
-            titleKey: 'Entrepreneuriat',
+            titleKey: 'experiences.entrepreneurship.title',
             tasksKey: [
-               'Création de projets e-commerce avec Shopify',
-               'Adaptabilité du code à un template existant',
-               "Publication de contenus visuels et vidéos marketings",
-               'Copywriting orienté conversion',
-               'Lancement et gestion de campagnes publicitaires',
-               'Optimisation SEO (titre, méta description, sémantique, accessibilité...)'
+               'experiences.entrepreneurship.tasks.t1',
+               'experiences.entrepreneurship.tasks.t2',
+               'experiences.entrepreneurship.tasks.t3',
+               'experiences.entrepreneurship.tasks.t4',
+               'experiences.entrepreneurship.tasks.t5',
+               'experiences.entrepreneurship.tasks.t6',
             ],
          },
          {
-            titleKey: 'Création de ce portfolio',
-            tasksKey: ['Développement en NextJS App router et TailwindCSS en version desktop et responsive', 'Apprivoisement des outils de déploiements tels que OVH, Vercel, Github...', 'Utilisation et hébergement de projets sur un VPS', 'Formation en autodidacte sur divers outils et langages...'],
+            titleKey: 'experiences.portfolio.title',
+            tasksKey: [
+               'experiences.portfolio.tasks.t1',
+               'experiences.portfolio.tasks.t2',
+               'experiences.portfolio.tasks.t3',
+               'experiences.portfolio.tasks.t4',
+            ],
          },
       ],
       icons: ['nextjs.png', 'material-ui2.svg', 'nextjs.png'],
    },
    {
-      yearKey: '09/2023 - 09/2024',
+      yearKey: 'years.y2023_2024',
       experiencesKey: [
          {
-            titleKey: 'BlueSoft Group',
-            tasksKey: ['Développeur FullStack alternance', 'Positionnement multi projets avec approche et méthodologie agiles'],
+            titleKey: 'experiences.bluesoft.title',
+            tasksKey: [
+               'experiences.bluesoft.tasks.t1',
+               'experiences.bluesoft.tasks.t2',
+            ],
          },
          {
-            titleKey: 'Wild Code School',
+            titleKey: 'experiences.wcs_cda.title',
             tasksKey: [
-               "Formation en alternance au titre CDA +3/4 (Concepteur Développeur d'Applications) à la WCS. Programme en Full Remote. Travail en équipe sur un projet complet en NextJS.",
-               "Passage puis obtention titre CDA +3/4",
-               'Voir le programme',            ],
-         }
+               'experiences.wcs_cda.tasks.t1',
+               'experiences.wcs_cda.tasks.t2',
+               'experiences.wcs_cda.tasks.cta',
+            ],
+         },
       ],
       icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
    },
    {
-      yearKey: '02/2023 - 08/2023',
+      yearKey: 'years.y2023_stage',
       experiencesKey: [
          {
-            titleKey: 'BlueSoft Group',
+            titleKey: 'experiences.bluesoft.title',
             tasksKey: [
-               'Développeur Web et Web Mobile stage',
-               'Positionnement multi projets avec approche et méthodologie agiles',
+               'experiences.bluesoft_stage.tasks.t1',
+               'experiences.bluesoft_stage.tasks.t2',
             ],
          },
       ],
       icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
    },
    {
-      yearKey: '09/2022 - 02/2023',
+      yearKey: 'years.y2022_2023',
       experiencesKey: [
          {
-            titleKey: 'Wild Code School',
+            titleKey: 'experiences.wcs_dwwm.title',
             tasksKey: [
-               "Formation au titre DWWM +2 (Développeur Web et Web Mobile) à la WCS. Programme en présentiel. Travail en équipe sur plusieurs projets Javascript, ReactJS...",
-               "Passage puis obtention titre DWWM +2",
-               'Voir le programme',
+               'experiences.wcs_dwwm.tasks.t1',
+               'experiences.wcs_dwwm.tasks.t2',
+               'experiences.wcs_dwwm.tasks.cta',
             ],
          },
          {
-            titleKey: 'Projets réalisés',
+            titleKey: 'experiences.projects_done.title',
             tasksKey: [
-               "Projet 1 : France Trivia (Javascript)",
-               "Projet 2 : Virtual Met Art (ViteJS)",
-               'Projet 3 : Make Sense (ReactJS + MySQL)',
+               'experiences.projects_done.tasks.t1',
+               'experiences.projects_done.tasks.t2',
+               'experiences.projects_done.tasks.t3',
             ],
-         }
+         },
       ],
       icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
    },
