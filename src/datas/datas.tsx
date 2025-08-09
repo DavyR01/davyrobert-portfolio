@@ -12,6 +12,7 @@ import { GrMysql } from 'react-icons/gr';
 import { HiLightningBolt, HiOutlineQuestionMarkCircle, HiOutlineUser } from 'react-icons/hi';
 import { SiExpress, SiKotlin, SiNodedotjs, SiOvh, SiPostgresql, SiReact, SiSqlite, SiTailwindcss, SiTypescript, SiVercel } from 'react-icons/si';
 import { IoAdd } from 'react-icons/io5';
+import { HiOutlineEye } from 'react-icons/hi2';
 
 const methods = {
    items: [
@@ -41,16 +42,16 @@ const getQualities = (tQualities: (key: string) => string): Qualities => ({
    title: 'Qualités', // This could also be translated if needed
    items: [
       {
-         label: tQualities('proactif'),
-         icon: <HiLightningBolt size={20} className="inline" />,
+         label: tQualities('autonome'),
+         icon: <HiOutlineUser size={20} className="inline" />,
       },
       {
          label: tQualities('rigoureux'),
          icon: <BsCheck2Square size={20} className="inline" />,
       },
       {
-         label: tQualities('autonome'),
-         icon: <HiOutlineUser size={20} className="inline" />,
+         label: tQualities('attentive'),
+         icon: <HiOutlineEye  size={20} className="inline" />,
       },
       {
          label: tQualities('adaptatif'),
@@ -426,7 +427,7 @@ const data_experiences: DataExperience[] = [
             tasksKey: [
                'experiences.wcs_cda.tasks.t1',
                'experiences.wcs_cda.tasks.t2',
-               'experiences.wcs_cda.tasks.cta',
+               // 'experiences.wcs_cda.tasks.cta',
             ],
          },
       ],
@@ -586,7 +587,7 @@ const data_experiences: DataExperience[] = [
             tasksKey: [
                'experiences.wcs_dwwm.tasks.t1',
                'experiences.wcs_dwwm.tasks.t2',
-               'experiences.wcs_dwwm.tasks.cta',
+               // 'experiences.wcs_dwwm.tasks.cta',
             ],
          },
          {
@@ -773,6 +774,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
       tags: [
          { name: "REACT JS", color: "dark:text-[--primary-color]" },
          { name: "SHAREPOINT", color: "dark:text-[--primary-color]" },
+         { name: "Webpack", color: "dark:text-[--primary-color]" },
       ],
       image: "/projects/vuitton2.png",
       sourceWeb: "https://fr.louisvuitton.com/fra-fr/homepage",

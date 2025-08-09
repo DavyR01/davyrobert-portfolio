@@ -19,9 +19,9 @@
     "paragraph3": "Therefore, I wish to contribute to ambitious and transformative projects, alongside committed companies that share strong values."
   },
   "qualities": {
-    "proactif": "Proactive",
-    "rigoureux": "Rigorous",
     "autonome": "Autonomous",
+    "rigoureux": "Rigorous",
+    "attentive": "Attentive",
     "adaptatif": "Adaptive",
     "goutChallenge": "Challenge-oriented",
     "curieux": "Curious"
@@ -85,7 +85,7 @@
       "wcs_cda": {
         "title": "Wild Code School",
         "tasks": {
-          "t1": "Work-study training for the CDA +3/4 degree (Application Developer Designer) at WCS. Full Remote program. Teamwork on a complete project in NextJS.",
+          "t1": "Work-study training for the CDA +3/4 degree (Application Developer Designer) at WCS. Full Remote program. Teamwork on a complete project in NextJS (WildRent).",
           "t2": "CDA +3/4 degree obtained",
           "cta": "See the program"
         }

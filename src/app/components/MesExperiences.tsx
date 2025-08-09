@@ -35,7 +35,7 @@ const MesExperiences = () => {
                         <div className="relative w-full max-w-[95%] sm:max-w-[97%]">
                            <div className="dark:bg-[--bg-dark-items2] bg-[var(--bg-light)] border border-[--primary-color] rounded-lg p-6 w-full text-base">
 
-                               <h2 className="text-3xl font-bold mb-4 w-fit mx-auto">{t(item.yearKey)}</h2>
+                               <h2 className="text-3xl font-bold mb-4 w-full text-center">{t(item.yearKey)}</h2>
                               {item.experiencesKey.map((exp, expIndex) => (
                                  <div key={`${exp.titleKey}-${expIndex}`} className="mb-4">
                                      <h3 className="text-[--primary-color] font-bold text-2xl break-words">{t(exp.titleKey)}</h3>

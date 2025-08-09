@@ -13,9 +13,9 @@ const Skills = () => {
         <motion.section
             id="skills"
             className="pt-32 px-4 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
         >
             <h2 className="text-center text-[var(--primary-color)] uppercase text-4xl font-bold mb-8">

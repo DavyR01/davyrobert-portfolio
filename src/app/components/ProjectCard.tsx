@@ -101,7 +101,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                           {tags.map((tag, idx) => (
                              <span
                                 key={idx}
-                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-light-items2)] dark:bg-[var(--bg-dark-items2)] px-2 py-0.5 rounded-full font-semibold  `}
+                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-light-items2)] dark:bg-[var(--bg-dark-items2)] px-2 py-0.5 rounded-full font-semibold uppercase `}
                              >
                                 {tag.name}
                              </span>

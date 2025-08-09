@@ -19,9 +19,9 @@
     "paragraph3": "De ce fait, je souhaite apporter ma contribution dans des projets ambitieux et porteurs de transformations, auprès d'entreprises engagées et partageant des valeurs fortes."
   },
   "qualities": {
-    "proactif": "Proactif",
-    "rigoureux": "Rigoureux",
     "autonome": "Autonome",
+    "rigoureux": "Rigoureux",
+    "attentive": "A l'écoute",
     "adaptatif": "Adaptatif",
     "goutChallenge": "Goût du challenge",
     "curieux": "Curieux"
@@ -85,7 +85,7 @@
       "wcs_cda": {
         "title": "Wild Code School",
         "tasks": {
-          "t1": "Formation en alternance au titre CDA +3/4 (Concepteur Développeur d'Applications) à la WCS. Programme en Full Remote. Travail en équipe sur un projet complet en NextJS.",
+          "t1": "Formation en alternance au titre CDA +3/4 (Concepteur Développeur d'Applications) à la WCS. Programme en Full Remote. Travail en équipe sur un projet complet en NextJS (WildRent).",
           "t2": "Passage puis obtention titre CDA +3/4",
           "cta": "Voir le programme"
         }
