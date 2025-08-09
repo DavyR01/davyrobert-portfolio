@@ -19,7 +19,7 @@ export type Experience = {
 };
 
 export type DataExperience = {
-  year: string;
+  yearKey: string;
   experiencesKey: Experience[];
   icons: string[];
 };

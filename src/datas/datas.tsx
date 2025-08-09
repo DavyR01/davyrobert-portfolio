@@ -176,7 +176,7 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
 
 const data_experiences: DataExperience[] = [
    {
-      year: '2025',
+      yearKey: '2025',
       experiencesKey: [
          {
             titleKey: 'Entrepreneuriat',
@@ -197,7 +197,7 @@ const data_experiences: DataExperience[] = [
       icons: ['nextjs.png', 'material-ui2.svg', 'nextjs.png'],
    },
    {
-      year: '09/2023 - 09/2024',
+      yearKey: '09/2023 - 09/2024',
       experiencesKey: [
          {
             titleKey: 'BlueSoft Group',
@@ -214,7 +214,7 @@ const data_experiences: DataExperience[] = [
       icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
    },
    {
-      year: '02/2023 - 08/2023',
+      yearKey: '02/2023 - 08/2023',
       experiencesKey: [
          {
             titleKey: 'BlueSoft Group',
@@ -227,7 +227,7 @@ const data_experiences: DataExperience[] = [
       icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
    },
    {
-      year: '09/2022 - 02/2023',
+      yearKey: '09/2022 - 02/2023',
       experiencesKey: [
          {
             titleKey: 'Wild Code School',
