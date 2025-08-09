@@ -205,17 +205,27 @@ const data_experiences: DataExperience[] = [
                <Image
                   src="/assets/skills/nextjs.png"
                   alt="NextJS"
-                  width={48}
-                  height={48}
-                  className="w-12 h-12"
+                  width={64}
+                  height={64}
+                  className="w-16 h-16"
                />
             ),
             label: 'nextjs',
          },
          { icon: <SiOvh />, label: 'OVH Cloud' },
          { icon: <FaDocker />, label: 'Docker' },
-
-
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/shopify.svg"
+                  alt="Shopify"
+                  width={64}
+                  height={64}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Shopify',
+         },
       ],
    },
    {
@@ -238,20 +248,18 @@ const data_experiences: DataExperience[] = [
          },
       ],
       icons: [
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/nextjs.png"
+                  alt="NextJS"
+                  width={64}
+                  height={64}
+                  className="w-25 h-25"
+               />
+            ),
+            label: 'nextjs',
+         },
       ],
    },
    {
@@ -266,20 +274,18 @@ const data_experiences: DataExperience[] = [
          },
       ],
       icons: [
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/nextjs.png"
+                  alt="NextJS"
+                  width={64}
+                  height={64}
+                  className="w-25 h-25"
+               />
+            ),
+            label: 'nextjs',
+         },
       ],
    },
    {
@@ -303,20 +309,18 @@ const data_experiences: DataExperience[] = [
          },
       ],
       icons: [
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
-         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/nextjs.png"
+                  alt="NextJS"
+                  width={64}
+                  height={64}
+                  className="w-25 h-25"
+               />
+            ),
+            label: 'nextjs',
+         },
       ],
    },
 ];
@@ -374,8 +378,8 @@ const categories: Category[] = [
                <Image
                   src="/assets/skills/nextjs.png"
                   alt="NextJS"
-                  width={48}
-                  height={48}
+                  width={96}
+                  height={96}
                   className="w-16 h-16"
                />
             ),
@@ -413,8 +417,8 @@ const categories: Category[] = [
                   <Image
                      src="/assets/skills/material-ui2.svg"
                      alt="Material UI"
-                     width={48}
-                     height={48}
+                     width={96}
+                     height={96}
                      className="w-16 h-16"
                   />
                ),

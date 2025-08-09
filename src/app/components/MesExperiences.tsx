@@ -46,10 +46,10 @@ const MesExperiences = () => {
                                     </ul>
                                  </div>
                               ))}
-                               <div className="flex flex-wrap justify-center gap-4 mt-6">
+                               <div className="flex flex-wrap justify-center gap-6 mt-6">
                                   {item.icons.map(({ icon, label }, k) => (
-                                     <div key={`mobile-${item.yearKey}-${label}-${k}`} className="w-12 h-12 flex items-center justify-center">
-                                        <IconDisplay icon={icon} label={label} sizeClass="text-5xl" />
+                                     <div key={`mobile-${item.yearKey}-${label}-${k}`} className="w-16 h-16 flex items-center justify-center">
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-6xl" />
                                      </div>
                                   ))}
                                </div>
@@ -73,7 +73,7 @@ const MesExperiences = () => {
                                  top-1/2 -translate-y-1/2 
                                  z-20 
                                  w-[500px]
-                                 flex flex-wrap gap-8
+                                 flex flex-wrap gap-10
                                  ${i % 2 === 0
                                  ? 'left-[calc(50%+40px)] justify-center'
                                  : 'right-[calc(55%-0px)] justify-center'} 
@@ -81,8 +81,8 @@ const MesExperiences = () => {
                         >
 
                            {item.icons.map(({ icon, label }, k) => (
-                              <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-16 h-16 flex items-center justify-center">
-                                 <IconDisplay icon={icon} label={label} sizeClass="text-6xl" />
+                              <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-25 h-25 flex items-center justify-center">
+                                 <IconDisplay icon={icon} label={label} sizeClass="text-7xl" />
                               </div>
                            ))}
                         </div>
