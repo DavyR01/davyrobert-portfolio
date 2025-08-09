@@ -199,7 +199,24 @@ const data_experiences: DataExperience[] = [
             ],
          },
       ],
-      icons: ['nextjs.png', 'material-ui2.svg', 'nextjs.png'],
+      icons: [
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/nextjs.png"
+                  alt="NextJS"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12"
+               />
+            ),
+            label: 'nextjs',
+         },
+         { icon: <SiOvh />, label: 'OVH Cloud' },
+         { icon: <FaDocker />, label: 'Docker' },
+
+
+      ],
    },
    {
       yearKey: 'years.y2023_2024',
@@ -220,7 +237,22 @@ const data_experiences: DataExperience[] = [
             ],
          },
       ],
-      icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
+      icons: [
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+      ],
    },
    {
       yearKey: 'years.y2023_stage',
@@ -233,7 +265,22 @@ const data_experiences: DataExperience[] = [
             ],
          },
       ],
-      icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
+      icons: [
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+      ],
    },
    {
       yearKey: 'years.y2022_2023',
@@ -255,7 +302,22 @@ const data_experiences: DataExperience[] = [
             ],
          },
       ],
-      icons: ['nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png', 'nextjs.png'],
+      icons: [
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+         { icon: <Image src="/assets/skills/nextjs.png" alt="NextJS" width={48} height={48} className="w-12 h-12" />, label: 'nextjs' },
+      ],
    },
 ];
 

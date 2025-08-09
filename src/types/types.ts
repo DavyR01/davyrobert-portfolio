@@ -21,7 +21,7 @@ export type Experience = {
 export type DataExperience = {
   yearKey: string;
   experiencesKey: Experience[];
-  icons: string[];
+  icons: ExperienceIcon[];
 };
 
 export type CategoryItem = {
@@ -42,4 +42,9 @@ export type QualityIcon = {
 export type Qualities = {
   title: string;
   items: QualityIcon[];
+};
+
+export type ExperienceIcon = {
+  icon: ReactNode;
+  label: string;
 };

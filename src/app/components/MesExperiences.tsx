@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import IconDisplay from '@/app/components/ui/IconDisplay'
 import React, { useEffect, useState } from 'react'
 import { data_experiences } from '@/datas/datas'
 import { useTranslations } from 'next-intl'
@@ -46,12 +46,13 @@ const MesExperiences = () => {
                                     </ul>
                                  </div>
                               ))}
-                              <div className="flex flex-wrap justify-center gap-4 mt-6">
-                                 {item.icons.map((icon, k) => (
-                                    <Image key={`mobile-${item.yearKey}-${icon}-${k}`} src={`/assets/skills/${icon}`}
-                                       alt={icon} width={50} height={50} className="hover:scale-110 transition-transform" />
-                                 ))}
-                              </div>
+                               <div className="flex flex-wrap justify-center gap-4 mt-6">
+                                  {item.icons.map(({ icon, label }, k) => (
+                                     <div key={`mobile-${item.yearKey}-${label}-${k}`} className="w-12 h-12 flex items-center justify-center">
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-5xl" />
+                                     </div>
+                                  ))}
+                               </div>
                            </div>
                         </div>
                      </div>
@@ -79,15 +80,10 @@ const MesExperiences = () => {
                               `}
                         >
 
-                           {item.icons.map((icon, k) => (
-                              <Image
-                                  key={`desktop-${item.yearKey}-${icon}-${k}`}
-                                 src={`/assets/skills/${icon}`}
-                                 alt={icon}
-                                 width={60}
-                                 height={60}
-                                 className="hover:scale-110 transition-transform"
-                              />
+                           {item.icons.map(({ icon, label }, k) => (
+                              <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-16 h-16 flex items-center justify-center">
+                                 <IconDisplay icon={icon} label={label} sizeClass="text-6xl" />
+                              </div>
                            ))}
                         </div>
                      )}

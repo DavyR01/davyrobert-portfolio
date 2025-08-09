@@ -3,27 +3,8 @@
 import { motion } from 'framer-motion';
 import { categories } from '@/datas/datas';
 import React from 'react'
-import iconColors from '@/utils/colors';
+import IconDisplay from '@/app/components/ui/IconDisplay';
 import { useTranslations } from 'next-intl';
-
-// Helper component to render an icon with optional color logic
-const IconDisplay = ({ icon, label, sizeClass }: { icon: React.ReactNode; label: string; sizeClass: string }) => {
-    const lower = label.toLowerCase();
-    const specialCases = ['vercel', 'symfony'];
-    
-    if (specialCases.includes(lower)) {
-        return (
-            <span className={`${sizeClass} text-black dark:text-white`}>
-                {icon}
-            </span>
-        );
-    }
-    return (
-        <span className={sizeClass} style={{ color: iconColors[lower] || 'var(--primary-color)' }}>
-            {icon}
-        </span>
-    );
-};
 
 const Skills = () => {
     const t = useTranslations('mySkills')
