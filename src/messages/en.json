@@ -50,9 +50,9 @@
     "title2": "Experiences",
     "years": {
       "y2025": "2025",
-      "y2023_2024": "09/2023 - 09/2024",
-      "y2023_stage": "02/2023 - 08/2023",
-      "y2022_2023": "09/2022 - 02/2023"
+      "y2023_2024": "2023 - 2024",
+      "y2023_stage": "2023/02 - 2023/08",
+      "y2022_2023": "2022/09 - 2023/02"
     },
     "experiences": {
       "entrepreneurship": {
@@ -60,7 +60,7 @@
         "tasks": {
           "t1": "Creation of e-commerce projects with Shopify",
           "t2": "Code adaptability to an existing template",
-          "t3": "Publishing visual and marketing video content",
+          "t3": "Production and publication of visual content and marketing videos",
           "t4": "Conversion-oriented copywriting",
           "t5": "Launching and managing advertising campaigns",
           "t6": "SEO optimization (title, meta description, semantics, accessibility, etc.)"
@@ -78,8 +78,8 @@
       "bluesoft": {
         "title": "BlueSoft Group",
         "tasks": {
-          "t1": "FullStack Developer apprenticeship",
-          "t2": "Multi-project context with agile approaches and methodologies"
+          "t1": "FullStack Developer 1 year apprenticeship",
+          "t2": "Collaborative multi-project context with an agile approach and methodology (Ecosystem, Louis Vuitton, Eurowatt...)"
         }
       },
       "wcs_cda": {
@@ -93,8 +93,8 @@
       "bluesoft_stage": {
         "title": "BlueSoft Group",
         "tasks": {
-          "t1": "Web and Mobile Web Developer internship",
-          "t2": "Multi-project context with agile approaches and methodologies"
+          "t1": "Web and Mobile Web Developer 6 month internship",
+          "t2": "Collaborative multi-project context with an agile approach and methodology (MyCrit Job, Eurowatt...)"
         }
       },
       "wcs_dwwm": {

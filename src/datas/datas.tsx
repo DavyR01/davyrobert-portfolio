@@ -11,6 +11,7 @@ import { FiRefreshCw, FiTarget } from 'react-icons/fi';
 import { GrMysql } from 'react-icons/gr';
 import { HiLightningBolt, HiOutlineQuestionMarkCircle, HiOutlineUser } from 'react-icons/hi';
 import { SiExpress, SiKotlin, SiNodedotjs, SiOvh, SiPostgresql, SiReact, SiSqlite, SiTailwindcss, SiTypescript, SiVercel } from 'react-icons/si';
+import { IoAdd } from 'react-icons/io5';
 
 const methods = {
    items: [
@@ -209,6 +210,18 @@ const categories: Category[] = [
       items: [
          { icon: <SiNodedotjs />, label: 'NodeJS' },
          { icon: <SiExpress />, label: 'Express' },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+                  alt="GraphQL"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'GraphQL',
+         },
          { icon: <DiDotnet />, label: '.NET' },
          { icon: <FaSymfony />, label: 'Symfony' },
          { icon: <SiPostgresql />, label: 'postgresql' },
@@ -248,6 +261,18 @@ const categories: Category[] = [
          {
             icon: (
                <Image
+                  src="/assets/skills/azuredevops.svg"
+                  alt="Azure DevOps"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Azure DevOps',
+         },
+         {
+            icon: (
+               <Image
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg"
                   alt="Android Studio"
                   width={48}
@@ -268,6 +293,18 @@ const categories: Category[] = [
                />
             ),
             label: 'Firebase',
+         },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/sharepoint.png"
+                  alt="Sharepoint"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Sharepoint',
          },
          { icon: <SiOvh />, label: 'OVH Cloud' },
          {
@@ -347,29 +384,31 @@ const data_experiences: DataExperience[] = [
          {
             icon: (
                <Image
-                  src="/assets/skills/nextjs.png"
-                  alt="NextJS"
-                  width={64}
-                  height={64}
-                  className="w-16 h-16"
-               />
-            ),
-            label: 'nextjs',
-         },
-         { icon: <SiOvh />, label: 'OVH Cloud' },
-         { icon: <FaDocker />, label: 'Docker' },
-         {
-            icon: (
-               <Image
                   src="/assets/skills/shopify.svg"
                   alt="Shopify"
                   width={64}
                   height={64}
-                  className="w-16 h-16"
                />
             ),
             label: 'Shopify',
          },
+         { icon: <IoAdd className="w-16 h-16" />, label: 'Plus' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/nextjs.png"
+                  alt="NextJS"
+                  width={64}
+                  height={64}
+               />
+            ),
+            label: 'nextjs',
+         },
+         { icon: <SiTailwindcss />, label: 'TailwindCSS' },
+         { icon: <SiTypescript />, label: 'typescript' },
+         { icon: <SiOvh />, label: 'OVH Cloud' },
+         { icon: (<SiVercel />), label: 'Vercel', },
+         { icon: <FaDocker />, label: 'Docker' },
       ],
    },
    {
@@ -395,6 +434,57 @@ const data_experiences: DataExperience[] = [
          {
             icon: (
                <Image
+                  src="/assets/skills/angular.svg"
+                  alt="Angular"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Angular',
+         },
+         { icon: <SiTypescript />, label: 'typescript' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/csharp.svg"
+                  alt="C#"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'C#',
+         },
+         { icon: <DiDotnet />, label: '.NET' },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg"
+                  alt="Swagger"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Swagger',
+         },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/azuredevops.svg"
+                  alt="Azure DevOps"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Azure DevOps',
+         },
+         { icon: <IoAdd className="w-16 h-16" />, label: 'Plus' },
+         {
+            icon: (
+               <Image
                   src="/assets/skills/nextjs.png"
                   alt="NextJS"
                   width={64}
@@ -404,6 +494,22 @@ const data_experiences: DataExperience[] = [
             ),
             label: 'nextjs',
          },
+         { icon: <SiReact />, label: 'react' },
+         { icon: <SiTailwindcss />, label: 'TailwindCSS' },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+                  alt="GraphQL"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'GraphQL',
+         },
+         { icon: <SiPostgresql />, label: 'postgresql' },
+         { icon: <SiSqlite />, label: 'SQLite' },
       ],
    },
    {
@@ -421,15 +527,55 @@ const data_experiences: DataExperience[] = [
          {
             icon: (
                <Image
-                  src="/assets/skills/nextjs.png"
-                  alt="NextJS"
-                  width={64}
-                  height={64}
-                  className="w-25 h-25"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-plain.svg"
+                  alt="Android Studio"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
                />
             ),
-            label: 'nextjs',
+            label: 'Android Studio',
          },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/java2.svg"
+                  alt="Java"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Java',
+         },
+         { icon: <SiKotlin />, label: 'Kotlin' },
+         {
+            icon: (
+               <Image
+                  src="/assets/skills/firebase.svg"
+                  alt="Firebase"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'Firebase',
+         },
+         {
+            icon: (
+               <Image
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+                  alt="PHP"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
+               />
+            ),
+            label: 'PHP',
+         },
+         { icon: <FaSymfony />, label: 'Symfony' },
+         { icon: <SiTypescript />, label: 'typescript' },
+
       ],
    },
    {
@@ -453,18 +599,23 @@ const data_experiences: DataExperience[] = [
          },
       ],
       icons: [
+         { icon: <SiReact />, label: 'react' },
+         { icon: <DiJavascript />, label: 'Javascript' },
          {
             icon: (
                <Image
-                  src="/assets/skills/nextjs.png"
-                  alt="NextJS"
-                  width={64}
-                  height={64}
-                  className="w-25 h-25"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+                  alt="ViteJS"
+                  width={48}
+                  height={48}
+                  className="w-16 h-16"
                />
             ),
-            label: 'nextjs',
+            label: 'ViteJS',
          },
+         { icon: <SiNodedotjs />, label: 'NodeJS' },
+         { icon: <SiExpress />, label: 'Express' },
+         { icon: <GrMysql />, label: 'MySQL' },
       ],
    },
 ];

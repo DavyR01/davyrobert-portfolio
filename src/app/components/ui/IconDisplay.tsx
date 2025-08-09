@@ -11,7 +11,7 @@ type IconDisplayProps = {
 
 const IconDisplay: React.FC<IconDisplayProps> = ({ icon, label, sizeClass }) => {
   const lower = label.toLowerCase()
-  const specialCases = ['vercel', 'symfony', 'express']
+  const specialCases = ['vercel', 'symfony', 'express', 'plus']
 
   if (specialCases.includes(lower)) {
     // return <span className={`${sizeClass} text-black dark:text-white`}>{icon}</span>

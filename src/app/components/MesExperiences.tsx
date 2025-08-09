@@ -48,8 +48,8 @@ const MesExperiences = () => {
                               ))}
                                <div className="flex flex-wrap justify-center gap-6 mt-6">
                                   {item.icons.map(({ icon, label }, k) => (
-                                     <div key={`mobile-${item.yearKey}-${label}-${k}`} className="w-16 h-16 flex items-center justify-center">
-                                        <IconDisplay icon={icon} label={label} sizeClass="text-6xl" />
+                                     <div key={`mobile-${item.yearKey}-${label}-${k}`} className="w-12 h-12 flex items-center justify-center">
+                                        <IconDisplay icon={icon} label={label} sizeClass="text-5xl" />
                                      </div>
                                   ))}
                                </div>

@@ -50,7 +50,7 @@
     "title2": "Expériences",
     "years": {
       "y2025": "2025",
-      "y2023_2024": "09/2023 - 09/2024",
+      "y2023_2024": "2023 - 2024",
       "y2023_stage": "02/2023 - 08/2023",
       "y2022_2023": "09/2022 - 02/2023"
     },
@@ -60,7 +60,7 @@
         "tasks": {
           "t1": "Création de projets e-commerce avec Shopify",
           "t2": "Adaptabilité du code à un template existant",
-          "t3": "Publication de contenus visuels et vidéos marketings",
+          "t3": "Réalisation et publication de contenus visuels et vidéos marketings",
           "t4": "Copywriting orienté conversion",
           "t5": "Lancement et gestion de campagnes publicitaires",
           "t6": "Optimisation SEO (titre, méta description, sémantique, accessibilité...)"
@@ -78,8 +78,8 @@
       "bluesoft": {
         "title": "BlueSoft Group",
         "tasks": {
-          "t1": "Développeur FullStack alternance",
-          "t2": "Positionnement multi projets avec approche et méthodologie agiles"
+          "t1": "Développeur FullStack 1 an d'alternance",
+          "t2": "Positionnement multi projets avec approche et méthodologie agiles (Ecosystem, Louis Vuitton, Eurowatt...)"
         }
       },
       "wcs_cda": {
@@ -93,8 +93,8 @@
       "bluesoft_stage": {
         "title": "BlueSoft Group",
         "tasks": {
-          "t1": "Développeur Web et Web Mobile stage",
-          "t2": "Positionnement multi projets avec approche et méthodologie agiles"
+          "t1": "Développeur Web et Web Mobile stage de 6 mois",
+          "t2": "Positionnement multi projets collaboratif avec approche et méthodologie agiles (MyCrit Job, Eurowatt...)"
         }
       },
       "wcs_dwwm": {
