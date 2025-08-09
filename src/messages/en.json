@@ -108,9 +108,9 @@
       "projects_done": {
         "title": "Projects completed",
         "tasks": {
-          "t1": "Project 1: France Trivia (JavaScript)",
-          "t2": "Project 2: Virtual Met Art (ViteJS)",
-          "t3": "Project 3: Make Sense (ReactJS + MySQL)"
+          "t1": "Project 1 : France Trivia (JavaScript)",
+          "t2": "Project 2 : Virtual Met Art (ViteJS)",
+          "t3": "Project 3 : Make Sense (ReactJS + MySQL)"
         }
       }
     }
