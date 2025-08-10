@@ -10,6 +10,7 @@ export type ProjectCardProps = {
   sourceGithub?: string;
   projectSlug: string;
   maxTagsCount?: number;
+  video?: string;
 };
 
 export type Experience = {

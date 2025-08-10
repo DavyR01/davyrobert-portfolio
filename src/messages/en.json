@@ -119,7 +119,7 @@
     "title1": "My",
     "title2": "Projects",
     "title3": "Fulfillments",
-    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have created some demo videos to showcase the features and ergonomics of these projects.",
+    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have sometimes been able to create demonstration videos to showcase the features and usability of these projects.",
     "description": {
       "ecosystemQVMD": "Check out the Ecosystem QVMD application, a professional platform for waste management between service providers and waste holders",
       "makeSense": "Application of decision-making between companies, institutions and communities",
@@ -144,12 +144,37 @@
   "project": {
     "viewProject": "VIEW PROJECT",
     "backToProjects": "Back to projects",
-    "viewGithub": "VIEW ON GITHUB"
+    "viewGithub": "VIEW ON GITHUB",
+    "context": {
+      "title": "Project Context",
+      "ecosystemQVMD": "Project developed during a professional mission at BlueSoft Group. Development of a waste management platform to facilitate collaboration between service providers and waste holders.",
+      "makeSense": "Collaborative application developed to improve decision-making between different institutional actors.",
+      "wildRent": "End-of-training project at Wild Code School, developed in a team of 4 developers.",
+      "myCrit": "Web application developed during an internship at BlueSoft Group to facilitate temporary job search.",
+      "eurowatt": "Professional energy management project developed in collaboration with the BlueSoft team.",
+      "virtuelMetArt": "Virtual art management application developed during DWWM training.",
+      "franceTrivia": "First training project, interactive quiz about France developed in vanilla JavaScript.",
+      "blogProject": "Personal blog project developed to share articles and ideas.",
+      "louisVuitton": "Collaborative e-commerce project developed in team at BlueSoft Group."
+    },
+    "skills": {
+      "title": "Skills and Expertise",
+      "ecosystemQVMD": "Full Stack development with NextJS, React, NodeJS. Database management, REST API, deployment and agile methodology.",
+      "portfolio": "Creation of a modern and responsive portfolio with Next.js 14, Tailwind CSS and internationalization. UI/UX design and performance optimization.",
+      "qvmdApp": "React Native mobile app development for waste management. REST API integration and local state management.",
+      "taskManager": "Task management application with React and TypeScript. State management with Context API and local storage.",
+      "weatherApp": "Weather application with React and external API integration. Real-time data management and intuitive user interface."
+    },
+    "techStack": {
+      "title": "Technical Stacks Used :"
+    }
   },
   "notFound": {
     "title": "This page does not exist.\nPlease redirect to home.",
     "description": "Sorry, the project you are looking for is inaccessible or has been moved.",
-    "backHome": "Back to home"
+    "backHome": "Back to home",
+    "videoNotSupported": "Your browser does not support video playback.",
+    "noMediaAvailable": "No media available"
   },
   "globalNotFound": {
     "title": "This page does not exist.\nPlease redirect to home.",

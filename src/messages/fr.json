@@ -119,7 +119,7 @@
     "title1": "Mes",
     "title2": "Projets",
     "title3": "Réalisations",
-    "intro": "Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d'autres l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai réalisé quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets.",
+    "intro": "Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d'autres l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai parfois pu réaliser quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets.",
     "description": {
       "ecosystemQVMD": "Découvrez l'application Ecosystem QVMD, une plateforme professionnelle de gestion des déchets entre prestataires et détenteur de déchets",
       "makeSense": "Application de prise de décisions entre entreprises, institutions et collectivités",
@@ -144,12 +144,37 @@
   "project": {
     "viewProject": "VOIR LE PROJET",
     "backToProjects": "Retour aux projets",
-    "viewGithub": "VOIR SUR GITHUB"
+    "viewGithub": "VOIR SUR GITHUB",
+    "context": {
+      "title": "Contexte du projet",
+      "ecosystemQVMD": "Projet réalisé dans le cadre d'une mission professionnelle chez BlueSoft Group. Développement d'une plateforme de gestion des déchets pour faciliter la collaboration entre prestataires et détenteurs de déchets.",
+      "makeSense": "Application collaborative développée pour améliorer la prise de décisions entre différents acteurs institutionnels.",
+      "wildRent": "Projet de fin de formation à la Wild Code School, développé en équipe de 4 développeurs.",
+      "myCrit": "Application web développée lors d'un stage chez BlueSoft Group pour faciliter la recherche d'emplois en intérim.",
+      "eurowatt": "Projet professionnel de gestion énergétique développé en collaboration avec l'équipe BlueSoft.",
+      "virtuelMetArt": "Application de gestion d'art virtuel développée lors de la formation DWWM.",
+      "franceTrivia": "Premier projet de formation, quiz interactif sur la France développé en JavaScript vanilla.",
+      "blogProject": "Projet personnel de blog développé pour partager des articles et idées.",
+      "louisVuitton": "Projet e-commerce collaboratif développé en équipe chez BlueSoft Group."
+    },
+    "skills": {
+      "title": "Savoir-faire et compétences",
+      "ecosystemQVMD": "Développement Full Stack avec NextJS, React, NodeJS. Gestion de base de données, API REST, déploiement et méthodologie agile.",
+      "portfolio": "Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation. Design UI/UX et optimisation des performances.",
+      "qvmdApp": "Développement d'une application mobile React Native pour la gestion des déchets. Intégration avec des APIs REST et gestion d'état local.",
+      "taskManager": "Application de gestion de tâches avec React et TypeScript. Gestion d'état avec Context API et stockage local.",
+      "weatherApp": "Application météo avec React et intégration d'API externe. Gestion des données en temps réel et interface utilisateur intuitive."
+    },
+    "techStack": {
+      "title": "Stacks Techniques utilisés :"
+    }
   },
   "notFound": {
     "title": "Cette page n'existe pas.\nMerci de vous rediriger vers l'accueil.",
     "description": "Désolé, le projet que vous recherchez est inaccessible ou a été déplacée.",
-    "backHome": "Retour à l'accueil"
+    "backHome": "Retour à l'accueil",
+    "videoNotSupported": "Votre navigateur ne supporte pas la lecture de vidéos.",
+    "noMediaAvailable": "Aucun média disponible"
   },
   "globalNotFound": {
     "title": "Cette page n'existe pas.\nMerci de vous rediriger vers l'accueil.",

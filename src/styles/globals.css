@@ -17,6 +17,12 @@
    --bg-light-items1: #f5f5f5;
    --bg-light-items2: #e5e8e8;
 
+   /* Variables pour les divs et éléments d'interface */
+   --bg-light-div: #f6f6f6;
+   --bg-light-div-hover: #ececec;
+   --border-light-div: #e5e5e5;
+   --text-light-div: #000000;
+
    --primary-color: var(--secondary-color); /* Use secondary as primary in light mode */
    --secondary-color: #1343a9; /* white mode */
    --secondary-color-opacity: rgba(19, 67, 169); /* white mode */
@@ -32,6 +38,12 @@
 .dark:root {
    --primary-color: #5ce1e6; /* original primary for dark mode */
    --secondary-color: #1343a9;
+
+   /* Variables pour le mode sombre */
+   --bg-dark-div: #222;
+   --bg-dark-div-hover: #333;
+   --border-dark-div: #444;
+   --text-dark-div: #ffffff;
 
    /* --primary-color: rgb(92, 225, 230);
    --secondary-color: rgb(19, 67, 169); */
