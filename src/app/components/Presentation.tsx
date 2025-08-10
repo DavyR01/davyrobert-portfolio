@@ -50,16 +50,16 @@ const Presentation = () => {
    }, []);
 
    return (
-      <section
-         ref={sectionRef}
-         id="introduction"
-         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-12 pt-[100px] xs480:pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
-      >
+             <section
+          ref={sectionRef}
+          id="introduction"
+          className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-20 pt-[100px] xs480:pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
+       >
          {/* Canvas Matrix background effect */}
          {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
-         {/* Présentation texte */}
-         <div id="presentation" className="relative z-10 w-full max-w-[700px] text-left mb-8 lg:mb-0">
+                   {/* Présentation texte */}
+          <div id="presentation" className="relative z-10 w-full max-w-[800px] text-left mb-8 lg:mb-0">
             <h2 className="xs480:text-4xl text-[1.4rem] font-bold text-center lg:text-left ">{t('hello')}</h2>
             <h1 className="xs480:text-[64px] text-[2rem] my-4 font-bold text-center lg:text-left ">
                <span className="">Davy ROBERT</span>
@@ -70,10 +70,10 @@ const Presentation = () => {
             </h2>
 
             {/* Image profil <=1024px */}
-            <div className="lg:hidden aspect-square w-[250px] md:w-[300px] min-w-[150px] max-w-full rounded-full border-2 border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto my-6">
+            <div className="lg:hidden aspect-[4/5] w-[200px] md:w-[240px] min-w-[150px] max-w-full rounded-2xl border-2 border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto my-6">
                <Image
                   src="/assets/logos/davyprofile.png"
-                  width={300}
+                  width={240}
                   height={300}
                   alt="profile"
                   className="object-cover w-full h-full"
@@ -165,16 +165,16 @@ const Presentation = () => {
             </div>
          </div>
 
-         {/* Image profil > 1024px */}
-         <div className="hidden lg:flex aspect-square w-[250px] md:w-[400px] min-w-[150px] max-w-full rounded-full border-2 border-[--primary-color] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0 relative z-10">
-            <Image
-               src="/assets/logos/davyprofile.png"
-               width={400}
-               height={400}
-               alt="profile"
-               className="object-cover w-full h-full"
-            />
-         </div>
+                   {/* Image profil > 1024px */}
+          <div className="hidden lg:flex aspect-[4/5] w-[280px] md:w-[350px] min-w-[150px] max-w-full rounded-2xl border-2 border-[--primary-color] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0 relative z-10">
+             <Image
+                src="/assets/logos/davyprofile.png"
+                width={350}
+                height={437}
+                alt="profile"
+                className="object-cover w-full h-full"
+             />
+          </div>
       </section>
    )
 }
