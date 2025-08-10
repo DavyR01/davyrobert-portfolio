@@ -143,34 +143,34 @@
   },
   "project": {
     "viewProject": "VOIR LE PROJET",
-    "viewProjectLink": "VOIR LE PROJET : ",
+    "viewProjectLink": "VOIR LE PROJET :",
     "learnMore": "EN SAVOIR PLUS SUR LE PROJET :",
     "backToProjects": "Retour aux projets",
     "viewGithub": "CODE SOURCE : ",
     "context": {
       "title": "Contexte du projet",
-      "ecosystemQVMD": "Projet réalisé dans le cadre d'une mission professionnelle chez BlueSoft Group. Développement d'une plateforme de gestion des déchets pour faciliter la collaboration entre prestataires et détenteurs de déchets.",
+      "ecosystemQVMD": "Dans le cadre d'une alternance au sein du Groupe Blue Soft, j'interviens en mode multi-projets en suivant la méthodologie agile (de type SCRUM) soit en TMA soit sous forme de sprint d'une ou 2 semaines selon le projet.\n\nLes processus d'organisation s'inscrivent dans une démarche DevOps.\n\nEcosystem est un éco-organisme agréé par les pouvoirs publics. Son objectif est de mettre en relation des professionnels dans le but de favoriser le recyclage et le don de tout type de déchets grâce à l'organisation d'une collecte.\n\nCette manœuvre permet ainsi de revaloriser les matériaux en leur trouvant une utilité et en leur donnant une seconde vie lorsque cela est possible.\n\nDéveloppement applicatif de mise en relation entre détenteurs et prestataires sous forme de sprints de 2 semaines.",
       "makeSense": "Application collaborative développée pour améliorer la prise de décisions entre différents acteurs institutionnels.",
       "wildRent": "Projet de fin de formation à la Wild Code School, développé en équipe de 4 développeurs.",
       "myCrit": "Application web développée lors d'un stage chez BlueSoft Group pour faciliter la recherche d'emplois en intérim.",
       "eurowatt": "Projet professionnel de gestion énergétique développé en collaboration avec l'équipe BlueSoft.",
       "virtuelMetArt": "Application de gestion d'art virtuel développée lors de la formation DWWM réalisé avec ViteJS et TailwindCSS.",
       "franceTrivia": "Premier projet de formation, quiz interactif sur les connaissances générales en France développé en JavaScript.",
-      "blogProject": "Projet personnel de blog développé pour partager des articles et idées. Réalisé en autodidacte enjavascript principalement avec l'utilisation d'une REST API.",
+      "blogProject": "Projet personnel de blog développé pour partager des articles et idées.\n\nRéalisé en autodidacte en JavaScript principalement avec l'utilisation d'une REST API.",
       "louisVuitton": "Projet e-commerce collaboratif développé en équipe chez BlueSoft Group réalisé avec Sharepoint, une solution CMS Microsoft."
     },
     "skills": {
       "title": "Savoir-faire et compétences",
-      "ecosystemQVMD": "XXXX",
+      "ecosystemQVMD": "• Prise en main des architectures CQRS, Hexagonale et MVC\n\n• Mise en place de fonctionnalités frontend/backend de l'application\n\n• Renforcement sécurité par des permissions et autorisations d'écriture, de lecture\n\n• Modifications, corrections de bugs et évolutions diverses\n\n• Implémentations de tests unitaires pour chaque nouvelles fonctionnalités\n\n• Augmenter la visibilité, optimiser la recherche par le référencement naturel (SEO)\n\nL'équipe est composée de :\n• 3 à 4 développeurs\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 dev test\n• 1 product owner",
       "makeSense": "XXXXXXXXXXXXXXXXXXX",
-      "wildRent": "Développement Full Stack avec NextJS, React, NodeJS. Gestion de base de données, API REST, déploiement et méthodologie agile.",
+      "wildRent": "• Développement Full Stack avec NextJS, React, NodeJS\n\n• Gestion de base de données, API REST\n\n• Déploiement et méthodologie agile",
       "myCrit": "XXXXXXXX",
       "eurowatt": "XXXXXXXX",
       "virtuelMetArt": "XXXXXXXX",
       "franceTrivia": "XXXXXXXX",
       "blogProject": "XXXXXXXX",
       "louisVuitton": "XXXXXXXX",
-      "portfolio": "Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation. Design UI/UX et optimisation des performances."
+      "portfolio": "• Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation\n\n• Design UI/UX et optimisation des performances"
     },
     "techStack": {
       "title": "Stacks Techniques utilisés :"

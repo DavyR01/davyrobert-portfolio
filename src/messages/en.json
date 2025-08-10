@@ -142,35 +142,35 @@
     "rights": "© 2025 Davy Robert – All rights reserved"
   },
   "project": {
-    "viewProject": "VIEW PROJECT",
+    "viewProject": "VIEW THE PROJECT",
     "viewProjectLink": "VIEW THE PROJECT :",
     "learnMore": "LEARN MORE ABOUT THIS PROJECT :",
     "backToProjects": "Back to projects",
     "viewGithub": "SOURCE CODE : ",
     "context": {
       "title": "Project Context",
-      "ecosystemQVMD": "Project developed during a professional mission at BlueSoft Group. Development of a waste management platform to facilitate collaboration between service providers and waste holders.",
+      "ecosystemQVMD": "As part of an apprenticeship within the Blue Soft Group, I work in multi-project mode following agile methodology (SCRUM type) either in TMA or in the form of 1 or 2 week sprints depending on the project.\n\nThe organizational processes are part of a DevOps approach.\n\nEcosystem is a public authority-approved eco-organization. Its objective is to connect professionals in order to promote the recycling and donation of all types of waste through the organization of collection.\n\nThis operation thus allows materials to be revalued by finding them a use and giving them a second life when possible.\n\nApplication development for connecting holders and service providers in the form of 2-week sprints.",
       "makeSense": "Collaborative application developed to improve decision-making between different institutional actors.",
       "wildRent": "End-of-training project at Wild Code School, developed in a team of 4 developers.",
       "myCrit": "Web application developed during an internship at BlueSoft Group to facilitate temporary job search.",
       "eurowatt": "Professional energy management project developed in collaboration with the BlueSoft team.",
-      "virtuelMetArt": "Virtual art management application developed during DWWM training.",
-      "franceTrivia": "First training project, interactive quiz about France developed in vanilla JavaScript.",
-      "blogProject": "Personal blog project developed to share articles and ideas.",
-      "louisVuitton": "Collaborative e-commerce project developed in team at BlueSoft Group."
+      "virtuelMetArt": "Virtual art management application developed during DWWM training using ViteJS and TailwindCSS.",
+      "franceTrivia": "First training project, interactive quiz on general knowledge in France developed in JavaScript.",
+      "blogProject": "Personal blog project developed to share articles and ideas. Self-taught project mainly in JavaScript using a REST API.",
+      "louisVuitton": "Collaborative e-commerce project developed in a team at BlueSoft Group using Sharepoint, a Microsoft CMS solution."
     },
     "skills": {
       "title": "Skills and Expertise",
-      "ecosystemQVMD": "XXXX",
+      "ecosystemQVMD": "• Mastering CQRS, Hexagonal and MVC architectures\n• Implementation of frontend/backend application features\n• Security reinforcement through write and read permissions and authorizations\n• Modifications, bug fixes and various evolutions\n• Implementation of unit tests for each new feature\n• Increase visibility, optimize search through natural referencing (SEO)\n\nThe team consists of:\n• 3 to 4 developers\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 test dev\n• 1 product owner",
       "makeSense": "XXXXXXXXXXXXXXXXXXX",
-      "wildRent": "Développement Full Stack avec NextJS, React, NodeJS. Gestion de base de données, API REST, déploiement et méthodologie agile.",
+      "wildRent": "Full Stack development with NextJS, React, NodeJS. Database management, REST API, deployment and agile methodology.",
       "myCrit": "XXXXXXXX",
       "eurowatt": "XXXXXXXX",
       "virtuelMetArt": "XXXXXXXX",
       "franceTrivia": "XXXXXXXX",
       "blogProject": "XXXXXXXX",
       "louisVuitton": "XXXXXXXX",
-      "portfolio": "Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation. Design UI/UX et optimisation des performances."
+      "portfolio": "Creation of a modern and responsive portfolio with Next.js 14, Tailwind CSS and internationalization. UI/UX design and performance optimization."
     },
     "techStack": {
       "title": "Technical Stacks Used :"
