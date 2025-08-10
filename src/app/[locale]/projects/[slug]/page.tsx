@@ -78,10 +78,12 @@ export default function ProjectPage() {
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.context.title')}
             </h2>
-            <p className="text-base leading-relaxed text-black dark:text-gray-300">
-              {t(`project.context.${project.descriptionKey}`)}
-              {/* {t(`myProjects.description.${project.descriptionKey}`)} */}
-            </p>
+            <div
+              className="text-base leading-relaxed text-black dark:text-gray-300"
+              dangerouslySetInnerHTML={{
+                __html: t(`project.context.${project.descriptionKey}`).replace(/\n/g, '<br>')
+              }}
+            />
           </div>
 
           {/* Savoir-faire et compétences */}
@@ -89,28 +91,16 @@ export default function ProjectPage() {
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.skills.title')}
             </h2>
-            <p className="text-base leading-relaxed text-black dark:text-gray-300">
-              {t(`project.skills.${project.descriptionKey}`)}
-            </p>
+            <div 
+              className="text-base leading-relaxed text-black dark:text-gray-300"
+              dangerouslySetInnerHTML={{ 
+                __html: t(`project.skills.${project.descriptionKey}`)
+                  .replace(/\n/g, '<br>')
+                  .replace(/•/g, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•')
+              }}
+            />
           </div>
         </div>
-
-        {/* Stacks Techniques utilisés */}
-        {/* <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
-            {t('project.techStack.title')}
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <span
-                key={tag.name}
-                className={`px-3 py-1 rounded-full bg-white dark:bg-gray-800 text-sm border border-gray-200 dark:border-gray-700 ${tag.color}`}
-              >
-                {tag.name}
-              </span>
-            ))}
-          </div>
-        </div> */}
 
         <h2 className="text-2xl font-bold mb-4">
           {t('project.techStack.title')}

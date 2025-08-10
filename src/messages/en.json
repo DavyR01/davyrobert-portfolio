@@ -119,7 +119,7 @@
     "title1": "My",
     "title2": "Projects",
     "title3": "Fulfillments",
-    "intro": "Discover my completed, recent and upcoming projects. Some have been deployed by me and others professionally in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have sometimes been able to create demonstration videos to showcase the features and usability of these projects.",
+    "intro": "Discover my completed, recent and upcoming projects. Most of them have been deployed by me, and some were deployed in a professional setting in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have sometimes been able to create demonstration videos to showcase the features and usability of these projects.",
     "description": {
       "ecosystemQVMD": "Check out the Ecosystem QVMD application, a professional platform for waste management between service providers and waste holders",
       "makeSense": "Application of decision-making between companies, institutions and communities",
@@ -156,21 +156,21 @@
       "eurowatt": "Professional energy management project developed in collaboration with the BlueSoft team.",
       "virtuelMetArt": "Virtual art management application developed during DWWM training using ViteJS and TailwindCSS.",
       "franceTrivia": "First training project, interactive quiz on general knowledge in France developed in JavaScript.",
-      "blogProject": "Personal blog project developed to share articles and ideas. Self-taught project mainly in JavaScript using a REST API.",
+      "blogProject": "Personal blog project developed to share articles and ideas.\n\nSelf-taught project mainly in JavaScript using a REST API.",
       "louisVuitton": "Collaborative e-commerce project developed in a team at BlueSoft Group using Sharepoint, a Microsoft CMS solution."
     },
     "skills": {
-      "title": "Skills and Expertise",
-      "ecosystemQVMD": "• Mastering CQRS, Hexagonal and MVC architectures\n• Implementation of frontend/backend application features\n• Security reinforcement through write and read permissions and authorizations\n• Modifications, bug fixes and various evolutions\n• Implementation of unit tests for each new feature\n• Increase visibility, optimize search through natural referencing (SEO)\n\nThe team consists of:\n• 3 to 4 developers\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 test dev\n• 1 product owner",
+      "title": "Skills and expertise acquired",
+      "ecosystemQVMD": "• Mastery of CQRS, Hexagonal, and MVC architectures\n• Implementation of frontend/backend features of the application\n• Security enhancement through write and read permissions and authorizations\n• Modifications, bug fixes, and various improvements\n• Implementation of unit tests for each new feature\n• Increase visibility, optimize search through natural referencing (SEO)\n\nThe team is composed of:\n• 3 to 4 developers\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 dev tester\n• 1 product owner",
       "makeSense": "XXXXXXXXXXXXXXXXXXX",
-      "wildRent": "Full Stack development with NextJS, React, NodeJS. Database management, REST API, deployment and agile methodology.",
+      "wildRent": "<ul class='list-disc space-y-2 ml-6'><li>Full Stack development with NextJS, React, NodeJS</li><li>Database management, REST API</li><li>Deployment and agile methodology</li></ul>",
       "myCrit": "XXXXXXXX",
       "eurowatt": "XXXXXXXX",
       "virtuelMetArt": "XXXXXXXX",
       "franceTrivia": "XXXXXXXX",
       "blogProject": "XXXXXXXX",
       "louisVuitton": "XXXXXXXX",
-      "portfolio": "Creation of a modern and responsive portfolio with Next.js 14, Tailwind CSS and internationalization. UI/UX design and performance optimization."
+      "portfolio": "<ul class='list-disc space-y-2 ml-6'><li>Creation of a modern and responsive portfolio with Next.js 14, Tailwind CSS and internationalization</li><li>UI/UX design and performance optimization</li></ul>"
     },
     "techStack": {
       "title": "Technical Stacks Used :"

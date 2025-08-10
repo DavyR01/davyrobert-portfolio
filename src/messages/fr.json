@@ -119,7 +119,7 @@
     "title1": "Mes",
     "title2": "Projets",
     "title3": "Réalisations",
-    "intro": "Découvrez mes projets réalisés, récents et à venir. Certains ont été déployés par mes soins et d'autres l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai parfois pu réaliser quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets.",
+    "intro": "Découvrez mes projets réalisés, récents et à venir. La plupart d'entre eux ont été déployés par mes soins et certains l'ont été dans un cadre professionnel en collaboration avec d'autres développeurs. <br /> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br /> Toutefois, j'ai parfois pu réaliser quelques vidéos de démonstration afin d'illustrer les fonctionnalités et l'ergonomie de ces projets.",
     "description": {
       "ecosystemQVMD": "Développement d'une plateforme de gestion des déchets pour faciliter la collaboration entre prestataires et détenteurs de déchets.",
       "makeSense": "Application collaborative développée pour améliorer la prise de décisions entre différents acteurs institutionnels.",
@@ -160,17 +160,17 @@
       "louisVuitton": "Projet e-commerce collaboratif développé en équipe chez BlueSoft Group réalisé avec Sharepoint, une solution CMS Microsoft."
     },
     "skills": {
-      "title": "Savoir-faire et compétences",
-      "ecosystemQVMD": "• Prise en main des architectures CQRS, Hexagonale et MVC\n\n• Mise en place de fonctionnalités frontend/backend de l'application\n\n• Renforcement sécurité par des permissions et autorisations d'écriture, de lecture\n\n• Modifications, corrections de bugs et évolutions diverses\n\n• Implémentations de tests unitaires pour chaque nouvelles fonctionnalités\n\n• Augmenter la visibilité, optimiser la recherche par le référencement naturel (SEO)\n\nL'équipe est composée de :\n• 3 à 4 développeurs\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 dev test\n• 1 product owner",
+      "title": "Savoir-faire et compétences apprises",
+      "ecosystemQVMD": "• Prise en main des architectures CQRS, Hexagonale et MVC\n• Mise en place de fonctionnalités frontend/backend de l'application\n• Renforcement sécurité par des permissions et autorisations d'écriture, de lecture\n• Modifications, corrections de bugs et évolutions diverses\n• Implémentations de tests unitaires pour chaque nouvelles fonctionnalités\n• Augmenter la visibilité, optimiser la recherche par le référencement naturel (SEO)\n\nL'équipe est composée de :\n• 3 à 4 développeurs\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 dev test\n• 1 product owner",
       "makeSense": "XXXXXXXXXXXXXXXXXXX",
-      "wildRent": "• Développement Full Stack avec NextJS, React, NodeJS\n\n• Gestion de base de données, API REST\n\n• Déploiement et méthodologie agile",
+      "wildRent": "Développement Full Stack avec NextJS, React, NodeJS. Gestion de base de données, API REST, Déploiement et méthodologie agile.",
       "myCrit": "XXXXXXXX",
       "eurowatt": "XXXXXXXX",
       "virtuelMetArt": "XXXXXXXX",
       "franceTrivia": "XXXXXXXX",
       "blogProject": "XXXXXXXX",
       "louisVuitton": "XXXXXXXX",
-      "portfolio": "• Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation\n\n• Design UI/UX et optimisation des performances"
+      "portfolio": "Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation, Design UI/UX et optimisation des performances."
     },
     "techStack": {
       "title": "Stacks Techniques utilisés :"
