@@ -634,8 +634,10 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
          { name: "DOCKER", color: "dark:text-[--primary-color]" },
       ],
       image: "/projects/ecosystem-qvmd.png",
-      video: "/assets/videos/ecosystem-video.mp4",
+      video: "/assets/videos/test.mp4",
       sourceWeb: "https://www.quiveutmesdechets.fr/",
+      sourceGithub: "",
+      learnMore: "",
       projectSlug: "ecosystem-qvmd",
    },
    {
@@ -657,8 +659,6 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG1", color: "dark:text-[--primary-color]" },
          { name: "TAG1", color: "dark:text-[--primary-color]" },
-
-
       ],
       image: "/projects/makesense2.png",
       video: "",
@@ -700,12 +700,12 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
          { name: "TAG2", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
          { name: "TAG2", color: "dark:text-[--primary-color]" },
-
       ],
       image: "/projects/crit_job5.png",
       video: "",
-      sourceWeb: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1",
+      sourceWeb: "",
       projectSlug: "crit-job",
+      learnMore: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1"
    },
    {
       name: "Eurowatt Super7",
@@ -731,8 +731,9 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
       ],
       image: "/projects/super7_interface.png",
       video: "",
-      sourceWeb: "https://eurowatt.com/en",
+      sourceWeb: "",
       projectSlug: "eurowatt-super7",
+      learnMore: "https://eurowatt.com/en"
    },
    {
       name: "Virtual Met'Art",
@@ -786,8 +787,9 @@ const projects: Omit<ProjectCardProps, 'index'>[] = [
       ],
       image: "/projects/vuitton2.png",
       video: "",
-      sourceWeb: "https://fr.louisvuitton.com/fra-fr/homepage",
+      sourceWeb: "",
       projectSlug: "louisvuitton",
+      learnMore: "https://fr.louisvuitton.com/fra-fr/homepage"
    },
 ];
 

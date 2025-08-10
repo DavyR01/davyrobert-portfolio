@@ -11,6 +11,7 @@ export type ProjectCardProps = {
   projectSlug: string;
   maxTagsCount?: number;
   video?: string;
+  learnMore?: string;
 };
 
 export type Experience = {

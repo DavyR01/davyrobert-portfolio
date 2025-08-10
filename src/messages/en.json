@@ -143,8 +143,10 @@
   },
   "project": {
     "viewProject": "VIEW PROJECT",
+    "viewProjectLink": "VIEW THE PROJECT :",
+    "learnMore": "LEARN MORE ABOUT THIS PROJECT :",
     "backToProjects": "Back to projects",
-    "viewGithub": "VIEW ON GITHUB",
+    "viewGithub": "SOURCE CODE : ",
     "context": {
       "title": "Project Context",
       "ecosystemQVMD": "Project developed during a professional mission at BlueSoft Group. Development of a waste management platform to facilitate collaboration between service providers and waste holders.",
@@ -159,11 +161,16 @@
     },
     "skills": {
       "title": "Skills and Expertise",
-      "ecosystemQVMD": "Full Stack development with NextJS, React, NodeJS. Database management, REST API, deployment and agile methodology.",
-      "portfolio": "Creation of a modern and responsive portfolio with Next.js 14, Tailwind CSS and internationalization. UI/UX design and performance optimization.",
-      "qvmdApp": "React Native mobile app development for waste management. REST API integration and local state management.",
-      "taskManager": "Task management application with React and TypeScript. State management with Context API and local storage.",
-      "weatherApp": "Weather application with React and external API integration. Real-time data management and intuitive user interface."
+      "ecosystemQVMD": "XXXX",
+      "makeSense": "XXXXXXXXXXXXXXXXXXX",
+      "wildRent": "Développement Full Stack avec NextJS, React, NodeJS. Gestion de base de données, API REST, déploiement et méthodologie agile.",
+      "myCrit": "XXXXXXXX",
+      "eurowatt": "XXXXXXXX",
+      "virtuelMetArt": "XXXXXXXX",
+      "franceTrivia": "XXXXXXXX",
+      "blogProject": "XXXXXXXX",
+      "louisVuitton": "XXXXXXXX",
+      "portfolio": "Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation. Design UI/UX et optimisation des performances."
     },
     "techStack": {
       "title": "Technical Stacks Used :"
