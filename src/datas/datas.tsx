@@ -9,7 +9,7 @@ import { FaDocker, FaSymfony } from 'react-icons/fa';
 import { FaAws, FaBitbucket } from 'react-icons/fa6';
 import { FiRefreshCw, FiTarget } from 'react-icons/fi';
 import { GrMysql } from 'react-icons/gr';
-import { HiLightningBolt, HiOutlineQuestionMarkCircle, HiOutlineUser } from 'react-icons/hi';
+import { HiOutlineQuestionMarkCircle, HiOutlineUser } from 'react-icons/hi';
 import { SiExpress, SiKotlin, SiNodedotjs, SiOvh, SiPostgresql, SiReact, SiSqlite, SiTailwindcss, SiTypescript, SiVercel } from 'react-icons/si';
 import { IoAdd } from 'react-icons/io5';
 import { HiOutlineEye } from 'react-icons/hi2';

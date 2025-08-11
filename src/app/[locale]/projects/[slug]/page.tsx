@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { AiOutlineEye } from 'react-icons/ai';
+import { formatText } from '@/utils/formatText';
 
 export default function ProjectPage() {
   const params = useParams();
@@ -81,7 +82,7 @@ export default function ProjectPage() {
             <div
               className="text-base leading-relaxed text-black dark:text-gray-300"
               dangerouslySetInnerHTML={{
-                __html: t(`project.context.${project.descriptionKey}`).replace(/\n/g, '<br>')
+                __html: formatText(t(`project.context.${project.descriptionKey}`))
               }}
             />
           </div>
@@ -91,12 +92,10 @@ export default function ProjectPage() {
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.skills.title')}
             </h2>
-            <div 
+            <div
               className="text-base leading-relaxed text-black dark:text-gray-300"
-              dangerouslySetInnerHTML={{ 
-                __html: t(`project.skills.${project.descriptionKey}`)
-                  .replace(/\n/g, '<br>')
-                  .replace(/•/g, '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•')
+              dangerouslySetInnerHTML={{
+                __html: formatText(t(`project.skills.${project.descriptionKey}`))
               }}
             />
           </div>
