@@ -16,6 +16,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     image,
     sourceWeb,
     sourceGithub,
+    learnMore,
     projectSlug,
     maxTagsCount,
  }) => {
@@ -58,12 +59,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 <div className="mt-3 mb-2 flex items-center justify-between gap-4 px-5">
                    <p className="text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] font-bold text-[24px]">{name}</p>
                    <div className="flex gap-4">
+                      {learnMore && (
+                         <div
+                            onClick={() => window.open(learnMore, "_blank")}
+                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                         >
+                            <AiFillEye className="w-10 h-10 hover:text-[--primary-color]" />
+                         </div>
+                      )}
                       {sourceWeb && (
                          <div
                             onClick={() => window.open(sourceWeb, "_blank")}
                             className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                          >
-                            <AiFillEye className="w-10 h-10" />
+                            <AiFillEye className="w-10 h-10 hover:text-[--primary-color]" />
                          </div>
                       )}
                       {sourceGithub && (
@@ -73,7 +82,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                             rel="noopener noreferrer"
                             className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                          >
-                            <AiFillGithub className="w-10 h-10" />
+                            <AiFillGithub className="w-10 h-10 hover:text-[--primary-color]" />
+                            {/* <AiFillGithub className="w-10 h-10 hover:text-gray-700 dark:hover:text-gray-400" /> */}
                          </a>
                       )}
                    </div>

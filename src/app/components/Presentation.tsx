@@ -7,7 +7,7 @@ import { MdEmail } from 'react-icons/md'
 import MatrixCanvas from './ui/MatrixCanvas';
 // import MatrixCanvas from '@/app/components/ui/MatrixCanvas';
 import { useTheme } from '@/context/ThemeContext';
-import { getQualities, methods } from '@/datas/datas';
+import { getQualities, methods } from '@/datas';
 import Button from './ui/Button';
 import { useTranslations } from 'next-intl';
 

@@ -2,7 +2,7 @@
 
 import IconDisplay from '@/app/components/ui/IconDisplay'
 import React, { useEffect, useState } from 'react'
-import { data_experiences } from '@/datas/datas'
+import { data_experiences } from '@/datas'
 import { useTranslations } from 'next-intl'
 
 const MesExperiences = () => {

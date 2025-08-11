@@ -6,7 +6,7 @@ export const formatText = (text: string) => {
     // Convert line breaks to <br>
     .replace(/\n/g, '<br>')
     // Convert bullets to HTML lists with indentation
-    .replace(/•\s*(.*?)(?=<br>|$)/g, '<li class="ml-6 mb-2">$1</li>')
+    .replace(/•\s*(.*?)(?=<br>|$)/g, '<li class="ml-8 mb-2 pl-2">$1</li>')
     // Add <ul> tags around lists
     .replace(/(<li.*?<\/li>)+/g, '<ul class="list-disc space-y-2 ml-6 mb-4">$&</ul>')
     // Bold section titles (lines ending with :)

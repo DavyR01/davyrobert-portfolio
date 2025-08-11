@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { categories } from '@/datas/datas';
+import { categories } from '@/datas';
 import React from 'react'
 import IconDisplay from '@/app/components/ui/IconDisplay';
 import { useTranslations } from 'next-intl';

@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import { projects } from "@/datas/datas";
+import { projects } from "@/datas";
 import { ProjectCard } from "./ProjectCard";
 import { useTranslations } from 'next-intl';
 

@@ -1,5 +1,5 @@
 'use client'
-import { projects } from '@/datas/datas';
+import { projects } from '@/datas';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import NavbarBackProjects from '@/app/components/NavbarProjects';
