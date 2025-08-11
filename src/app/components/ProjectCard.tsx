@@ -88,12 +88,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
  
  
                 {/* Tags */}
-                <div className="mt-4 px-5 mb-2">
+                <div className="mt-6 px-5 mb-2">
                    <div
                       className="overflow-hidden project-tags-min-height mb-3"
                       style={
                         maxTagsCount
-                          ? { ['--tags-min-height' as string]: `${Math.ceil(maxTagsCount / 4) * 1.2}rem` }
+                          ? { ['--tags-min-height' as string]: `${Math.ceil(maxTagsCount / 4) * 1.7}rem` }
                           : undefined
                       }
                     >
