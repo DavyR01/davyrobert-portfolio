@@ -27,7 +27,7 @@ const Presentation = () => {
    // Keywords for different paragraphs in French and English
    const getKeywords = () => {
       const locale = t('hello').includes('Bonjour') ? 'fr' : 'en';
-      
+
       if (locale === 'fr') {
          return {
             paragraph1: ['spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'nouvelles technologies'],
@@ -50,16 +50,27 @@ const Presentation = () => {
    }, []);
 
    return (
-             <section
-          ref={sectionRef}
-          id="introduction"
-          className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-20 pt-[100px] xs480:pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
-       >
+      <section
+         ref={sectionRef}
+         id="introduction"
+         className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1200px] mx-auto px-6 relative gap-20 pt-[110px] lg:pt-32 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
+      >
          {/* Canvas Matrix background effect */}
          {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
-                   {/* Présentation texte */}
-          <div id="presentation" className="relative z-10 w-full max-w-[800px] text-left mb-8 lg:mb-0">
+         {/* Présentation texte */}
+         <div id="presentation" className="relative z-10 w-full max-w-[800px] text-left mb-8 lg:mb-0">
+
+            {/* Hero Section */}
+            <div className="relative xs480:mb-8">
+               {/* Badge de statut */}
+               <div className="flex justify-center lg:justify-start mb-6">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-sm font-medium text-[--primary-color]">
+                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                     {t('statusBadge')}
+                  </div>
+               </div>
+            </div>
             <h2 className="xs480:text-4xl text-[1.4rem] font-bold text-center lg:text-left ">{t('hello')}</h2>
             <h1 className="xs480:text-[64px] text-[2rem] my-4 font-bold text-center lg:text-left ">
                <span className="">Davy ROBERT</span>
@@ -105,22 +116,27 @@ const Presentation = () => {
                <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph3'), keywords.paragraph3) }} />
             </div>
 
-            <div className="flex flex-wrap gap-4 mb-8 w-full justify-center md:justify-start">
-               {getQualities(tQualities).items.map((q) => (
-                  <span
-                     key={q.label}
-                     className="
-                    flex items-center gap-2
-                    bg-white/10 text-black border border-[#232946]
-                    px-2 md:px-4 py-2 rounded-xl font-semibold text-base shadow transition-all
-                    hover:bg-black/70 hover:text-white
-                    dark:bg-white/10 dark:text-white dark:border-white/20
-                    dark:hover:bg-white/20
-                  "
-                  >
-                     {q.icon}{q.label}
-                  </span>
-               ))}
+            {/* Section Qualités */}
+            <div className="mb-8">
+               <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                  {getQualities(tQualities).items.map((q, index) => (
+                     <div
+                        key={q.label}
+                        className="group flex items-center gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-600 px-4 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 "
+                        style={{
+                           animationDelay: `${index * 80}ms`
+                        }}
+                     >
+
+                        <div className="text-[--primary-color] group-hover:text-[--tertiary-color] transition-colors duration-300">
+                           {q.icon}
+                        </div>
+                        <span className="transition-colors duration-300">
+                           {q.label}
+                        </span>
+                     </div>
+                  ))}
+               </div>
             </div>
             <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                <Button
@@ -165,18 +181,19 @@ const Presentation = () => {
             </div>
          </div>
 
-                   {/* Image profil > 1024px */}
-          <div className="hidden lg:flex aspect-[4/5] w-[280px] md:w-[350px] min-w-[150px] max-w-full rounded-2xl border-2 border-[--primary-color] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0 relative z-10">
-             <Image
-                src="/assets/logos/davyprofile.png"
-                width={350}
-                height={437}
-                alt="profile"
-                className="object-cover w-full h-full"
-             />
-          </div>
+         {/* Image profil > 1024px */}
+         <div className="hidden lg:flex aspect-[4/5] w-[280px] md:w-[350px] min-w-[150px] max-w-full rounded-2xl border-2 border-[--primary-color] items-center justify-center overflow-hidden shrink-0 self-start mx-auto lg:mx-0 relative z-10">
+            <Image
+               src="/assets/logos/davyprofile.png"
+               width={350}
+               height={437}
+               alt="profile"
+               className="object-cover w-full h-full"
+            />
+         </div>
       </section>
    )
 }
+
 
 export default Presentation
