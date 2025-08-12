@@ -21,7 +21,7 @@ const MesProjets = () => {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
                transition={{ delay: 0.2 }}
-               className='text-secondary text-[18px] max-w-4xl leading-[28px] text-center mx-auto'
+               className='text-secondary text-[18px] max-w-4xl leading-[28px] mx-auto text-justify'
                dangerouslySetInnerHTML={{ __html: t('intro') }}
             />
          </div>
