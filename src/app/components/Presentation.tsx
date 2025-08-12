@@ -59,8 +59,9 @@ const Presentation = () => {
             {/* Canvas Matrix background effect */}
             {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
 
+            {/* FOR LG+ : >=1024px */}
 
-            {/* Left Section for lg+ : Image + Titles */}
+            {/* Left Section for lg+ (>=1024px) : Image + Titles */}
             <div className="hidden lg:flex flex-col items-center gap-4 z-10 min-w-[410px]">
 
                {/* Hero Section */}
@@ -68,7 +69,7 @@ const Presentation = () => {
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
                      <div className="inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-sm font-medium text-[--primary-color]">
-                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 p-2 bg-green-500 rounded-full animate-pulse"></div>
                         {t('statusBadge')}
                      </div>
                   </div>
@@ -97,9 +98,7 @@ const Presentation = () => {
                   </h2>
                </div>
 
-
-
-               {/* Buttons Section */}
+               {/* Buttons Section for lg+ */}
                <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                   {/* <Button
                      variant="primary"
@@ -142,9 +141,6 @@ const Presentation = () => {
                   </div>
                </div>
 
-
-
-
             </div>
 
 
@@ -152,18 +148,22 @@ const Presentation = () => {
             {/* Right Section */}
             <div id="presentation" className="flex flex-col gap-2 relative z-10 w-full max-w-[680px] text-left mb-8 lg:mb-0">
 
+               {/* FOR Responsive LG- only : <1024px */}
                {/* Section Availability Badge */}
                <div className="relative lg:hidden">
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start mb-2">
-                     <div className="inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-sm font-medium text-[--primary-color]">
-                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                        {t('statusBadge')}
+                     <div className="inline-flex items-center text-center gap-3 px-3 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-sm font-medium text-[--primary-color]">
+                        <div className="p-2 bg-green-500 rounded-full animate-pulse"></div>
+                        <div>
+                           {t('statusBadge')}
+                        </div>
                      </div>
                   </div>
                </div>
 
-               {/* Rôle and Title - Screen < lg only */}
+               {/* FOR Responsive LG- only : <1024px */}
+               {/* Rôle and Title */}
                <div className="lg:hidden">
                   <h2 className="xs480:text-4xl text-[1.4rem] font-bold text-center">{t('hello')}</h2>
                   <h1 className="xs480:text-[64px] text-[2rem] my-4 font-bold text-center">
@@ -175,6 +175,7 @@ const Presentation = () => {
                   </h2>
                </div>
 
+               {/* FOR Responsive LG- : <1024px */}
                {/* Profile Image block<1024px */}
                <div className="lg:hidden aspect-[4/5] w-[200px] xs480:w-[240px] min-w-[150px] max-w-full rounded-2xl border-2 border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto mb-4">
                   <Image
@@ -258,7 +259,8 @@ const Presentation = () => {
 
 
 
-                  
+                  {/* FOR Responsive LG- only : <1024px */}
+
                   <div className="lg:hidden flex w-full justify-center items-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
                      <a
                         href="https://github.com/davyR01"
@@ -287,49 +289,6 @@ const Presentation = () => {
 
             </div>
          </section>
-
-         {/* Buttons Section */}
-         {/* <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4 mt-4">
-            <Button
-               variant="primary"
-               href="/download/CV_davy_robert_2025.pdf"
-               download
-            >
-               {t('cvStandard')}
-            </Button>
-            <Button
-               variant="secondary"
-               href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
-               download
-               withShineEffect
-            >
-               {t('cvLong')}
-            </Button> */}
-         {/* <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
-               <a
-                  href="https://github.com/davyR01"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[--primary-color] text-5xl sm:text-4xl hover:scale-110 transition-transform"
-               >
-                  <FaGithub />
-               </a>
-               <a
-                  href="https://www.linkedin.com/in/davy-robert"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[--primary-color] text-5xl sm:text-4xl  hover:scale-110 transition-transform"
-               >
-                  <FaLinkedin />
-               </a>
-               <a
-                  href="mailto:contact@davyrobert.fr"
-                  className="text-[--primary-color] text-5xl sm:text-4xl  hover:scale-110 transition-transform"
-               >
-                  <MdEmail />
-               </a>
-            </div> */}
-         {/* </div> */}
       </div>
    )
 }
