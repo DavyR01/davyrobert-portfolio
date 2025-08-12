@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border dark:border-[#000] dark:hover:border-[var(--primary-color)] hover:border-[rgba(19,67,169,0.6)] rounded-2xl xs892-max:w-full sm:w-[360px] relative overflow-hidden flex flex-col"
+             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border dark:border-[#000] dark:hover:border-[var(--primary-color)] hover:border-[rgba(19,67,169,0.6)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}

@@ -53,7 +53,7 @@ const Presentation = () => {
          <section
             ref={sectionRef}
             id="introduction"
-            className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-14 pt-[110px] lg:pt-26 scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
+            className="flex flex-row flex-wrap lg:flex-nowrap justify-between max-w-[1400px] mx-auto px-6 relative gap-14 pt-[110px] lg:pt-[7.3rem] scroll-mt-20 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
          >
             {/* Canvas Matrix background effect */}
             {mounted && theme === 'dark' && <MatrixCanvas sectionRef={sectionRef} />}
@@ -82,7 +82,7 @@ const Presentation = () => {
                      height={437}
                      alt="profile"
                      className="w-full h-full"
-                     // priority
+                  // priority
                   />
                </div>
 
@@ -165,11 +165,11 @@ const Presentation = () => {
                {/* FOR Responsive LG- only : <1024px */}
                {/* Rôle and Title */}
                <div className="lg:hidden">
-                  <h2 className="xs480:text-4xl text-[1.4rem] font-bold text-center">{t('hello')}</h2>
-                  <h1 className="xs480:text-[64px] text-[2rem] my-4 font-bold text-center">
+                  <h2 className="font-bold text-center presentation-clamp-h2">{t('hello')}</h2>
+                  <h1 className="my-4 font-bold text-center presentation-clamp-h1">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="xs480:text-4xl text-[1.4rem] font-bold mb-4 text-center">
+                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2">
                      {t('fullstackTitle')} <br />
                      <span className="text-[--primary-color]">{t('fullstackRole')}</span>
                   </h2>

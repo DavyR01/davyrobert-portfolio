@@ -16,10 +16,9 @@ export default {
          screens: {
             xxs: "280px",
             xs: "390px",
-            xs420: "420px", 
-            xs480: "480px", 
-            "xs892-max": { max: "892px" },
-            "xs893": { min: "893px" },
+            xs420: "420px",
+            xs480: "480px",
+            xs893: { min: "893px" }, // xs893: "893px",
          },
          fontFamily: {
             sans: ['var(--font-geist-sans)', 'sans-serif'],
