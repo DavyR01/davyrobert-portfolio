@@ -64,7 +64,7 @@ const MesExperiences = () => {
             <div className="relative mx-auto w-full max-w-[1400px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[--primary-color] z-0 rounded"></div>
                {data_experiences.map((item, i) => (
-                  <div key={`desktop-${item.yearKey}-${i}`} className="relative w-full flex mb-24">
+                  <div key={`desktop-${item.yearKey}-${i}`} className="relative w-full flex">
                      {/* Icônes positionnés à gauche ou à droite */}
                      {!isMobile && (
                         <div
