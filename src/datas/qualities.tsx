@@ -1,4 +1,4 @@
-import { Qualities } from "@/types/types";
+import { Qualities } from "@/types/index";
 import { BsCheck2Square } from "react-icons/bs";
 import { FiRefreshCw, FiTarget } from "react-icons/fi";
 import { HiOutlineUser, HiOutlineEye, HiOutlineQuestionMarkCircle } from "react-icons/hi";

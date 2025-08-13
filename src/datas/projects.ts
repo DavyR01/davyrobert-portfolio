@@ -1,4 +1,4 @@
-import { ProjectCardProps } from "@/types/types";
+import { ProjectCardProps } from "@/types/index";
 
 export const projects: Omit<ProjectCardProps, 'index'>[] = [
     {

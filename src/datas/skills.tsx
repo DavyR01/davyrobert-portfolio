@@ -1,4 +1,4 @@
-import { Category } from "@/types/types"
+import { Category } from "@/types/index"
 import { DiJavascript, DiDotnet } from "react-icons/di";
 import { FaSymfony, FaDocker, FaAws, FaBitbucket } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";

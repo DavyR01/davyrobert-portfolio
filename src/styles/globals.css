@@ -36,6 +36,9 @@
 
    --bg-button-dark: rgba(17, 24, 39, 1);
    --bg-button-light: rgb(245, 245, 245);
+
+   --border-dark: rgba(0, 0, 0, 0.8);
+   --border-light: rgb(245, 245, 245, 0.8);
 }
 
 .dark:root {
@@ -53,17 +56,53 @@
    --secondary-color: rgb(19, 67, 169); */
 }
 
+/* .dark :root {
+   --background: --bg-dark-items2;
+   --foreground: #ffffff;
+   --foreground: #0ed572;
+} */
+
 body {
    color: var(--foreground);
    background: var(--background);
    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .dark :root {
-   --background: --bg-dark-items2;
-   --foreground: #ffffff;
-   --foreground: #0ed572;
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+ */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --secondary-color: #232946;
+  }
+}
+
+.dark :root {
+  --secondary-color: #232946;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Handle animation Numbers.tsx */
 @keyframes scroll-down {
@@ -124,24 +163,11 @@ body {
    }
 }
 
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
- */
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --secondary-color: #232946;
-  }
-}
 
-.dark :root {
-  --secondary-color: #232946;
-} */
+
+
+
 
 
 

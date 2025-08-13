@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
-import { ProjectCardProps } from "@/types/types";
+import { ProjectCardProps } from "@/types/index";
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from "next-intl";
 

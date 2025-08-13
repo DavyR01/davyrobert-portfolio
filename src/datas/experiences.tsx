@@ -1,4 +1,4 @@
-import { DataExperience } from "@/types/types"
+import { DataExperience } from "@/types/index"
 import Image from 'next/image';
 import { DiDotnet, DiJavascript } from "react-icons/di";
 import { FaDocker, FaAws, FaSymfony } from "react-icons/fa";

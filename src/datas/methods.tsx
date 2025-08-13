@@ -1,4 +1,4 @@
-import { Methods } from "@/types/types";
+import { Methods } from "@/types/index";
 import Image from "next/image";
 
 export const methods: Methods = {

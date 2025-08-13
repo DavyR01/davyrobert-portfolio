@@ -68,8 +68,8 @@ const Presentation = () => {
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
                      <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available 
-                        ? 'from-[--primary-color]/10 to-[--tertiary-color]/10 border-[--primary-color]/20 text-[--primary-color]' 
-                        : 'from-red-500/10 to-red-600/10'
+                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]' 
+                        : 'from-red-300/10 to-red-400/10 border-[--border-dark] dark:border-[--border-light]'
                      } border rounded-full text-[0.9rem] font-medium`}>
                         <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
                         {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
@@ -157,8 +157,8 @@ const Presentation = () => {
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
                      <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available 
-                        ? 'from-[--primary-color]/10 to-[--tertiary-color]/10 border-[--primary-color]/20 text-[--primary-color]' 
-                        : 'from-red-500/10 to-red-600/10'
+                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]' 
+                        : 'from-red-300/10 to-red-400/10 border-[--border-dark] dark:border-[--border-light]'
                      } border rounded-full text-[0.9rem] font-medium`}>
                         <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
                         {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
