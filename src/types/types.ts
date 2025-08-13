@@ -50,3 +50,15 @@ export type ExperienceIcon = {
   icon: ReactNode;
   label: string;
 };
+
+export type PersonalData = {
+  available: boolean;
+};
+
+export type Methods = {
+  items: {
+    label: string;
+    icon: ReactNode;
+  }[];
+};
+

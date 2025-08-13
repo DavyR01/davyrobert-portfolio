@@ -4,11 +4,11 @@ import Image from 'next/image'
 import React, { useRef, useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import MatrixCanvas from './ui/MatrixCanvas';
-import { useTheme } from '@/context/ThemeContext';
-import { getQualities, methods } from '@/datas';
-import Button from './ui/Button';
 import { useTranslations } from 'next-intl';
+import { useTheme } from '@/context/ThemeContext';
+import MatrixCanvas from './ui/MatrixCanvas';
+import { getQualities, personalData, methods } from '@/datas';
+import Button from './ui/Button';
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -67,9 +67,12 @@ const Presentation = () => {
                <div className="relative">
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
-                     <div className="inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-[0.9rem] font-medium text-[--primary-color]">
-                        <div className="w-3 h-3 p-2 bg-green-500 rounded-full animate-pulse"></div>
-                        {t('statusBadge')}
+                     <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available 
+                        ? 'from-[--primary-color]/10 to-[--tertiary-color]/10 border-[--primary-color]/20 text-[--primary-color]' 
+                        : 'from-red-500/10 to-red-600/10'
+                     } border rounded-full text-[0.9rem] font-medium`}>
+                        <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
+                        {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
                      </div>
                   </div>
                </div>
@@ -152,12 +155,13 @@ const Presentation = () => {
                {/* Section Availability Badge */}
                <div className="relative lg:hidden">
                   {/* Statut Badge */}
-                  <div className="flex justify-center lg:justify-start mb-2">
-                     <div className="inline-flex items-center text-center gap-3 px-3 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-sm font-medium text-[--primary-color]">
-                        <div className="p-2 bg-green-500 rounded-full animate-pulse"></div>
-                        <div>
-                           {t('statusBadge')}
-                        </div>
+                  <div className="flex justify-center lg:justify-start">
+                     <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available 
+                        ? 'from-[--primary-color]/10 to-[--tertiary-color]/10 border-[--primary-color]/20 text-[--primary-color]' 
+                        : 'from-red-500/10 to-red-600/10'
+                     } border rounded-full text-[0.9rem] font-medium`}>
+                        <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
+                        {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
                      </div>
                   </div>
                </div>

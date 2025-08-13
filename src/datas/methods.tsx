@@ -1,6 +1,7 @@
+import { Methods } from "@/types/types";
 import Image from "next/image";
 
-export const methods = {
+export const methods: Methods = {
    items: [
       {
          label: 'DevOps',
