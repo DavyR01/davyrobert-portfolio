@@ -64,30 +64,7 @@ const MesExperiences = () => {
             <div className="relative mx-auto w-full max-w-[1400px]">
                <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[--primary-color] z-0 rounded"></div>
                {data_experiences.map((item, i) => (
-                  <div key={`desktop-${item.yearKey}-${i}`} className="relative w-full flex">
-                     {/* Icônes positionnés à gauche ou à droite */}
-                     {!isMobile && (
-                        <div
-                           className={`
-                                 absolute 
-                                 top-1/2 -translate-y-1/2 
-                                 z-20 
-                                 w-[500px]
-                                 flex flex-wrap gap-10
-                                 ${i % 2 === 0
-                                 ? 'left-[calc(50%+40px)] justify-center'
-                                 : 'right-[calc(55%-0px)] justify-center'} 
-                              `}
-                        >
-
-                           {item.icons.map(({ icon, label }, k) => (
-                              <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-25 h-25 flex items-center justify-center">
-                                 <IconDisplay icon={icon} label={label} sizeClass="text-7xl" />
-                              </div>
-                           ))}
-                        </div>
-                     )}
-
+                  <div key={`desktop-${item.yearKey}-${i}`} className="relative w-full flex mb-16">
                      {i % 2 === 0 ? (
                         <>
                            <div className="w-1/2 flex justify-end pr-10">
@@ -108,12 +85,28 @@ const MesExperiences = () => {
                                  </div>
                               </div>
                            </div>
-                           <div className="w-1/2"></div>
+                           <div className="w-1/2 flex justify-center items-center pl-10">
+                              <div className="w-[500px] flex flex-wrap justify-center gap-6 items-start pt-8">
+                                 {item.icons.map(({ icon, label }, k) => (
+                                    <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-20 h-20 flex items-center justify-center">
+                                       <IconDisplay icon={icon} label={label} sizeClass="text-7xl" />
+                                    </div>
+                                 ))}
+                              </div>
+                           </div>
                         </>
                      ) : (
                         <>
-                           <div className="w-1/2"></div>
-                           <div className="w-1/2 flex justify-start pl-10">
+                           <div className="w-1/2 flex justify-end items-center pr-10">
+                              <div className="w-[500px] flex flex-wrap justify-center gap-6 items-start pt-8">
+                                 {item.icons.map(({ icon, label }, k) => (
+                                    <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-20 h-20 flex items-center justify-center">
+                                       <IconDisplay icon={icon} label={label} sizeClass="text-7xl" />
+                                    </div>
+                                 ))}
+                              </div>
+                           </div>
+                           <div className="w-1/2 flex justify-center items-center pl-10">
                               <div className="relative">
                                  <div className="absolute top-1/2 left-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
                                  <div className="dark:bg-[--bg-dark-items2] bg-[var(--bg-light)] border border-[--primary-color] rounded-lg p-6 w-[500px] text-base">

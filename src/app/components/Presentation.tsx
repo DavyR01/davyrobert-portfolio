@@ -67,7 +67,7 @@ const Presentation = () => {
                <div className="relative">
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
-                     <div className="inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-sm font-medium text-[--primary-color]">
+                     <div className="inline-flex items-center gap-4 px-4 py-2 bg-gradient-to-r from-[--primary-color]/10 to-[--tertiary-color]/10 border border-[--primary-color]/20 rounded-full text-[0.9rem] font-medium text-[--primary-color]">
                         <div className="w-3 h-3 p-2 bg-green-500 rounded-full animate-pulse"></div>
                         {t('statusBadge')}
                      </div>
