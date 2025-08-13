@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 import { useTranslations } from 'next-intl';
 
 
-const MesProjets = () => {
+const MyProjects = () => {
    const maxTagsCount = projects.reduce((max, project) => Math.max(max, project.tags.length), 0);
    const t = useTranslations('myProjects');
 
@@ -41,4 +41,4 @@ const MesProjets = () => {
    );
 };
 
-export default MesProjets;
+export default MyProjects;

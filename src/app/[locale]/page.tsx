@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Presentation from '../components/Presentation';
-import MesProjets from '../components/MesProjets';
+import MyProjects from '../components/MyProjects';
 import MesExperiences from '../components/MesExperiences';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
@@ -36,7 +36,7 @@ export default function HomePage() {
       <Presentation />
       <Skills />
       <MesExperiences />
-      <MesProjets />
+      <MyProjects />
       <Contact />
       </div>
     </main>
