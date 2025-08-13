@@ -28,7 +28,7 @@ export default function Button({
   const widthClasses = fullWidth ? "w-full sm:w-auto" : "w-auto";
   
   const variantClasses = {
-    primary: "bg-[--primary-color] dark:text-[var(--text-color-dark)] hover:bg-[var(--text-primary-color)] hover:text-[--secondary-color] dark:hover:text-[--primary-color] hover:border-[--primary-color] text-[var(--text-color-light)]",
+    primary: "bg-[--primary-color] dark:text-[var(--text-color-dark)] hover:bg-[var(--bg-primary-color)] hover:text-[--primary-color] dark:hover:text-[--primary-color] hover:border-[--primary-color] text-[var(--text-color-light)]",
     secondary: "relative overflow-hidden bg-gradient-to-r from-[#bfc9ca] via-[#e5e8e8] to-[#bfc9ca] text-[var(--text-color-dark)] hover:from-[#e5e8e8] hover:to-[#bfc9ca] hover:text-[#1A3A34] hover:border-[#bfc9ca] shadow-md"
   };
 

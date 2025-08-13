@@ -1,0 +1,7 @@
+:root {
+    --font-cambria: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.font-cambria {
+    font-family: var(--font-cambria);
+}

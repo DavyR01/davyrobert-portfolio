@@ -27,6 +27,7 @@ export default {
             grotesk500: ['var(--font-space-grotesk-500)', 'serif'],
             grotesk600: ['var(--font-space-grotesk-600)', 'serif'],
             grotesk700: ['var(--font-space-grotesk-700)', 'serif'],
+            cambriaaa: ['var(--font-cambria)', 'serif'],
          },
       },
    },

@@ -135,6 +135,18 @@ export const data_experiences: DataExperience[] = [
                 ),
                 label: 'Azure DevOps',
             },
+            {
+                icon: (
+                    <Image
+                        src="/assets/skills/sharepoint.png"
+                        alt="Sharepoint"
+                        width={48}
+                        height={48}
+                        className="w-16 h-16"
+                    />
+                ),
+                label: 'Sharepoint',
+            },
             { icon: <IoAdd className="w-16 h-16" />, label: 'Plus' },
             {
                 icon: (

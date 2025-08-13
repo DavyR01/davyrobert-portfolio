@@ -7,10 +7,12 @@
     "contact": "CONTACT"
   },
   "presentation": {
-    "hello": "Hello, let me introduce myself",
-    "fullstack": "And I work as a Full Stack Developer",
+    "hello": "Hello, I'm",
     "fullstackTitle": "And I work as a",
     "fullstackRole": "Full Stack Developer",
+    "fullstackRole2": "web",
+    "fullstackRole3": "mobile ",
+    "fullstackRole4": "certified",
     "methodsTitle": "Methods used:",
     "statusBadge": "Available and open to opportunities",
     "statusBadgeUnavailable": "Currently unavailable but listening",
@@ -18,7 +20,7 @@
     "cvLong": "Extended CV",
     "paragraph1": "After a rich, varied and diversified career path, I decided to specialize in the field of computer science and more particularly in web development and application design. Passionate about the world of entrepreneurship and new technologies, I continuously learn and evolve according to the required skills and market demand.",
     "paragraph2": "I design, develop and optimize web applications, from idea to realization through to production deployment. I dedicate time to self-training and constantly adapt to innovations and emerging new technologies. One of my objectives is therefore to aim to exploit those that prove relevant to successfully carry out the missions entrusted to me.",
-    "paragraph3": "Therefore, I wish to contribute to ambitious and transformative projects, alongside committed companies that share strong values."
+    "paragraph3": "I propose therefore digital solutions tailored to specific client needs. As a result, I wish to contribute to ambitious and transformative projects, alongside committed companies that share strong values."
   },
   "qualities": {
     "autonome": "Autonomous",
@@ -33,12 +35,15 @@
     "title2": "Skills",
     "interventionTitle": "My areas of intervention and expertise:",
     "intervention1": "Design and creation of modern, intuitive user-oriented web applications",
-    "intervention2": "Analysis, Research of digital solutions and Resolution of various problems",
-    "intervention3": "Unit, integration and end-to-end testing...",
+    "intervention2": "Analysis, search for digital solutions, maintenance and troubleshooting of various problems",
+    "intervention3": "Configuration, management and implementation of databases for users and performance.",
+    "intervention4": "Integration of unit and integration tests to ensure consistency, faithful quality and durable reliability within applications",
+    "intervention5": "Adaptability of applications to all supports through responsive design",
     "stacksTitle": "My predominant technical stacks to date:",
     "stack1": "NextJS, ReactJS, NodeJS with TailwindCSS",
     "stack2": "Angular, C#",
     "stack3": "Java / Kotlin with Android Studio",
+    "stack5": "PostgreSQL, GraphQL, MySQL",
     "stack4": "And much more...",
     "categories": {
       "languages": "Languages",
@@ -121,7 +126,7 @@
     "title1": "My",
     "title2": "Projects",
     "title3": "Fulfillments",
-    "intro": "Discover my completed, recent and upcoming projects. Most of them have been deployed by me, and some were deployed in a professional setting in collaboration with other developers. <br /> For confidentiality reasons, I cannot provide the source code of projects made in companies. <br /> However, I have sometimes been able to create demonstration videos to showcase the features and usability of these projects.",
+    "intro": "<hl>Discover my completed, recent and upcoming projects.</hl> Most of them were <hl>deployed by myself</hl> and some were done in a <hl>professional context</hl> in collaboration with other developers. <br></br> Due to confidentiality concerns, I could not provide the source code of the projects done in a company. <br></br> However, you may find <hl>some demonstration videos</hl> that I have made when the project is not immediately accessible online in order to <hl>illustrate the features</hl> and <hl>ergonomics</hl> of these projects.",
     "description": {
       "ecosystemQVMD": "Development of a waste management platform to facilitate collaboration between service providers and waste holders.",
       "makeSense": "Collaborative application developed to improve decision-making between different institutional actors.",
@@ -131,17 +136,17 @@
       "virtuelMetArt": "Virtual art management application developed during DWWM training using ViteJS and TailwindCSS.",
       "franceTrivia": "First training project, interactive quiz on general knowledge about France developed in JavaScript.",
       "blogProject": "Personal blog project developed to share articles and ideas. Self-taught project mainly in JavaScript using a REST API.",
-      "louisVuitton": "Collaborative e-commerce project developed in a team at BlueSoft Group using Sharepoint, a Microsoft CMS solution."
+      "louisVuitton": "Collaborative e-commerce project developed in a team at BlueSoft Group using Sharepoint, a Microsoft SaaS collaborative solution."
     },
     "learnMore": "LEARN MORE..."
   },
   "contact": {
     "title": "Contact Me",
-    "paragraph": "Are you looking for a developer, a web integrator or even a tester to strengthen your team? <br /><br /> I am currently seeking a professional opportunity and would be delighted to discuss a future collaboration. <br /><br /> Feel free to contact me to talk about a project, learn more about my profile or simply ask questions. <br /><br /> I remain available and responsive, and I will be happy to reply."
+    "paragraph": "<hl>Are you looking for a developer, a web integrator or even a tester to strengthen your team?</hl> <br></br><br></br> I am currently seeking a professional opportunity and would be delighted to discuss a future collaboration. <br></br><br></br><hl> Feel free to contact me to talk about a project, learn more about my profile or simply ask questions.</hl> <br></br><br></br> I remain available and responsive, and I will be happy to reply."
   },
   "footer": {
     "madeWith": "Design and Development made with NextJS & TailwindCSS",
-    "rights": "© 2025 Davy Robert – All rights reserved"
+    "rights": " 2025 Davy Robert – All rights reserved"
   },
   "project": {
     "viewProject": "VIEW THE PROJECT",
@@ -159,18 +164,18 @@
       "virtuelMetArt": "Project completed during Web and Mobile Web Developer training (DWWM).\nVirtual art management application developed during DWWM training using ReactJS, ViteJS and TailwindCSS.\n The team was composed of 4 students following this training. ",
       "franceTrivia": "Project completed during Web and Mobile Web Developer training (DWWM).\nFirst training project, interactive quiz on general knowledge in France developed in JavaScript.\n The team was composed of 4 students following this training.",
       "blogProject": "Personal blog project developed to share articles and ideas.\n\nSelf-taught project mainly in JavaScript using a REST API.",
-      "louisVuitton": "Collaborative e-commerce project developed in a team at BlueSoft Group using Sharepoint, a Microsoft CMS solution.\n\nLouis Vuitton is a luxury leather goods brand and a world leader in high-quality products.\n\nManagement and improvement of their collaborative SharePoint site. This intranet software, hosted in the Cloud, allows sharing and managing content for businesses.\n\nThe team was composed of 1 to 2 developers, 1 tech lead and 1 scrum master."
+      "louisVuitton": "Collaborative e-commerce project developed in a team at BlueSoft Group using Sharepoint, a Microsoft SaaS collaborative solution.\n\nLouis Vuitton is a luxury leather goods brand and a world leader in high-quality products.\n\nManagement and improvement of their collaborative SharePoint site. This intranet software, hosted in the Cloud, allows sharing and managing content for businesses.\n\nThe team was composed of 1 to 2 developers, 1 tech lead and 1 scrum master."
     },
     "skills": {
       "title": "Skills and expertise acquired",
       "ecosystemQVMD": "• Mastery of CQRS, Hexagonal, and MVC architectures\n• Implementation of frontend/backend features of the application\n• Security enhancement through write and read permissions and authorizations\n• Modifications, bug fixes, and various improvements\n• Implementation of unit tests for each new feature\n• Increase visibility, optimize search through natural referencing (SEO)\n\nThe team is composed of:\n• 3 to 4 developers\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 dev tester\n• 1 product owner",
-      "makeSense": "• Respect for an imposed graphic charter\n• Mockup, Product Backlog, sprint and agile methodology\n• Design and Modeling of a database with MySQL\n• Development of a responsive and desktop application\n• Application debugging\n• Refactoring and performance improvement\n• Adding features to improve user experience\n• Implementation of internationalization for multilingual support\n• Creation of a switch for theme change (dark or light mode)",
-      "wildRent": "• Respect for imposed specifications\n• Mockup + prototype with Figma\n• UML diagram design and database modeling\n• Desktop + responsive application development (responsive not finished)\n• Implementation of unit, integration and end-to-end tests\n• Consideration of eco-design and accessibility for people\n• Redis server caching and response time optimization",
+      "makeSense": "• Respect for an imposed graphic charter\n• Mockup, Product Backlog, sprint and agile methodology\n• Design and Modeling of a database with MySQL\n• Development of a responsive and desktop application\n• Application debugging\n• Refactoring and performance improvement\n• Adding features to improve user experience\n• Implementation of internationalization for multilingual support\n• Creation of a switch for theme change (dark or light mode)\n• Deployment and hosting of the application on a VPS",
+      "wildRent": "• Respect for imposed specifications\n• Mockup + prototype with Figma\n• UML diagram design and database modeling\n• Desktop + responsive application development (responsive not finished)\n• Implementation of unit, integration and end-to-end tests\n• Consideration of eco-design and accessibility for people\n• Redis server caching and response time optimization\n• Deployment and hosting of the application on a VPS",
       "myCrit": "• Mobile Web Application project + Deployment on PlayStore\n• Graphic redesign of applications on PlayStore and AppleStore\n• TMA follow-up with client every beginning of week and demo end of week\n• Implementation of features: carousel, biometric authentication...\n• Error tracking with Firebase platform\n• Modifications, Debug and software and application fixes",
       "eurowatt": "• Application TMA monitoring and software evolution\n• Frontend and backend application improvement/correction\n• Various application debugging\n• TMA and evolution of database and business tools dedicated to development, construction and operation of renewable energy production centers\n• GDO application for renewable energy park network in Europe (solar, wind, hydraulic)\n• Multilingual site",
-      "virtuelMetArt": "• Free choice on graphic charter, no particular constraints\n• Mockup, Product Backlog, sprint and agile methodology\n• Choice and use of REST API architecture for database\n• Development of responsive and desktop application\n• Application debugging\n• Refactoring and performance improvement\n• Adding features to improve user experience",
-      "franceTrivia": "• Free choice on graphic charter, no particular constraints\n• Mockup, Product Backlog, sprint and agile methodology\n• Development of responsive and desktop application\n• Application debugging\n• Refactoring and performance improvement\n• Adding features to improve user experience",
-      "blogProject": "• Complete CRUD for articles\n• Filtering and sorting\n• Responsive interface\n• Local management and API",
+      "virtuelMetArt": "• Free choice on graphic charter, no particular constraints\n• Mockup, Product Backlog, sprint and agile methodology\n• Choice and use of REST API architecture for database\n• Development of responsive and desktop application\n• Application debugging\n• Refactoring and performance improvement\n• Adding features to improve user experience\n• Deployment and hosting of the application on a VPS",
+      "franceTrivia": "• Free choice on graphic charter, no particular constraints\n• Mockup, Product Backlog, sprint and agile methodology\n• Development of responsive and desktop application\n• Application debugging\n• Refactoring and performance improvement\n• Adding features to improve user experience\n• Deployment and hosting of the application on a VPS",
+      "blogProject": "• Complete CRUD for articles\n• Filtering and sorting\n• Responsive interface\n• Local management and API\n• Deployment and hosting of the application on a VPS",
       "louisVuitton": "• Creation of unit tests to cover at least 80% of code guaranteed by Blue Soft\n• Modifications, maintenance, corrections and evolutions on some webparts\n• Management and improvement of collaborative SharePoint site\n• Development of collaborative intranet platform based on SharePoint Online, hosted in Azure Cloud\n• Sharing and managing content for businesses",
       "portfolio": "Creation of a modern and responsive portfolio with Next.js 14, Tailwind CSS and internationalization\nUI/UX design and performance optimization"
     },

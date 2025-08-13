@@ -31,4 +31,6 @@ const geistSans = localFont({
     weight: "100 900",
  });
 
+ // La variable --font-cambria est définie dans fonts.css
+
  export {geistSans, geistMono, spaceGrotesk, spaceGrotesk700, spaceGrotesk500, spaceGrotesk600};

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useRef, useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import { useTranslations } from 'next-intl';
+import {  useLocale, useTranslations } from 'next-intl';
 import { useTheme } from '@/context/ThemeContext';
 import MatrixCanvas from './ui/MatrixCanvas';
 import { getQualities, personalData, methods } from '@/datas';
@@ -16,6 +16,7 @@ const Presentation = () => {
    const [mounted, setMounted] = useState(false);
    const t = useTranslations('presentation');
    const tQualities = useTranslations('qualities');
+   const locale = useLocale();
 
    // Function to highlight keywords based on language
    const highlightKeywords = (text: string, keywords: string[]) => {
@@ -25,19 +26,18 @@ const Presentation = () => {
 
    // Keywords for different paragraphs in French and English
    const getKeywords = () => {
-      const locale = t('hello').includes('Bonjour') ? 'fr' : 'en';
 
       if (locale === 'fr') {
          return {
             paragraph1: ['spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'nouvelles technologies'],
-            paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte'],
-            paragraph3: ['projets ambitieux', 'transformations']
+            paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte','exploiter celles qui s\'avèrent pertinentes'],
+            paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "engagées"]
          };
       } else {
          return {
             paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies'],
-            paragraph2: ['design', 'develop', 'optimize', 'self-training'],
-            paragraph3: ['ambitious', 'transformative projects']
+            paragraph2: ['design', 'develop', 'optimize', 'self-training','exploit those that prove relevant'],
+            paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed']
          };
       }
    };
@@ -78,7 +78,7 @@ const Presentation = () => {
                </div>
 
                {/* Profile Image >= 1024px */}
-               <div className=" /* aspect-[4/5] */ aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-2 border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 relative z-10">
+               <div className=" /* aspect-[4/5] */ aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-4 animate-border-pulse flex items-center justify-center overflow-hidden shrink-0 relative z-10">
                   <Image
                      src="/assets/logos/davyprofile.png"
                      width={350}
@@ -97,7 +97,9 @@ const Presentation = () => {
                   </h1>
                   <h2 className="text-[2rem] font-bold mb-4">
                      {t('fullstackTitle')} <br />
-                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
+                     <div className="text-[--primary-color]">{t('fullstackRole')}</div>
+                     <span className="text-[--primary-color]">{t('fullstackRole2')} <span className="font-cambriaaa">&</span> {t('fullstackRole3')}</span>
+                     <span className="">{t('fullstackRole4')}</span>
                   </h2>
                </div>
 
@@ -149,7 +151,7 @@ const Presentation = () => {
 
 
             {/* Right Section */}
-            <div id="presentation" className="flex flex-col gap-2 relative z-10 w-full  text-left mb-8 lg:mb-0">
+            <div id="presentation" className="flex flex-col gap-3 relative z-10 w-full  text-left mb-8 lg:mb-0">
 
                {/* FOR Responsive LG- only : <1024px */}
                {/* Section Availability Badge */}
@@ -170,13 +172,22 @@ const Presentation = () => {
                {/* Rôle and Title */}
                <div className="lg:hidden">
                   <h2 className="font-bold text-center presentation-clamp-h2">{t('hello')}</h2>
-                  <h1 className="my-4 font-bold text-center presentation-clamp-h1">
+                  <h1 className="my-2 font-bold text-center presentation-clamp-h1">
                      <span className="">Davy ROBERT</span>
                   </h1>
                   <h2 className="font-bold mb-4 text-center presentation-clamp-h2">
                      {t('fullstackTitle')} <br />
-                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
+                     <div className="text-[--primary-color]">{t('fullstackRole')}</div>
+                     <span className="text-[--primary-color]">{t('fullstackRole2')} <span className="font-cambriaaa">&</span> {t('fullstackRole3')}</span>
+                     <span className="">{t('fullstackRole4')}</span>
                   </h2>
+
+                  {/* <h2 className="text-[2rem] font-bold mb-4">
+                     {t('fullstackTitle')} <br />
+                     <div className="text-[--primary-color]">{t('fullstackRole')}</div>
+                     <span className="text-[--primary-color]">{t('fullstackRole2')} <span className="font-cambriaaa">&</span> {t('fullstackRole3')}</span>
+                     <span className="">{t('fullstackRole4')}</span>
+                  </h2> */}
                </div>
 
                {/* FOR Responsive LG- : <1024px */}
@@ -207,7 +218,7 @@ const Presentation = () => {
                </div>
 
                {/* Text Introduction Section */}
-               <div className="text-base mb-8 dark:text-gray-300 text-gray-700 space-y-4 xl:space-y-6 leading-relaxed lg:leading-normal xl:leading-loose text-justify">
+               <div className={`text-base mb-8 dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-loose' : 'space-y-8 xl:leading-[2.61rem]'} leading-relaxed lg:leading-normal text-justify`}>
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph1'), keywords.paragraph1) }} />
 
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph2'), keywords.paragraph2) }} />
@@ -241,7 +252,7 @@ const Presentation = () => {
 
 
                {/* Buttons Section */}
-               <div className="flex lg:flex-col flex-wrap w-full lg:w-[75%] gap-4 sm:flex-nowrap sm:items-left mb-4">
+               <div className="flex lg:flex-col flex-wrap w-full xl:w-[66%] gap-4 sm:flex-nowrap sm:items-left mb-4">
                   <Button
                      variant="primary"
                      href="/download/CV_davy_robert_2025.pdf"

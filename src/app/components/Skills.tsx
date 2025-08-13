@@ -23,14 +23,16 @@ const Skills = () => {
             </h2>
 
             {/* Sections d'intervention et stacks techniques */}
-            <div className="max-w-[1000px] mx-auto mb-12 px-4">
-                <div className="grid md:grid-cols-2 gap-8">
+            <div className="max-w-[1150px] mx-auto mb-12 px-4">
+                <div className="grid lg:grid-cols-2 gap-16">
                     <div>
                         <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('interventionTitle')}</h3>
                         <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
                             <li>{t('intervention1')}</li>
                             <li>{t('intervention2')}</li>
                             <li>{t('intervention3')}</li>
+                            <li>{t('intervention4')}</li>
+                            <li>{t('intervention5')}</li>
                         </ul>
                     </div>
 
@@ -41,6 +43,7 @@ const Skills = () => {
                             <li>{t('stack2')}</li>
                             <li>{t('stack3')}</li>
                             <li>{t('stack4')}</li>
+                            <li>{t('stack5')}</li>
                         </ul>
                     </div>
                 </div>
