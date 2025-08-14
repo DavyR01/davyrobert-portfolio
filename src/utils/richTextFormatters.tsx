@@ -21,13 +21,20 @@ const formatRichText = (translationFunction: ReturnType<typeof useTranslations>,
 export const useRichTextFormatters = () => {
   const contactT = useTranslations('contact');
   const myProjectsT = useTranslations('myProjects');
+  const projectT = useTranslations('project');
 
   const formatContactParagraph = () => formatRichText(contactT, 'paragraph');
   const formatProjectsIntro = () => formatRichText(myProjectsT, 'intro');
+  
+  // Generic formatter for project contexts
+  const formatProjectContext = (contextKey: string) => {
+    return formatRichText(projectT, `context.${contextKey}`);
+  };
 
   return {
     formatContactParagraph,
-    formatProjectsIntro
+    formatProjectsIntro,
+    formatProjectContext
   };
 };
 
