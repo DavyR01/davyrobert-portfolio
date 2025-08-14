@@ -8,7 +8,7 @@
   },
   "presentation": {
     "hello": "Hello, I'm",
-    "fullstackTitle": "And I work as a",
+    "fullstackTitle": "I work as a",
     "fullstackRole": "Full Stack Developer",
     "fullstackRole2": "web",
     "fullstackRole3": "mobile ",
@@ -19,7 +19,7 @@
     "cvStandard": "Standard CV",
     "cvLong": "Extended CV",
     "paragraph1": "After a rich, varied and diversified career path, I decided to specialize in the field of computer science and more particularly in web development and application design. Passionate about the world of entrepreneurship and new technologies, I continuously learn and evolve according to the required skills and market demand.",
-    "paragraph2": "I design, develop and optimize web applications, from idea to realization through to production deployment. I dedicate time to self-training and constantly adapt to innovations and emerging new technologies. One of my objectives is therefore to aim to exploit those that prove relevant to successfully carry out the missions entrusted to me.",
+    "paragraph2": "I design, develop and optimize web applications, from idea to realization through to production deployment. I dedicate time to self-training and constantly adapt to innovations and emerging technologies. One of my objectives is therefore to aim to exploit those that prove relevant to successfully carry out the missions entrusted to me.",
     "paragraph3": "I propose therefore digital solutions tailored to specific client needs. As a result, I wish to contribute to ambitious and transformative projects, alongside committed companies that share strong values."
   },
   "qualities": {
@@ -65,7 +65,7 @@
       "entrepreneurship": {
         "title": "Entrepreneurship",
         "tasks": {
-          "t1": "Creation of e-commerce projects with Shopify",
+          "t1": "Creation of e-commerce projects using the Shopify SaaS software",
           "t2": "Code adaptability to an existing template",
           "t3": "Production and publication of visual content and marketing videos",
           "t4": "Conversion-oriented copywriting",

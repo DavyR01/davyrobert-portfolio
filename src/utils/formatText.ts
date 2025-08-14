@@ -1,3 +1,5 @@
+'use client';
+
 // Function to format text with lists, bold, and structure
 export const formatText = (text: string) => {
   if (!text) return '';
@@ -26,3 +28,32 @@ export const formatText = (text: string) => {
 
   return formattedText;
 };
+
+
+
+
+
+// Function to highlight keywords based on language
+export const highlightKeywordsPresentation = (text: string, keywords: string[]) => {
+  const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
+  return text.replace(regex, '<span class="keyword-highlight">$1</span>');
+};
+
+// Keywords for different paragraphs in French and English
+export const getKeywordsPresentation = (locale: string) => {
+  if (locale === 'fr') {
+    return {
+      paragraph1: ['spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'nouvelles technologies'],
+      paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte', 'exploiter celles qui s\'avèrent pertinentes'],
+      paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "engagées"]
+    };
+  } else {
+    return {
+      paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies'],
+      paragraph2: ['design', 'develop', 'optimize', 'self-training', 'exploit those that prove relevant'],
+      paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed']
+    };
+  }
+};
+
+

@@ -4,11 +4,12 @@ import Image from 'next/image'
 import React, { useRef, useEffect, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import {  useLocale, useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useTheme } from '@/context/ThemeContext';
 import MatrixCanvas from './ui/MatrixCanvas';
 import { getQualities, personalData, methods } from '@/datas';
 import Button from './ui/Button';
+import { getKeywordsPresentation, highlightKeywordsPresentation } from '@/utils/formatText'
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -18,31 +19,7 @@ const Presentation = () => {
    const tQualities = useTranslations('qualities');
    const locale = useLocale();
 
-   // Function to highlight keywords based on language
-   const highlightKeywords = (text: string, keywords: string[]) => {
-      const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
-      return text.replace(regex, '<span class="keyword-highlight">$1</span>');
-   };
-
-   // Keywords for different paragraphs in French and English
-   const getKeywords = () => {
-
-      if (locale === 'fr') {
-         return {
-            paragraph1: ['spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'nouvelles technologies'],
-            paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte','exploiter celles qui s\'avèrent pertinentes'],
-            paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "engagées"]
-         };
-      } else {
-         return {
-            paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies'],
-            paragraph2: ['design', 'develop', 'optimize', 'self-training','exploit those that prove relevant'],
-            paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed']
-         };
-      }
-   };
-
-   const keywords = getKeywords();
+   const keywords = getKeywordsPresentation(locale);
 
    useEffect(() => {
       setMounted(true);
@@ -63,14 +40,13 @@ const Presentation = () => {
             {/* Left Section for lg+ (>=1024px) : Image + Titles */}
             <div className="hidden lg:flex flex-col items-center gap-4 z-10 min-w-[360px]">
 
-               {/* Hero Section */}
+               {/* Statut Badge */}
                <div className="relative">
-                  {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
-                     <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available 
-                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]' 
+                     <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available
+                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]'
                         : 'from-red-300/10 to-red-400/10 border-[--border-dark] dark:border-[--border-light]'
-                     } border rounded-full text-[0.9rem] font-medium`}>
+                        } border rounded-full text-[0.9rem] font-medium`}>
                         <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
                         {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
                      </div>
@@ -78,7 +54,7 @@ const Presentation = () => {
                </div>
 
                {/* Profile Image >= 1024px */}
-               <div className=" /* aspect-[4/5] */ aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-4 animate-border-pulse flex items-center justify-center overflow-hidden shrink-0 relative z-10">
+               <div className=" /* aspect-[4/5] */ aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-[0.2rem] animate-border-pulse flex items-center justify-center overflow-hidden shrink-0 relative z-10">
                   <Image
                      src="/assets/logos/davyprofile.png"
                      width={350}
@@ -89,7 +65,7 @@ const Presentation = () => {
                   />
                </div>
 
-               {/* Titres behind image for lg+ */}
+               {/* Titles behind image for lg+ */}
                <div className="leading-tight">
                   <h2 className="text-[2rem] font-bold">{t('hello')}</h2>
                   <h1 className="text-[3.3rem] my-4 font-bold">
@@ -158,10 +134,10 @@ const Presentation = () => {
                <div className="relative lg:hidden">
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
-                     <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available 
-                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]' 
+                     <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available
+                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]'
                         : 'from-red-300/10 to-red-400/10 border-[--border-dark] dark:border-[--border-light]'
-                     } border rounded-full text-[0.9rem] font-medium`}>
+                        } border rounded-full text-[0.9rem] font-medium`}>
                         <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
                         {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
                      </div>
@@ -192,7 +168,7 @@ const Presentation = () => {
 
                {/* FOR Responsive LG- : <1024px */}
                {/* Profile Image block<1024px */}
-               <div className="lg:hidden aspect-square w-[200px] xs480:w-[240px] min-w-[150px] max-w-full rounded-2xl border-2 border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto mb-4">
+               <div className="lg:hidden aspect-square w-[200px] xs480:w-[240px] min-w-[150px] max-w-full rounded-2xl border-[0.16rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto mb-4 animate-border-pulse">
                   <Image
                      src="/assets/logos/davyprofile.png"
                      width={240}
@@ -219,11 +195,11 @@ const Presentation = () => {
 
                {/* Text Introduction Section */}
                <div className={`text-base mb-8 dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-loose' : 'space-y-8 xl:leading-[2.61rem]'} leading-relaxed lg:leading-normal text-justify`}>
-                  <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph1'), keywords.paragraph1) }} />
+                  <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph1'), keywords.paragraph1) }} />
 
-                  <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph2'), keywords.paragraph2) }} />
+                  <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph2'), keywords.paragraph2) }} />
 
-                  <p dangerouslySetInnerHTML={{ __html: highlightKeywords(t('paragraph3'), keywords.paragraph3) }} />
+                  <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph3'), keywords.paragraph3) }} />
                </div>
 
                {/* Qualities Section */}
