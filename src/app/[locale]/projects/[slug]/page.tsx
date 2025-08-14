@@ -9,14 +9,12 @@ import { useParams } from 'next/navigation';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { AiOutlineEye } from 'react-icons/ai';
 import { formatText } from '@/utils/formatText';
-import { useRichTextFormatters } from '@/utils/richTextFormatters';
 
 export default function ProjectPage() {
   const params = useParams();
   const t = useTranslations();
   const { slug } = params;
   const project = projects.find((p) => p.projectSlug === slug);
-  const { formatProjectContext } = useRichTextFormatters();
 
   const videoFallbackText = t('notFound.videoNotSupported');
 
@@ -81,9 +79,12 @@ export default function ProjectPage() {
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.context.title')}
             </h2>
-            <div className="text-base leading-relaxed dark:text-[#b1bad3] text-gray-600">
-              {formatProjectContext(project.descriptionKey)}
-            </div>
+            <div
+              className="text-base leading-relaxed text-black dark:text-gray-300"
+              dangerouslySetInnerHTML={{
+                __html: formatText(t(`project.context.${project.descriptionKey}`))
+              }}
+            />
           </div>
 
           {/* Savoir-faire et compétences */}
@@ -92,7 +93,7 @@ export default function ProjectPage() {
               {t('project.skills.title')}
             </h2>
             <div
-              className="text-base leading-relaxed dark:text-[#b1bad3] text-gray-600"
+              className="text-base leading-relaxed text-black dark:text-gray-300"
               dangerouslySetInnerHTML={{
                 __html: formatText(t(`project.skills.${project.descriptionKey}`))
               }}
