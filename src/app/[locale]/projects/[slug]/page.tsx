@@ -75,7 +75,7 @@ export default function ProjectPage() {
         <div className="grid gap-8 mb-8">
 
           {/* Contexte du projet */}
-          <div className="bg-[#f6f6f6] dark:bg-gray-900 p-4 sm:p-5 rounded-xl border border-[#e5e5e5] dark:border-transparent shadow">
+          <div className="bg-[#fcf9f9] dark:bg-gray-900 p-4 sm:p-5 rounded-xl border border-[#e5e5e5] dark:border-transparent shadow">
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.context.title')}
             </h2>
@@ -88,7 +88,7 @@ export default function ProjectPage() {
           </div>
 
           {/* Savoir-faire et compétences */}
-          <div className="bg-[#f6f6f6] dark:bg-gray-900 p-4 sm:p-5  rounded-xl border border-[#e5e5e5] dark:border-transparent shadow">
+          <div className="bg-[#fcf9f9] dark:bg-gray-900 p-4 sm:p-5  rounded-xl border border-[#e5e5e5] dark:border-transparent shadow">
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.skills.title')}
             </h2>

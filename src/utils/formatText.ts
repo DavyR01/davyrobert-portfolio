@@ -4,7 +4,17 @@
 export const formatText = (text: string) => {
   if (!text) return '';
 
-  const formattedText = text
+  // Find only the very first sentence of the entire text
+  const firstSentenceMatch = text.match(/^(.*?[.!?])/);
+  let textWithGreenSentence = text;
+
+  if (firstSentenceMatch) {
+    const firstSentence = firstSentenceMatch[1];
+    const restOfText = text.substring(firstSentence.length);
+    textWithGreenSentence = `<span class="keyword-highlight">${firstSentence}</span>${restOfText}`;
+  }
+
+  const formattedText = textWithGreenSentence
     // Convert line breaks to <br>
     .replace(/\n/g, '<br>')
     // Convert bullets to HTML lists with indentation
@@ -33,6 +43,7 @@ export const formatText = (text: string) => {
 
 
 
+// on Prestentation Component
 // Function to highlight keywords based on language
 export const highlightKeywordsPresentation = (text: string, keywords: string[]) => {
   const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
