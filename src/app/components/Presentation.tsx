@@ -1,15 +1,15 @@
 'use client'
 
+import { useTheme } from '@/context/ThemeContext'
+import { getQualities, methods, personalData } from '@/datas'
+import { getKeywordsPresentation, highlightKeywordsPresentation } from '@/utils/formatText'
+import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import { useLocale, useTranslations } from 'next-intl';
-import { useTheme } from '@/context/ThemeContext';
-import MatrixCanvas from './ui/MatrixCanvas';
-import { getQualities, personalData, methods } from '@/datas';
-import Button from './ui/Button';
-import { getKeywordsPresentation, highlightKeywordsPresentation } from '@/utils/formatText'
+import Button from './ui/Button'
+import MatrixCanvas from './ui/MatrixCanvas'
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -54,14 +54,16 @@ const Presentation = () => {
                </div>
 
                {/* Profile Image >= 1024px */}
-               <div className=" /* aspect-[4/5] */ aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-[0.2rem] animate-border-pulse flex items-center justify-center overflow-hidden shrink-0 relative z-10">
+               <div className="aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-[0.25rem] animate-border-pulse overflow-hidden shrink-0 relative z-10">
                   <Image
-                     src="/assets/logos/davyprofile.png"
-                     width={350}
-                     height={437}
+                     src="/assets/profile/davyprofile1.png"
+                     fill
+                     // width={350}
+                     // height={437}
                      alt="profile"
-                     className="w-full h-full"
-                  // priority
+                     className="object-cover"
+                     priority
+                     // sizes="(max-width: 768px) 280px, (max-width: 1024px) 500px, 500px"
                   />
                </div>
 
@@ -168,9 +170,9 @@ const Presentation = () => {
 
                {/* FOR Responsive LG- : <1024px */}
                {/* Profile Image block<1024px */}
-               <div className="lg:hidden aspect-square w-[200px] xs480:w-[240px] min-w-[150px] max-w-full rounded-2xl border-[0.16rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto mb-4 animate-border-pulse">
+               <div className="lg:hidden aspect-square w-[200px] xs480:w-[260px] min-w-[210px] max-w-full rounded-2xl border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto mb-4 animate-border-pulse">
                   <Image
-                     src="/assets/logos/davyprofile.png"
+                     src="/assets/profile/davyprofile1.png"
                      width={240}
                      height={300}
                      alt="profile"
@@ -231,7 +233,7 @@ const Presentation = () => {
                <div className="flex lg:flex-col flex-wrap w-full xl:w-[66%] gap-4 sm:flex-nowrap sm:items-left mb-4">
                   <Button
                      variant="primary"
-                     href="/download/CV_davy_robert_2025.pdf"
+                     href="/download/CV_davy_robert_2025_V5.pdf"
                      download
                   >
                      {t('cvStandard')}

@@ -1,13 +1,12 @@
-import { ReactNode } from 'react';
-import { getServerThemeClass } from '@/utils/theme';
-import { THEME_INIT_SCRIPT } from '@/utils/theme';
-import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from '../utils/fonts';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { getServerThemeClass, THEME_INIT_SCRIPT } from '@/utils/theme';
 import Script from 'next/script';
+import { ReactNode } from 'react';
+import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from '../utils/fonts';
 // import ThemeToggle from './components/ui/ThemeToggle';
+import { routing } from '@/i18n/routing';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { routing } from '@/i18n/routing';
 import { cookies } from 'next/headers';
 
 import '@/styles';

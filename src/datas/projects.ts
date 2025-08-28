@@ -72,7 +72,7 @@ export const projects: Omit<ProjectCardProps, 'index'>[] = [
           { name: "JIRA", color: "dark:text-[--primary-color]" },
        ],
        image: "/projects/crit_job5.png",
-       video: "/assets/videos/mycritjob.webm",
+       video: "/assets/videos/mycritjob.mp4",
        sourceWeb: "",
        projectSlug: "crit-job",
        learnMore: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1"
