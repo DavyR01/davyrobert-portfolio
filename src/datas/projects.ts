@@ -18,7 +18,7 @@ export const projects: Omit<ProjectCardProps, 'index'>[] = [
           { name: "DOCKER", color: "dark:text-[--primary-color]" },
        ],
        image: "/projects/ecosystem-qvmd.png",
-       video: "",
+       video: "/assets/videos/ecosystem.mp4",
        sourceWeb: "https://www.quiveutmesdechets.fr/",
        sourceGithub: "",
        learnMore: "",
@@ -72,7 +72,7 @@ export const projects: Omit<ProjectCardProps, 'index'>[] = [
           { name: "JIRA", color: "dark:text-[--primary-color]" },
        ],
        image: "/projects/crit_job5.png",
-       video: "",
+       video: "/assets/videos/mycritjob.webm",
        sourceWeb: "",
        projectSlug: "crit-job",
        learnMore: "https://play.google.com/store/apps/details?id=com.critjob.mycrit&hl=fr&pli=1"
