@@ -8,13 +8,20 @@ import Script from "next/script";
 import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../../utils/fonts";
 import ThemeToggle from "../components/ui/ThemeToggle";
 import Footer from '../components/Footer';
+import type { Metadata } from 'next';
+import { generateSEOMetadata } from '@/utils/seo';
 
 // import "@/styles/index.css";
 
-export const metadata = {
-  title: "Davy Robert - Portfolio",
-  description: "Portfolio de Davy Robert - Développeur Full Stack",
-};
+// Métadonnées dynamiques basées sur la locale
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return generateSEOMetadata(locale);
+}
 
 export default async function LocaleLayout({
   children,
