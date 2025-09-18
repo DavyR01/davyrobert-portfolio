@@ -53,7 +53,14 @@ const Footer = () => {
          {/* Copyright*/}
          <div className="mt-10 text-center space-y-2 mx-4">
             <p className="text-sm dark:text-gray-500 text-gray-900">
-               {t('madeWith')}
+               <a 
+                  href="https://github.com/DavyR01/davyrobert-portfolio" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline cursor-pointer"
+               >
+                  {t('madeWith')}
+               </a>
             </p>
             <p className="text-sm text-[--secondary-color] dark:text-[--primary-color] font-semibold">
                {t('rights')}

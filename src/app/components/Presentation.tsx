@@ -233,7 +233,7 @@ const Presentation = () => {
                <div className="flex lg:flex-col flex-wrap w-full xl:w-[66%] gap-4 sm:flex-nowrap sm:items-left mb-4">
                   <Button
                      variant="primary"
-                     href="/download/CV_davy_robert_2025_V5.pdf"
+                     href="/download/CV_davy_robert_2025_V6.pdf"
                      download
                   >
                      {t('cvStandard')}
