@@ -1,0 +1,200 @@
+{
+  "navbar": {
+    "about": "A PROPOS",
+    "skills": "COMPÉTENCES",
+    "experience": "EXPÉRIENCES",
+    "projects": "PROJETS",
+    "contact": "CONTACT"
+  },
+  "presentation": {
+    "hello": "Bonjour, je suis",
+    "fullstackTitle": "J'exerce en tant que",
+    "fullstackRole": "Développeur Full Stack",
+    "fullstackRole2": "web",
+    "fullstackRole3": "mobile ",
+    "fullstackRole4": "certifié",
+    "methodsTitle": "Méthodes adoptées :",
+    "statusBadge": "Disponible et ouvert aux opportunités",
+    "statusBadgeUnavailable": "Actuellement indisponible mais à l'écoute",
+    "cvStandard": "Mon CV format standard",
+    "cvLong": "Mon CV format long",
+    "paragraph1": "Après un parcours riche, varié et diversifié, j'ai décidé de me spécialiser dans le domaine de l'informatique et plus particulièrement dans le développement web et la conception d'applications. Épris par le monde de l'entrepreneuriat et les nouvelles technologies, j'apprends et évolue continuellement selon les compétences requises et la demande sur le marché.",
+    "paragraph2": "Je conçois, développe et optimise des applications web, d'une idée à la réalisation jusqu'à la mise en production. Je consacre du temps à me former en autodidacte et m'adapte en permanence aux innovations et technologies émergentes. Un de mes objectifs est donc de viser à exploiter celles qui s'avèrent pertinentes pour mener à bien les missions qui me sont confiées.",
+    "paragraph3": "Je propose donc des solutions numériques sur mesure et adaptées aux besoins spécifiques des clients. De ce fait, je souhaite intégrer une équipe et apporter ma contribution dans des projets ambitieux, porteurs de transformations et auprès d'entreprises engagées véhiculant des valeurs fortes."
+  },
+  "qualities": {
+    "autonome": "Autonome",
+    "rigoureux": "Rigoureux",
+    "attentive": "A l'écoute",
+    "adaptatif": "Adaptatif",
+    "goutChallenge": "Goût du challenge",
+    "curieux": "Curieux"
+  },
+  "mySkills": {
+    "title1": "Mes",
+    "title2": "Compétences",
+    "interventionTitle": "Mes domaines d'intervention et expertises:",
+    "intervention1": "Conception, création d'applications web et mobiles modernes, intuitives et orientées utilisateur",
+    "intervention2": "Analyse, recherche de solutions numériques, maintenance et résolution de problèmes divers",
+    "intervention3": "Configuration, gestion et mise en place de bases de données sécurisées pour les utilisateurs et performantes.",
+    "intervention4": "Intégration de tests unitaires et d'intégrations afin de garantir une cohérence, une qualité fidèle et une fiabilité durable au sein des applications",
+    "intervention5": "Adaptabilité des applications à tous les supports par le biais du responsive design",
+    "stacksTitle": "Mes stacks techniques prédominantes à ce jour:",
+    "stack1": "NextJS, ReactJS, NodeJS avec TailwindCSS",
+    "stack2": "Angular, C#",
+    "stack3": "Java / Kotlin avec Android Studio",
+    "stack4": "PostgreSQL, GraphQL, MySQL",
+    "stack5": "Et plus encore...",
+    "categories": {
+      "languages": "Langages",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils"
+    }
+  },
+  "myExperiences": {
+    "title1": "Mes",
+    "title2": "Expériences",
+    "years": {
+      "y2025": "2025",
+      "y2023_2024": "2023 - 2024",
+      "y2023_stage": "02/2023 - 08/2023",
+      "y2022_2023": "09/2022 - 02/2023"
+    },
+    "experiences": {
+      "entrepreneurship": {
+        "title": "Entrepreneuriat",
+        "tasks": {
+          "t1": "Création de projets e-commerce à l'aide du logiciel SaaS Shopify",
+          "t2": "Adaptabilité du code à un template existant",
+          "t3": "Réalisation et publication de contenus visuels et vidéos marketings",
+          "t4": "Copywriting orienté conversion",
+          "t5": "Lancement et gestion de campagnes publicitaires",
+          "t6": "Optimisation SEO (titre, méta description, sémantique, accessibilité...)"
+        }
+      },
+      "portfolio": {
+        "title": "Création de ce portfolio",
+        "tasks": {
+          "t1": "Développement en NextJS App router et TailwindCSS en version desktop et responsive",
+          "t2": "Apprivoisement des outils de déploiements tels que OVH, Vercel, Github...",
+          "t3": "Utilisation et hébergement de projets sur un VPS",
+          "t4": "Formation en autodidacte sur divers outils et langages..."
+        }
+      },
+      "bluesoft": {
+        "title": "BlueSoft Group",
+        "tasks": {
+          "t1": "Développeur FullStack 1 an d'alternance",
+          "t2": "Positionnement multi projets avec approche et méthodologie agiles (Ecosystem, Louis Vuitton, Eurowatt...)"
+        }
+      },
+      "wcs_cda": {
+        "title": "Wild Code School",
+        "tasks": {
+          "t1": "Formation en alternance au titre CDA +3/4 (Concepteur Développeur d'Applications) à la WCS. Programme en Full Remote. Travail en équipe sur un projet complet en NextJS (WildRent).",
+          "t2": "Passage puis obtention titre CDA +3/4",
+          "cta": "Voir le programme"
+        }
+      },
+      "bluesoft_stage": {
+        "title": "BlueSoft Group",
+        "tasks": {
+          "t1": "Développeur Web et Web Mobile stage de 6 mois",
+          "t2": "Positionnement multi projets collaboratif avec approche et méthodologie agiles (MyCrit Job, Eurowatt...)"
+        }
+      },
+      "wcs_dwwm": {
+        "title": "Wild Code School",
+        "tasks": {
+          "t1": "Formation au titre DWWM +2 (Développeur Web et Web Mobile) à la WCS. Programme en présentiel. Travail en équipe sur plusieurs projets Javascript, ReactJS...",
+          "t2": "Passage puis obtention titre DWWM +2",
+          "cta": "Voir le programme"
+        }
+      },
+      "projects_done": {
+        "title": "Projets réalisés",
+        "tasks": {
+          "t1": "Projet 1 : France Trivia (Javascript)",
+          "t2": "Projet 2 : Virtual Met Art (ViteJS)",
+          "t3": "Projet 3 : Make Sense (ReactJS + MySQL)"
+        }
+      }
+    }
+  },
+  "myProjects": {
+    "title1": "Mes",
+    "title2": "Projets",
+    "title3": "Réalisations",
+    "intro": "<hl>Découvrez mes projets réalisés, récents et à venir.</hl> La plupart d'entre eux ont été <hl>déployés par mes soins</hl> et certains l'ont été dans un <hl>cadre professionnel</hl> en collaboration avec d'autres développeurs. <br></br> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br></br> Toutefois, vous trouverez peut-être parfois <hl> quelques vidéos de démonstration</hl> que j'ai pu réaliser lorsque le projet n'est pas immédiatement accessible en ligne afin <hl> d'illustrer les fonctionnalités </hl> et <hl>l'ergonomie</hl> de ces projets.",
+    "description": {
+      "ecosystemQVMD": "Développement d'une plateforme de gestion des déchets pour faciliter la collaboration entre prestataires et détenteurs de déchets.",
+      "makeSense": "Application collaborative développée pour améliorer la prise de décisions entre différents acteurs institutionnels.",
+      "wildRent": "Plateforme en ligne de location et de réservation de matériels et d'équipements (Ski, randonnée, plongée, voyage, camping…). L'objectif étant de proposer une multitude d'articles à travers une interface web simple, fluide et intuitive.",
+      "myCrit": "Application web développée lors d'un stage chez BlueSoft Group pour faciliter la recherche d'emplois en intérim.",
+      "eurowatt": "Projet professionnel de gestion énergétique développé en collaboration avec l'équipe BlueSoft.",
+      "virtuelMetArt": "Application de gestion d'art virtuel développée lors de la formation DWWM réalisé avec ViteJS et TailwindCSS.",
+      "franceTrivia": "Premier projet de formation, quiz interactif sur les connaissances générales en France développé en JavaScript.",
+      "blogProject": "Projet personnel de blog développé pour partager des articles et idées. Réalisé en autodidacte enjavascript principalement avec l'utilisation d'une REST API.",
+      "louisVuitton": "Projet e-commerce collaboratif développé en équipe chez BlueSoft Group réalisé avec Sharepoint, une solution SaaS collaborative Microsoft."
+    },
+    "learnMore": "EN SAVOIR PLUS..."
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "paragraph": "<hl>Vous êtes à la recherche d'un développeur, d'un intégrateur web ou encore d'un testeur pour renforcer votre équipe ?</hl> <br></br><br></br> Je suis actuellement à la recherche d'une opportunité professionnelle et serais ravi d'échanger autour d'une future collaboration. <br></br><br></br> <hl>N'hésitez pas à me contacter, que ce soit pour discuter d'un projet, en savoir plus sur mon profil, ou simplement me poser des questions.</hl> <br></br><br></br> Je reste disponible et réactif, et je me ferai un plaisir de vous répondre."
+  },
+  "footer": {
+    "madeWith": "Design et Développement réalisés en NextJS & TailwindCSS",
+    "rights": "© 2025 Davy Robert – Tous droits réservés"
+  },
+  "project": {
+    "viewProject": "VOIR LE PROJET",
+    "viewProjectLink": "VOIR LE PROJET :",
+    "learnMore": "EN SAVOIR PLUS SUR LE PROJET :",
+    "backToProjects": "Retour aux projets",
+    "viewGithub": "CODE SOURCE : ",
+    "context": {
+      "title": "Contexte du projet",
+      "ecosystemQVMD": "Dans le cadre d'une alternance au sein du Groupe Blue Soft, j'interviens sur ce projet en suivant la méthodologie agile (de type SCRUM) sous forme de sprint de 2 semaines.\n\nLes processus d'organisation s'inscrivent dans une démarche DevOps.\n\nEcosystem est un éco-organisme agréé par les pouvoirs publics. Son objectif est de mettre en relation des professionnels dans le but de favoriser le recyclage et le don de tout type de déchets grâce à l'organisation d'une collecte.\n\nCette manœuvre permet ainsi de revaloriser les matériaux en leur trouvant une utilité et en leur donnant une seconde vie lorsque cela est possible.\n\nDéveloppement applicatif de mise en relation entre détenteurs et prestataires sous forme de sprints de 2 semaines.",
+      "makeSense": "Projet réalisé au cours de la formation Développeur web & Web mobile (DWWM).\nÉlaboration d'un projet intégrant une plateforme collaborative de gestion de prises de décisions, pour le compte d'une association nommée MakeSense, destinée à la fois aux entreprises, aux organisations et aux citoyens.\n L'équipe était composée de 4 élèves suivant cette formation.\n \n Par la suite, j'ai été amené à apporter un certains nombre de fonctionnalités supplémentaires dans le but de m'exercer et de m'améliorer.\n\nComptes de démonstration :\n• Utilisateur : user@gmail.com / motdepasse : Jetestlapp01!\n• Administrateur : admin@gmail.com / motdepasse : Jetestlapp01!",
+      "wildRent": "Projet réalisé au cours de la formation Concepteur Développeur d'Application (CDA).\nLe projet s'intitule « Wild Rent ». C'est une plateforme en ligne de location et de réservation de matériels et d'équipements (Ski, randonnée, plongée, voyage, camping…). L'objectif étant de proposer une multitude d'articles à travers une interface web simple, fluide et intuitive.\nL'équipe était composée de 4 élèves suivant cette formation. \n\nComptes de démonstration :\n• Utilisateur : user1@user.com / motdepasse : Wildrent!1\n• Administrateur : admin1@admin.com / motdepasse : Wildrent!1",
+      "myCrit": "Projet d'application mobile réalisé au cours d'un stage au sein du Groupe Blue Soft.\nJ'interviens sur ce projet en suivant la méthodologie agile de type SCRUM sous forme de sprint d'une ou 2 semaines.\n\n Crit est une entreprise de travail temporaire, donc destiné aux intérimaires. \nElle dispose d'une application mobile Android et une autre gérée par IOS disponibles sur les stores respectifs. Je me suis chargé de la partie Android.\nL'équipe était composée de 2 développeurs et 1 Scrum master.",
+      "eurowatt": "Projet professionnel de gestion énergétique développé en collaboration avec l'équipe BlueSoft.\n\nEurowatt utilise une application GDO du réseau du parc d'énergie renouvelable en Europe. Énergie solaire, éolien et hydraulique. Le site est multilingue.\n\nTMA et évolution d'une base de données et d'outils métiers dédiés au développement, à la construction et à l'exploitation de centres de production ENR.\n\nL'équipe était composée de 2 à 3 développeurs et 1 Scrum master.",
+      "virtuelMetArt": "Projet réalisé au cours de la formation Développeur web & Web mobile (DWWM).\nApplication de gestion d'art virtuel développée lors de la formation DWWM réalisé avec ReactJS, ViteJS et TailwindCSS.\n L'équipe était composée de 4 élèves suivant cette formation. ",
+      "franceTrivia": "Projet réalisé au cours de la formation Développeur web & Web mobile (DWWM).\nPremier projet de formation, quiz interactif sur les connaissances générales en France développé en JavaScript.\n L'équipe était composée de 4 élèves suivant cette formation.",
+      "blogProject": "Projet personnel de blog développé pour partager des articles et idées.\n\nRéalisé en autodidacte en JavaScript principalement avec l'utilisation d'une REST API.",
+      "louisVuitton": "Projet e-commerce collaboratif développé en équipe chez BlueSoft Group réalisé avec Sharepoint Online, une plateforme SaaS collaborative Microsoft.\n\nLouis Vuitton est une marque de luxe de maroquinerie et un leader mondial dans les produits de haute qualité.\n\nGestion et amélioration de leur site collaboratif SharePoint. Ce logiciel intranet, hébergé dans le Cloud, permet de partager et de gérer des contenus à destination des entreprises.\n\nL'équipe était composée de 1 à 2 développeurs, 1 tech lead et 1 scrum master."
+    },
+    "skills": {
+      "title": "Savoir-faire et compétences apprises",
+      "ecosystemQVMD": "• Prise en main des architectures CQRS, Hexagonale et MVC\n• Mise en place de fonctionnalités frontend/backend de l'application\n• Renforcement sécurité par des permissions et autorisations d'écriture, de lecture\n• Modifications, corrections de bugs et évolutions diverses\n• Implémentations de tests unitaires pour chaque nouvelles fonctionnalités\n• Augmenter la visibilité, optimiser la recherche par le référencement naturel (SEO)\n\nL'équipe est composée de :\n• 3 à 4 développeurs\n• 1 tech lead\n• 1 scrum master\n• 1 UI/UX designer\n• 1 dev test\n• 1 product owner",
+      "makeSense": "• Respect d'une charte graphique imposée\n• Maquettage, Product Backlog, sprint et méthode agile\n• Conception et Modélisation d'une base de données avec MySQL\n• Développement d'une application responsive et desktop\n• Debug d'application\n• Refactoring et amélioration des performances\n• Ajout de fonctionnalités permettant d'améliorer l'expérience utilisateur, \n• Mise en place de l'internationalisation pour le multilingue, \n• Création d'un switch pour le changement de thème (mode dark ou white), \n• Déploiement et hébergement de l'application sur un VPS",
+      "wildRent": "• Respect du cahier des charges imposé\n• Maquettage + prototype avec Figma\n• Conception diagrammes UML et Modélisation d'une base de données\n• Développement d'une application desktop + responsive (non terminé)\n• Implémentation des tests unitaires, d'intégration et end-to-end\n• Prise en compte Ecoconception et Accessibilité des personnes\n• Mise en cache sur un serveur Redis et optimisation du temps de réponse., \n• Déploiement et hébergement de l'application sur un VPS",
+      "myCrit": "• Projet d'application Web Mobile + Déploiement sur le PlayStore\n• Refonte graphique complète des applications sur PlayStore et AppleStore\n• Suivi TMA avec le client chaque début de semaines et démo fin de semaine\n• Mise en place de fonctionnalités : carrousel, authentification biométrique…\n• Suivi des remontées d'erreurs avec la plateforme Firebase\n• Modifications, Debug et correctifs de logiciels et d'applications",
+      "eurowatt": "• Suivi de la TMA d'application et évolutions de logiciels\n• Amélioration / Correction frontend et backend de l'application\n• Debug d'applications diverses\n• TMA et évolution d'une base de données et d'outils métiers dédiés au développement, à la construction et à l'exploitation de centres de production ENR\n• Application GDO du réseau du parc d'énergie renouvelable en Europe (solaire, éolien, hydraulique)\n• Site multilingue",
+      "virtuelMetArt":  "• Libre choix sur la charte graphique, pas de contraintes particulières\n• Maquettage, Product Backlog, sprint et méthode agile\n• Choix et utilisation d'une architecture REST API pour la base de données\n• Développement d'une application responsive et desktop\n• Debug d'application\n• Refactoring et amélioration des performances\n• Ajout de fonctionnalités permettant d'améliorer l'expérience utilisateur, \n• Déploiement et hébergement de l'application sur un VPS",
+      "franceTrivia":  "• Libre choix sur la charte graphique, pas de contraintes particulières\n• Maquettage, Product Backlog, sprint et méthode agile\n• Développement d'une application responsive et desktop\n• Debug d'application\n• Refactoring et amélioration des performances\n• Ajout de fonctionnalités permettant d'améliorer l'expérience utilisateur, \n• Déploiement et hébergement de l'application sur un VPS",
+      "blogProject": "• CRUD complet des articles\n• Filtrage et tri\n• Interface responsive\n• Gestion locale et API \n• Déploiement et hébergement de l'application sur un VPS",
+      "louisVuitton": "• Création de tests unitaires afin de couvrir au moins 80% de code garantie par Blue Soft\n• Modifications, maintenance, corrections et évolutions sur quelques webparts\n• Gestion et amélioration du site collaboratif SharePoint\n• Développement d'une plateforme intranet collaborative basée sur SharePoint Online, hébergée dans le Cloud Azure\n• Partage et gestion de contenus à destination des entreprises",
+      "portfolio": "Création d'un portfolio moderne et responsive avec Next.js 14, Tailwind CSS et internationalisation, Design UI/UX et optimisation des performances."
+    },
+    "techStack": {
+      "title": "Stacks Techniques utilisés :"
+    }
+  },
+  "notFound": {
+    "title": "Cette page n'existe pas.\nMerci de vous rediriger vers l'accueil.",
+    "description": "Désolé, le projet que vous recherchez est inaccessible ou a été déplacée.",
+    "backHome": "Retour à l'accueil",
+    "videoNotSupported": "Votre navigateur ne supporte pas la lecture de vidéos.",
+    "noMediaAvailable": "Aucun média disponible"
+  },
+  "globalNotFound": {
+    "title": "Cette page n'existe pas.\nMerci de vous rediriger vers l'accueil.",
+    "description": "Désolé, la page que vous cherchez est inaccessible ou a été déplacée.",
+    "backHome": "Retour à l'accueil"
+  },
+  "maintenance": "Le site est actuellement en cours d'élaboration. \nVeuillez patienter...............",
+  "loading": "Chargement..."
+}

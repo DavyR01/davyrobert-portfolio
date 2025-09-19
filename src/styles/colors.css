@@ -1,0 +1,95 @@
+/* Handle colors app */
+
+:root {
+  --primary-color: var(--secondary-color);
+  /* Use secondary as primary in light mode */
+  --secondary-color: #1343a9;
+
+  --border-primary-color: var(--border-secondary-color);
+  --border-secondary-color: #4a4a4a;
+
+  --text-primary-color: var(--text-secondary-color);
+  --text-secondary-color: #000000;
+
+  --bg-primary-color: var(--bg-secondary-color);
+  --bg-secondary-color: #ffffff;
+
+    --bg-dark: #000;
+    --bg-dark-items1: #1A1A1A;
+    --bg-dark-items2: #0f0f0f;
+    --bg-dark-menu: 0, 0, 0;
+    --bg-light: #ffffff;
+    --bg-light-items1: #f5f5f5;
+    --bg-light-items2: #e5e8e8;
+ 
+    /* Variables pour les divs et éléments d'interface */
+    --bg-light-div: #f6f6f6;
+    --bg-light-div-hover: #ececec;
+    --border-light-div: #e5e5e5;
+    --text-light-div: #000000;
+ 
+    --tertiary-color: #ff7700;
+ 
+    --text-color-light: #ffffff;
+    --text-color-dark: #000000;
+ 
+    --bg-button-dark: rgba(17, 24, 39, 1);
+    --bg-button-light: rgb(245, 245, 245);
+ 
+    --border-dark: rgba(0, 0, 0, 0.8);
+    --border-light: rgb(245, 245, 245, 0.8);
+
+ }
+ 
+ .dark:root {
+    --primary-color: #5ce1e6; /* rgb(92, 225, 230) */
+    /* original primary for dark mode */
+
+    --border-primary-color: #ffffff;
+ 
+    --text-primary-color: #ffffff;
+
+    --bg-primary-color: #000000;
+    
+    /* Variables pour le mode sombre */
+    --bg-dark-div: #222;
+    --bg-dark-div-hover: #333;
+    --border-dark-div: #444;
+    --text-dark-div: #ffffff;
+ }
+ 
+ body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ /*
+ @media (prefers-color-scheme: dark) {
+   :root {
+     --background: #0a0a0a;
+     --foreground: #ededed;
+   }
+ }
+  */
+ 
+ /* @media (prefers-color-scheme: dark) {
+   :root {
+     --secondary-color: #232946;
+   }
+ }
+ */
