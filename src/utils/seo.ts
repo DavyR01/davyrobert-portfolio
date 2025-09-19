@@ -13,7 +13,7 @@ export const seoContent = {
     keywords: ['développeur', 'full stack', 'react', 'nextjs', 'typescript', 'nodejs', 'développement web', 'portfolio', 'javascript', 'frontend', 'backend'],
   },
   en: {
-    title: 'Davy Robert - Full Stack Developer',
+    title: 'Davy Robert - Full Stack Developer specialized in React, Next.js, Node.js and TypeScript',
     description: 'Full Stack Developer passionate about modern web technologies. Specialized in React, Next.js, Node.js and TypeScript. Portfolio showcasing innovative projects and deep technical expertise.',
     keywords: ['developer', 'full stack', 'react', 'nextjs', 'typescript', 'nodejs', 'web development', 'portfolio', 'javascript', 'frontend', 'backend'],
   }
