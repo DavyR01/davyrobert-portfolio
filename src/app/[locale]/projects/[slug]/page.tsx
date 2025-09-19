@@ -55,6 +55,21 @@ export default function ProjectPage() {
             </div>
           )}
 
+          {/* Lien "en savoir plus" avec effet de hover - uniquement pour les images sans projet déployé */}
+          {!project.sourceWeb && project.image && !project.video && (
+            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <a
+                href={project.learnMore}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-white dark:bg-gray-800 text-black dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+              >
+                <AiOutlineEye className="w-6 h-6" />
+                <span className="font-medium">{t('project.learnMore2')}</span>
+              </a>
+            </div>
+          )}
+
           {/* Lien "voir le projet" avec effet de hover - uniquement pour les images */}
           {project.sourceWeb && project.image && !project.video && (
             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -101,6 +116,7 @@ export default function ProjectPage() {
           </div>
         </div>
 
+        {/* Stacks Techniques utilisés */}
         <h2 className="text-2xl font-bold mb-4">
           {t('project.techStack.title')}
         </h2>
@@ -114,6 +130,8 @@ export default function ProjectPage() {
             </span>
           ))}
         </div>
+
+        {/* Code Source */}
         <div className='flex flex-col gap-4 mt-8'>
           {project.sourceGithub && (
             <div className='flex items-center gap-4'>
@@ -132,6 +150,8 @@ export default function ProjectPage() {
               </a>
             </div>
           )}
+
+          {/* Voir le Projet */}
           {project.sourceWeb && (
             <div className='flex items-center gap-4'>
               <div
@@ -149,6 +169,8 @@ export default function ProjectPage() {
               </a>
             </div>
           )}
+
+          {/* En savoir plus */}
           {project.learnMore && (
             <div className='flex items-center gap-4'>
               <div
