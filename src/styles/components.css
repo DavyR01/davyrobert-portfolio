@@ -2,11 +2,11 @@
 
 #presentation {
     .presentation-clamp-h1 {
-       font-size: clamp(2rem, 2rem + (100vw - 480px) * 1.25, 4rem)
+       font-size: clamp(2rem, 2rem + (100vw - 480px) * 1.25, 3.3rem)
     }
  
     .presentation-clamp-h2 {
-       font-size: clamp(1.4rem, 1.4rem + (100vw - 480px) * 0.53125, 2.25rem)
+       font-size: clamp(1.4rem, 1.4rem + (100vw - 480px) * 0.53125, 1.7rem)
     }
  }
 
