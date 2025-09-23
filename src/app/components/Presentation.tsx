@@ -63,23 +63,26 @@ const Presentation = () => {
                      alt="profile"
                      className="object-cover"
                      priority
-                     // sizes="(max-width: 768px) 280px, (max-width: 1024px) 500px, 500px"
+                  // sizes="(max-width: 768px) 280px, (max-width: 1024px) 500px, 500px"
                   />
                </div>
 
                {/* Titles behind image for lg+ */}
-               <div className="leading-tight">
+               <div className="leading-tight text-left w-[320px]">
                   <h2 className="text-[2rem] font-bold">{t('hello')}</h2>
-                  <h1 className="text-[3.3rem] my-4 font-bold">
+                  <h1 className="text-[3rem] my-4 font-bold">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="text-[2rem] font-bold mb-4">
-                     {t('fullstackTitle')} <br />
-                     <div className="text-[--primary-color]">{t('fullstackRole')}</div>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')} <span className="font-cambriaaa">&</span> {t('fullstackRole3')}</span>
-                     <span className="">{t('fullstackRole4')}</span>
+                  <h2 className="text-[1.65rem] font-bold mb-4">
+                     <span>{t('fullstackTitle')}</span>
+                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
+                     <span className="font-cambriaaa text-[--primary-color]">&</span>
+                     <span className="text-[--primary-color]">{t('fullstackRole2')}</span>
+                     <span className="">{t('fullstackRole3')}</span>
                   </h2>
                </div>
+
+               {/* <span className="font-cambriaaa">&</span> */}
 
                {/* Buttons Section for lg+ */}
                <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
@@ -100,20 +103,20 @@ const Presentation = () => {
                   </Button> */}
                   <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
                      <a
-                        href="https://github.com/davyR01"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[--primary-color] text-5xl  hover:scale-110 transition-transform"
-                     >
-                        <FaGithub />
-                     </a>
-                     <a
                         href="https://www.linkedin.com/in/davy-robert"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
                      >
                         <FaLinkedin />
+                     </a>
+                     <a
+                        href="https://github.com/davyR01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[--primary-color] text-5xl  hover:scale-110 transition-transform"
+                     >
+                        <FaGithub />
                      </a>
                      <a
                         href="mailto:contact@davyrobert.fr"
@@ -153,11 +156,12 @@ const Presentation = () => {
                   <h1 className="my-2 font-bold text-center presentation-clamp-h1">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2">
-                     {t('fullstackTitle')} <br />
-                     <div className="text-[--primary-color]">{t('fullstackRole')}</div>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')} <span className="font-cambriaaa">&</span> {t('fullstackRole3')}</span>
-                     <span className="">{t('fullstackRole4')}</span>
+                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2 xs480:w-[80%] xs480:mx-auto ">
+                     <span>{t('fullstackTitle')}</span>
+                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
+                     <span className="font-cambriaaa text-[--primary-color]">&</span>
+                     <span className="text-[--primary-color]">{t('fullstackRole2')}</span>
+                     <span className="">{t('fullstackRole3')}</span>
                   </h2>
 
                   {/* <h2 className="text-[2rem] font-bold mb-4">
@@ -170,7 +174,7 @@ const Presentation = () => {
 
                {/* FOR Responsive LG- : <1024px */}
                {/* Profile Image block<1024px */}
-               <div className="lg:hidden aspect-square w-[200px] xs480:w-[260px] min-w-[210px] max-w-full rounded-2xl border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto mb-4 animate-border-pulse">
+               <div className="lg:hidden aspect-square w-[200px] xs480:w-[260px] min-w-[210px] max-w-full rounded-2xl border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto animate-border-pulse">
                   <Image
                      src="/assets/profile/davyprofile1.png"
                      width={240}
@@ -180,9 +184,34 @@ const Presentation = () => {
                   />
                </div>
 
+               <div className="sm:hidden flex w-full justify-center gap-8 mt-2">
+                  <a
+                     href="https://www.linkedin.com/in/davy-robert"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-[--primary-color] text-4xl sm:text-4xl  hover:scale-110 transition-transform"
+                  >
+                     <FaLinkedin />
+                  </a>
+                  <a
+                     href="https://github.com/davyR01"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-[--primary-color] text-4xl sm:text-4xl hover:scale-110 transition-transform"
+                  >
+                     <FaGithub />
+                  </a>
+                  <a
+                     href="mailto:contact@davyrobert.fr"
+                     className="text-[--primary-color] text-4xl sm:text-4xl  hover:scale-110 transition-transform"
+                  >
+                     <MdEmail />
+                  </a>
+               </div>
+
                {/* Methods Section */}
                <div className="flex flex-col xl:flex-row items-center lg:items-start mb-6 gap-2 xl:gap-4">
-                  <span className="text-lg font-bold text-[--primary-color] mb-2 xl:mb-0 min-w-max xl:self-center">
+                  <span className="text-lg font-bold text-[--primary-color] mb-2 mt-2 xl:mb-0 min-w-max xl:self-center">
                      {t('methodsTitle')}
                   </span>
                   <div className="flex flex-row flex-wrap gap-2 xl:gap-4 justify-center mt-0">
@@ -233,14 +262,14 @@ const Presentation = () => {
                <div className="flex lg:flex-col flex-wrap w-full xl:w-[66%] gap-4 sm:flex-nowrap sm:items-left mb-4">
                   <Button
                      variant="primary"
-                     href="/download/CV_davy_robert_2025_V6.pdf"
+                     href="/download/CV_Davy_ROBERT_DEVELOPPEUR_2025.pdf"
                      download
                   >
                      {t('cvStandard')}
                   </Button>
                   <Button
                      variant="secondary"
-                     href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
+                     href="/download/CV_DETAILLE_Davy_ROBERT_DEVELOPPEUR_2025.pdf"
                      download
                      withShineEffect
                   >
@@ -253,20 +282,20 @@ const Presentation = () => {
 
                   <div className="lg:hidden flex w-full justify-center items-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
                      <a
-                        href="https://github.com/davyR01"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[--primary-color] text-5xl sm:text-4xl hover:scale-110 transition-transform"
-                     >
-                        <FaGithub />
-                     </a>
-                     <a
                         href="https://www.linkedin.com/in/davy-robert"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[--primary-color] text-5xl sm:text-4xl  hover:scale-110 transition-transform"
                      >
                         <FaLinkedin />
+                     </a>
+                     <a
+                        href="https://github.com/davyR01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[--primary-color] text-5xl sm:text-4xl hover:scale-110 transition-transform"
+                     >
+                        <FaGithub />
                      </a>
                      <a
                         href="mailto:contact@davyrobert.fr"
