@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border dark:border-[#000] dark:hover:border-[var(--primary-color)] hover:border-[rgba(19,67,169,0.6)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col"
+             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border dark:border-[#000] hover:border-[var(--primary-color)] dark:hover:border-[var(--primary-color)] hover:shadow-[0_0_0_2px_var(--primary-color)] dark:hover:shadow-[0_0_0_2px_var(--primary-color)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
@@ -40,7 +40,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
              <div className="flex-1 flex flex-col">
                 {/* Image du projet */}
                 <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden group">
-                   <Link href={`/projects/${projectSlug}`} className="block w-full h-full">
+                   <Link href={`/projects/${projectSlug}`} prefetch={true} className="block w-full h-full">
                       <Image
                          src={image}
                          alt={name}

@@ -10,6 +10,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import Button from './ui/Button'
 import MatrixCanvas from './ui/MatrixCanvas'
+import ProjectsButton from './ui/ProjectsButton'
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -101,29 +102,33 @@ const Presentation = () => {
                   >
                      {t('cvLong')}
                   </Button> */}
-                  <div className="flex w-full justify-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
-                     <a
-                        href="https://www.linkedin.com/in/davy-robert"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
-                     >
-                        <FaLinkedin />
-                     </a>
-                     <a
-                        href="https://github.com/davyR01"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[--primary-color] text-5xl  hover:scale-110 transition-transform"
-                     >
-                        <FaGithub />
-                     </a>
-                     <a
-                        href="mailto:contact@davyrobert.fr"
-                        className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
-                     >
-                        <MdEmail />
-                     </a>
+                  <div className="flex flex-col items-center sm:items-start gap-4 sm:mt-0 mt-4 w-full">
+                     {/* Logos réseaux sociaux */}
+                     <div className="flex gap-8">
+                        <a
+                           href="https://www.linkedin.com/in/davy-robert"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
+                        >
+                           <FaLinkedin />
+                        </a>
+                        <a
+                           href="https://github.com/davyR01"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="text-[--primary-color] text-5xl  hover:scale-110 transition-transform"
+                        >
+                           <FaGithub />
+                        </a>
+                        <a
+                           href="mailto:contact@davyrobert.fr"
+                           className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
+                        >
+                           <MdEmail />
+                        </a>
+                     </div>
+                     
                   </div>
                </div>
 
@@ -225,12 +230,17 @@ const Presentation = () => {
                </div>
 
                {/* Text Introduction Section */}
-               <div className={`text-base mb-8 dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-loose' : 'space-y-8 xl:leading-[2.61rem]'} leading-relaxed lg:leading-normal text-justify`}>
+               <div className={`text-base dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-loose' : 'space-y-8 xl:leading-[2.61rem]'} leading-relaxed lg:leading-normal text-justify`}>
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph1'), keywords.paragraph1) }} />
 
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph2'), keywords.paragraph2) }} />
 
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph3'), keywords.paragraph3) }} />
+               </div>
+
+               {/* Button projets redirection */}
+               <div className="my-2 flex justify-center lg:justify-start">
+                  <ProjectsButton />
                </div>
 
                {/* Qualities Section */}
@@ -275,8 +285,6 @@ const Presentation = () => {
                   >
                      {t('cvLong')}
                   </Button>
-
-
 
                   {/* FOR Responsive LG- only : <1024px */}
 

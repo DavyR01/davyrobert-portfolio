@@ -10,11 +10,14 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { AiOutlineEye } from 'react-icons/ai';
 import { formatText } from '@/utils/formatText';
 
+// Créer un Map pour un accès O(1) au lieu de O(n)
+const projectsMap = new Map(projects.map(p => [p.projectSlug, p]));
+
 export default function ProjectPage() {
   const params = useParams();
   const t = useTranslations();
   const { slug } = params;
-  const project = projects.find((p) => p.projectSlug === slug);
+  const project = projectsMap.get(slug as string);
 
   const videoFallbackText = t('notFound.videoNotSupported');
 
