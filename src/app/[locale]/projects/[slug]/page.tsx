@@ -6,7 +6,7 @@ import BackToProjectsButton from '@/app/components/BackToProjectsButton';
 import { getTranslations } from 'next-intl/server';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { AiOutlineEye } from 'react-icons/ai';
-import { formatText } from '@/utils/formatText';
+import { formatTextServer } from '@/utils/formatTextServer';
 
 // Créer un Map pour un accès O(1) au lieu de O(n)
 const projectsMap = new Map(projects.map(p => [p.projectSlug, p]));
@@ -19,7 +19,7 @@ interface ProjectPageProps {
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const t = await getTranslations();
   const project = projectsMap.get(slug);
 
@@ -104,7 +104,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div
               className="text-base leading-relaxed text-black dark:text-gray-300"
               dangerouslySetInnerHTML={{
-                __html: formatText(t(`project.context.${project.descriptionKey}`))
+                __html: formatTextServer(t(`project.context.${project.descriptionKey}`))
               }}
             />
           </div>
@@ -117,7 +117,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div
               className="text-base leading-relaxed text-black dark:text-gray-300"
               dangerouslySetInnerHTML={{
-                __html: formatText(t(`project.skills.${project.descriptionKey}`))
+                __html: formatTextServer(t(`project.skills.${project.descriptionKey}`))
               }}
             />
           </div>
