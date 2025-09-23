@@ -54,13 +54,13 @@ export const highlightKeywordsPresentation = (text: string, keywords: string[]) 
 export const getKeywordsPresentation = (locale: string) => {
   if (locale === 'fr') {
     return {
-      paragraph1: ['spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'nouvelles technologies'],
+      paragraph1: ['parcours riche, varié et diversifié', 'spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'j\'apprends et évolue continuellement', 'travail de qualité', 'aligné avec les objectifs'],
       paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte', 'exploiter celles qui s\'avèrent pertinentes'],
       paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "engagées"]
     };
   } else {
     return {
-      paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies'],
+      paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies', 'constantly learning and evolving', 'quality work', 'aligned with the users\' objectives'],
       paragraph2: ['design', 'develop', 'optimize', 'self-training', 'exploit those that prove relevant'],
       paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed']
     };

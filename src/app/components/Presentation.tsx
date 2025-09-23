@@ -231,7 +231,7 @@ const Presentation = () => {
                </div>
 
                {/* Text Introduction Section */}
-               <div className={`text-base dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-loose' : 'space-y-8 xl:leading-[2.61rem]'} leading-relaxed lg:leading-normal text-justify`}>
+               <div className={`text-base dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-[2.1rem]' : 'xl:leading-[2.38rem]'} leading-[1.65rem] space-y-6 lg:leading-normal text-justify`}>
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph1'), keywords.paragraph1) }} />
 
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph2'), keywords.paragraph2) }} />
@@ -245,7 +245,7 @@ const Presentation = () => {
                </div>
 
                {/* Qualities Section */}
-               <div className="mb-8">
+               <div className="mb-4">
                   <div className="flex flex-wrap gap-3 justify-center md:justify-start">
                      {getQualities(tQualities).items.map((q, index) => (
                         <div
