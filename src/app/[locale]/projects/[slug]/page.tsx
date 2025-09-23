@@ -12,10 +12,10 @@ import { formatTextServer } from '@/utils/formatTextServer';
 const projectsMap = new Map(projects.map(p => [p.projectSlug, p]));
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
     locale: string;
-  };
+  }>;
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {

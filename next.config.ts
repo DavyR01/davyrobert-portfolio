@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
       // ignoreBuildErrors: true
    },
    experimental: {
-      optimizeCss: true,
+      // optimizeCss: true, // Désactivé car nécessite le module 'critters'
    },
    images: {
       formats: ['image/webp', 'image/avif'],
