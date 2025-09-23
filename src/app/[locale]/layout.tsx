@@ -10,6 +10,7 @@ import ThemeToggle from "../components/ui/ThemeToggle";
 import Footer from '../components/Footer';
 import type { Metadata } from 'next';
 import { generateSEOMetadata } from '@/utils/seo';
+import ArrowButton from '../components/ui/ArrowButton';
 
 // import "@/styles/index.css";
 

@@ -11,6 +11,7 @@ import { MdEmail } from 'react-icons/md'
 import Button from './ui/Button'
 import MatrixCanvas from './ui/MatrixCanvas'
 import ProjectsButton from './ui/ProjectsButton'
+import ArrowButton from './ui/ArrowButton'
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -128,7 +129,7 @@ const Presentation = () => {
                            <MdEmail />
                         </a>
                      </div>
-                     
+
                   </div>
                </div>
 
@@ -315,6 +316,8 @@ const Presentation = () => {
                </div>
 
             </div>
+            <ArrowButton />
+
          </section>
       </div>
    )

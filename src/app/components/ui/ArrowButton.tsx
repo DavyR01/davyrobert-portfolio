@@ -1,57 +1,54 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { FaArrowDown } from 'react-icons/fa';
+import { FaArrowUp } from 'react-icons/fa';
 
 const ArrowButton = () => {
   const [mounted, setMounted] = useState(false);
-  const [hasReachedProjects, setHasReachedProjects] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     
-    // Function to check whether the projects section has been reached
-    const checkProjectsReached = () => {
-      const projectsSection = document.getElementById('projets');
+    // Function to check if user has reached the contact section
+    const checkContactReached = () => {
+      const contactSection = document.getElementById('contact');
       
-      if (projectsSection) {
-        const rect = projectsSection.getBoundingClientRect();
-        // If the top of the projects section is visible or exceeded
+      if (contactSection) {
+        const rect = contactSection.getBoundingClientRect();
+        // Show button when contact section is visible or passed
         const hasReached = rect.top <= window.innerHeight;
-        setHasReachedProjects(hasReached);
+        setShowButton(hasReached);
       }
     };
 
-    checkProjectsReached();
+    checkContactReached();
 
-    window.addEventListener('scroll', checkProjectsReached);
+    window.addEventListener('scroll', checkContactReached);
     
     return () => {
-      window.removeEventListener('scroll', checkProjectsReached);
+      window.removeEventListener('scroll', checkContactReached);
     };
   }, []);
 
-  const handleArrowClick = () => {
-    const projectsSection = document.getElementById('projets');
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Don't display the arrow before complete hydration
+  // Don't display the button before complete hydration
   if (!mounted) {
     return null;
   }
 
   return (
     <>
-      {!hasReachedProjects && (
+      {showButton && (
         <button
-          onClick={handleArrowClick}
-          className="fixed bottom-7 right-[5.5rem] z-50 animate-pulse hover:scale-110 transition-transform"
-          aria-label="Aller aux projets"
+          onClick={scrollToTop}
+          className="fixed bottom-[90px] right-5 z-50 w-12 h-12 dark:bg-black/50 bg-white/50 hover:bg-[--tertiary-color] dark:hover:bg-[--tertiary-color] rounded-full flex items-center justify-center shadow-lg transition-all duration-300 group border-2 border-[--tertiary-color] transform-gpu"
+          aria-label="Remonter en haut de la page"
         >
-          <FaArrowDown className="text-orange-500 text-2xl" />
+          <FaArrowUp className="text-[--tertiary-color] text-2xl group-hover:text-white hover:scale-110" />
         </button>
       )}
     </>
