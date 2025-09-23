@@ -8,14 +8,14 @@ export interface SEOContent {
 
 export const seoContent = {
   fr: {
-    title: 'Davy Robert - Développeur Full Stack spécialisé en React, Next.js, Node.js et TypeScript',
-    description: 'Développeur Full Stack passionné par les technologies web modernes. Spécialisé en React, Next.js, Node.js et TypeScript. Portfolio avec projets innovants et expertise technique approfondie.',
-    keywords: ['développeur', 'full stack', 'react', 'nextjs', 'typescript', 'nodejs', 'développement web', 'portfolio', 'javascript', 'frontend', 'backend'],
+    title: 'ROBERT Davy | Portfolio | Concepteur Développeur Full Stack d\'Applications Web et Mobile',
+    description: 'Concepteur Développeur Full Stack d\'Applications Web et Mobile. Spécialisé en React, Next.js, Node.js & TypeScript. Découvrez mon portfolio et mes projets.',
+    keywords: ['Développeur Full Stack', 'Concepteur Développeur d\'Applications Web et Mobile', 'React', 'Next.js', 'Node.js', 'TypeScript', 'JavaScript', 'Développement Web', 'Portfolio'],
   },
   en: {
-    title: 'Davy Robert - Full Stack Developer specialized in React, Next.js, Node.js and TypeScript',
-    description: 'Full Stack Developer passionate about modern web technologies. Specialized in React, Next.js, Node.js and TypeScript. Portfolio showcasing innovative projects and deep technical expertise.',
-    keywords: ['developer', 'full stack', 'react', 'nextjs', 'typescript', 'nodejs', 'web development', 'portfolio', 'javascript', 'frontend', 'backend'],
+    title: 'ROBERT Davy | Portfolio | Full Stack Web and Mobile Application Developer',
+    description: 'Full Stack Web and Mobile Application Developer. Specialized in React, Next.js, Node.js & TypeScript. Explore my portfolio and projects.',
+    keywords: ['Full Stack Developer', 'Web and Mobile Application Developer', 'React', 'Next.js', 'Node.js', 'TypeScript', 'JavaScript', 'Web Development', 'Portfolio'],
   }
 };
 
@@ -25,11 +25,11 @@ export function generateSEOMetadata(
   pageDescription?: string
 ): Metadata {
   const content = seoContent[locale as keyof typeof seoContent] || seoContent.fr;
-  
-  const title = pageTitle 
+
+  const title = pageTitle
     ? `${pageTitle} | ${content.title.split(' - ')[0]}`
     : content.title;
-  
+
   const description = pageDescription || content.description;
 
   return {
