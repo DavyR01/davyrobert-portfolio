@@ -70,7 +70,7 @@ const Presentation = () => {
                </div>
 
                {/* Titles behind image for lg+ */}
-               <div className="leading-[42px] text-left w-[320px]">
+               <div className="leading-[44px] text-left w-[320px]">
                   <h2 className="text-[2rem] font-bold">{t('hello')}</h2>
                   <h1 className="text-[3rem] my-4 font-bold">
                      <span className="">Davy ROBERT</span>

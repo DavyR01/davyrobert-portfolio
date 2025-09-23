@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
    /* config options here */
    typescript: {
       // ignoreBuildErrors: true
+   },
+   experimental: {
+      optimizeCss: true,
+   },
+   images: {
+      formats: ['image/webp', 'image/avif'],
    }
 };
 
