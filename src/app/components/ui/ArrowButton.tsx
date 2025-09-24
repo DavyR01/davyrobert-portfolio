@@ -45,10 +45,10 @@ const ArrowButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-[90px] right-5 z-50 w-12 h-12 dark:bg-black/50 bg-white/50 hover:bg-[--tertiary-color] dark:hover:bg-[--tertiary-color] rounded-full flex items-center justify-center shadow-lg transition-all duration-300 group border-2 border-[--tertiary-color] transform-gpu"
+          className="fixed bottom-[90px] right-5 z-50 w-12 h-12 dark:bg-black/50 bg-white/50 hover:bg-[--secondary-color] dark:hover:bg-[--secondary-color] rounded-full flex items-center justify-center shadow-lg transition-all duration-300 group border-2 border-[--secondary-color] transform-gpu"
           aria-label="Remonter en haut de la page"
         >
-          <FaArrowUp className="text-[--tertiary-color] text-2xl group-hover:text-white hover:scale-110" />
+          <FaArrowUp className="text-[--secondary-color] text-2xl group-hover:text-white hover:scale-110" />
         </button>
       )}
     </>

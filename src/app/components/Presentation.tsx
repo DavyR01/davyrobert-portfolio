@@ -254,7 +254,7 @@ const Presentation = () => {
                            }}
                         >
 
-                           <div className="text-[--primary-color] group-hover:text-[--tertiary-color] transition-colors duration-300">
+                           <div className="text-[--primary-color] group-hover:text-[--secondary-color] transition-colors duration-300">
                               {q.icon}
                            </div>
                            <span className="transition-colors duration-300">

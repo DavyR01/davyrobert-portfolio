@@ -48,7 +48,7 @@ const HeroSection = () => {
                   <a
                     href="/download/CV_davy_robert_2025.pdf"
                     download
-                    className="w-full sm:w-auto text-center bg-[--primary-color] text-[var(--text-color-dark)] font-semibold py-3 px-6 rounded-lg transition-all hover:scale-105 hover:bg-[var(--bg-light)] hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent"
+                    className="w-full sm:w-auto text-center bg-[--primary-color] text-[var(--text-color-dark)] font-semibold py-3 px-6 rounded-lg transition-all hover:scale-105 hover:bg-[var(--bg-primary)] hover:text-[--primary-color] hover:border-[--primary-color] border-2 border-transparent"
                   >
                     Mon CV format standard
                   </a>

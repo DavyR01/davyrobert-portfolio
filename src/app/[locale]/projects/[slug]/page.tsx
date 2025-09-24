@@ -151,7 +151,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={`${project.sourceGithub}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                className="w-11 h-11 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
               >
                 <AiFillGithub className="w-9 h-9 hover:text-[--primary-color] hover:font-bold" />
               </a>
@@ -170,7 +170,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={project.sourceWeb}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                className="w-11 h-11 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
               >
                 <AiFillEye className="w-9 h-9 hover:text-[--primary-color] hover:font-bold" />
               </a>
@@ -189,7 +189,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={project.learnMore}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                className="w-11 h-11 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
               >
                 <AiFillEye className="w-9 h-9 hover:text-[--primary-color] hover:font-bold" />
               </a>

@@ -1,38 +1,29 @@
 /* Handle colors app */
 
 :root {
-  --primary-color: var(--secondary-color);
-  /* Use secondary as primary in light mode */
-  --secondary-color: #1343a9;
-  --tertiary-color: #fd9336;
-  --text-color-main: #b1bad3;
+  --primary-color: #1343a9;
+  --primary-color-hover: rgba(19, 67, 169, 0.1);
+  --secondary-color: #df7b23;
+  
+  --text-color-main: #4B5563;  
+  --text-color-light: #ffffff;
+  --text-color-dark: #000000;
 
-  --border-primary-color: var(--border-secondary-color);
-  --border-secondary-color: #4a4a4a;
+  --border-primary-color: #4a4a4a;
+  --text-primary-color: #000000;
+  --bg-primary: #ffffff;
 
-  --text-primary-color: var(--text-secondary-color);
-  --text-secondary-color: #000000;
+  --bg-items-card: #f5f5f5;
+  --bg-xp: #f5f5f5;
+  --bg-stack-card: #e5e8e8;
 
-  --bg-primary-color: var(--bg-secondary-color);
-  --bg-secondary-color: #ffffff;
-
-    --bg-dark: #000;
-    --bg-dark-items1: #1A1A1A;
-    --bg-dark-items2: #0f0f0f;
     --bg-dark-menu: 0, 0, 0;
-    --bg-light: #ffffff;
-    --bg-light-items1: #f5f5f5;
-    --bg-light-items2: #e5e8e8;
  
     /* Variables pour les divs et éléments d'interface */
     --bg-light-div: #f6f6f6;
     --bg-light-div-hover: #ececec;
     --border-light-div: #e5e5e5;
     --text-light-div: #000000;
- 
- 
-    --text-color-light: #ffffff;
-    --text-color-dark: #000000;
  
     --bg-button-dark: rgba(17, 24, 39, 1);
     --bg-button-light: rgb(245, 245, 245);
@@ -42,23 +33,35 @@
 
  }
  
- .dark:root {
+ .dark {
     --primary-color: #5ce1e6; /* rgb(92, 225, 230) */
     /* original primary for dark mode */
-
+    --primary-color-hover: rgba(92, 225, 230, 0.1);
+    --secondary-color: #df7b23;
+    
+    --text-color-main: #b1bad3;
+    
     --border-primary-color: #ffffff;
- 
     --text-primary-color: #ffffff;
+    --bg-primary: rgba(14, 14, 14);
 
-    --bg-primary-color: #000000;
     
     /* Variables pour le mode sombre */
     --bg-dark-div: #222;
     --bg-dark-div-hover: #333;
     --border-dark-div: #444;
     --text-dark-div: #ffffff;
+
+    --bg-items-card: #1A1A1A;
+    --bg-xp: #0f0f0f;
+    --bg-stack-card: #0f0f0f;
+
  }
  
+
+
+
+
  body {
     color: var(--foreground);
     background: var(--background);
@@ -100,3 +103,6 @@
    }
  }
  */
+
+   /* --primary-color: var(--secondary-color);
+  --secondary-color: #1343a9; */
