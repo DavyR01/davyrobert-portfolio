@@ -65,13 +65,17 @@
     font-family: Arial, Helvetica, sans-serif;
  }
 
-.rich-text-shadow {
-  text-shadow: 0 0 1px currentColor;
+ /* Custom keyword highlighting */
+.keyword-highlight {
+   color: var(--text-color-dark);
+   font-weight: 400;
+   font-family: inherit;
+   text-shadow: 0 0 1px currentColor;
 }
 
-
-
-
+.dark .keyword-highlight {
+   color: var(--text-color-light);
+}
 
 
 

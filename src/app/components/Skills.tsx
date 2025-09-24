@@ -28,9 +28,9 @@ const Skills = () => {
                     <div>
                         <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('interventionTitle')}</h3>
                         <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li className='rich-text-shadow'>{t('intervention1')}</li>
-                            <li className='rich-text-shadow'>{t('intervention2')}</li>
-                            <li className='rich-text-shadow'>{t('intervention3')}</li>
+                            <li className='keyword-highlight'>{t('intervention1')}</li>
+                            <li className='keyword-highlight'>{t('intervention2')}</li>
+                            <li className='keyword-highlight'>{t('intervention3')}</li>
                             <li className='dark:text-[var(--text-color-main)]'>{t('intervention4')}</li>
                             <li className='dark:text-[var(--text-color-main)]'>{t('intervention5')}</li>
                         </ul>
@@ -39,9 +39,9 @@ const Skills = () => {
                     <div>
                         <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('stacksTitle')}</h3>
                         <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li className='rich-text-shadow'>{t('stack1')}</li>
-                            <li className='rich-text-shadow'>{t('stack2')}</li>
-                            <li className='rich-text-shadow'>{t('stack3')}</li>
+                            <li className='keyword-highlight'>{t('stack1')}</li>
+                            <li className='keyword-highlight'>{t('stack2')}</li>
+                            <li className='keyword-highlight'>{t('stack3')}</li>
                             <li className='dark:text-[var(--text-color-main)]'>{t('stack4')}</li>
                             <li className='dark:text-[var(--text-color-main)]'>{t('stack5')}</li>
                         </ul>
