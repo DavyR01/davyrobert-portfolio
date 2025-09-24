@@ -7,6 +7,12 @@ const nextConfig: NextConfig = {
    /* config options here */
    typescript: {
       // ignoreBuildErrors: true
+   },
+   experimental: {
+      // optimizeCss: true, // Désactivé car nécessite le module 'critters'
+   },
+   images: {
+      formats: ['image/webp', 'image/avif'],
    }
 };
 
