@@ -11,14 +11,14 @@ const Footer = () => {
    return (
       <motion.footer
          id="contact"
-         className="dark:bg-[var(--bg-dark)] bg-[var(--bg-light)] text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] py-10"
+         className="dark:bg-[var(--bg-primary)] bg-[var(--bg-primary)] text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] py-10"
          initial={{ opacity: 0, y: 40 }}
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true, amount: 0.3 }}
          transition={{ duration: 0.6, ease: "easeOut" }}
       >
          {/* Ligne verte */}
-         <div className="h-[2px] bg-[--secondary-color] dark:bg-[--primary-color] w-[80%] mx-auto mb-6" />
+         <div className="h-[2px] bg-[--primary-color] w-[80%] mx-auto mb-6" />
 
          {/* Titre */}
          {/* <h3 className="text-center text-xl font-semibold mb-4">
@@ -31,7 +31,7 @@ const Footer = () => {
                href="https://github.com/davyR01"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--secondary-color] dark:text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-3xl hover:scale-110 transition-transform"
             >
                <FaGithub />
             </a>
@@ -39,13 +39,13 @@ const Footer = () => {
                href="https://www.linkedin.com/in/davy-robert"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--secondary-color] dark:text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <FaLinkedin />
             </a>
             <a
                href="mailto:contact@davyrobert.fr"
-               className="text-[--secondary-color] dark:text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
             >
                <MdEmail />
             </a>
@@ -62,7 +62,7 @@ const Footer = () => {
                   {t('madeWith')}
                </a>
             </p>
-            <p className="text-sm text-[--secondary-color] dark:text-[--primary-color] font-semibold">
+            <p className="text-sm text-[--primary-color] font-semibold">
                {t('rights')}
             </p>
          </div>

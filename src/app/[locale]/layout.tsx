@@ -42,14 +42,14 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
-      <body className="antialiased flex flex-col min-h-screen font-grotesk overflow-x-hidden bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]">
+      <body className="antialiased flex flex-col min-h-screen font-grotesk overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             {isMaintenanceMode ? (
-              <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-dark)] dark:text-[var(--text-color-light)]">
+              <div className="h-screen flex justify-center items-center font-medium text-3xl text-center dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)]">
                 <div className="border border-[--primary-color] text-[--primary-color] p-16">Le site est actuellement en cours d&apos;élaboration. <br /> Veuillez patienter...............</div>
               </div>
             ) : (

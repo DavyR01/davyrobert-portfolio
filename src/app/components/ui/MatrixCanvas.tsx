@@ -25,7 +25,9 @@ const MatrixCanvas: React.FC<MatrixCanvasProps> = ({ sectionRef }) => {
 
     function draw() {
       if (!ctx) return;
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+      // ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+      ctx.fillStyle = 'rgba(14, 14, 14, 0.15)';
+
       ctx.fillRect(0, 0, w, h);
       ctx.font = fontSize + 'px monospace';
       ctx.fillStyle = 'rgba(0,255,65,0.35)';
@@ -66,7 +68,7 @@ const MatrixCanvas: React.FC<MatrixCanvasProps> = ({ sectionRef }) => {
     <canvas
       ref={canvasRef}
       className="pointer-events-none absolute inset-0 w-full h-full z-0"
-      style={{ background: 'black', filter: 'blur(1px)' }}
+      style={{filter: 'blur(1px)' }}
     />
   );
 };

@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="dark:bg-[--bg-dark-items1] bg-[--bg-light-items1] border dark:border-[#000] hover:border-[var(--primary-color)] dark:hover:border-[var(--primary-color)] hover:shadow-[0_0_0_2px_var(--primary-color)] dark:hover:shadow-[0_0_0_2px_var(--primary-color)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300"
+             className="bg-[--bg-items-card] border dark:border-[#000]  hover:shadow-[0_0_0_2px_var(--primary-color)] hover:bg-[var(--primary-color-hover)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
@@ -62,7 +62,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                       {learnMore && (
                          <div
                             onClick={() => window.open(learnMore, "_blank")}
-                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                          >
                             <AiFillEye className="w-10 h-10 hover:text-[--primary-color]" />
                          </div>
@@ -70,7 +70,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                       {sourceWeb && (
                          <div
                             onClick={() => window.open(sourceWeb, "_blank")}
-                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                          >
                             <AiFillEye className="w-10 h-10 hover:text-[--primary-color]" />
                          </div>
@@ -80,7 +80,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                             href={sourceGithub.startsWith("http") ? sourceGithub : `https://${sourceGithub}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-dark)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
+                            className="w-8 h-8 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                          >
                             <AiFillGithub className="w-10 h-10 hover:text-[--primary-color]" />
                             {/* <AiFillGithub className="w-10 h-10 hover:text-gray-700 dark:hover:text-gray-400" /> */}
@@ -111,7 +111,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                           {tags.map((tag, idx) => (
                              <span
                                 key={idx}
-                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-light-items2)] dark:bg-[var(--bg-dark-items2)] px-2 py-0.5 rounded-full font-semibold uppercase `}
+                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-stack-card)] px-2 py-0.5 rounded-full font-semibold uppercase `}
                              >
                                 {tag.name}
                              </span>

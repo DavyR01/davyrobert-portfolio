@@ -33,7 +33,7 @@ const MesExperiences = () => {
                   <div key={`${item.yearKey}-${i}`} className="relative flex flex-col w-full mb-16" data-index={i}>
                      <div className="w-full flex justify-center mb-6">
                         <div className="relative w-full max-w-[95%] sm:max-w-[97%]">
-                           <div className="dark:bg-[--bg-dark-items2] bg-[var(--bg-light)] border border-[--primary-color] rounded-lg p-6 w-full text-base">
+                           <div className="bg-[var(--bg-xp)] border border-[--primary-color] rounded-lg p-6 w-full text-base">
 
                                <h2 className="text-3xl font-bold mb-4 w-full text-center">{t(item.yearKey)}</h2>
                               {item.experiencesKey.map((exp, expIndex) => (
@@ -70,7 +70,7 @@ const MesExperiences = () => {
                            <div className="w-1/2 flex justify-end pr-10">
                               <div className="relative">
                                  <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
-                                 <div className="border dark:bg-[--bg-dark-items2] border-[--primary-color] rounded-lg p-6 w-[500px] text-base">
+                                 <div className="border bg-[var(--bg-xp)] border-[--primary-color] rounded-lg p-6 w-[500px] text-base">
                                      <h2 className="text-4xl font-bold mb-4 text-center">{t(item.yearKey)}</h2>
                                     {item.experiencesKey.map((exp, expIndex) => (
                                        <div key={`desktop-${exp.titleKey}-${expIndex}`} className="mb-4">
@@ -109,7 +109,7 @@ const MesExperiences = () => {
                            <div className="w-1/2 flex justify-center items-center pl-10">
                               <div className="relative">
                                  <div className="absolute top-1/2 left-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
-                                 <div className="dark:bg-[--bg-dark-items2] bg-[var(--bg-light)] border border-[--primary-color] rounded-lg p-6 w-[500px] text-base">
+                                 <div className="bg-[var(--bg-xp)] border border-[--primary-color] rounded-lg p-6 w-[500px] text-base">
                                      <h2 className="text-4xl font-bold mb-4 text-center">{t(item.yearKey)}</h2>
                                     {item.experiencesKey.map((exp, expIndex) => (
                                        <div key={`desktop-${exp.titleKey}-${expIndex}`} className="mb-4">
