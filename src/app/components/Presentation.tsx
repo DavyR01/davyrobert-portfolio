@@ -2,7 +2,7 @@
 
 import { useTheme } from '@/context/ThemeContext'
 import { getQualities, methods, personalData } from '@/datas'
-import { getKeywordsPresentation, highlightKeywordsPresentation } from '@/utils/formatText'
+import { getKeywordsPresentation, highlightKeywordsPresentation } from '@/utils/formatTextServer'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'

@@ -36,3 +36,38 @@ export const formatTextServer = (text: string) => {
 
   return formattedText;
 };
+
+
+
+
+
+
+
+
+
+
+// on Prestentation Component
+// Function to highlight keywords based on language
+export const highlightKeywordsPresentation = (text: string, keywords: string[]) => {
+  const regex = new RegExp(`(${keywords.join('|')})`, 'gi');
+  return text.replace(regex, '<span class="keyword-highlight">$1</span>');
+};
+
+
+// Keywords for different paragraphs in French and English
+export const getKeywordsPresentation = (locale: string) => {
+  if (locale === 'fr') {
+    return {
+      paragraph1: ['parcours riche, varié et diversifié', 'spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'j\'apprends et évolue continuellement', 'travail de qualité', 'aligné avec les objectifs'],
+      paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte', 'exploiter celles qui s\'avèrent pertinentes'],
+      paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "engagées"]
+    };
+  } else {
+    return {
+      paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies', 'constantly learning and evolving', 'quality work', 'aligned with the users\' objectives'],
+      paragraph2: ['design', 'develop', 'optimize', 'self-training', 'exploit those that prove relevant'],
+      paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed']
+    };
+  }
+};
+
