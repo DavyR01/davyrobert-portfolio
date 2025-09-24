@@ -15,7 +15,7 @@ const Contact = () => {
                     <span className="italic dark:text-white text-black">{t('title').split(' ')[0]}</span> {t('title').split(' ')[1]}
                 </h2>
 
-                <div className="max-w-[800px] text-lg leading-7 dark:text-[#b1bad3] text-gray-600 text-justify">
+                <div className="max-w-[800px] text-lg leading-7 dark:text-[--text-color-main] text-gray-600 text-justify">
                     <p className="mb-6">
                         {formatContactParagraph()}
                     </p>

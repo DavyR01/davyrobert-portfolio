@@ -23,7 +23,7 @@ const MyProjects = () => {
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
                transition={{ delay: 0.2 }}
-               className='text-secondary dark:text-[#b1bad3] text-gray-600 text-[18px] max-w-4xl leading-[2.2rem] mx-auto text-justify'
+               className='text-secondary dark:text-[--text-color-main] text-gray-600 text-[18px] max-w-4xl leading-[2.2rem] mx-auto text-justify'
             >
                {formatProjectsIntro()}
             </motion.p>
