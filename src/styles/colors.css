@@ -64,7 +64,9 @@
     font-family: Arial, Helvetica, sans-serif;
  }
 
-
+.rich-text-component {
+  text-shadow: 0 0 1px currentColor;
+}
 
 
 

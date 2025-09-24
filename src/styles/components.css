@@ -19,7 +19,7 @@
    /* border-radius: 0.375rem; */
    font-weight: 400;
    font-family: inherit;
-   text-shadow: 0 0 0.5 0 currentColor;
+   text-shadow: 0 0 1px currentColor;
 }
 
 .dark .keyword-highlight {
