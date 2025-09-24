@@ -58,16 +58,15 @@ export const highlightKeywordsPresentation = (text: string, keywords: string[]) 
 export const getKeywordsPresentation = (locale: string) => {
   if (locale === 'fr') {
     return {
-      paragraph1: ['parcours riche, varié et diversifié', 'spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'j\'apprends et évolue continuellement', 'travail de qualité', 'aligné avec les objectifs'],
-      paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte', 'exploiter celles qui s\'avèrent pertinentes'],
-      paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "engagées"]
+      paragraph1: ['parcours riche, varié et diversifié', 'spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'valider mon appétence', 'j\'apprends et évolue continuellement', 'travail de qualité', 'aligné avec les attentes et exigences'],
+      paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte', "m'adapte", 'exploiter celles qui s\'avèrent pertinentes', 'forgé une rigueur et une capacité de précision', 'efficacement'],
+      paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "entreprises engagées véhiculant des valeurs fortes"]
     };
   } else {
     return {
-      paragraph1: ['specialize', 'computer science', 'web development', 'application design', 'entrepreneurship', 'new technologies', 'constantly learning and evolving', 'quality work', 'aligned with the users\' objectives'],
-      paragraph2: ['design', 'develop', 'optimize', 'self-training', 'exploit those that prove relevant'],
-      paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed']
+      paragraph1: ['rich, varied and diversified experience', 'specialize', 'computer science', 'web development', 'application design', 'validate my passion', 'learn and evolve continuously', 'quality work', 'track and aligned with the expectations'],
+      paragraph2: ['design', 'develop', 'optimize', 'self-training', 'exploit those that prove relevant', 'constantly adapt', 'shaped my rigor and my capacity for precision', 'efficiently'],
+      paragraph3: ['ambitious', 'transformative projects', 'digital solutions tailored', 'committed companies that share strong values']
     };
   }
 };
-

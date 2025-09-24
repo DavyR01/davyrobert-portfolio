@@ -70,9 +70,9 @@ const Presentation = () => {
                </div>
 
                {/* Titles behind image for lg+ */}
-               <div className="leading-[44px] text-left w-[320px]">
+               <div className="leading-[48px] text-left w-[320px]">
                   <h2 className="text-[2rem] font-bold">{t('hello')}</h2>
-                  <h1 className="text-[3rem] my-4 font-bold">
+                  <h1 className="text-[3.1rem] my-4 font-bold">
                      <span className="">Davy ROBERT</span>
                   </h1>
                   <h2 className="text-[1.65rem] font-bold mb-4">
@@ -129,10 +129,8 @@ const Presentation = () => {
                            <MdEmail />
                         </a>
                      </div>
-
                   </div>
                </div>
-
             </div>
 
 
@@ -216,7 +214,7 @@ const Presentation = () => {
                </div>
 
                {/* Methods Section */}
-               <div className="flex flex-col xl:flex-row items-center lg:items-start mb-6 gap-2 xl:gap-4">
+               <div className="flex flex-col xl:flex-row items-center lg:items-start mb-6 lg:mb-2 gap-2 xl:gap-4">
                   <span className="text-lg font-bold text-[--primary-color] mb-2 mt-2 xl:mb-0 min-w-max xl:self-center">
                      {t('methodsTitle')}
                   </span>
@@ -231,7 +229,7 @@ const Presentation = () => {
                </div>
 
                {/* Text Introduction Section */}
-               <div className={`text-base dark:text-[#b1bad3] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-[2.1rem]' : 'xl:leading-[2.38rem]'} leading-[1.65rem] space-y-6 lg:leading-normal text-justify`}>
+               <div className={`text-base dark:text-[--text-color-main] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-[2.1rem]' : 'xl:leading-[2.28rem]'} leading-[1.65rem] space-y-6 lg:leading-normal text-justify`}>
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph1'), keywords.paragraph1) }} />
 
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph2'), keywords.paragraph2) }} />
