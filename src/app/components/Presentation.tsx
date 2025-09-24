@@ -229,7 +229,7 @@ const Presentation = () => {
                </div>
 
                {/* Text Introduction Section */}
-               <div className={`text-base dark:text-[--text-color-main] text-gray-600 space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-[2.1rem]' : 'xl:leading-[2.28rem]'} leading-[1.65rem] space-y-6 lg:leading-normal text-justify`}>
+               <div className={`text-base text-[var(--text-color-dark)] dark:text-[var(--text-color-main)] space-y-4 ${locale === 'fr' ? 'xl:space-y-6 xl:leading-[2.1rem]' : 'xl:leading-[2.28rem]'} leading-[1.65rem] space-y-6 lg:leading-normal text-justify`}>
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph1'), keywords.paragraph1) }} />
 
                   <p dangerouslySetInnerHTML={{ __html: highlightKeywordsPresentation(t('paragraph2'), keywords.paragraph2) }} />

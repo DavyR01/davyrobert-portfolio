@@ -40,7 +40,7 @@
     "intervention4": "Intégration de tests unitaires et d'intégrations afin de garantir une cohérence, une qualité fidèle et une fiabilité durable au sein des applications",
     "intervention5": "Adaptabilité des applications à tous les supports par le biais du responsive design",
     "stacksTitle": "Mes stacks techniques prédominantes à ce jour:",
-    "stack1": "NextJS, ReactJS, NodeJS avec TailwindCSS",
+    "stack1": "Next.js, React, Node.js avec TailwindCSS",
     "stack2": "Angular, C#, .NET",
     "stack3": "Java / Kotlin avec Android Studio",
     "stack4": "PostgreSQL, GraphQL, MySQL",
@@ -116,8 +116,8 @@
         "title": "Projets réalisés",
         "tasks": {
           "t1": "Projet 1 : France Trivia (Javascript)",
-          "t2": "Projet 2 : Virtual Met Art (ViteJS)",
-          "t3": "Projet 3 : Make Sense (ReactJS + MySQL)"
+          "t2": "Projet 2 : Virtual Met Art (Vite.js)",
+          "t3": "Projet 3 : Make Sense (React + MySQL)"
         }
       }
     }
