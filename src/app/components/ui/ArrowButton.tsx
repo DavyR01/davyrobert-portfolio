@@ -10,24 +10,29 @@ const ArrowButton = () => {
   useEffect(() => {
     setMounted(true);
     
-    // Function to check if user has reached the contact section
-    const checkContactReached = () => {
-      const contactSection = document.getElementById('contact');
+    // Function to check if user has reached the skills section
+    const checkSkillsReached = () => {
+      const skillsSection = document.getElementById('skills');
       
-      if (contactSection) {
-        const rect = contactSection.getBoundingClientRect();
-        // Show button when contact section is visible or passed
-        const hasReached = rect.top <= window.innerHeight;
-        setShowButton(hasReached);
+      if (skillsSection) {
+        // Get the top position of the skills section
+        const skillsTop = skillsSection.offsetTop;
+        // Current scroll position
+        const scrollPosition = window.scrollY;
+        
+        // Show button when user has scrolled to the skills section
+        // Add a small offset to show the button slightly before reaching the section
+        const hasReachedSkills = scrollPosition >= skillsTop;
+        setShowButton(hasReachedSkills);
       }
     };
 
-    checkContactReached();
+    checkSkillsReached();
 
-    window.addEventListener('scroll', checkContactReached);
+    window.addEventListener('scroll', checkSkillsReached);
     
     return () => {
-      window.removeEventListener('scroll', checkContactReached);
+      window.removeEventListener('scroll', checkSkillsReached);
     };
   }, []);
 
