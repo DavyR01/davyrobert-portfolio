@@ -40,11 +40,14 @@
     "intervention4": "Integration of unit and integration tests to ensure consistency, faithful quality and durable reliability within applications",
     "intervention5": "Adaptability of applications to all supports through responsive design",
     "stacksTitle": "My predominant technical stacks to date:",
-    "stack1": "Next.js, React, Node.js with TailwindCSS",
-    "stack2": "Angular, C#",
-    "stack3": "Java / Kotlin with Android Studio",
-    "stack4": "PostgreSQL, GraphQL, MySQL",
-    "stack5": "And much more...",
+    "stack1": "Next.js, React, Typescript, Javascript",
+    "stack2": "TailwindCSS",
+    "stack3": "GraphQL (Apollo, TypeGraphQL), Node.js",
+    "stack4": "TypeORM, PostgreSQL",
+    "stack5": "Angular, C#, .NET",
+    "stack6": "Java / Kotlin avec Android Studio",
+    "stack7": "And much more...",
+    "stack8": " (Business project)",
     "categories": {
       "languages": "Languages",
       "frontend": "Frontend",
@@ -145,7 +148,7 @@
     "paragraph": "<hl>Are you looking for a developer, a web integrator or even a tester to strengthen your team?</hl> <br></br><br></br> I am currently seeking a professional opportunity and would be delighted to discuss a future collaboration. <br></br><br></br><hl> Feel free to contact me to talk about a project, learn more about my profile or simply ask questions.</hl> <br></br><br></br> I remain available and responsive, and I will be happy to reply."
   },
   "footer": {
-    "madeWith": "Design and Development made with NextJS & TailwindCSS",
+    "madeWith": "Design and Development made with Next.js & TailwindCSS",
     "rights": " 2025 Davy Robert – All rights reserved"
   },
   "project": {

@@ -40,11 +40,14 @@
     "intervention4": "Intégration de tests unitaires et d'intégrations afin de garantir une cohérence, une qualité fidèle et une fiabilité durable au sein des applications",
     "intervention5": "Adaptabilité des applications à tous les supports par le biais du responsive design",
     "stacksTitle": "Mes stacks techniques prédominantes à ce jour:",
-    "stack1": "Next.js, React, Node.js avec TailwindCSS",
-    "stack2": "Angular, C#, .NET",
-    "stack3": "Java / Kotlin avec Android Studio",
-    "stack4": "PostgreSQL, GraphQL, MySQL",
-    "stack5": "Et plus encore...",
+    "stack1": "Next.js, React, Typescript, Javascript",
+    "stack2": "TailwindCSS",
+    "stack3": "GraphQL (Apollo, TypeGraphQL), Node.js",
+    "stack4": "TypeORM, PostgreSQL",
+    "stack5": "Angular, C#, .NET",
+    "stack6": "Java / Kotlin avec Android Studio",
+    "stack7": "Et plus encore...",
+    "stack8": " (Projet d'entreprise)",
     "categories": {
       "languages": "Langages",
       "frontend": "Frontend",
@@ -128,7 +131,7 @@
     "title3": "Réalisations",
     "intro": "<hl>Découvrez mes projets réalisés, récents et à venir.</hl> La plupart d'entre eux ont été <hl>déployés par mes soins</hl> et certains l'ont été dans un <hl>cadre professionnel</hl> en collaboration avec d'autres développeurs. <br></br> Par soucis de confidentialité, je ne pourrais pas fournir le code source des projets réalisés en entreprise. <br></br> Toutefois, vous trouverez peut-être parfois <hl> quelques vidéos de démonstration</hl> que j'ai pu réaliser lorsque le projet n'est pas immédiatement accessible en ligne afin <hl> d'illustrer les fonctionnalités </hl> et <hl>l'ergonomie</hl> de ces projets.",
     "description": {
-      "ecosystemQVMD": "Développement d'une plateforme de gestion des déchets pour faciliter la collaboration entre prestataires et détenteurs de déchets.",
+      "ecosystemQVMD": "Développement d'une plateforme de gestion des déchets pour faciliter la collaboration entre prestataires et détenteurs de déchets (BlueSoft Group)",
       "makeSense": "Application collaborative développée pour améliorer la prise de décisions entre différents acteurs institutionnels.",
       "wildRent": "Plateforme en ligne de location et de réservation de matériels et d'équipements (Ski, randonnée, plongée, voyage, camping…). L'objectif étant de proposer une multitude d'articles à travers une interface web simple, fluide et intuitive.",
       "myCrit": "Application web développée lors d'un stage chez BlueSoft Group pour faciliter la recherche d'emplois en intérim.",
@@ -145,7 +148,7 @@
     "paragraph": "<hl>Vous êtes à la recherche d'un développeur, d'un intégrateur web ou encore d'un testeur pour renforcer votre équipe ?</hl> <br></br><br></br> Je suis actuellement à la recherche d'une opportunité professionnelle et serais ravi d'échanger autour d'une future collaboration. <br></br><br></br> <hl>N'hésitez pas à me contacter, que ce soit pour discuter d'un projet, en savoir plus sur mon profil, ou simplement me poser des questions.</hl> <br></br><br></br> Je reste disponible et réactif, et je me ferai un plaisir de vous répondre."
   },
   "footer": {
-    "madeWith": "Design et Développement réalisés en NextJS & TailwindCSS",
+    "madeWith": "Design et Développement réalisés en Next.js & TailwindCSS",
     "rights": "© 2025 Davy Robert – Tous droits réservés"
   },
   "project": {

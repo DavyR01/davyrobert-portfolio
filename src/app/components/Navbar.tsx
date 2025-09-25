@@ -87,10 +87,10 @@ const Navbar = () => {
    return (
       <header className="
       fixed top-0 left-0 right-0 z-30 w-full mx-auto
-      bg-[var(--bg-primary)] text-[var(--text-color-dark)]
-      dark:bg-[var(--bg-primary)]  dark:text-[var(--text-color-light)]
+      bg-[rgb(var(--bg-primary))] text-[var(--text-color-dark)]
+      dark:bg-[rgb(var(--bg-primary))]  dark:text-[var(--text-color-light)]
     ">
-         <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20">
+         <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20 bg-[var(--bg-primary-menu)]">
             <div className="flex justify-between items-center w-full md:w-auto h-20">
                <Link href="/" className="block w-[60px] h-[80px] relative select-none">
                   <Image
@@ -113,7 +113,7 @@ const Navbar = () => {
                <div className="flex items-center gap-6">
                   <button
                      onClick={toggleLocale}
-                     className="md:mt-0 block md:hidden border border-[--primary-color] px-2 py-1 rounded"
+                     className="md:mt-0 block md:hidden border border-[--primary-color] hover:bg-[--primary-color] hover:text-[--text-color-dl-invert] px-2 py-1 rounded"
                   >
                      {locale === 'fr' ? 'EN' : 'FR'}
                   </button>
@@ -129,7 +129,7 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex bg-[var(--bg-primary)] dark:bg-[rgba(var(--bg-primary-menu),0.9)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
+                  ? 'flex bg-[var(--bg-primary-menu-op)] hover:bg-[var(--bg-primary-menu)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >
@@ -192,7 +192,7 @@ const Navbar = () => {
                   <li>
                      <button
                         onClick={toggleLocale}
-                        className="mt-6 md:mt-0 hidden md:block border border-[--primary-color] px-2 py-1 rounded"
+                        className="mt-6 md:mt-0 hidden md:block border hover:bg-[--primary-color] border-[--primary-color] px-2 py-1 rounded hover:text-[--text-color-dl-invert]"
                      >
                         {locale === 'fr' ? 'EN' : 'FR'}
                      </button>
