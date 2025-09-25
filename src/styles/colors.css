@@ -5,26 +5,23 @@
   --primary-color-hover: rgba(19, 67, 169, 0.1);
   --secondary-color: #df7b23;
   
-  --text-color-main: #4B5563;
+  --text-color-main: #000000;
   --text-color-light: #ffffff;
   --text-color-dark: #000000;
+  --text-color-dl: #000000;
+  --text-color-dl-invert: #ffffff;
+
 
   --border-primary-color: #4a4a4a;
-  --text-primary-color: #000000;
-  --bg-primary: #ffffff;
+  --bg-primary: 255, 255, 255;
+  --bg-primary-menu: rgba(255, 255, 255);
+  --bg-primary-menu-op: rgba(255, 255, 255, 0.9);
 
   --bg-items-card: #f5f5f5;
   --bg-xp: #f5f5f5;
   --bg-stack-card: #e5e8e8;
-
-    --bg-dark-menu: 0, 0, 0;
  
-    /* Variables pour les divs et éléments d'interface */
-    --bg-light-div: #f6f6f6;
-    --bg-light-div-hover: #ececec;
-    --border-light-div: #e5e5e5;
-    --text-light-div: #000000;
- 
+    /* Variables pour les divs et éléments d'interface */ 
     --bg-button-dark: rgba(17, 24, 39, 1);
     --bg-button-light: rgb(245, 245, 245);
  
@@ -35,23 +32,23 @@
  
  .dark {
     --primary-color: #5ce1e6; /* rgb(92, 225, 230) */
-    /* original primary for dark mode */
     --primary-color-hover: rgba(92, 225, 230, 0.1);
     --secondary-color: #df7b23;
     
     --text-color-main: #b1bad3;
+    --text-color-light: #ffffff;
+    --text-color-dark: #000000;
+    --text-color-dl: #ffffff;
+    --text-color-dl-invert: #000000;
     
     --border-primary-color: #ffffff;
-    --text-primary-color: #ffffff;
     --bg-primary: rgba(14, 14, 14);
+    --bg-primary-menu: rgba(14, 14, 14);
+    --bg-primary-menu-op: rgba(14, 14, 14, 0.9);
+
 
     
     /* Variables pour le mode sombre */
-    --bg-dark-div: #222;
-    --bg-dark-div-hover: #333;
-    --border-dark-div: #444;
-    --text-dark-div: #ffffff;
-
     --bg-items-card: #1A1A1A;
     --bg-xp: #0f0f0f;
     --bg-stack-card: #0f0f0f;
@@ -71,23 +68,24 @@
  /* Custom keyword highlighting */
 .keyword-highlight {
    color: var(--text-color-dark);
-   font-weight: 400;
-   font-family: inherit;
    text-shadow: 0 0 1px currentColor;
+   /* font-weight: 400;
+   font-family: inherit; */
 }
 
 .dark .keyword-highlight {
    color: var(--text-color-light);
 }
 
+.keyword-highlight-secondary {
+   color: var(--secondary-color);
+   text-shadow: 0 0 1px currentColor;
+}
 
+.group:hover .tag-shadow {
+  text-shadow: 0 0 1px currentColor;
+}
 
-
-
-
-
-
- 
  /*
  @media (prefers-color-scheme: dark) {
    :root {

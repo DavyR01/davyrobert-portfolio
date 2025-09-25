@@ -28,24 +28,24 @@ const Footer = () => {
          {/* Icônes */}
          <div className="flex justify-center items-center gap-6">
             <a
-               href="https://github.com/davyR01"
-               target="_blank"
-               rel="noopener noreferrer"
-               className="text-[--primary-color] text-3xl hover:scale-110 transition-transform"
-            >
-               <FaGithub />
-            </a>
-            <a
                href="https://www.linkedin.com/in/davy-robert"
                target="_blank"
                rel="noopener noreferrer"
-               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:text-[--secondary-color] hover:scale-110 transition-transform"
             >
                <FaLinkedin />
             </a>
             <a
+               href="https://github.com/davyR01"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-[--primary-color] text-3xl hover:text-[--secondary-color]  hover:scale-110 transition-transform"
+            >
+               <FaGithub />
+            </a>
+            <a
                href="mailto:contact@davyrobert.fr"
-               className="text-[--primary-color] text-4xl hover:scale-110 transition-transform"
+               className="text-[--primary-color] text-4xl hover:text-[--secondary-color] hover:scale-110 transition-transform"
             >
                <MdEmail />
             </a>

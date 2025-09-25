@@ -40,7 +40,7 @@ const NavbarBackProjects = () => {
         <div className="flex items-center">
           <button
             onClick={toggleLocale}
-            className="md:mt-0 block border border-[--primary-color] px-2 py-1 rounded"
+            className="md:mt-0 block border border-[--primary-color] hover:bg-[--primary-color] hover:text-[--text-color-dl-invert] px-2 py-1 rounded"
           >
             {locale === 'fr' ? 'EN' : 'FR'}
           </button>

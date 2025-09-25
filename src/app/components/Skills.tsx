@@ -39,11 +39,13 @@ const Skills = () => {
                     <div>
                         <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('stacksTitle')}</h3>
                         <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li className='keyword-highlight'>{t('stack1')}</li>
+                            <li className='keyword-highlight-secondary'>{t('stack1')}</li>
                             <li className='keyword-highlight'>{t('stack2')}</li>
                             <li className='keyword-highlight'>{t('stack3')}</li>
-                            <li className='dark:text-[var(--text-color-main)]'>{t('stack4')}</li>
-                            <li className='dark:text-[var(--text-color-main)]'>{t('stack5')}</li>
+                            <li className='keyword-highlight'>{t('stack4')}</li>
+                            <li> <span className='keyword-highlight'>{t('stack5')}</span><span className='text-[var(--text-color-main)]'>{t('stack8')}</span></li>
+                            <li> <span className='keyword-highlight'>{t('stack6')}</span><span className='text-[var(--text-color-main)]'>{t('stack8')}</span></li>
+                            <li className='dark:text-[var(--text-color-main)]'>{t('stack7')}</li>
                         </ul>
                     </div>
                 </div>

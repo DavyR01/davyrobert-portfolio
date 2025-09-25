@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="bg-[--bg-items-card] border dark:border-[#000]  hover:shadow-[0_0_0_2px_var(--primary-color)] hover:bg-[var(--primary-color-hover)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300"
+             className="bg-[--bg-items-card] border dark:border-[#000]  hover:shadow-[0_0_0_2px_var(--primary-color)] hover:bg-[var(--primary-color-hover)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300 group"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
@@ -111,7 +111,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                           {tags.map((tag, idx) => (
                              <span
                                 key={idx}
-                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-stack-card)] px-2 py-0.5 rounded-full font-semibold uppercase `}
+                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-stack-card)] px-2 py-0.5 rounded-full uppercase tag-shadow transition-all duration-300`}
                              >
                                 {tag.name}
                              </span>

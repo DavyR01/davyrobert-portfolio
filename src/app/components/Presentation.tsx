@@ -110,7 +110,7 @@ const Presentation = () => {
                            href="https://www.linkedin.com/in/davy-robert"
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
+                           className="text-[--primary-color] text-5xl hover:text-[--secondary-color]  hover:scale-110 transition-transform"
                         >
                            <FaLinkedin />
                         </a>
@@ -118,13 +118,13 @@ const Presentation = () => {
                            href="https://github.com/davyR01"
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="text-[--primary-color] text-5xl  hover:scale-110 transition-transform"
+                           className="text-[--primary-color] text-5xl hover:text-[--secondary-color]  hover:scale-110 transition-transform"
                         >
                            <FaGithub />
                         </a>
                         <a
                            href="mailto:contact@davyrobert.fr"
-                           className="text-[--primary-color] text-5xl   hover:scale-110 transition-transform"
+                           className="text-[--primary-color] text-5xl hover:text-[--secondary-color]   hover:scale-110 transition-transform"
                         >
                            <MdEmail />
                         </a>
@@ -193,7 +193,7 @@ const Presentation = () => {
                      href="https://www.linkedin.com/in/davy-robert"
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="text-[--primary-color] text-4xl sm:text-4xl  hover:scale-110 transition-transform"
+                     className="text-[--primary-color] text-4xl sm:text-4xl hover:text-[--secondary-color]  hover:scale-110 transition-transform"
                   >
                      <FaLinkedin />
                   </a>
@@ -201,13 +201,13 @@ const Presentation = () => {
                      href="https://github.com/davyR01"
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="text-[--primary-color] text-4xl sm:text-4xl hover:scale-110 transition-transform"
+                     className="text-[--primary-color] text-4xl sm:text-4xl hover:text-[--secondary-color]  hover:scale-110 transition-transform"
                   >
                      <FaGithub />
                   </a>
                   <a
                      href="mailto:contact@davyrobert.fr"
-                     className="text-[--primary-color] text-4xl sm:text-4xl  hover:scale-110 transition-transform"
+                     className="text-[--primary-color] text-4xl sm:text-4xl hover:text-[--secondary-color]   hover:scale-110 transition-transform"
                   >
                      <MdEmail />
                   </a>
@@ -292,7 +292,7 @@ const Presentation = () => {
                         href="https://www.linkedin.com/in/davy-robert"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[--primary-color] text-5xl sm:text-4xl  hover:scale-110 transition-transform"
+                        className="text-[--primary-color] text-5xl sm:text-4xl hover:text-[--secondary-color]  hover:scale-110 transition-transform"
                      >
                         <FaLinkedin />
                      </a>
@@ -300,13 +300,13 @@ const Presentation = () => {
                         href="https://github.com/davyR01"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[--primary-color] text-5xl sm:text-4xl hover:scale-110 transition-transform"
+                        className="text-[--primary-color] text-5xl sm:text-4xl hover:text-[--secondary-color] hover:scale-110 transition-transform"
                      >
                         <FaGithub />
                      </a>
                      <a
                         href="mailto:contact@davyrobert.fr"
-                        className="text-[--primary-color] text-5xl sm:text-4xl  hover:scale-110 transition-transform"
+                        className="text-[--primary-color] text-5xl sm:text-4xl hover:text-[--secondary-color] hover:scale-110 transition-transform"
                      >
                         <MdEmail />
                      </a>
