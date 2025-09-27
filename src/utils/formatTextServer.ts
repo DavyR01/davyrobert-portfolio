@@ -20,15 +20,17 @@ export const formatTextServer = (text: string) => {
     // Add <ul> tags around lists
     .replace(/(<li.*?<\/li>)+/g, '<ul class="list-disc space-y-2 ml-6 mb-4">$&</ul>')
     // Bold section titles (lines ending with :)
-    .replace(/^([^<]*?:)(?=<br>|$)/gm, '<strong class="text-[--primary-color] font-semibold">$1</strong>')
-    // Style credentials - motdepasse and password
-    .replace(/\bmotdepasse\b/g, '<strong class="text-green-600 ">motdepasse</strong>')
-    .replace(/\bpassword\b/g, '<strong class="text-green-600 ">password</strong>')
+    .replace(/^([^<]*?:)(?=<br>|$)/gm, '<strong class=" font-semibold">$1</strong>')
     // Style email addresses (simple pattern)
-    .replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<span class="text-gray-600 font-mono">$1</span>')
-    // Style passwords (text after "motdepasse : " or "password : " until space or end)
-    .replace(/(motdepasse<\/strong> : )([^\s<]+)/g, '$1<span class="text-gray-600 font-mono">$2</span>')
-    .replace(/(password<\/strong> : )([^\s<]+)/g, '$1<span class="text-gray-600 font-mono">$2</span>')
+    .replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<span class="text-gray-600 font-mono font-medium">$1</span>')
+    // Style passwords and usernames - simple and direct approach
+    .replace(/motdepasse\s*:\s*([^\s<\n]+)/gi, '<strong class=" font-semibold">motdepasse</strong> : <span class="text-gray-600 font-mono font-semibold px-1 py-0.5 rounded">$1</span>')
+    .replace(/password\s*:\s*([^\s<\n]+)/gi, '<strong class=" font-semibold">password</strong> : <span class="text-gray-600 font-mono font-semibold  px-1 py-0.5 rounded">$1</span>')
+    // Style usernames
+    .replace(/utilisateur\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">utilisateur</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
+    .replace(/user\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">user</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
+    .replace(/administrateur\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">administrateur</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
+    .replace(/admin\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">admin</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
     // Clean up extra <br> after lists
     .replace(/<\/ul><br>/g, '</ul>')
     // Clean up extra <br> before lists
