@@ -13,7 +13,7 @@
 
 
   --border-primary-color: #4a4a4a;
-  --bg-primary: 255, 255, 255;
+  --bg-primary: rgba(255, 255, 255);
   --bg-primary-menu: rgba(255, 255, 255);
   --bg-primary-menu-op: rgba(255, 255, 255, 0.9);
 
