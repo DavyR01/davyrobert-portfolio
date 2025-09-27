@@ -21,16 +21,16 @@ export const formatTextServer = (text: string) => {
     .replace(/(<li.*?<\/li>)+/g, '<ul class="list-disc space-y-2 ml-6 mb-4">$&</ul>')
     // Bold section titles (lines ending with :)
     .replace(/^([^<]*?:)(?=<br>|$)/gm, '<strong class=" font-semibold">$1</strong>')
-    // Style email addresses (simple pattern)
-    .replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<span class="text-gray-600 font-mono font-medium">$1</span>')
-    // Style passwords and usernames - simple and direct approach
-    .replace(/motdepasse\s*:\s*([^\s<\n]+)/gi, '<strong class=" font-semibold">motdepasse</strong> : <span class="text-gray-600 font-mono font-semibold px-1 py-0.5 rounded">$1</span>')
-    .replace(/password\s*:\s*([^\s<\n]+)/gi, '<strong class=" font-semibold">password</strong> : <span class="text-gray-600 font-mono font-semibold  px-1 py-0.5 rounded">$1</span>')
-    // Style usernames
-    .replace(/utilisateur\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">utilisateur</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
-    .replace(/user\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">user</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
-    .replace(/administrateur\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">administrateur</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
-    .replace(/admin\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong class=" font-semibold">admin</strong> : <span class="text-gray-600 font-mono font-medium">$1</span>')
+    // Style email addresses (simple pattern) - CSS inline avec même style que les mots de passe
+    .replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<span style="color: #6b7280; font-family: monospace; font-weight: 600; padding: 2px 4px; border-radius: 4px; background-color: rgba(107, 114, 128, 0.1);">$1</span>')
+    // Style passwords and usernames - simple and direct approach - CSS inline
+    .replace(/motdepasse\s*:\s*([^\s<\n]+)/gi, '<strong style="font-weight: 600;">motdepasse</strong> : <span style="color: #6b7280; font-family: monospace; font-weight: 600; padding: 2px 4px; border-radius: 4px; background-color: rgba(107, 114, 128, 0.1);">$1</span>')
+    .replace(/password\s*:\s*([^\s<\n]+)/gi, '<strong style="font-weight: 600;">password</strong> : <span style="color: #6b7280; font-family: monospace; font-weight: 600; padding: 2px 4px; border-radius: 4px; background-color: rgba(107, 114, 128, 0.1);">$1</span>')
+    // Style usernames - CSS inline
+    .replace(/utilisateur\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong style="font-weight: 600;">utilisateur</strong> : <span style="color: #6b7280; font-family: monospace; font-weight: 500;">$1</span>')
+    .replace(/user\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong style="font-weight: 600;">user</strong> : <span style="color: #6b7280; font-family: monospace; font-weight: 500;">$1</span>')
+    .replace(/administrateur\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong style="font-weight: 600;">administrateur</strong> : <span style="color: #6b7280; font-family: monospace; font-weight: 500;">$1</span>')
+    .replace(/admin\s*:\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/gi, '<strong style="font-weight: 600;">admin</strong> : <span style="color: #6b7280; font-family: monospace; font-weight: 500;">$1</span>')
     // Clean up extra <br> after lists
     .replace(/<\/ul><br>/g, '</ul>')
     // Clean up extra <br> before lists
