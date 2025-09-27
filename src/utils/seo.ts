@@ -6,7 +6,7 @@ export interface SEOContent {
   keywords: string[];
 }
 
-export const seoContent = {
+export const seoContent: Record<string, SEOContent> = {
   fr: {
     title: 'Davy ROBERT | Portfolio | Concepteur Développeur Full Stack d\'Applications Web et Mobile',
     description: 'Concepteur Développeur Full Stack d\'Applications Web et Mobile. Spécialisé en Next.js, React, Node.js, Javascript & TypeScript... Découvrez mon portfolio en ligne et accédez à mes projets réalisés et en cours de réalisation.',
@@ -22,7 +22,7 @@ export const seoContent = {
 export function generateSEOMetadata(
   locale: string,
   pageTitle?: string,
-  pageDescription?: string
+  pageDescription?: string,
 ): Metadata {
   const content = seoContent[locale as keyof typeof seoContent] || seoContent.fr;
 

@@ -7,8 +7,10 @@ import { getTranslations } from 'next-intl/server';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { AiOutlineEye } from 'react-icons/ai';
 import { formatTextServer } from '@/utils/formatTextServer';
+import { generateSEOMetadata } from '@/utils/seo';
+import type { Metadata } from 'next';
 
-// Créer un Map pour un accès O(1) au lieu de O(n)
+// Create a Map for O(1) access instead of O(n)
 const projectsMap = new Map(projects.map(p => [p.projectSlug, p]));
 
 interface ProjectPageProps {
@@ -16,6 +18,23 @@ interface ProjectPageProps {
     slug: string;
     locale: string;
   }>;
+}
+
+// Dynamics metadata for each project
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const t = await getTranslations('myProjects.description');
+  const project = projectsMap.get(slug);
+
+  if (!project) return notFound();
+
+  const projectDescription = t(project.descriptionKey);
+
+  return generateSEOMetadata(
+    locale,
+    project.name,
+    projectDescription
+  );
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
