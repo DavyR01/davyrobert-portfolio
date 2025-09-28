@@ -17,7 +17,7 @@ export default {
             xxs: "280px",
             xs: "390px",
             xs420: "420px",
-            xs480: "480px",
+            xs481: "481px",
             xs893: { min: "893px" }, // xs893: "893px",
          },
          fontFamily: {

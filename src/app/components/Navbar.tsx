@@ -129,7 +129,7 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex bg-[var(--bg-primary-menu-op)] hover:bg-[var(--bg-primary-menu)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
+                  ? 'flex bg-[var(--bg-primary-menu)] xs481:bg-[var(--bg-primary-menu-op)] hover:bg-[var(--bg-primary-menu)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >

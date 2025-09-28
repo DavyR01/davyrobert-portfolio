@@ -160,7 +160,7 @@ const Presentation = () => {
                   <h1 className="my-2 font-bold text-center presentation-clamp-h1">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2 xs480:w-[80%] xs480:mx-auto ">
+                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2 xs481:w-[80%] xs481:mx-auto ">
                      <span>{t('fullstackTitle')}</span>
                      <span className="text-[--primary-color]">{t('fullstackRole')}</span>
                      <span className="font-cambriaaa text-[--primary-color]">&</span>
@@ -178,7 +178,7 @@ const Presentation = () => {
 
                {/* FOR Responsive LG- : <1024px */}
                {/* Profile Image block<1024px */}
-               <div className="lg:hidden aspect-square w-[200px] xs480:w-[260px] min-w-[210px] max-w-full rounded-2xl border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto animate-border-pulse">
+               <div className="lg:hidden aspect-square w-[200px] xs481:w-[260px] min-w-[210px] max-w-full rounded-2xl border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto animate-border-pulse">
                   <Image
                      src="/assets/profile/davyprofile1.png"
                      width={240}
@@ -248,7 +248,7 @@ const Presentation = () => {
                      {getQualities(tQualities).items.map((q, index) => (
                         <div
                            key={q.label}
-                           className="group flex items-center gap-1 xs480:gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-600 px-2 xs480:px-5 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 "
+                           className="group flex items-center gap-1 xs481:gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-600 px-2 xs481:px-5 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 "
                            style={{
                               animationDelay: `${index * 80}ms`
                            }}

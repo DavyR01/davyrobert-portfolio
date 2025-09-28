@@ -60,9 +60,9 @@ export const highlightKeywordsPresentation = (text: string, keywords: string[]) 
 export const getKeywordsPresentation = (locale: string) => {
   if (locale === 'fr') {
     return {
-      paragraph1: ['parcours riche, varié et diversifié', 'spécialiser', 'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'valider mon appétence', 'j\'apprends et évolue continuellement', 'travail de qualité', 'aligné avec les attentes et exigences'],
+      paragraph1: ['parcours riche, varié et diversifié', 'spécialiser', 'l\'informatique', 'développement web', 'conception d\'applications', 'entrepreneuriat', 'valider mon appétence', 'j\'apprends et évolue continuellement', 'travail de qualité', 'aligné avec les attentes et exigences'],
       paragraph2: ['conçois', 'développe', 'optimise', 'me former en autodidacte', "m'adapte", 'exploiter celles qui s\'avèrent pertinentes', 'forgé une rigueur et une capacité de précision', 'efficacement'],
-      paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "entreprises engagées véhiculant des valeurs fortes"]
+      paragraph3: ['projets ambitieux', 'transformations', 'adaptées aux besoins', 'solutions numériques', "d\'entreprises engagées véhiculant des valeurs fortes"]
     };
   } else {
     return {
