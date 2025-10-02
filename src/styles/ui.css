@@ -1,0 +1,56 @@
+/* Custom button classes for mobile compatibility */
+.btn-primary {
+    background-color: #1343a9;
+    background-color: var(--primary-color, #1343a9);
+    color: #ffffff;
+    color: var(--text-color-light, #ffffff);
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ffffff;
+    background-color: var(--bg-primary, #ffffff);
+    color: #1343a9;
+    color: var(--primary-color, #1343a9);
+    border-color: #1343a9;
+    border-color: var(--primary-color, #1343a9);
+  }
+  
+  .btn-secondary {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #bfc9ca, #e5e8e8, #bfc9ca);
+    color: #000000;
+    color: var(--text-color-dark, #000000);
+    border: 2px solid transparent;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .btn-secondary:hover {
+    background: linear-gradient(to right, #e5e8e8, #bfc9ca, #e5e8e8);
+    color: #1A3A34;
+    border-color: #bfc9ca;
+  }
+  
+  /* Dark mode styles */
+  .dark .btn-primary {
+    color: #000000;
+    color: var(--text-color-dark, #000000);
+  }
+  
+  .dark .btn-primary:hover {
+    color: #5ce1e6;
+    color: var(--primary-color, #5ce1e6);
+  }
+  
+  /* Mobile-specific fixes */
+  @media (max-width: 768px) {
+    .btn-primary, .btn-secondary {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+   

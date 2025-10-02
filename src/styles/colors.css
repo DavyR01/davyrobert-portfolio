@@ -11,52 +11,43 @@
   --text-color-dl: #000000;
   --text-color-dl-invert: #ffffff;
 
-
   --border-primary-color: #4a4a4a;
   --bg-primary: rgba(255, 255, 255);
   --bg-primary-menu: rgba(255, 255, 255);
-  --bg-primary-menu-op: rgba(255, 255, 255, 0.9);
+  --bg-primary-menu-op: rgba(255, 255, 255, 0.8);
 
   --bg-items-card: #f5f5f5;
   --bg-xp: #f5f5f5;
   --bg-stack-card: #e5e8e8;
- 
-    /* Variables pour les divs et éléments d'interface */ 
-    --bg-button-dark: rgba(17, 24, 39, 1);
-    --bg-button-light: rgb(245, 245, 245);
- 
-    --border-dark: rgba(0, 0, 0, 0.8);
-    --border-light: rgb(245, 245, 245, 0.8);
+  
+  /* Variables pour les divs et éléments d'interface */ 
+  --bg-button-dark: rgba(17, 24, 39, 1);
+  --bg-button-light: rgb(245, 245, 245);
+  --border-dark: rgba(0, 0, 0, 0.8);
+  --border-light: rgb(245, 245, 245, 0.8);
+}
 
- }
- 
- .dark {
-    --primary-color: #5ce1e6; /* rgb(92, 225, 230) */
-    --primary-color-hover: rgba(92, 225, 230, 0.1);
-    --secondary-color: #df7b23;
-    
-    --text-color-main: #b1bad3;
-    --text-color-light: #ffffff;
-    --text-color-dark: #000000;
-    --text-color-dl: #ffffff;
-    --text-color-dl-invert: #000000;
-    
-    --border-primary-color: #ffffff;
-    --bg-primary: rgba(14, 14, 14);
-    --bg-primary-menu: rgba(14, 14, 14);
-    --bg-primary-menu-op: rgba(14, 14, 14, 0.9);
-
-
-    
-    /* Variables pour le mode sombre */
-    --bg-items-card: #1A1A1A;
-    --bg-xp: #0f0f0f;
-    --bg-stack-card: #0f0f0f;
-
- }
- 
-
-
+.dark {
+  --primary-color: #5ce1e6;
+  --primary-color-hover: rgba(92, 225, 230, 0.1);
+  --secondary-color: #df7b23;
+  
+  --text-color-main: #b1bad3;
+  --text-color-light: #ffffff;
+  --text-color-dark: #000000;
+  --text-color-dl: #ffffff;
+  --text-color-dl-invert: #000000;
+  
+  --border-primary-color: #ffffff;
+  --bg-primary: rgba(14, 14, 14);
+  --bg-primary-menu: rgba(14, 14, 14);
+  --bg-primary-menu-op: rgba(14, 14, 14, 0.8);
+  
+  /* Variables pour le mode sombre */
+  --bg-items-card: #1A1A1A;
+  --bg-xp: #0f0f0f;
+  --bg-stack-card: #0f0f0f;
+}
 
 
  body {
