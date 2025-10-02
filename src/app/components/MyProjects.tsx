@@ -13,12 +13,13 @@ const MyProjects = () => {
    const { formatProjectsIntro } = useRichTextFormatters();
 
    return (
-      <section id="projets" className="pt-32 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] px-4">
-         <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
-            <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')} <span className="font-cambriaaa">&</span> {t('title3')}
-         </h2>
+      <section id="projets" className="pt-32 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] w-full">
+         <div className='w-full py-8'>
+            <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-8 px-5">
+               <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')} <span className="font-cambriaaa">&</span> {t('title3')}
+            </h2>
 
-         <div className='w-full flex'>
+            <div className='w-full flex bg-[var(--bg-primary-menu)] py-8 px-5'>
             <motion.p
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
@@ -28,8 +29,9 @@ const MyProjects = () => {
                {formatProjectsIntro()}
             </motion.p>
          </div>
+         </div>
 
-         <div className="mt-20 flex justify-center w-full">
+         <div className="mt-8 flex justify-center w-full px-4">
             <div className="w-full max-w-[1200px]">
                <div className="flex flex-wrap justify-center gap-7 w-full">
                   {projects.map((project, index) => (

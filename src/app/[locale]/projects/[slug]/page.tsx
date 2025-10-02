@@ -146,7 +146,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <h2 className="text-2xl font-bold mb-4">
           {t('project.techStack.title')}
         </h2>
-        <div className="flex flex-wrap gap-3 mb-6">
+        <div className="flex flex-wrap gap-3 mb-6 uppercase">
           {project.tags.map((tag) => (
             <span
               key={tag.name}

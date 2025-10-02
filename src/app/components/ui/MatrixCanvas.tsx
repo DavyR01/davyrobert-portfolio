@@ -25,12 +25,12 @@ const MatrixCanvas: React.FC<MatrixCanvasProps> = ({ sectionRef }) => {
 
     function draw() {
       if (!ctx) return;
-      // ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
-      ctx.fillStyle = 'rgba(14, 14, 14, 0.15)';
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+      // ctx.fillStyle = 'rgba(14, 14, 14, 0.15)';
 
       ctx.fillRect(0, 0, w, h);
       ctx.font = fontSize + 'px monospace';
-      ctx.fillStyle = 'rgba(0,255,65,0.35)';
+      ctx.fillStyle = 'rgba(0,255,65,0.38)';
       for (let i = 0; i < drops.length; i++) {
         const text = letters[Math.floor(Math.random() * letters.length)];
         ctx.fillText(text, i * fontSize, drops[i] * fontSize);

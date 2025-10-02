@@ -9,7 +9,7 @@
 
 > Ce portfolio personnel moderne a été conçu avec Next.js, TypeScript et Tailwind CSS et est dédié à vous présenter mon parcours professionnel et compétences techniques en tant que Concepteur Développeur d'Applications Web & Mobile certifié.
 
-> Vous y retrouverez l'ensemble de mes projets et de mes différentes expériences. Pour discuter de mon parcours, de vos réels besoins, et de comment je peux vous apporter de la valeur, prenez contact avec moi pour en discuter. 
+> Vous y retrouverez l'ensemble de mes projets et de mes différentes expériences. Pour discuter de mon parcours, de vos réels besoins, et de comment je peux y contribuer en vous apportant un maximum de valeur, prenez contact avec moi pour en discuter. 
 
 > Pour me joindre, rendez-vous directement sur mon [LinkedIn](https://linkedin.com/in/davy-robert) en m'envoyant un message ou sur mon [Portfolio](https://davyrobert.fr) pour plus de détails.
 
@@ -182,4 +182,4 @@ Ce projet est un projet personnel dans le but de démontrer mes compétences et 
 
 ---
 
-**Développé avec ❤️ par Davy ROBERT**
+**Développé avec ❤️ par [DavyR01](https://github.com/DavyR01)**

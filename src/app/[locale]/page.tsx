@@ -29,7 +29,7 @@ export default function HomePage() {
   }, [searchParams, router]);
 
   return (
-    <main className="flex-1 flex flex-col px-2 sm:px-8 pb-20 gap-16 font-grotesk font-[800] dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">
+    <main className="flex-1 flex flex-col pb-20 gap-16 font-grotesk font-[800] dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">
       <div className="flex flex-col items-center gap-8 w-full">
       <Navbar />
       {/* <HeroSection /> */}

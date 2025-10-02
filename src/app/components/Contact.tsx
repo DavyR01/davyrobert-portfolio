@@ -9,7 +9,7 @@ const Contact = () => {
     const { formatContactParagraph } = useRichTextFormatters();
 
     return (
-        <section id="contact" className="pt-32 px-4">
+        <section id="contact" className="pt-32 px-5">
             <div className="max-w-[1400px] mx-auto flex flex-col items-center">
                 <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
                     <span className="italic dark:text-white text-black">{t('title').split(' ')[0]}</span> {t('title').split(' ')[1]}

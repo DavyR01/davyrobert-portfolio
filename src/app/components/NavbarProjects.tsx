@@ -17,7 +17,7 @@ const NavbarBackProjects = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-30 w-[100%] mx-auto bg-[var(--bg-primary)] text-[var(--text-color-dark)] dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)]">
+    <header className="fixed top-0 left-0 right-0 z-30 w-[100%] mx-auto bg-[var(--bg-primary)] text-[var(--text-color-dark)] dark:bg-[var(--bg-primary-menu)] dark:text-[var(--text-color-light)]">
       <div className="flex flex-row justify-between items-center px-6 h-20 relative">
         <Link href="/" className="block w-[60px] h-[80px] relative select-none">
           <Image

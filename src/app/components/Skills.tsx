@@ -12,7 +12,7 @@ const Skills = () => {
     return (
         <motion.section
             id="skills"
-            className="pt-32 px-4 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]"
+            className="pt-32 w-full text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] dark:bg-[var(--bg-primary)] pb-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
@@ -23,36 +23,38 @@ const Skills = () => {
             </h2>
 
             {/* Sections d'intervention et stacks techniques */}
-            <div className="max-w-[1150px] mx-auto mb-12 px-4">
-                <div className="grid lg:grid-cols-2 gap-16">
-                    <div>
-                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('interventionTitle')}</h3>
-                        <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li className='keyword-highlight'>{t('intervention1')}</li>
-                            <li className='keyword-highlight'>{t('intervention2')}</li>
-                            <li className='keyword-highlight'>{t('intervention3')}</li>
-                            <li className='dark:text-[var(--text-color-main)]'>{t('intervention4')}</li>
-                            <li className='dark:text-[var(--text-color-main)]'>{t('intervention5')}</li>
-                        </ul>
-                    </div>
+            <div className="w-full mb-12 dark:bg-[var(--bg-primary-menu)] py-8">
+                <div className='max-w-[1200px] mx-auto px-[2.5rem] lg:px-[4rem]'>
+                    <div className="grid lg:grid-cols-2 gap-16 lg:gap-28">
+                        <div>
+                            <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('interventionTitle')}</h3>
+                            <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
+                                <li className='keyword-highlight'>{t('intervention1')}</li>
+                                <li className='keyword-highlight'>{t('intervention2')}</li>
+                                <li className='keyword-highlight'>{t('intervention3')}</li>
+                                <li className='dark:text-[var(--text-color-main)]'>{t('intervention4')}</li>
+                                <li className='dark:text-[var(--text-color-main)]'>{t('intervention5')}</li>
+                            </ul>
+                        </div>
 
-                    <div>
-                        <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('stacksTitle')}</h3>
-                        <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-                            <li className='keyword-highlight-secondary'>{t('stack1')}</li>
-                            <li className='keyword-highlight'>{t('stack2')}</li>
-                            <li className='keyword-highlight'>{t('stack3')}</li>
-                            <li className='keyword-highlight'>{t('stack4')}</li>
-                            <li> <span className='keyword-highlight'>{t('stack5')}</span><span className='text-[var(--text-color-main)]'>{t('stack8')}</span></li>
-                            <li> <span className='keyword-highlight'>{t('stack6')}</span><span className='text-[var(--text-color-main)]'>{t('stack8')}</span></li>
-                            <li className='dark:text-[var(--text-color-main)]'>{t('stack7')}</li>
-                        </ul>
+                        <div>
+                            <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">{t('stacksTitle')}</h3>
+                            <ul className="list-disc list-inside space-y-2 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
+                                <li className='keyword-highlight-secondary'>{t('stack1')}</li>
+                                <li className='keyword-highlight'>{t('stack2')}</li>
+                                <li className='keyword-highlight'>{t('stack3')}</li>
+                                <li className='keyword-highlight'>{t('stack4')}</li>
+                                <li> <span className='keyword-highlight'>{t('stack5')}</span><span className='text-[var(--text-color-main)]'>{t('stack8')}</span></li>
+                                <li> <span className='keyword-highlight'>{t('stack6')}</span><span className='text-[var(--text-color-main)]'>{t('stack8')}</span></li>
+                                <li className='dark:text-[var(--text-color-main)]'>{t('stack7')}</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
             {/* 🔹 Mobile <640px (flexible grid responsive) */}
-            <div className="sm:hidden w-full max-w-[1200px] mx-auto flex flex-col gap-12">
+            <div className="sm:hidden w-full max-w-[1200px] mx-auto flex flex-col gap-12 px-4">
                 {categories.map((cat) => (
                     <div key={cat.titleKey} className="flex flex-col items-center gap-6 px-4">
                         <h3 className="text-3xl font-semibold dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">{t(`categories.${cat.titleKey}`)}</h3>
@@ -75,7 +77,7 @@ const Skills = () => {
 
 
             {/* 🔹 Desktop ≥640px (grid version) */}
-            <div className="hidden sm:grid w-full max-w-[1200px] lg:max-w-[1200px] mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="hidden sm:grid w-full max-w-[1200px] mx-auto lg:px-[2.5rem] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {categories.map((cat, idx) => (
                     <div
                         key={cat.titleKey}
