@@ -32,6 +32,8 @@ export function generateSEOMetadata(
 
   const description = pageDescription || content.description;
 
+  const siteUrl = 'https://www.davyrobert.com';
+
   return {
     title,
     description,
@@ -40,22 +42,21 @@ export function generateSEOMetadata(
     creator: 'Davy ROBERT',
     publisher: 'Davy ROBERT',
     applicationName: 'Davy ROBERT Portfolio',
-    appleWebApp: {
-      title: 'Davy ROBERT Portfolio',
-    },
     openGraph: {
       title,
       description,
       type: 'website',
       locale: locale === 'fr' ? 'fr_FR' : 'en_US',
       siteName: 'Davy ROBERT Portfolio',
+      url: siteUrl,
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title,
       description,
       creator: '@davyrobert',
     },
+    metadataBase: new URL(siteUrl),
     robots: {
       index: true,
       follow: true,
