@@ -8,10 +8,10 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import ArrowButton from './ui/ArrowButton'
 import Button from './ui/Button'
 import MatrixCanvas from './ui/MatrixCanvas'
 import ProjectsButton from './ui/ProjectsButton'
-import ArrowButton from './ui/ArrowButton'
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -56,7 +56,7 @@ const Presentation = () => {
                </div>
 
                {/* Profile Image >= 1024px */}
-               <div className="aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-2xl border-[0.25rem] animate-border-pulse overflow-hidden shrink-0 relative z-10">
+               <div className="aspect-square w-[280px] md:max-w-[500px] min-w-[320px] max-w-full rounded-md border-[0.25rem] animate-border-pulse overflow-hidden shrink-0 relative z-10">
                   <Image
                      src="/assets/profile/davyprofile1.png"
                      fill
@@ -71,15 +71,15 @@ const Presentation = () => {
 
                {/* Titles behind image for lg+ */}
                <div className="leading-[48px] text-left w-[320px]">
-                  <h2 className="text-[2rem] font-bold">{t('hello')}</h2>
-                  <h1 className="text-[3.1rem] my-4 font-bold">
+                  <h2 className="text-[2rem]">{t('hello')}</h2>
+                  <h1 className="text-[3rem] my-4">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="text-[1.65rem] font-bold mb-4">
+                  <h2 className="text-[1.65rem] mb-4">
                      <span>{t('fullstackTitle')}</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
-                     <span className="font-cambriaaa text-[--primary-color]">&</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')}</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole')}</span>
+                     <span className="text-[--primary-color] font-semibold">&</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole2')}</span>
                      <span className="">{t('fullstackRole3')}</span>
                   </h2>
                </div>
@@ -90,14 +90,14 @@ const Presentation = () => {
                <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
                   {/* <Button
                      variant="primary"
-                     href="/download/CV_davy_robert_2025.pdf"
+                     href="/download/CV_davy_robert.pdf"
                      download
                   >
                      {t('cvStandard')}
                   </Button>
                   <Button
                      variant="secondary"
-                     href="/download/CV_davy_robert_détails_du_parcours_2025.pdf"
+                     href="/download/CV_davy_robert_détails_du_parcours.pdf"
                      download
                      withShineEffect
                   >
@@ -156,15 +156,15 @@ const Presentation = () => {
                {/* FOR Responsive LG- only : <1024px */}
                {/* Rôle and Title */}
                <div className="lg:hidden">
-                  <h2 className="font-bold text-center presentation-clamp-h2">{t('hello')}</h2>
-                  <h1 className="my-2 font-bold text-center presentation-clamp-h1">
+                  <h2 className="text-center presentation-clamp-h2">{t('hello')}</h2>
+                  <h1 className="my-2 text-center presentation-clamp-h1">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2 xs481:w-[80%] xs481:mx-auto ">
+                  <h2 className="mb-4 text-center presentation-clamp-h2 xs481:w-[80%] xs481:mx-auto ">
                      <span>{t('fullstackTitle')}</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
-                     <span className="font-cambriaaa text-[--primary-color]">&</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')}</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole')}</span>
+                     <span className="text-[--primary-color] font-semibold">&</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole2')}</span>
                      <span className="">{t('fullstackRole3')}</span>
                   </h2>
 
@@ -178,7 +178,7 @@ const Presentation = () => {
 
                {/* FOR Responsive LG- : <1024px */}
                {/* Profile Image block<1024px */}
-               <div className="lg:hidden aspect-square w-[200px] xs481:w-[260px] min-w-[210px] max-w-full rounded-2xl border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto animate-border-pulse">
+               <div className="lg:hidden aspect-square w-[200px] xs481:w-[260px] min-w-[210px] max-w-full rounded-md border-[0.2rem] border-[--primary-color] flex items-center justify-center overflow-hidden shrink-0 mx-auto animate-border-pulse">
                   <Image
                      src="/assets/profile/davyprofile1.png"
                      width={240}
@@ -248,7 +248,7 @@ const Presentation = () => {
                      {getQualities(tQualities).items.map((q, index) => (
                         <div
                            key={q.label}
-                           className="group flex items-center gap-1 xs481:gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-200 dark:border-gray-600 px-2 xs481:px-5 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 "
+                           className="group flex items-center gap-1 xs481:gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-400 dark:border-gray-600 px-2 xs481:px-5 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 "
                            style={{
                               animationDelay: `${index * 80}ms`
                            }}
@@ -271,14 +271,14 @@ const Presentation = () => {
                <div className="flex lg:flex-col flex-wrap w-full xl:w-[66%] gap-4 sm:flex-nowrap sm:items-left mb-4">
                   <Button
                      variant="primary"
-                     href="/download/CV_Davy_ROBERT_DEVELOPPEUR_2025.pdf"
+                     href="/download/CV_Davy_ROBERT_DEVELOPPEUR.pdf"
                      download
                   >
                      {t('cvStandard')}
                   </Button>
                   <Button
                      variant="secondary"
-                     href="/download/CV_DETAILLE_Davy_ROBERT_DEVELOPPEUR_2025.pdf"
+                     href="/download/CV_DETAILLE_Davy_ROBERT_DEVELOPPEUR.pdf"
                      download
                      withShineEffect
                   >

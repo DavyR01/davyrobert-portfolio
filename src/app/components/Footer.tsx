@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from "framer-motion"; // 👈 Import
-import React from "react";
 import { useTranslations } from 'next-intl';
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -11,7 +11,7 @@ const Footer = () => {
    return (
       <motion.footer
          id="contact"
-         className="dark:bg-[var(--bg-primary-menu)] bg-[var(--bg-primary)] text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] pb-6 "
+         className="bg-[var(--bg-secondary)] bg-[var(--bg-primary)] text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] pb-6 "
          initial={{ opacity: 0, y: 40 }}
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true, amount: 0.3 }}

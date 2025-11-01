@@ -1,12 +1,12 @@
 'use client'
 
+import { Link } from '@/i18n/navigation';
+import { ProjectCardProps } from "@/types/index";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
-import { ProjectCardProps } from "@/types/index";
-import { Link } from '@/i18n/navigation';
-import { useTranslations } from "next-intl";
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
     index,
@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           transition={{ delay: index * 0.2, duration: 0.75, type: "spring" }}
        >
           <Tilt
-             className="bg-[--bg-items-card] border dark:border-[#000]  hover:shadow-[0_0_0_2px_var(--primary-color)] hover:bg-[var(--primary-color-hover)] rounded-2xl w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300 group"
+             className="bg-[--bg-items-card] hover:shadow-[0_0_0_2px_var(--primary-color)] hover:bg-[var(--primary-color-hover)] rounded-md w-full xs893:w-[360px] relative overflow-hidden flex flex-col transition-all duration-300 group"
              tiltMaxAngleX={15}
              tiltMaxAngleY={15}
              perspective={1000}
@@ -90,7 +90,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
  
                 {/* Description */}
-                <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem] px-5">
+                <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem] px-5 text-[var(--text-color-main)]">
                    {/* {t(descriptionKey)} */}
                    {t(`description.${descriptionKey}`)}
                 </p>

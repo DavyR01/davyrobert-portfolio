@@ -1,71 +1,71 @@
 /* Handle colors app */
 
 :root {
-  --primary-color: #1343a9;
-  --primary-color-hover: rgba(19, 67, 169, 0.1);
-  --secondary-color: #df7b23;
-  
-  --text-color-main: #000000;
-  --text-color-light: #ffffff;
-  --text-color-dark: #000000;
-  --text-color-dl: #000000;
-  --text-color-dl-invert: #ffffff;
+   --primary-color: #1343a9;
+   --primary-color-hover: rgba(19, 67, 169, 0.1);
+   --secondary-color: #df7b23;
 
-  --border-primary-color: #4a4a4a;
-  --bg-primary: rgba(255, 255, 255);
-  --bg-primary-menu: rgba(255, 255, 255);
-  --bg-primary-menu-op: rgba(255, 255, 255, 0.8);
+   --text-color-main: #000000;
+   --text-color-light: #ffffff;
+   --text-color-dark: #000000;
+   --text-color-dl: #000000;
+   --text-color-dl-invert: #ffffff;
 
-  --bg-items-card: #f5f5f5;
-  --bg-xp: #f5f5f5;
-  --bg-stack-card: #e5e8e8;
-  
-  /* Variables pour les divs et éléments d'interface */ 
-  --bg-button-dark: rgba(17, 24, 39, 1);
-  --bg-button-light: rgb(245, 245, 245);
-  --border-dark: rgba(0, 0, 0, 0.8);
-  --border-light: rgb(245, 245, 245, 0.8);
+   --border-primary-color: #4a4a4a;
+   --bg-primary: rgba(255, 255, 255);
+   --bg-secondary: rgb(227, 231, 248);
+   --bg-menu-open: rgba(255, 255, 255, 0.8);
+
+   --bg-items-card: #f5f5f5;
+   --bg-xp: #f5f5f5;
+   --bg-stack-card: #e5e8e8;
+
+   /* Variables pour les divs et éléments d'interface */
+   --bg-button-dark: rgba(17, 24, 39, 1);
+   --bg-button-light: rgb(245, 245, 245);
+   --border-dark: rgba(0, 0, 0, 0.8);
+   --border-light: rgb(245, 245, 245, 0.8);
 }
 
 .dark {
-  --primary-color: #5ce1e6;
-  --primary-color-hover: rgba(92, 225, 230, 0.1);
-  --secondary-color: #df7b23;
-  
-  --text-color-main: #b1bad3;
-  --text-color-light: #ffffff;
-  --text-color-dark: #000000;
-  --text-color-dl: #ffffff;
-  --text-color-dl-invert: #000000;
-  
-  --border-primary-color: #ffffff;
-  --bg-primary: rgba(0, 0, 0);
-  --bg-primary-menu: rgba(14, 14, 14);
-  --bg-primary-menu-op: rgba(14, 14, 14, 0.8);
-  
-  /* Variables pour le mode sombre */
-  --bg-items-card: #1A1A1A;
-  --bg-xp: #0f0f0f;
-  --bg-stack-card: #0f0f0f;
+   --primary-color: #5ce1e6;
+   --primary-color-hover: rgba(92, 225, 230, 0.1);
+   --secondary-color: #df7b23;
+
+   --text-color-main: #b1bad3;
+   --text-color-light: #ffffff;
+   --text-color-dark: #000000;
+   --text-color-dl: #ffffff;
+   --text-color-dl-invert: #000000;
+
+   --border-primary-color: #e2e2e2;
+   --bg-primary: rgba(0, 0, 0);
+   --bg-secondary: rgb(17, 34, 35);
+   --bg-menu-open: rgba(14, 14, 14, 0.8);
+
+   /* Variables pour le mode sombre */
+   --bg-items-card: #1A1A1A;
+   --bg-xp: #0f0f0f;
+   --bg-stack-card: #0f0f0f;
 }
 
 
- body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
- }
+body {
+   color: var(--foreground);
+   background: var(--background);
+}
 
- /* Custom keyword highlighting */
+/* Custom keyword highlighting */
 .keyword-highlight {
-   color: var(--text-color-dark);
+   color: var(--text-color-dl);
    text-shadow: 0 0 1px currentColor;
    /* font-weight: 400;
    font-family: inherit; */
 }
 
-.dark .keyword-highlight {
-   color: var(--text-color-light);
+.keyword-highlight2 {
+   color: var(--text-color-dl);
+   font-weight: 600;
 }
 
 .keyword-highlight-secondary {
@@ -74,10 +74,10 @@
 }
 
 .group:hover .tag-shadow {
-  text-shadow: 0 0 1px currentColor;
+   text-shadow: 0 0 1px currentColor;
 }
 
- /*
+/*
  @media (prefers-color-scheme: dark) {
    :root {
      --background: #0a0a0a;
@@ -85,13 +85,13 @@
    }
  }
   */
- 
- /* @media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
    :root {
      --secondary-color: #232946;
    }
  }
  */
 
-   /* --primary-color: var(--secondary-color);
+/* --primary-color: var(--secondary-color);
   --secondary-color: #1343a9; */

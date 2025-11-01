@@ -1,14 +1,13 @@
-import { projects } from '@/datas';
-import Image from 'next/image';
-import { notFound } from 'next/navigation';
-import NavbarBackProjects from '@/app/components/NavbarProjects';
 import BackToProjectsButton from '@/app/components/BackToProjectsButton';
-import { getTranslations } from 'next-intl/server';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import { AiOutlineEye } from 'react-icons/ai';
+import NavbarBackProjects from '@/app/components/NavbarProjects';
+import { projects } from '@/datas';
 import { formatTextServer } from '@/utils/formatTextServer';
 import { generateSEOMetadata } from '@/utils/seo';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import { AiFillEye, AiFillGithub, AiOutlineEye } from 'react-icons/ai';
 
 // Create a Map for O(1) access instead of O(n)
 const projectsMap = new Map(projects.map(p => [p.projectSlug, p]));
@@ -88,7 +87,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={project.learnMore}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white dark:bg-gray-800 text-black dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+                className="flex items-center gap-3 bg-white dark:bg-gray-800 text-black dark:text-white px-6 py-3 rounded shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
               >
                 <AiOutlineEye className="w-6 h-6" />
                 <span className="font-medium">{t('project.learnMore2')}</span>
@@ -103,7 +102,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 href={project.sourceWeb}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white dark:bg-gray-800 text-black dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+                className="flex items-center gap-3 bg-white dark:bg-gray-800 text-black dark:text-white px-6 py-3 rounded shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
               >
                 <AiOutlineEye className="w-6 h-6" />
                 <span className="font-medium">{t('project.viewProject')}</span>

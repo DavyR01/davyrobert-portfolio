@@ -1,10 +1,10 @@
 'use client'
 
-import { motion } from "framer-motion";
 import { projects } from "@/datas";
-import { ProjectCard } from "./ProjectCard";
-import { useTranslations } from 'next-intl';
 import { useRichTextFormatters } from '@/utils/richTextFormatters';
+import { motion } from "framer-motion";
+import { useTranslations } from 'next-intl';
+import { ProjectCard } from "./ProjectCard";
 
 
 const MyProjects = () => {
@@ -16,10 +16,10 @@ const MyProjects = () => {
       <section id="projets" className="pt-32 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] w-full">
          <div className='w-full py-8'>
             <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-8 px-5">
-               <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')} <span className="font-cambriaaa">&</span> {t('title3')}
+               <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')} <span className="">&</span> {t('title3')}
             </h2>
 
-            <div className='w-full flex bg-[var(--bg-primary-menu)] py-8 px-5'>
+            <div className='w-full flex bg-[var(--bg-secondary)] border-y border-[var(--border-primary-color)] py-8 px-5'>
             <motion.p
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}

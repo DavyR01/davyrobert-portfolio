@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
-import { useTranslations } from 'next-intl';
 import { useRichTextFormatters } from '@/utils/richTextFormatters';
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
 const Contact = () => {
     const t = useTranslations('contact');
@@ -22,7 +22,7 @@ const Contact = () => {
 
                     <a
                         href="mailto:contact@davyrobert.fr"
-                        className="relative inline-block mt-6 text-lg font-semibold dark:text-[--primary-color] border-2 border-[--primary-color] text-[var(--text-color-dark)] px-10 py-4 overflow-hidden transition-colors duration-200 group rounded-lg"
+                        className="relative inline-block mt-6 text-lg font-semibold dark:text-[--primary-color] border-2 border-[--primary-color] text-[var(--text-color-dark)] px-10 py-4 overflow-hidden transition-colors duration-200 group rounded"
                     >
                         <span className="relative z-10 dark:group-hover:text-[var(--text-color-dark)] group-hover:text-[var(--text-color-light)] transition-colors duration-200">contact@davyrobert.fr</span>
                         <span className="absolute inset-0 bg-[--primary-color] w-0 group-hover:w-full transition-all duration-300" />

@@ -1,13 +1,13 @@
 'use client';
 
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { scrollToSection } from '@/utils/scroll';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/navigation';
 import styles from './Navbar.module.css';
 import BurgerIcon from './ui/BurgerIcon';
-import { scrollToSection } from '@/utils/scroll';
 
 const sections = ['introduction', 'skills', 'experience', 'projets', 'contact'] as const;
 
@@ -90,7 +90,7 @@ const Navbar = () => {
       bg-[rgb(var(--bg-primary))] text-[var(--text-color-dark)]
       dark:bg-[rgb(var(--bg-primary))]  dark:text-[var(--text-color-light)]
     ">
-         <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20 bg-[var(--bg-primary-menu)]">
+         <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20 bg-[var(--bg-secondary)]">
             <div className="flex justify-between items-center w-full md:w-auto h-20">
                <Link href="/" className="block w-[60px] h-[80px] relative select-none">
                   <Image
@@ -129,7 +129,7 @@ const Navbar = () => {
             {/* Menu navigation */}
             <nav
                className={`${menuOpen
-                  ? 'flex backdrop-blur-md bg-[var(--bg-primary-menu-op)] hover:bg-[var(--bg-primary-menu)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
+                  ? 'flex backdrop-blur-md bg-[var(--bg-menu-open)] hover:bg-[var(--bg-secondary)] absolute top-20 left-0 w-full pt-6 border-t border-[--primary-color]'
                   : 'hidden'
                   } flex-col md:flex md:static md:flex-row md:gap-20 items-center text-base transition-all duration-300`}
             >

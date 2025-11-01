@@ -21,13 +21,8 @@ export default {
             xs893: { min: "893px" }, // xs893: "893px",
          },
          fontFamily: {
-            sans: ['var(--font-geist-sans)', 'sans-serif'],
-            mono: ['var(--font-geist-mono)', 'sans-serif'],
-            grotesk: ['var(--font-space-grotesk)', 'serif'],
-            grotesk500: ['var(--font-space-grotesk-500)', 'serif'],
-            grotesk600: ['var(--font-space-grotesk-600)', 'serif'],
-            grotesk700: ['var(--font-space-grotesk-700)', 'serif'],
-            cambriaaa: ['var(--font-cambria)', 'serif'],
+            saans: ['var(--font-geist-sans)', 'sans-serif'], // sans appliqué par défaut quand non spécifié
+            monoo: ['var(--font-geist-mono)', 'sans-serif'],
          },
       },
    },

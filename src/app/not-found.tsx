@@ -1,9 +1,9 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import Button from "./components/ui/Button";
-import NavbarBackProjects from "./components/NavbarProjects";
 import Footer from './components/Footer';
+import NavbarBackProjects from "./components/NavbarProjects";
+import Button from "./components/ui/Button";
 import ThemeToggle from './components/ui/ThemeToggle';
 
 export default function NotFound() {
@@ -12,7 +12,7 @@ export default function NotFound() {
   return (
     <>
 
-      <div className="min-h-screen flex flex-col justify-center items-center font-grotesk font-extrabold px-4 sm:px-8 pb-20 gap-8 text-[var(--primary-color)] dark:text-[var(--primary-color)] bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
+      <div className="min-h-screen flex flex-col justify-center items-center font-bold px-4 sm:px-8 pb-20 gap-8 text-[var(--primary-color)] dark:text-[var(--primary-color)] bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
         <NavbarBackProjects />
         <h1 className="text-3xl sm:text-4xl mb-4 text-center whitespace-pre-line">
           {t('title')}

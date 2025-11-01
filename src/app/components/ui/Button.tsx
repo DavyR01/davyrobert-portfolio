@@ -24,7 +24,7 @@ export default function Button({
   withShineEffect = false,
   fullWidth = true,
 }: ButtonProps) {
-  const baseClasses = "font-semibold py-2.5 px-6 text-lg rounded-lg transition-all hover:scale-105 border-2 border-transparent break-words text-center";
+  const baseClasses = "font-semibold py-2.5 px-6 text-lg rounded transition-all hover:scale-105 border-2 border-transparent break-words text-center";
   const widthClasses = fullWidth ? "w-full sm:w-auto" : "w-auto";
   
   const variantClasses = {

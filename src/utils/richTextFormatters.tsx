@@ -1,11 +1,11 @@
-import React from 'react';
 import { useTranslations } from 'next-intl';
+import React from 'react';
 
 
 // Reusable formatting components for placeholders
 export const RichTextComponents = {
   hl: (chunks: React.ReactNode) => (
-    <strong className="keyword-highlight">{chunks}</strong>
+    <strong className="keyword-highlight2">{chunks}</strong>
   ),
   br: () => <br />
 };
