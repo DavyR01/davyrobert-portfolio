@@ -1,14 +1,14 @@
 'use client';
 
-import { useEffect } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
-import Presentation from '../components/Presentation';
-import MyProjects from '../components/MyProjects';
-import MesExperiences from '../components/MesExperiences';
-import Skills from '../components/Skills';
-import Contact from '../components/Contact';
-import Navbar from '../components/Navbar';
 import { smoothScrollTo } from '@/utils/scroll';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
+import Contact from '../components/Contact';
+import MesExperiences from '../components/MesExperiences';
+import MyProjects from '../components/MyProjects';
+import Navbar from '../components/Navbar';
+import Presentation from '../components/Presentation';
+import Skills from '../components/Skills';
 
 export default function HomePage() {
   const searchParams = useSearchParams();
@@ -29,7 +29,7 @@ export default function HomePage() {
   }, [searchParams, router]);
 
   return (
-    <main className="flex-1 flex flex-col pb-20 gap-16 font-grotesk font-[800] dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">
+    <main className="flex-1 flex flex-col pb-20 gap-16 dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">
       <div className="flex flex-col items-center gap-8 w-full">
       <Navbar />
       {/* <HeroSection /> */}

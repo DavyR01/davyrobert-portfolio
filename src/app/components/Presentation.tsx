@@ -8,10 +8,10 @@ import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import ArrowButton from './ui/ArrowButton'
 import Button from './ui/Button'
 import MatrixCanvas from './ui/MatrixCanvas'
 import ProjectsButton from './ui/ProjectsButton'
-import ArrowButton from './ui/ArrowButton'
 
 const Presentation = () => {
    const sectionRef = useRef<HTMLElement>(null);
@@ -71,15 +71,15 @@ const Presentation = () => {
 
                {/* Titles behind image for lg+ */}
                <div className="leading-[48px] text-left w-[320px]">
-                  <h2 className="text-[2rem] font-bold">{t('hello')}</h2>
-                  <h1 className="text-[3.1rem] my-4 font-bold">
+                  <h2 className="text-[2rem]">{t('hello')}</h2>
+                  <h1 className="text-[3rem] my-4">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="text-[1.65rem] font-bold mb-4">
+                  <h2 className="text-[1.65rem] mb-4">
                      <span>{t('fullstackTitle')}</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
-                     <span className="font-cambriaaa text-[--primary-color]">&</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')}</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole')}</span>
+                     <span className="text-[--primary-color] font-semibold">&</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole2')}</span>
                      <span className="">{t('fullstackRole3')}</span>
                   </h2>
                </div>
@@ -156,15 +156,15 @@ const Presentation = () => {
                {/* FOR Responsive LG- only : <1024px */}
                {/* Rôle and Title */}
                <div className="lg:hidden">
-                  <h2 className="font-bold text-center presentation-clamp-h2">{t('hello')}</h2>
-                  <h1 className="my-2 font-bold text-center presentation-clamp-h1">
+                  <h2 className="text-center presentation-clamp-h2">{t('hello')}</h2>
+                  <h1 className="my-2 text-center presentation-clamp-h1">
                      <span className="">Davy ROBERT</span>
                   </h1>
-                  <h2 className="font-bold mb-4 text-center presentation-clamp-h2 xs481:w-[80%] xs481:mx-auto ">
+                  <h2 className="mb-4 text-center presentation-clamp-h2 xs481:w-[80%] xs481:mx-auto ">
                      <span>{t('fullstackTitle')}</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole')}</span>
-                     <span className="font-cambriaaa text-[--primary-color]">&</span>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')}</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole')}</span>
+                     <span className="text-[--primary-color] font-semibold">&</span>
+                     <span className="text-[--primary-color] font-semibold">{t('fullstackRole2')}</span>
                      <span className="">{t('fullstackRole3')}</span>
                   </h2>
 

@@ -1,12 +1,12 @@
 'use client'
 
+import { Link } from '@/i18n/navigation';
+import { ProjectCardProps } from "@/types/index";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import Tilt from "react-parallax-tilt";
-import { ProjectCardProps } from "@/types/index";
-import { Link } from '@/i18n/navigation';
-import { useTranslations } from "next-intl";
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
     index,
@@ -90,7 +90,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
  
                 {/* Description */}
-                <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem] px-5">
+                <p className="text-secondary text-[16px] mt-3 line-clamp-4 min-h-[6rem] px-5 text-[var(--text-color-main)]">
                    {/* {t(descriptionKey)} */}
                    {t(`description.${descriptionKey}`)}
                 </p>

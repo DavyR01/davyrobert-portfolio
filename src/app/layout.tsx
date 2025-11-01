@@ -2,15 +2,15 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import { getServerThemeClass, THEME_INIT_SCRIPT } from '@/utils/theme';
 import Script from 'next/script';
 import { ReactNode } from 'react';
-import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from '../utils/fonts';
+import { geistMono, geistSans, spaceGrotesk } from '../utils/fonts';
 // import ThemeToggle from './components/ui/ThemeToggle';
+import { Favicons } from '@/components/seo/Favicons';
 import { routing } from '@/i18n/routing';
+import { generateSEOMetadata } from '@/utils/seo';
+import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { cookies } from 'next/headers';
-import type { Metadata } from 'next';
-import { generateSEOMetadata } from '@/utils/seo';
-import { Favicons } from '@/components/seo/Favicons';
 
 import '@/styles';
 
@@ -37,11 +37,11 @@ export default async function RootLayout({ children }: Props) {
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
+    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${themeClass}`}>
       <head>
         <Favicons />
       </head>
-      <body className="antialiased font-grotesk flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
+      <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>

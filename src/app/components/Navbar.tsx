@@ -1,13 +1,13 @@
 'use client';
 
+import { usePathname, useRouter } from '@/i18n/navigation';
+import { scrollToSection } from '@/utils/scroll';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/navigation';
 import styles from './Navbar.module.css';
 import BurgerIcon from './ui/BurgerIcon';
-import { scrollToSection } from '@/utils/scroll';
 
 const sections = ['introduction', 'skills', 'experience', 'projets', 'contact'] as const;
 

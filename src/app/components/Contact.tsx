@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
-import { useTranslations } from 'next-intl';
 import { useRichTextFormatters } from '@/utils/richTextFormatters';
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
 const Contact = () => {
     const t = useTranslations('contact');

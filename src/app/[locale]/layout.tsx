@@ -1,15 +1,15 @@
-import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
-import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from "@/context/ThemeContext";
-import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
-import Script from "next/script";
-import { geistMono, geistSans, spaceGrotesk, spaceGrotesk500, spaceGrotesk600, spaceGrotesk700 } from "../../utils/fonts";
-import ThemeToggle from "../components/ui/ThemeToggle";
-import Footer from '../components/Footer';
-import type { Metadata } from 'next';
+import { routing } from '@/i18n/routing';
 import { generateSEOMetadata } from '@/utils/seo';
+import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
+import type { Metadata } from 'next';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import Script from "next/script";
+import { geistMono, geistSans, spaceGrotesk } from "../../utils/fonts";
+import Footer from '../components/Footer';
+import ThemeToggle from "../components/ui/ThemeToggle";
 
 // import "@/styles/index.css";
 
@@ -41,8 +41,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${spaceGrotesk500.variable} ${spaceGrotesk600.variable} ${spaceGrotesk700.variable} ${themeClass}`}>
-      <body className="antialiased flex flex-col min-h-screen font-grotesk overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
+    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${themeClass}`}>
+      <body className="antialiased flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
         </Script>
