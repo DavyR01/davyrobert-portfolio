@@ -23,6 +23,7 @@ export default {
          fontFamily: {
             saans: ['var(--font-geist-sans)', 'sans-serif'], // sans appliqué par défaut quand non spécifié
             monoo: ['var(--font-geist-mono)', 'sans-serif'],
+            opensaans: ['var(--font-opensans)', 'sans-serif'],
          },
       },
    },

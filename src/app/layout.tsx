@@ -2,7 +2,7 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import { getServerThemeClass, THEME_INIT_SCRIPT } from '@/utils/theme';
 import Script from 'next/script';
 import { ReactNode } from 'react';
-import { geistMono, geistSans } from '../utils/fonts';
+import { geistMono, geistSans, openSans } from '../utils/fonts';
 // import ThemeToggle from './components/ui/ThemeToggle';
 import { Favicons } from '@/components/seo/Favicons';
 import { routing } from '@/i18n/routing';
@@ -37,7 +37,7 @@ export default async function RootLayout({ children }: Props) {
   const messages = await getMessages({ locale });
 
   return (
-    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${themeClass}`}>
+    <html lang={locale} className={`${geistSans.variable} ${geistMono.variable} ${openSans.variable} ${themeClass}`}>
       <head>
         <Favicons />
       </head>

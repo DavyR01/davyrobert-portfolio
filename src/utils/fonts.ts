@@ -1,4 +1,13 @@
 import localFont from "next/font/local";
+import { Open_Sans } from "next/font/google";
+
+const openSans = Open_Sans({
+   subsets: ['latin'],
+   variable: '--font-opensans',
+   display: 'swap',
+   weight: ['300', '400', '500', '600', '700', '800'],
+   style: ['normal', 'italic'],
+});
 
 const geistSans = localFont({
    src: "../fonts/GeistVF.woff",
@@ -13,4 +22,4 @@ const geistMono = localFont({
 
 // La variable --font-cambria est définie dans fonts.css
 
-export { geistMono, geistSans };
+export { geistMono, geistSans, openSans };
