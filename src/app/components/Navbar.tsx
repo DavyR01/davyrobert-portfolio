@@ -86,11 +86,8 @@ const Navbar = () => {
 
    return (
       <header className="
-      fixed top-0 left-0 right-0 z-30 w-full mx-auto
-      bg-[rgb(var(--bg-primary))] text-[var(--text-color-dark)]
-      dark:bg-[rgb(var(--bg-primary))]  dark:text-[var(--text-color-light)]
-    ">
-         <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20 bg-[var(--bg-secondary)]">
+      fixed top-0 left-0 right-0 z-30 w-full mx-auto font-medium text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] bg-[var(--bg-secondary)]">
+         <div ref={navRef} className="flex flex-col md:flex-row md:justify-between md:items-center px-6 h-20">
             <div className="flex justify-between items-center w-full md:w-auto h-20">
                <Link href="/" className="block w-[60px] h-[80px] relative select-none">
                   <Image

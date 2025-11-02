@@ -20,7 +20,6 @@ const Presentation = () => {
    const t = useTranslations('presentation');
    const tQualities = useTranslations('qualities');
    const locale = useLocale();
-
    const keywords = getKeywordsPresentation(locale);
 
    useEffect(() => {
@@ -84,25 +83,8 @@ const Presentation = () => {
                   </h2>
                </div>
 
-               {/* <span className="font-cambriaaa">&</span> */}
-
                {/* Buttons Section for lg+ */}
                <div className="flex flex-wrap gap-4 sm:flex-nowrap sm:items-center mb-4">
-                  {/* <Button
-                     variant="primary"
-                     href="/download/CV_davy_robert.pdf"
-                     download
-                  >
-                     {t('cvStandard')}
-                  </Button>
-                  <Button
-                     variant="secondary"
-                     href="/download/CV_davy_robert_détails_du_parcours.pdf"
-                     download
-                     withShineEffect
-                  >
-                     {t('cvLong')}
-                  </Button> */}
                   <div className="flex flex-col items-center sm:items-start gap-4 sm:mt-0 mt-4 w-full">
                      {/* Logos réseaux sociaux */}
                      <div className="flex gap-8">
@@ -132,7 +114,6 @@ const Presentation = () => {
                   </div>
                </div>
             </div>
-
 
 
             {/* Right Section */}
@@ -167,13 +148,6 @@ const Presentation = () => {
                      <span className="text-[--primary-color] font-semibold">{t('fullstackRole2')}</span>
                      <span className="">{t('fullstackRole3')}</span>
                   </h2>
-
-                  {/* <h2 className="text-[2rem] font-bold mb-4">
-                     {t('fullstackTitle')} <br />
-                     <div className="text-[--primary-color]">{t('fullstackRole')}</div>
-                     <span className="text-[--primary-color]">{t('fullstackRole2')} <span className="font-cambriaaa">&</span> {t('fullstackRole3')}</span>
-                     <span className="">{t('fullstackRole4')}</span>
-                  </h2> */}
                </div>
 
                {/* FOR Responsive LG- : <1024px */}

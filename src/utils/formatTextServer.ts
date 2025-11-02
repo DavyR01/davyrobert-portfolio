@@ -45,10 +45,7 @@ export const formatTextServer = (text: string) => {
 
 
 
-
-
-
-// on Prestentation Component
+//***** on Presentation Component ********//
 // Function to highlight keywords based on language
 export const highlightKeywordsPresentation = (text: string, keywords: string[]) => {
   const regex = new RegExp(`(${keywords.join('|')})`, 'gi');

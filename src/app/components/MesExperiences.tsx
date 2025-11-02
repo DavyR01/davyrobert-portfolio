@@ -21,7 +21,7 @@ const MesExperiences = () => {
 
    return (
       <section id="experience" className="pt-32 px-4 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
-         <h2 className="text-center text-[--primary-color] uppercase text-4xl font-bold mb-12">
+         <h2 className="text-center text-[--primary-color] uppercase text-4xl mb-12 font-bold">
             <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')}
          </h2>
 
@@ -35,10 +35,10 @@ const MesExperiences = () => {
                         <div className="relative w-full max-w-[95%] sm:max-w-[97%]">
                            <div className="bg-[var(--bg-xp)] border border-[--primary-color] rounded p-6 w-full text-base">
 
-                               <h2 className="text-3xl font-bold mb-4 w-full text-center">{t(item.yearKey)}</h2>
+                               <h2 className="text-3xl font-medium mb-4 w-full text-center">{t(item.yearKey)}</h2>
                               {item.experiencesKey.map((exp, expIndex) => (
                                  <div key={`${exp.titleKey}-${expIndex}`} className="mb-4">
-                                     <h3 className="text-[--primary-color] font-bold text-2xl break-words">{t(exp.titleKey)}</h3>
+                                     <h3 className="text-[--primary-color] font-medium text-2xl break-words">{t(exp.titleKey)}</h3>
                                     <ul className="list-disc ml-8 mt-1 space-y-1">
                                        {exp.tasksKey.map((task, taskIndex) => (
                                            <li key={`${task}-${taskIndex}`} className="break-words">{t(task)}</li>
@@ -71,10 +71,10 @@ const MesExperiences = () => {
                               <div className="relative">
                                  <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
                                  <div className="border bg-[var(--bg-xp)] border-[--primary-color] rounded p-6 w-[500px] text-base">
-                                     <h2 className="text-4xl font-bold mb-4 text-center">{t(item.yearKey)}</h2>
+                                     <h2 className="text-4xl font-medium mb-4 text-center">{t(item.yearKey)}</h2>
                                     {item.experiencesKey.map((exp, expIndex) => (
                                        <div key={`desktop-${exp.titleKey}-${expIndex}`} className="mb-4">
-                                           <h3 className="text-[--primary-color] font-bold text-3xl break-words">{t(exp.titleKey)}</h3>
+                                           <h3 className="text-[--primary-color] font-medium text-3xl break-words">{t(exp.titleKey)}</h3>
                                           <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasksKey.map((task, taskIndex) => (
                                                  <li key={`desktop-${task}-${taskIndex}`} className="break-words">{t(task)}</li>
@@ -110,10 +110,10 @@ const MesExperiences = () => {
                               <div className="relative">
                                  <div className="absolute top-1/2 left-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
                                  <div className="bg-[var(--bg-xp)] border border-[--primary-color] rounded p-6 w-[500px] text-base">
-                                     <h2 className="text-4xl font-bold mb-4 text-center">{t(item.yearKey)}</h2>
+                                     <h2 className="text-4xl font-medium mb-4 text-center">{t(item.yearKey)}</h2>
                                     {item.experiencesKey.map((exp, expIndex) => (
                                        <div key={`desktop-${exp.titleKey}-${expIndex}`} className="mb-4">
-                                           <h3 className="text-[--primary-color] font-bold text-3xl break-words">{t(exp.titleKey)}</h3>
+                                           <h3 className="text-[--primary-color] font-medium text-3xl break-words">{t(exp.titleKey)}</h3>
                                           <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasksKey.map((task, taskIndex) => (
                                                  <li key={`desktop-${task}-${taskIndex}`} className="break-words">{t(task)}</li>

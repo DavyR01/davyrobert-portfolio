@@ -20,10 +20,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     projectSlug,
     maxTagsCount,
  }) => {
-    //   const tiltRef = useRef(null);
 
     const t = useTranslations('myProjects');
-
  
     return (
        <motion.div
@@ -83,7 +81,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                             className="w-8 h-8 rounded-full dark:bg-[var(--bg-primary)]/70 flex items-center justify-center text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] cursor-pointer"
                          >
                             <AiFillGithub className="w-10 h-10 hover:text-[--primary-color]" />
-                            {/* <AiFillGithub className="w-10 h-10 hover:text-gray-700 dark:hover:text-gray-400" /> */}
                          </a>
                       )}
                    </div>
@@ -94,8 +91,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                    {/* {t(descriptionKey)} */}
                    {t(`description.${descriptionKey}`)}
                 </p>
- 
- 
  
                 {/* Tags */}
                 <div className="mt-6 px-5 mb-2">

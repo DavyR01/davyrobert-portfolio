@@ -32,7 +32,6 @@ export default function HomePage() {
     <main className="flex-1 flex flex-col pb-20 gap-16 dark:bg-[var(--bg-primary)] dark:text-[var(--text-color-light)] text-[var(--text-color-dark)]">
       <div className="flex flex-col items-center gap-8 w-full">
       <Navbar />
-      {/* <HeroSection /> */}
       <Presentation />
       <Skills />
       <MesExperiences />

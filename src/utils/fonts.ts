@@ -20,6 +20,4 @@ const geistMono = localFont({
    weight: "100 900",
 });
 
-// La variable --font-cambria est définie dans fonts.css
-
 export { geistMono, geistSans, openSans };
