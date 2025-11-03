@@ -28,3 +28,25 @@ export function smoothScrollTo(targetY: number, duration: number = 1200) {
       smoothScrollTo(targetY, duration);
     }
   }
+
+  // Script to prevent scroll restoration flash on page reload
+  export const SCROLL_RESTORATION_SCRIPT = `
+    (() => {
+      try {
+        // Enable browser's native scroll restoration
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'auto';
+        }
+        
+        // Mark as ready after a minimal delay to let scroll restoration happen
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            document.documentElement.classList.add('scroll-ready');
+          });
+        });
+      } catch (e) {
+        // Fallback: mark as ready immediately
+        document.documentElement.classList.add('scroll-ready');
+      }
+    })();
+  `;

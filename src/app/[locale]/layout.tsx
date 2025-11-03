@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@/context/ThemeContext";
 import { routing } from '@/i18n/routing';
+import { SCROLL_RESTORATION_SCRIPT } from '@/utils/scroll';
 import { generateSEOMetadata } from '@/utils/seo';
 import { THEME_INIT_SCRIPT, getServerThemeClass } from "@/utils/theme";
 import type { Metadata } from 'next';
@@ -45,6 +46,9 @@ export default async function LocaleLayout({
       <body className="antialiased font-saans flex flex-col min-h-screen overflow-x-hidden bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)]">
         <Script id="theme-init" strategy="beforeInteractive">
           {THEME_INIT_SCRIPT}
+        </Script>
+        <Script id="scroll-restoration" strategy="beforeInteractive">
+          {SCROLL_RESTORATION_SCRIPT}
         </Script>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider>

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent scroll restoration flash on page reload */
+html:not(.scroll-ready) {
+   overflow: hidden;
+}
+
+html:not(.scroll-ready) body {
+   opacity: 0;
+   transition: opacity 0.05s ease-in;
+}
+
+html.scroll-ready body {
+   opacity: 1;
+}
 
 /* Handle animation Button Long CV.tsx */
 @keyframes shine {
