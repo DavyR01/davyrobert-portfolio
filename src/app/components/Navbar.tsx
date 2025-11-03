@@ -1,6 +1,6 @@
 'use client';
 
-import { usePathname, useRouter } from '@/i18n/navigation';
+import { usePathname } from '@/i18n/navigation';
 import { scrollToSection } from '@/utils/scroll';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -19,12 +19,13 @@ const Navbar = () => {
    const navRef = useRef<HTMLDivElement>(null);
    const t = useTranslations('navbar');
    const locale = useLocale();
-   const router = useRouter();
    const pathname = usePathname();
 
    const toggleLocale = () => {
       const newLocale = locale === 'fr' ? 'en' : 'fr';
-      router.push(pathname, { locale: newLocale });
+      // Force a full page reload to avoid hydration mismatch
+      const newPath = `/${newLocale}${pathname === '/' ? '' : pathname}`;
+      window.location.href = newPath;
    };
 
    useEffect(() => {

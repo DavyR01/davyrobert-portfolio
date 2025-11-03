@@ -1,18 +1,19 @@
 'use client'
 
-import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import { Link, usePathname } from '@/i18n/navigation';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
 
 
 const NavbarBackProjects = () => {
    const pathname = usePathname();
-   const router = useRouter();
    const locale = useLocale();
 
    const toggleLocale = () => {
       const newLocale = locale === 'fr' ? 'en' : 'fr';
-      router.push(pathname, { locale: newLocale });
+      // Force a full page reload to avoid hydration mismatch 
+      const newPath = `/${newLocale}${pathname === '/' ? '' : pathname}`;
+      window.location.href = newPath;
    };
 
    return (
