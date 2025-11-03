@@ -1,7 +1,8 @@
 :root {
    --primary-color: #1343a9;
    --primary-color-hover: rgba(19, 67, 169, 0.1);
-   --secondary-color: #df7b23;
+   --secondary-color: rgba(223, 123, 35, 1);
+   --secondary-color-hover: rgba(223, 123, 35, 1);
 
    --text-color-main: #000000;
    --text-color-light: #ffffff;
@@ -23,12 +24,19 @@
    --bg-button-light: rgb(245, 245, 245);
    --border-dark: rgba(0, 0, 0, 0.8);
    --border-light: rgb(245, 245, 245, 0.8);
+
+   --bg-project-button: rgb(227, 231, 248);
+   --border-project-button: rgba(0, 0, 0, 0.8);
+   --text-project-button: rgba(0, 0, 0);
 }
 
+
 .dark {
-   --primary-color: #5ce1e6;
+   --primary-color: rgb(92, 225, 230, 1);
    --primary-color-hover: rgba(92, 225, 230, 0.1);
-   --secondary-color: #df7b23;
+   --secondary-color: rgb(223, 123, 35, 1);
+   --secondary-color-hover: rgba(223, 123, 35, 1);
+
 
    --text-color-main: #b1bad3;
    --text-color-light: #ffffff;
@@ -45,6 +53,10 @@
    --bg-items-card: #1A1A1A;
    --bg-xp: #0f0f0f;
    --bg-stack-card: #0f0f0f;
+
+   --bg-project-button: rgb(17, 34, 35);
+   --border-project-button: rgba(255, 255, 255, 0.8);
+   --text-project-button: rgba(255, 255, 255);
 }
 
 
