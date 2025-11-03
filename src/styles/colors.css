@@ -1,23 +1,24 @@
 :root {
-   --primary-color: #1343a9;
+   --primary-color: rgb(19, 67, 169);
    --primary-color-hover: rgba(19, 67, 169, 0.1);
    --secondary-color: rgba(223, 123, 35, 1);
-   --secondary-color-hover: rgba(223, 123, 35, 1);
 
-   --text-color-main: #000000;
-   --text-color-light: #ffffff;
-   --text-color-dark: #000000;
-   --text-color-dl: #000000;
-   --text-color-dl-invert: #ffffff;
+   --text-color-main: rgb(0, 0, 0);
+   --text-color-light: rgb(255, 255, 255);
+   --text-color-dark: rgb(0, 0, 0);
+   --text-color-dl: rgb(0, 0, 0);
+   --text-color-dl-invert: rgb(255, 255, 255);
 
-   --border-primary-color: #4a4a4a;
+   --border-primary-color: rgb(74, 74, 74);
    --bg-primary: rgba(255, 255, 255);
    --bg-secondary: rgb(227, 231, 248);
    --bg-menu-open: rgba(255, 255, 255, 0.8);
 
-   --bg-items-card: #f5f5f5;
-   --bg-xp: #f5f5f5;
+   --bg-items-card: rgb(245, 245, 245);
+   --bg-xp: rgb(245, 245, 245);
+   /* --bg-stack-card: rgb(245, 245, 245); */
    --bg-stack-card: #e5e8e8;
+
 
    /* Variables pour les divs et éléments d'interface */
    --bg-button-dark: rgba(17, 24, 39, 1);
@@ -35,24 +36,25 @@
    --primary-color: rgb(92, 225, 230, 1);
    --primary-color-hover: rgba(92, 225, 230, 0.1);
    --secondary-color: rgb(223, 123, 35, 1);
-   --secondary-color-hover: rgba(223, 123, 35, 1);
+   --secondary-color-hover: rgba(255, 160, 80, 1);
 
 
-   --text-color-main: #b1bad3;
-   --text-color-light: #ffffff;
-   --text-color-dark: #000000;
-   --text-color-dl: #ffffff;
-   --text-color-dl-invert: #000000;
+   --text-color-main: rgb(177, 186, 211);
+   --text-color-light: rgb(255, 255, 255);
+   --text-color-dark: rgb(0, 0, 0);
+   --text-color-dl: rgb(255, 255, 255);
+   --text-color-dl-invert: rgb(0, 0, 0);
 
-   --border-primary-color: #e2e2e2;
+   --border-primary-color: rgb(226, 226, 226);
    --bg-primary: rgba(0, 0, 0);
    --bg-secondary: rgb(17, 34, 35);
    --bg-menu-open: rgba(14, 14, 14, 0.8);
 
    /* Variables pour le mode sombre */
-   --bg-items-card: #1A1A1A;
-   --bg-xp: #0f0f0f;
-   --bg-stack-card: #0f0f0f;
+   --bg-items-card: rgb(24, 24, 24);
+   --bg-xp: rgb(24, 24, 24);
+   --bg-stack-card: #0F0F0F;
+   /* --bg-stack-card: rgb(24, 24, 24); */
 
    --bg-project-button: rgb(17, 34, 35);
    --border-project-button: rgba(255, 255, 255, 0.8);
@@ -76,9 +78,8 @@ body {
    font-weight: 600;
 }
 
-.keyword-highlight-secondary {
-   color: var(--secondary-color);
-   text-shadow: 0 0 1px currentColor;
+.dark .keyword-highlight2 {
+   font-weight: 500;
 }
 
 .group:hover .tag-shadow {

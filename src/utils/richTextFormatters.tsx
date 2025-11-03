@@ -5,7 +5,7 @@ import React from 'react';
 // Reusable formatting components for placeholders
 export const RichTextComponents = {
   hl: (chunks: React.ReactNode) => (
-    <strong className="keyword-highlight2">{chunks}</strong>
+    <span className="keyword-highlight2">{chunks}</span>
   ),
   br: () => <br />
 };

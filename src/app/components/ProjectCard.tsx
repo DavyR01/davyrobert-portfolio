@@ -111,7 +111,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                           {tags.map((tag, idx) => (
                              <span
                                 key={idx}
-                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-stack-card)] px-2 py-0.5 rounded-full uppercase tag-shadow transition-all duration-300`}
+                                className={`inline-flex text-[14px] xs893:text-[12px] ${tag.color} bg-[var(--bg-stack-card)] px-2 py-0.5 rounded-full uppercase tag-shadow dark:hover:text-[var(--secondary-color-hover)] hover:bg-transparent cursor-default transition-all duration-300`}
                              >
                                 {tag.name}
                              </span>
