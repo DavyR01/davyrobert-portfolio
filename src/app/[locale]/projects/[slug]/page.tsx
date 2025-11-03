@@ -19,6 +19,23 @@ interface ProjectPageProps {
   }>;
 }
 
+// Generate static params for all projects at build time
+export async function generateStaticParams() {
+  const locales = ['fr', 'en'];
+  const allParams: { locale: string; slug: string }[] = [];
+
+  for (const locale of locales) {
+    for (const project of projects) {
+      allParams.push({
+        locale,
+        slug: project.projectSlug,
+      });
+    }
+  }
+
+  return allParams;
+}
+
 // Dynamics metadata for each project
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
   const { slug, locale } = await params;

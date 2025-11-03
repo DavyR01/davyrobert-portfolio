@@ -13,7 +13,13 @@ const nextConfig: NextConfig = {
    },
    images: {
       formats: ['image/webp', 'image/avif'],
-   }
+   },
+   // Optimisations de performance
+   compiler: {
+      removeConsole: process.env.NODE_ENV === 'production',
+   },
+   // Améliore le prefetching et la navigation
+   reactStrictMode: true,
 };
 
 export default withNextIntl(nextConfig);

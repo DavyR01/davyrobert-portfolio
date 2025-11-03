@@ -38,20 +38,25 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
              <div className="flex-1 flex flex-col">
                 {/* Image du projet */}
                 <div className="w-full aspect-[16/9] mb-5 relative overflow-hidden group">
-                   <Link href={`/projects/${projectSlug}`} prefetch={true} className="block w-full h-full">
-                      <Image
-                         src={image}
-                         alt={name}
-                         width={640}
-                         height={360}
-                         className="object-cover w-full h-auto"
-                      />
-                      {/* Overlay au hover */}
-                      <div className="absolute inset-0 bg-black/70 hidden group-hover:flex items-center justify-center transition-opacity duration-300">
-                         <span className="text-white text-2xl font-bold">{t("learnMore")}</span>
-                      </div>
-                   </Link>
-                </div>
+                  <Link 
+                     href={`/projects/${projectSlug}`}  
+                     prefetch={true} 
+                     className="block w-full h-full"
+                  >
+                     <Image
+                        src={image}
+                        alt={name}
+                        width={640}
+                        height={360}
+                        className="object-cover w-full h-auto"
+                        priority={index < 3}
+                     />
+                     {/* Overlay au hover */}
+                     <div className="absolute inset-0 bg-black/70 hidden group-hover:flex items-center justify-center transition-opacity duration-300">
+                        <span className="text-white text-2xl font-bold">{t("learnMore")}</span>
+                     </div>
+                  </Link>
+               </div>
  
                 {/* Titre + icônes */}
                 <div className="mt-3 mb-2 flex items-center justify-between gap-4 px-5">
