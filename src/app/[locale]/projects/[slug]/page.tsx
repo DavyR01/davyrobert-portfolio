@@ -67,7 +67,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <BackToProjectsButton />
       <div className='md:w-[85%] lg:w-[80%] mx-auto'>
         <h1 className="text-3xl md:text-4xl font-bold mb-6">{project.name}</h1>
-        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-6 group">
+        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-6 group border-[--border-tertiary] border">
           {project.video ? (
             <video
               className="w-full h-full" // object-cover
@@ -132,7 +132,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="grid gap-8 mb-8">
 
           {/* Contexte du projet */}
-          <div className="bg-[#fcf9f9] dark:bg-gray-900 p-4 sm:p-5 rounded-xl border border-[#e5e5e5] dark:border-transparent shadow">
+          <div className="bg-[#fcf9f9] dark:bg-gray-900 p-4 sm:p-5 rounded-xl border border-[var(--border-tertiary)] shadow">
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.context.title')}
             </h2>
@@ -145,7 +145,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
 
           {/* Savoir-faire et compétences */}
-          <div className="bg-[#fcf9f9] dark:bg-gray-900 p-4 sm:p-5  rounded-xl border border-[#e5e5e5] dark:border-transparent shadow">
+          <div className="bg-[#fcf9f9] dark:bg-gray-900 p-4 sm:p-5  rounded-xl border border-[var(--border-tertiary)] shadow">
             <h2 className="text-2xl font-bold mb-4 text-[--primary-color]">
               {t('project.skills.title')}
             </h2>

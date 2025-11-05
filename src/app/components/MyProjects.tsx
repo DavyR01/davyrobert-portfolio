@@ -19,7 +19,7 @@ const MyProjects = () => {
                <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')} <span className="">&</span> {t('title3')}
             </h2>
 
-            <div className='w-full flex bg-[var(--bg-secondary)] border-y border-[var(--border-primary-color)] py-8 px-5'>
+            <div className='w-full flex bg-[var(--bg-secondary)] border-y border-[var(--border-secondary)] py-8 px-5'>
             <motion.p
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}

@@ -23,7 +23,7 @@ const Skills = () => {
             </h2>
 
             {/* Sections d'intervention et stacks techniques */}
-            <div className="w-full mb-12 bg-[var(--bg-secondary)] border-y border-[var(--border-primary-color)] py-8">
+            <div className="w-full mb-12 bg-[var(--bg-secondary)] border-y border-[var(--border-secondary)] py-8">
                 <div className='max-w-[1200px] mx-auto px-[2.5rem] lg:px-[4rem]'>
                     <div className="grid lg:grid-cols-2 gap-16 lg:gap-28">
                         <div>

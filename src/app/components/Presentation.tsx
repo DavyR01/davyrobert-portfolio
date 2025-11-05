@@ -45,8 +45,8 @@ const Presentation = () => {
                <div className="relative">
                   <div className="flex justify-center lg:justify-start">
                      <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available
-                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]'
-                        : 'from-red-300/10 to-red-400/10 border-[--border-dark] dark:border-[--border-light]'
+                        ? 'from-green-300/10 to-green-400/10 border-[--border-primary] dark:border-[--border-primary] text-[--primary-color]'
+                        : 'from-red-300/10 to-red-400/10 border-[--border-primary] dark:border-[--border-primary]'
                         } border rounded-full text-[0.9rem] font-medium`}>
                         <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
                         {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
@@ -125,8 +125,8 @@ const Presentation = () => {
                   {/* Statut Badge */}
                   <div className="flex justify-center lg:justify-start">
                      <div className={`inline-flex items-center text-center gap-4 px-4 py-2 bg-gradient-to-r ${personalData.available
-                        ? 'from-green-300/10 to-green-400/10 border-[--border-dark] dark:border-[--border-light] text-[--primary-color]'
-                        : 'from-red-300/10 to-red-400/10 border-[--border-dark] dark:border-[--border-light]'
+                        ? 'from-green-300/10 to-green-400/10 border-[--border-primary] dark:border-[--border-primary] text-[--primary-color]'
+                        : 'from-red-300/10 to-red-400/10 border-[--border-primary] dark:border-[--border-primary]'
                         } border rounded-full text-[0.9rem] font-medium`}>
                         <div className={`w-3 h-3 p-2 ${personalData.available ? 'bg-green-500' : 'bg-red-500'} rounded-full animate-pulse`}></div>
                         {personalData.available ? t('statusBadge') : t('statusBadgeUnavailable')}
@@ -222,7 +222,7 @@ const Presentation = () => {
                      {getQualities(tQualities).items.map((q, index) => (
                         <div
                            key={q.label}
-                           className="group flex items-center gap-1 xs481:gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-400 dark:border-gray-600 px-2 xs481:px-5 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 "
+                           className="group flex items-center gap-1 xs481:gap-2  hover:bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 border border-gray-400 dark:border-gray-600 px-2 xs481:px-5 py-2 rounded-full font-medium text-sm shadow-sm hover:shadow-md transition-all duration-300 hover:border-[--primary-color]/30 cursor-default"
                            style={{
                               animationDelay: `${index * 80}ms`
                            }}
