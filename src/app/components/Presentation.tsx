@@ -245,14 +245,14 @@ const Presentation = () => {
                <div className="flex lg:flex-col flex-wrap w-full xl:w-[66%] gap-4 sm:flex-nowrap sm:items-left mb-4">
                   <Button
                      variant="primary"
-                     href="/download/CV_Davy_ROBERT_DEVELOPPEUR.pdf"
+                     href="/download/CV_Davy_ROBERT_DEVELOPPEUR_WEB.pdf"
                      download
                   >
                      {t('cvStandard')}
                   </Button>
                   <Button
                      variant="secondary"
-                     href="/download/CV_DETAILLE_Davy_ROBERT_DEVELOPPEUR.pdf"
+                     href="/download/CV_Details_Projets_Davy_ROBERT_DEVELOPPEUR_WEB.pdf"
                      download
                      withShineEffect
                   >
