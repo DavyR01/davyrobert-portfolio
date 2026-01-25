@@ -1,58 +1,105 @@
-'use client'
+'use client';
 
-import IconDisplay from '@/app/components/ui/IconDisplay'
-import { data_experiences } from '@/datas'
-import { useTranslations } from 'next-intl'
-import React, { useEffect, useState } from 'react'
+import IconDisplay from '@/app/components/ui/IconDisplay';
+import { data_experiences } from '@/datas';
+import { useTranslations } from 'next-intl';
+import React, { useEffect, useState } from 'react';
+
+const MAX_ICONS_DESKTOP = 5;
+const MAX_ICONS_MOBILE = 4;
 
 const MesExperiences = () => {
-   const [isMobile, setIsMobile] = useState(false)
-   const t = useTranslations('myExperiences')
+   const [isMobile, setIsMobile] = useState(false);
+   const t = useTranslations('myExperiences');
 
    useEffect(() => {
-      const handleResize = () => {
-         setIsMobile(window.innerWidth <= 1150)
-      }
+      const handleResize = () => setIsMobile(window.innerWidth <= 1150);
+      handleResize();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+   }, []);
 
-      handleResize()
-      window.addEventListener('resize', handleResize)
-      return () => window.removeEventListener('resize', handleResize)
-   }, [])
+   const renderTechBlock = (icons: { icon: React.ReactNode; label: string }[], mode: 'mobile' | 'desktop') => {
+      const max = mode === 'mobile' ? MAX_ICONS_MOBILE : MAX_ICONS_DESKTOP;
+      const featured = icons.slice(0, max);
+      const others = icons.slice(max);
+
+      return (
+         <div className="w-full flex flex-col items-center">
+            <div className="flex flex-wrap justify-center gap-6 items-start pt-6">
+               {featured.map(({ icon, label }, k) => (
+                  <div
+                     key={`${mode}-icon-${label}-${k}`}
+                     className={mode === 'mobile' ? 'w-12 h-12' : 'w-16 h-16'}
+                  >
+                     <div className="w-full h-full flex items-center justify-center">
+                        <IconDisplay
+                           icon={icon}
+                           label={label}
+                           sizeClass={mode === 'mobile' ? 'text-5xl' : 'text-6xl'}
+                        />
+                     </div>
+                  </div>
+               ))}
+            </div>
+
+            {others.length > 0 ? (
+               <div className="w-full mt-4">
+                  <p className="text-sm text-[var(--text-color-main)] text-center mb-2">
+                     Autres compétences
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-2">
+                     {others.map((it, idx) => (
+                        <span
+                           key={`${mode}-other-${it.label}-${idx}`}
+                           className="inline-flex items-center px-3 py-1 rounded-full border border-[var(--border-secondary)] bg-[var(--bg-secondary)] text-xs"
+                        >
+                           {it.label}
+                        </span>
+                     ))}
+                  </div>
+               </div>
+            ) : null}
+         </div>
+      );
+   };
 
    return (
       <section id="experience" className="pt-32 px-4 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
          <h2 className="text-center text-[--primary-color] uppercase text-4xl mb-12 font-bold">
-            <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">{t('title1')}</span> {t('title2')}
+            <span className="italic text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
+               {t('title1')}
+            </span>{' '}
+            {t('title2')}
          </h2>
 
          {isMobile ? (
             // Responsive layout (<= 1150px)
             <div className="relative mx-auto w-full max-w-[800px]">
-               <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[--primary-color] z-0 rounded"></div>
+               <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[--primary-color] z-0 rounded" />
                {data_experiences.map((item, i) => (
-                  <div key={`${item.yearKey}-${i}`} className="relative flex flex-col w-full mb-16" data-index={i}>
+                  <div key={`${item.yearKey}-${i}`} className="relative flex flex-col w-full mb-16">
                      <div className="w-full flex justify-center mb-6">
                         <div className="relative w-full max-w-[95%] sm:max-w-[97%]">
                            <div className="bg-[var(--bg-xp)] border border-[--primary-color] rounded p-6 w-full text-base">
+                              <h2 className="text-3xl font-medium mb-4 w-full text-center">{t(item.yearKey)}</h2>
 
-                               <h2 className="text-3xl font-medium mb-4 w-full text-center">{t(item.yearKey)}</h2>
                               {item.experiencesKey.map((exp, expIndex) => (
                                  <div key={`${exp.titleKey}-${expIndex}`} className="mb-4">
-                                     <h3 className="text-[--primary-color] font-medium text-2xl break-words">{t(exp.titleKey)}</h3>
+                                    <h3 className="text-[--primary-color] font-medium text-2xl break-words">
+                                       {t(exp.titleKey)}
+                                    </h3>
                                     <ul className="list-disc ml-8 mt-1 space-y-1">
                                        {exp.tasksKey.map((task, taskIndex) => (
-                                           <li key={`${task}-${taskIndex}`} className="break-words">{t(task)}</li>
+                                          <li key={`${task}-${taskIndex}`} className="break-words">
+                                             {t(task)}
+                                          </li>
                                        ))}
                                     </ul>
                                  </div>
                               ))}
-                               <div className="flex flex-wrap justify-center gap-6 mt-6">
-                                  {item.icons.map(({ icon, label }, k) => (
-                                     <div key={`mobile-${item.yearKey}-${label}-${k}`} className="w-12 h-12 flex items-center justify-center">
-                                        <IconDisplay icon={icon} label={label} sizeClass="text-5xl" />
-                                     </div>
-                                  ))}
-                               </div>
+
+                              {renderTechBlock(item.icons, 'mobile')}
                            </div>
                         </div>
                      </div>
@@ -62,22 +109,27 @@ const MesExperiences = () => {
          ) : (
             // Desktop layout (> 1150px)
             <div className="relative mx-auto w-full max-w-[1400px]">
-               <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[--primary-color] z-0 rounded"></div>
+               <div className="absolute top-0 left-1/2 -translate-x-1/2 h-full w-1 bg-[--primary-color] z-0 rounded" />
                {data_experiences.map((item, i) => (
                   <div key={`desktop-${item.yearKey}-${i}`} className="relative w-full flex mb-16">
                      {i % 2 === 0 ? (
                         <>
                            <div className="w-1/2 flex justify-end pr-10">
                               <div className="relative">
-                                 <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
+                                 <div className="absolute top-1/2 right-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded" />
                                  <div className="border bg-[var(--bg-xp)] border-[--primary-color] rounded p-6 w-[500px] text-base">
-                                     <h2 className="text-4xl font-medium mb-4 text-center">{t(item.yearKey)}</h2>
+                                    <h2 className="text-4xl font-medium mb-4 text-center">{t(item.yearKey)}</h2>
+
                                     {item.experiencesKey.map((exp, expIndex) => (
                                        <div key={`desktop-${exp.titleKey}-${expIndex}`} className="mb-4">
-                                           <h3 className="text-[--primary-color] font-medium text-3xl break-words">{t(exp.titleKey)}</h3>
+                                          <h3 className="text-[--primary-color] font-medium text-3xl break-words">
+                                             {t(exp.titleKey)}
+                                          </h3>
                                           <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasksKey.map((task, taskIndex) => (
-                                                 <li key={`desktop-${task}-${taskIndex}`} className="break-words">{t(task)}</li>
+                                                <li key={`desktop-${task}-${taskIndex}`} className="break-words">
+                                                   {t(task)}
+                                                </li>
                                              ))}
                                           </ul>
                                        </div>
@@ -85,38 +137,37 @@ const MesExperiences = () => {
                                  </div>
                               </div>
                            </div>
+
                            <div className="w-1/2 flex justify-center items-center pl-10">
-                              <div className="w-[500px] flex flex-wrap justify-center gap-6 items-start pt-8">
-                                 {item.icons.map(({ icon, label }, k) => (
-                                    <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-20 h-20 flex items-center justify-center">
-                                       <IconDisplay icon={icon} label={label} sizeClass="text-7xl" />
-                                    </div>
-                                 ))}
+                              <div className="w-[500px]">
+                                 {renderTechBlock(item.icons, 'desktop')}
                               </div>
                            </div>
                         </>
                      ) : (
                         <>
                            <div className="w-1/2 flex justify-end items-center pr-10">
-                              <div className="w-[500px] flex flex-wrap justify-center gap-6 items-start pt-8">
-                                 {item.icons.map(({ icon, label }, k) => (
-                                    <div key={`desktop-${item.yearKey}-${label}-${k}`} className="w-20 h-20 flex items-center justify-center">
-                                       <IconDisplay icon={icon} label={label} sizeClass="text-7xl" />
-                                    </div>
-                                 ))}
+                              <div className="w-[500px]">
+                                 {renderTechBlock(item.icons, 'desktop')}
                               </div>
                            </div>
+
                            <div className="w-1/2 flex justify-center items-center pl-10">
                               <div className="relative">
-                                 <div className="absolute top-1/2 left-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded"></div>
+                                 <div className="absolute top-1/2 left-[-40px] -translate-y-1/2 h-1 w-10 bg-[--primary-color] z-20 rounded" />
                                  <div className="bg-[var(--bg-xp)] border border-[--primary-color] rounded p-6 w-[500px] text-base">
-                                     <h2 className="text-4xl font-medium mb-4 text-center">{t(item.yearKey)}</h2>
+                                    <h2 className="text-4xl font-medium mb-4 text-center">{t(item.yearKey)}</h2>
+
                                     {item.experiencesKey.map((exp, expIndex) => (
                                        <div key={`desktop-${exp.titleKey}-${expIndex}`} className="mb-4">
-                                           <h3 className="text-[--primary-color] font-medium text-3xl break-words">{t(exp.titleKey)}</h3>
+                                          <h3 className="text-[--primary-color] font-medium text-3xl break-words">
+                                             {t(exp.titleKey)}
+                                          </h3>
                                           <ul className="list-disc ml-10 mt-1 space-y-1">
                                              {exp.tasksKey.map((task, taskIndex) => (
-                                                 <li key={`desktop-${task}-${taskIndex}`} className="break-words">{t(task)}</li>
+                                                <li key={`desktop-${task}-${taskIndex}`} className="break-words">
+                                                   {t(task)}
+                                                </li>
                                              ))}
                                           </ul>
                                        </div>
@@ -131,7 +182,7 @@ const MesExperiences = () => {
             </div>
          )}
       </section>
-   )
-}
+   );
+};
 
-export default MesExperiences
+export default MesExperiences;

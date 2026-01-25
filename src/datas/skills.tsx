@@ -147,7 +147,7 @@ export const categories: SkillCategory[] = [
    {
       titleKey: "backend",
       featured: [
-         { icon: <SiNodedotjs />, label: "Node.js" },
+         { icon: <SiNodedotjs />, label: 'NodeJS' },
          { icon: <SiExpress />, label: "Express" },
          { icon: <SiPostgresql />, label: "PostgreSQL" },
       ],
