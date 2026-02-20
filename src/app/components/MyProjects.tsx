@@ -8,9 +8,9 @@ import { ProjectCard } from "./ProjectCard";
 
 
 const MyProjects = () => {
-   const maxTagsCount = projects.reduce((max, project) => Math.max(max, project.tags.length), 0);
    const t = useTranslations('myProjects');
-   const { formatProjectsIntro } = useRichTextFormatters();
+   const { formatProjectsIntroLine1 } = useRichTextFormatters();
+   const { formatProjectsIntroLine2 } = useRichTextFormatters();
 
    return (
       <section id="projets" className="pt-32 text-[var(--text-color-dark)] dark:text-[var(--text-color-light)] w-full">
@@ -20,15 +20,16 @@ const MyProjects = () => {
             </h2>
 
             <div className='w-full flex bg-[var(--bg-secondary)] border-y border-[var(--border-secondary)] py-8 px-5'>
-            <motion.p
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               transition={{ delay: 0.2 }}
-               className='text-secondary dark:text-[--text-color-main] text-[var(--text-color-dark)] text-[18px] max-w-4xl leading-[2.2rem] mx-auto text-justify'
-            >
-               {formatProjectsIntro()}
-            </motion.p>
-         </div>
+               <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className='text-secondary dark:text-[--text-color-main] text-[var(--text-color-dark)] text-[18px] max-w-4xl leading-[2.2rem] mx-auto text-justify'
+               >
+                  {formatProjectsIntroLine1()}<br />
+                  {formatProjectsIntroLine2()}
+               </motion.p>
+            </div>
          </div>
 
          <div className="mt-8 flex justify-center w-full px-4">
@@ -36,7 +37,7 @@ const MyProjects = () => {
                <div className="flex flex-wrap justify-center gap-7 w-full">
                   {projects.map((project, index) => (
                      <div key={`project-${index}`} className="w-full xs893:w-auto">
-                        <ProjectCard index={index} {...project} maxTagsCount={maxTagsCount} />
+                        <ProjectCard index={index} {...project} />
                      </div>
                   ))}
                </div>

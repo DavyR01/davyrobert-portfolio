@@ -25,48 +25,8 @@ const Skills = () => {
             {t('title2')}
          </h2>
 
-         <div className="w-full mb-12 bg-[var(--bg-secondary)] border-y border-[var(--border-secondary)] py-8">
-            <div className="max-w-[1200px] mx-auto px-[2.5rem] lg:px-[4rem]">
-               <div className="grid lg:grid-cols-2 gap-16 lg:gap-28">
-                  <div>
-                     <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">
-                        {t('interventionTitle')}
-                     </h3>
-                     <ul className="list-disc list-inside space-y-2">
-                        <li className="keyword-highlight">{t('intervention1')}</li>
-                        <li className="keyword-highlight">{t('intervention2')}</li>
-                        <li className="keyword-highlight">{t('intervention3')}</li>
-                        <li className="dark:text-[var(--text-color-main)]">{t('intervention4')}</li>
-                        <li className="dark:text-[var(--text-color-main)]">{t('intervention5')}</li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 className="font-semibold text-[--primary-color] mb-4 text-xl">
-                        {t('stacksTitle')}
-                     </h3>
-                     <ul className="list-disc list-inside space-y-2">
-                        <li className="keyword-highlight">{t('stack1')}</li>
-                        <li className="keyword-highlight">{t('stack2')}</li>
-                        <li className="keyword-highlight">{t('stack3')}</li>
-                        <li className="keyword-highlight">{t('stack4')}</li>
-                        <li>
-                           <span className="keyword-highlight">{t('stack5')}</span>
-                           <span className="text-[var(--text-color-main)]">{t('stack8')}</span>
-                        </li>
-                        <li>
-                           <span className="keyword-highlight">{t('stack6')}</span>
-                           <span className="text-[var(--text-color-main)]">{t('stack8')}</span>
-                        </li>
-                        <li className="dark:text-[var(--text-color-main)]">{t('stack7')}</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div className="w-full max-w-[1200px] mx-auto px-4 lg:px-[2.5rem]">
-            <div className="grid sm:grid-cols-2 gap-10">
+         <div className="w-full max-w-[1200px] mx-auto px-4 lg:px-[2.5rem] py-8">
+            <div className="grid sm:grid-cols-2 gap-10 sm:gap-x-24 lg:gap-x-32">
                {categories.map((cat) => (
                   <div key={cat.titleKey} className="flex flex-col gap-6">
                      <h3 className="text-2xl font-semibold text-[var(--text-color-dark)] dark:text-[var(--text-color-light)]">
@@ -93,7 +53,7 @@ const Skills = () => {
                      {cat.secondary?.length ? (
                         <div className="mt-1">
                            <p className="text-sm text-[var(--text-color-main)] mb-2">
-                              Autres compétences
+                              {t('otherSkills')}
                            </p>
                            <div className="flex flex-wrap gap-2">
                               {cat.secondary.map((s, i) => (
