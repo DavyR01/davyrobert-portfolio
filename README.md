@@ -12,7 +12,7 @@
 ## 📋 Table des Matières
 
 - [🚀 Portfolio - Davy ROBERT](#-portfolio---davy-robert)
-  - [💻 Concepteur Développeur d’Applications Web](#-concepteur-développeur-dapplications-web--mobile--agile--devops)
+  - [💻 Concepteur Développeur d’Applications Web](#-concepteur-développeur-dapplications-web)
   - [📋 Table des Matières](#-table-des-matières)
   - [🛠 Technologies Utilisées](#-technologies-utilisées)
     - [Frontend](#frontend)
@@ -171,10 +171,10 @@ Ce projet est un projet personnel dans le but de démontrer mes compétences et 
 
 ## 📞 Comment prendre contact avec moi ?
 
-- **Email** : [contact@davyrobert.fr](mailto:contact@davyrobert.fr)
+- **Email** : [davyrobert90@gmail.com](mailto:davyrobert90@gmail.com)
 - **LinkedIn** : [linkedin.com/in/davy-robert](https://linkedin.com/in/davy-robert)
 - **GitHub** : [github.com/davyr01](https://github.com/davyr01)
-- **Portfolio** : [https://davyrobert.fr](https://davyrobert.fr)
+- **Portfolio** : [https://davyrobert.fr](https://portfolio.davyrobert.fr)
 
 ---
 

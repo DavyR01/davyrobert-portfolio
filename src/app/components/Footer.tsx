@@ -44,7 +44,7 @@ const Footer = () => {
                <FaGithub />
             </a>
             <a
-               href="mailto:contact@davyrobert.fr"
+               href="mailto:davyrobert90@gmail.com"
                className="text-[--primary-color] text-4xl hover:text-[--secondary-color] hover:scale-110 transition-transform"
             >
                <MdEmail />

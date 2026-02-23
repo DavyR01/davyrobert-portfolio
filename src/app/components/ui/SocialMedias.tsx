@@ -22,7 +22,7 @@
 //                 <FaLinkedin />
 //             </a>
 //             <a
-//                 href="mailto:contact@davyrobert.fr"
+//                 href="mailto:davyrobert90@gmail.com"
 //                 className="text-[--primary-color] text-5xl sm:text-4xl  hover:scale-110 transition-transform"
 //             >
 //                 <MdEmail />

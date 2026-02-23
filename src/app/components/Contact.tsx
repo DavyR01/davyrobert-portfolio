@@ -20,10 +20,10 @@ const Contact = () => {
                </p>
 
                <a
-                  href="mailto:contact@davyrobert.fr"
+                  href="mailto:davyrobert90@gmail.com"
                   className="relative inline-block mt-6 text-lg font-semibold dark:text-[--primary-color] border-2 border-[--primary-color] text-[var(--text-color-dark)] px-10 py-4 overflow-hidden transition-colors duration-200 group rounded"
                >
-                  <span className="relative z-10 dark:group-hover:text-[var(--text-color-dark)] group-hover:text-[var(--text-color-light)] transition-colors duration-200">contact@davyrobert.fr</span>
+                  <span className="relative z-10 dark:group-hover:text-[var(--text-color-dark)] group-hover:text-[var(--text-color-light)] transition-colors duration-200">davyrobert90@gmail.com</span>
                   <span className="absolute inset-0 bg-[--primary-color] w-0 group-hover:w-full transition-all duration-300" />
                </a>
 

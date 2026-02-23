@@ -47,7 +47,7 @@ const Presentation = () => {
          </a>
 
          <a
-            href="mailto:contact@davyrobert.fr"
+            href="mailto:davyrobert90@gmail.com"
             aria-label="Email"
             className={`text-[--primary-color] ${sizeClass} hover:text-[--secondary-color] hover:scale-110 transition-transform`}
          >
@@ -236,14 +236,14 @@ const Presentation = () => {
                      {t('cvStandard')}
                   </Button>
 
-                  <Button
+                  {/* <Button
                      variant="secondary"
                      href="/download/CV_Details_Projets_Davy_ROBERT_DEVELOPPEUR_WEB.pdf"
                      download
                      withShineEffect
                   >
                      {t('cvLong')}
-                  </Button>
+                  </Button> */}
 
                   {/* Social links (<lg) */}
                   <div className="lg:hidden flex w-full justify-center items-center sm:w-auto sm:justify-start gap-8 sm:mt-0 mt-4">
