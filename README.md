@@ -1,9 +1,9 @@
 <!-- ![OOOOOK](https://komarev.com/ghpvc/?username=?) -->
 
 # 🚀 Portfolio - Davy ROBERT
-## 💻 Concepteur Développeur d’Applications Web
+## 💻 Développeur Web Full Stack
 
-> Ce portfolio personnel moderne a été conçu avec Next.js, TypeScript et Tailwind CSS et est dédié à vous présenter mon parcours professionnel et compétences techniques en tant que Concepteur Développeur d'Applications Web.
+> Ce portfolio personnel moderne a été conçu avec Next.js, TypeScript et Tailwind CSS et est dédié à vous présenter mon parcours professionnel et compétences techniques en tant que Développeur Web Full Stack.
 
 > Vous y retrouverez l'ensemble de mes projets et de mes différentes expériences. Pour discuter de mon parcours, de vos réels besoins, et de comment je peux y contribuer en vous apportant un maximum de valeur, prenez contact avec moi pour en discuter. 
 
@@ -12,7 +12,7 @@
 ## 📋 Table des Matières
 
 - [🚀 Portfolio - Davy ROBERT](#-portfolio---davy-robert)
-  - [💻 Concepteur Développeur d’Applications Web](#-concepteur-développeur-dapplications-web)
+  - [💻 Développeur Web Full Stack](#-développeur-web-full-stack)
   - [📋 Table des Matières](#-table-des-matières)
   - [🛠 Technologies Utilisées](#-technologies-utilisées)
     - [Frontend](#frontend)

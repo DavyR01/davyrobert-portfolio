@@ -8,7 +8,7 @@
    },
    "presentation": {
       "hello": "Bonjour, je suis",
-      "fullstackRole": "Concepteur Développeur d'Applications Web",
+      "fullstackRole": "Développeur Full Stack",
       "methodsTitle": "Méthodes adoptées :",
       "statusBadge": "Proactif et disponible",
       "statusBadgeUnavailable": "Actuellement indisponible mais à l'écoute",
@@ -55,7 +55,7 @@
          "languages": "Langages",
          "frontend": "Frontend",
          "backend": "Backend",
-         "tools": "Outils"
+         "tools": "Outils & DevOps"
       },
       "otherSkills": "Autres technologies utilisées :"
    },
@@ -72,21 +72,19 @@
          "entrepreneurship": {
             "title": "Entrepreneuriat",
             "tasks": {
-               "t1": "Création de projets e-commerce à l'aide du logiciel SaaS Shopify",
-               "t2": "Adaptabilité du code à un template existant",
-               "t3": "Réalisation et publication de contenus visuels et vidéos marketings",
-               "t4": "Copywriting orienté conversion",
-               "t5": "Lancement et gestion de campagnes publicitaires",
-               "t6": "Optimisation SEO (titre, méta description, sémantique, accessibilité...)"
+               "t1": "Conception et mise en ligne de projets e-commerce sur Shopify (SaaS)",
+               "t2": "Intégration et personnalisation front-end de templates (HTML, CSS, JavaScript, Liquid)",
+               "t3": "Adaptation de l’UI et optimisation de l’UX pour améliorer la navigation et l’expérience mobile",
+               "t4": "Connexion de services tiers et APIs et optimisation SEO technique (structure sémantique, métadonnées)"
             }
          },
          "portfolio": {
             "title": "Création de ce portfolio",
             "tasks": {
-               "t1": "Développement en NextJS App router et TailwindCSS en version desktop et responsive",
-               "t2": "Apprivoisement des outils de déploiements tels que OVH, Vercel, Github...",
-               "t3": "Utilisation et hébergement de projets sur un VPS",
-               "t4": "Formation en autodidacte sur divers outils et langages..."
+               "t1": "Développement d’une interface moderne avec Next.js, React et TypeScript (desktop et responsive)",
+               "t2": "Mise en place d’une architecture orientée SEO et gestion de contenus dynamiques",
+               "t3": "Déploiement et hébergement via Vercel, OVH et GitHub",
+               "t4": "Attention portée à l’UX, aux performances et à la qualité du code"
             }
          },
          "bluesoft": {

@@ -27,8 +27,6 @@ export const data_experiences: DataExperience[] = [
                "experiences.entrepreneurship.tasks.t2",
                "experiences.entrepreneurship.tasks.t3",
                "experiences.entrepreneurship.tasks.t4",
-               "experiences.entrepreneurship.tasks.t5",
-               "experiences.entrepreneurship.tasks.t6",
             ],
          },
          {

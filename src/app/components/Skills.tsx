@@ -52,9 +52,9 @@ const Skills = () => {
 
                      {cat.secondary?.length ? (
                         <div className="mt-1">
-                           <p className="text-sm text-[var(--text-color-main)] mb-2">
+                           {/* <p className="text-sm text-[var(--text-color-main)] mb-2">
                               {t('otherSkills')}
-                           </p>
+                           </p> */}
                            <div className="flex flex-wrap gap-2">
                               {cat.secondary.map((s, i) => (
                                  <span

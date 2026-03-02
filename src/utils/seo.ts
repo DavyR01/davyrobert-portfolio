@@ -8,13 +8,13 @@ export interface SEOContent {
 
 export const seoContent: Record<string, SEOContent> = {
    fr: {
-      title: 'Davy ROBERT | Portfolio | Concepteur Développeur Full Stack d\'Applications Web',
-      description: 'Concepteur Développeur d\'Applications Web. Spécialisé en Next.js, React, Node.js, Javascript & TypeScript... Découvrez mon portfolio en ligne et accédez à mes projets réalisés et en cours de réalisation.',
+      title: 'Davy ROBERT | Portfolio | Développeur Web Full Stack',
+      description: 'Développeur Web Full Stack. Découvrez mon portfolio en ligne et accédez à mes projets réalisés et en cours de réalisation.',
       keywords: ['Développeur Full Stack', 'Concepteur Développeur d\'Applications Web', 'React', 'Next.js', 'Node.js', 'TypeScript', 'JavaScript', 'Développement Web', 'Portfolio'],
    },
    en: {
       title: 'Davy ROBERT | Portfolio | Full Stack Web and Mobile Application Developer',
-      description: 'Full Stack Web and Mobile Application Developer. Specialized in Next.js, React, Node.js, Javascript & TypeScript... Explore my portfolio online and access to my projects realized and in progress.',
+      description: 'Full Stack Web Developer. Explore my portfolio online and access to my projects realized and in progress.',
       keywords: ['Full Stack Developer', 'Web and Mobile Application Developer', 'React', 'Next.js', 'Node.js', 'TypeScript', 'JavaScript', 'Web Development', 'Portfolio'],
    }
 };

@@ -8,7 +8,7 @@
    },
    "presentation": {
       "hello": "Hello, I'm",
-      "fullstackRole": "Web Application Developer",
+      "fullstackRole": "Full Stack Developer",
       "methodsTitle": "Methods used:",
       "statusBadge": "Proactive and available",
       "statusBadgeUnavailable": "Currently unavailable but open to opportunities",
@@ -55,7 +55,7 @@
          "languages": "Languages",
          "frontend": "Frontend",
          "backend": "Backend",
-         "tools": "Tools"
+         "tools": "Tools & DevOps"
       },
       "otherSkills": "Other technologies used :"
    },
@@ -72,21 +72,19 @@
          "entrepreneurship": {
             "title": "Entrepreneurship",
             "tasks": {
-               "t1": "Creation of e-commerce projects using the Shopify SaaS software",
-               "t2": "Code adaptability to an existing template",
-               "t3": "Production and publication of visual content and marketing videos",
-               "t4": "Conversion-oriented copywriting",
-               "t5": "Launching and managing advertising campaigns",
-               "t6": "SEO optimization (title, meta description, semantics, accessibility, etc.)"
+               "t1": "Design and launch of e-commerce projects on Shopify (SaaS)",
+               "t2": "Front-end integration and customization of templates (HTML, CSS, JavaScript, Liquid)",
+               "t3": "UI adjustments and UX optimization to improve navigation and mobile experience",
+               "t4": "Connecting third-party services and APIs and optimizing technical SEO (semantic structure, metadata)"
             }
          },
          "portfolio": {
             "title": "Creation of this portfolio",
             "tasks": {
-               "t1": "Development in NextJS App Router and TailwindCSS, desktop and responsive versions",
-               "t2": "Mastering deployment tools such as OVH, Vercel, GitHub...",
-               "t3": "Using and hosting projects on a VPS",
-               "t4": "Self-taught training on various tools and languages..."
+               "t1": "Development of a modern interface using Next.js, React, and TypeScript (desktop and responsive)",
+               "t2": "Implementation of an SEO-oriented architecture with dynamic content management",
+               "t3": "Deployment and hosting via Vercel, OVH, and GitHub",
+               "t4": "Focus on UX, performance, and code quality"
             }
          },
          "bluesoft": {
